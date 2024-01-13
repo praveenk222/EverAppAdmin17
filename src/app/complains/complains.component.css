@@ -1,0 +1,733 @@
+.frame-8725,
+.frame-8725 * {
+  box-sizing: border-box;
+}
+.frame-8725 {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1178px;
+  height: 942px;
+  position: relative;
+}
+.frame-8724 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608320 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.complains {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-2608324 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.search {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 9px 12px 9px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 370px;
+  position: relative;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.tabler-search {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+}
+.search-by-customer-id-location-user-name {
+  color: var(--primary, #3355b9);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-8073 {
+  background: var(--primary, #3355b9);
+  border-radius: 24px;
+  padding: 16px 20px 16px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 36px;
+  position: relative;
+}
+.create-ticket {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-2608323 {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608331 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608166 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.text-holder {
+  background: #ffffff;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px;
+  padding: 8px 14px 8px 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 188.4px;
+  position: relative;
+}
+.hub-center {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.800000011920929;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.iconamoon-search-fill {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.open-date {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.800000011920929;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.uis-calender {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.closed-date {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.800000011920929;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.uis-calender2 {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.status {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.800000011920929;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ep-arrow-down-bold {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: visible;
+}
+.frame-2608329 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.complains-table-head {
+  background: #d6edfe;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.column-1 {
+  padding: 10px 16px 10px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 144px;
+  position: relative;
+}
+.user-name {
+  color: #3355b9;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.column-2 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 120px;
+  position: relative;
+}
+.user-id {
+  color: #3355b9;
+  text-align: center;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  flex: 1;
+}
+.column-3 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+.about {
+  color: #3355b9;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  flex: 1;
+}
+.column-4 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 146px;
+  position: relative;
+}
+.open-date2 {
+  color: #3355b9;
+  text-align: center;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.column-8 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 146px;
+  position: relative;
+}
+.closed-date2 {
+  color: #3355b9;
+  text-align: center;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.column-5 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 100px;
+  position: relative;
+}
+.location {
+  color: #3355b9;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.column-6 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 130px;
+  position: relative;
+}
+.status2 {
+  color: #3355b9;
+  text-align: center;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.frame-2608319 {
+  flex-shrink: 0;
+  width: 52px;
+  height: 50px;
+  position: relative;
+}
+.complains-table-head2 {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.column-12 {
+  padding: 10px 16px 10px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 144px;
+  position: relative;
+}
+.frame-8459 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.user-name2 {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.user-id2 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.about2 {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.open-date3 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.closed-date3 {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.location2 {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.status3 {
+  background: #ffedbf;
+  border-radius: 24px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.completed {
+  color: #c1900f;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+.complains-table-head3 {
+  background: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-84592 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.status4 {
+  background: #dbefdc;
+  border-radius: 24px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.completed2 {
+  color: #4caf50;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-84593 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame-84594 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame-84595 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.status5 {
+  background: #fddbd6;
+  border-radius: 24px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.completed3 {
+  color: #de5753;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-84596 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame-84597 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame-84598 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.frame-2608326 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.showing-1-to-10-of-28-entries {
+  color: rgba(0, 0, 0, 0.4);
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-2608325 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.previous {
+  background: #ffffff;
+  border-radius: 6px;
+  opacity: 0.6000000238418579;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+}
+.fe-arrow-left {
+  opacity: 0.6000000238418579;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: hidden;
+}
+.fe-arrow-left-0 {
+  height: auto;
+  position: absolute;
+  left: 5.25px;
+  top: 3px;
+  overflow: visible;
+}
+._1 {
+  background: #3355b9;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+._12 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+}
+._2 {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+._22 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+._3 {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+._32 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+}
+.next {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 30px;
+  position: relative;
+}
+.fe-arrow-right {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: hidden;
+}
+.fe-arrow-right-0 {
+  height: auto;
+  position: absolute;
+  left: 5.25px;
+  top: 3px;
+  overflow: visible;
+}

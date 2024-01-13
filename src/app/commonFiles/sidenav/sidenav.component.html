@@ -44,6 +44,7 @@
     </div>
     <div class="navigation">
       <div class="navigation-1">
+
         <svg
           class="ic-round-space-dashboard"
           width="24"
@@ -57,7 +58,12 @@
             fill="white"
           />
         </svg>
-        <div class="dashboard">Dashboard</div>
+        <div routerLink="/" class="dashboard">
+        <a >
+          Dashboard
+        </a>
+        </div>
+
       </div>
       <div class="navigation-2">
         <svg
@@ -73,7 +79,7 @@
             fill="white"
           />
         </svg>
-        <div class="booking-history">Booking history</div>
+        <div routerLink="/bookinghistory"   class="booking-history">Booking history</div>
       </div>
       <div class="navigation-3">
         <svg
@@ -89,7 +95,7 @@
             fill="white"
           />
         </svg>
-        <div class="revenue">Revenue</div>
+        <div routerLink="revenue" class="revenue">Revenue</div>
       </div>
       <div class="navigation-4">
         <div class="solar-document-add-bold">
@@ -113,7 +119,7 @@
             />
           </svg>
         </div>
-        <div class="manual-booking">Manual booking</div>
+        <div routerLink="manualbooking" class="manual-booking">Manual booking</div>
       </div>
       <div class="navigation-5">
         <svg
@@ -129,7 +135,7 @@
             fill="white"
           />
         </svg>
-        <div class="inventory">Inventory</div>
+        <div routerLink="inventory" class="inventory">Inventory</div>
       </div>
       <div class="navigation-11">
         <svg
@@ -145,7 +151,7 @@
             fill="white"
           />
         </svg>
-        <div class="inventory2">Booking Rates &amp; price management</div>
+        <div routerLink="bookingpricedata" class="inventory2">Booking Rates &amp; price management</div>
       </div>
       <div class="navigation-6">
         <svg
@@ -161,7 +167,7 @@
             fill="white"
           />
         </svg>
-        <div class="manage-users">Manage customers</div>
+        <div routerLink="customers" class="manage-users">Manage customers</div>
       </div>
       <div class="navigation-7">
         <div class="mingcute-code-fill">
@@ -179,7 +185,7 @@
             />
           </svg>
         </div>
-        <div class="promo-codes">Promo codes</div>
+        <div routerLink="promodata" class="promo-codes">Promo codes</div>
       </div>
       <div class="navigation-8">
         <svg
@@ -195,7 +201,7 @@
             fill="#3355B9"
           />
         </svg>
-        <div class="push-notifications">Push notifications</div>
+        <div routerLink="pushnotification" class="push-notifications">Push notifications</div>
       </div>
       <div class="navigation-9">
         <div class="mingcute-alert-fill">
@@ -213,7 +219,7 @@
             />
           </svg>
         </div>
-        <div class="complains">Complains</div>
+        <div routerLink="complains" class="complains">Complains</div>
       </div>
     </div>
   </div>
