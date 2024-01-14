@@ -37,7 +37,8 @@
             "styles": [
               "src/styles.css",
               "src/styleguide.css",
-              "src/globals.css"
+              "src/globals.css",
+              "node_modules/ngx-spinner/animations/ball-clip-rotate-pulse.css"
             ],
             "scripts": []
           },
