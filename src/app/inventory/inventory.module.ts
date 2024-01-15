@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { InventoryRoutingModule } from './inventory-routing.module';
 import { InventoryComponent } from './inventory.component';
+import { MaterialModule } from '../commonFiles/commonModules/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { InventoryComponent } from './inventory.component';
   ],
   imports: [
     CommonModule,
-    InventoryRoutingModule
+    InventoryRoutingModule,
+    MaterialModule
   ]
 })
 export class InventoryModule { }

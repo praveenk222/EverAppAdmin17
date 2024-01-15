@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BookinghistoryRoutingModule } from './bookinghistory-routing.module';
 import { BookinghistoryComponent } from './bookinghistory.component';
-import { SharedModule } from '../commonFiles/commonModules/shared.services';
+import { SharedModule } from '../commonFiles/commonModules/shared.Module';
 
 
 @NgModule({
