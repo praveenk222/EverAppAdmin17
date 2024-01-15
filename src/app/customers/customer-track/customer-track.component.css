@@ -1,0 +1,829 @@
+.frame-8725,
+.frame-8725 * {
+  box-sizing: border-box;
+}
+.frame-8725 {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1178px;
+  height: 942px;
+  position: relative;
+}
+.frame-8724 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.frame-2608320 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608332 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ic-round-arrow-back {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.booking-details {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-2608346 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.frame-2608347 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  height: 803px;
+  position: relative;
+}
+.frame-8722 {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+.frame-2608263 {
+  background: #2fb735;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 103px;
+  position: relative;
+}
+.farmer-name {
+  color: #ffffff;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608264 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608265 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.farmer-name2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "OpenSansHebrew-ExtraBold", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  position: relative;
+}
+.days {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.div {
+  color: #ffffff;
+  text-align: center;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-2608266 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.hours {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608267 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.minutes {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608268 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.seconds {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608279 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608281 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.farmer-name3 {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.frame-2608280 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-8071 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.booking-id-rb-1996 {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.booking-id-rb-1996-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.booking-id-rb-1996-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.vehicle-number-ts-09-rk-1996 {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.vehicle-number-ts-09-rk-1996-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.vehicle-number-ts-09-rk-1996-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.hub-centre-megha-hills-ev-hub {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.hub-centre-megha-hills-ev-hub-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.hub-centre-megha-hills-ev-hub-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.start-date-time-20-oct-2023-11-00-am {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.start-date-time-20-oct-2023-11-00-am-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.start-date-time-20-oct-2023-11-00-am-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.end-date-time-6-nov-2023-10-59-am {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.end-date-time-6-nov-2023-10-59-am-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.end-date-time-6-nov-2023-10-59-am-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.duration-17-days {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.duration-17-days-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.duration-17-days-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.frame-8075 {
+  border-radius: 6px;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 150px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+.frame-2608298 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.billing-details {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.line-48 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+.frame-2608297 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608292 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.name {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.name2 {
+  color: #363636;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608293 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608294 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.line-49 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+.frame-2608296 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.name3 {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.name4 {
+  color: #363636;
+  text-align: right;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.button-1 {
+  background: #3355b9;
+  border-radius: 24px;
+  padding: 16px 12px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 195px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.name5 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-26083462 {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+.track-location {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.line-43 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.frame-2608197 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.line-28 {
+  border-style: dashed;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 328px;
+  height: 0px;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.frame-2608195 {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.group-66 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: static;
+}
+.ellipse-153 {
+  background: #2e4b98;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.ellipse-154 {
+  background: #7497f3;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+}
+.frame-2608348 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.location-1 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  width: 293px;
+}
+._22-oct-2023-11-00-am {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  width: 293px;
+}
+.location-2 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  width: 293px;
+}
+._22-oct-2023-10-00-am {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  width: 293px;
+}
+.frame-2608196 {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.location-3 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  width: 293px;
+}
+._22-oct-2023-9-00-am {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  width: 293px;
+}
+.frame-26081972 {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.location-4 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  width: 293px;
+}
+._22-oct-2023-8-00-am {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  width: 293px;
+}
+.frame-2608198 {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.location-5 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  width: 293px;
+}
+._22-oct-2023-7-00-am {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  width: 293px;
+}
+.frame-2608199 {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.location-6 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  width: 293px;
+}
+._22-oct-2023-6-00-am {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  width: 293px;
+}
+.rectangle-2510 {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  flex-shrink: 0;
+  width: 6px;
+  height: 92px;
+  position: absolute;
+  left: 586px;
+  top: 68px;
+}
+.frame-2608345 {
+  background: #ffffff;
+  border-radius: 18px;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 528px;
+  position: relative;
+  overflow: hidden;
+}
+.image-77 {
+  width: 528px;
+  height: 854px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+.line-46 {
+  width: 282.02px;
+  height: 513.96px;
+  position: absolute;
+  left: 94.76px;
+  top: 154.52px;
+  transform: translate(88.74px, -41.62px);
+  overflow: visible;
+}
+.group-662 {
+  position: absolute;
+  inset: 0;
+}
+.ellipse-1532 {
+  background: #2e4b98;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 307px;
+  top: 97px;
+}
+.ellipse-1542 {
+  background: #7497f3;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 317px;
+  top: 107px;
+}

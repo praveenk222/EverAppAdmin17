@@ -1,0 +1,156 @@
+.create-ticket,
+.create-ticket * {
+  box-sizing: border-box;
+}
+.create-ticket {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 24px 18px 24px;
+  width: 490px;
+  height: 580px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-2608353 {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 462px;
+  position: absolute;
+  left: 14px;
+  top: 62px;
+}
+.ob-forms-farmer-name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.farmer-name {
+  color: var(--text-color, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.frame {
+  background: var(--white, #ffffff);
+  border-radius: 24px;
+  border-style: solid;
+  border-color: var(--strokeon-white, #e2e1e5);
+  border-width: 1px;
+  padding: 12px 16px 12px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.name {
+  color: var(--text-color, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.6000000238418579;
+  position: relative;
+}
+.frame2 {
+  background: var(--white, #ffffff);
+  border-radius: 24px;
+  border-style: solid;
+  border-color: var(--strokeon-white, #e2e1e5);
+  border-width: 1px;
+  padding: 12px 16px 12px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 96px;
+  position: relative;
+  overflow: hidden;
+}
+.button-1 {
+  background: #3355b9;
+  border-radius: 24px;
+  padding: 16px 12px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.name2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.create-ticket2 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.line-43 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px 0 0 0;
+  height: 0px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 46px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.mingcute-close-line {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  overflow: hidden;
+}
+.group {
+  height: auto;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  overflow: visible;
+}

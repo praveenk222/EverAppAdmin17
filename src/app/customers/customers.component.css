@@ -623,3 +623,13 @@
   top: 3px;
   overflow: visible;
 }
+/* Your component.css */
+::ng-deep .p-datatable .p-datatable-thead  {
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
