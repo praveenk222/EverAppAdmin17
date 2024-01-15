@@ -21,9 +21,11 @@ apiUrl='http://localhost:8080/api/v1/adminweb/'
       );
     });
   }
-  async getOrders():  Promise<any> {
+  async getOrders(type:number):  Promise<any> {
+    
+
     return new Promise((resolve, reject) => {
-      this.http.get(this.apiUrl+'orders').subscribe(
+      this.http.get(this.apiUrl+'orders/'+type).subscribe(
         (data) => {
           resolve(data);
         },

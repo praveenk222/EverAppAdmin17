@@ -1,0 +1,713 @@
+.frame-8725,
+.frame-8725 * {
+  box-sizing: border-box;
+}
+.frame-8725 {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1178px;
+  height: 942px;
+  position: relative;
+}
+.frame-8724 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608389 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1146px;
+  position: relative;
+}
+.frame-2608332 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ic-round-arrow-back {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.ola-s-1-pro {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-8073 {
+  background: var(--primary, #3355b9);
+  border-radius: 24px;
+  padding: 16px 20px 16px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 36px;
+  position: relative;
+}
+.book-now {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-2608273 {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px 12px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 446px;
+  position: relative;
+}
+.frame-2608301 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608300 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608175 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ola-s-1-pro2 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+.madhapur-hills-ev-hub {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-8076 {
+  background: #aeeeb0;
+  border-radius: 20px;
+  padding: 8px 10px 8px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.available {
+  color: #116b14;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608272 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.vehicle-details {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-2608270 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-185117 {
+  background: #f1f1f1;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 132px;
+  position: relative;
+}
+.clarity-battery-solid {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+._1-8-kwh-li {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.battery {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608176 {
+  background: #f1f1f1;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 132px;
+  position: relative;
+}
+.ph-bluetooth-bold {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.bluetooth {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.connectivity {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608177 {
+  background: #f1f1f1;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 132px;
+  position: relative;
+}
+.material-symbols-speed-rounded {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+._25-kmph {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.speed {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608178 {
+  background: #f1f1f1;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 132px;
+  position: relative;
+}
+.material-symbols-speed-rounded2 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.km {
+  height: auto;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 31.25%;
+  top: 25%;
+  height: 43.75%;
+  overflow: visible;
+}
+._85-km {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.pure-mileage {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608179 {
+  background: #f1f1f1;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 132px;
+  position: relative;
+}
+.fluent-timer-48-filled {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+._5-seconds {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+._0-40-kmph {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608402 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.full-description {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.table {
+  background: var(--white, #ffffff);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.row {
+  background: var(--white, #ffffff);
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.cell {
+  background: var(--white, #ffffff);
+  border-style: solid;
+  border-color: var(--strokeon-white, #e2e1e5);
+  border-width: 0px 0px 1px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 160px;
+  position: relative;
+}
+.content {
+  padding: 10px 12px 10px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.model-name {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.cell2 {
+  background: var(--white, #ffffff);
+  border-style: solid;
+  border-color: var(--strokeon-white, #e2e1e5);
+  border-width: 0px 0px 1px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.ola-s-1-pro3 {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.battery2 {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+._1-8-kwh-li2 {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.connectivity2 {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.bluetooth2 {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.efficiency {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+._25-kmph2 {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.pure-mileage2 {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+._85-km2 {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.weight {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+._25-kg {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.cell3 {
+  background: var(--white, #ffffff);
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 160px;
+  position: relative;
+}
+.environmental-impact {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.cell4 {
+  background: var(--white, #ffffff);
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.recyclable-and-eco-friendly-manufacturing-processes {
+  color: var(--text-clr, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.frame-2608388 {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px 12px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 680px;
+  height: 787px;
+  position: relative;
+}
+.bike-image {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  width: 372px;
+}
+.frame-2608325 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-2508 {
+  border-radius: 12px;
+  width: 412px;
+  height: 316px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+.rectangle-2506 {
+  border-radius: 12px;
+  width: 232px;
+  height: 223px;
+  position: absolute;
+  left: 424px;
+  top: 0px;
+  object-fit: cover;
+}
+.rectangle-2510 {
+  border-radius: 12px;
+  width: 330px;
+  height: 284px;
+  position: absolute;
+  left: 0px;
+  top: 326px;
+  object-fit: cover;
+}
+.rectangle-2507 {
+  border-radius: 12px;
+  width: 112px;
+  height: 82px;
+  position: absolute;
+  right: 120px;
+  top: 234px;
+  object-fit: cover;
+}
+.rectangle-2512 {
+  border-radius: 12px;
+  width: 656px;
+  height: 109px;
+  position: absolute;
+  right: 0px;
+  top: 620px;
+  object-fit: cover;
+}
+.rectangle-2509 {
+  border-radius: 12px;
+  width: 110px;
+  height: 83px;
+  position: absolute;
+  right: 0px;
+  top: 233px;
+  object-fit: cover;
+}
+.rectangle-2511 {
+  border-radius: 12px;
+  width: 316px;
+  height: 284px;
+  position: absolute;
+  right: 0px;
+  top: 326px;
+  object-fit: cover;
+}

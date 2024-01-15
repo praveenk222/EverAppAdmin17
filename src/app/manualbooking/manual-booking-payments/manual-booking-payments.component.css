@@ -1,0 +1,705 @@
+.frame-8725,
+.frame-8725 * {
+  box-sizing: border-box;
+}
+.frame-8725 {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1178px;
+  height: 942px;
+  position: relative;
+}
+.frame-8724 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608389 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1146px;
+  height: 36px;
+  position: relative;
+}
+.frame-2608332 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ic-round-arrow-back {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.payment-details {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-2608403 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 714px;
+  position: relative;
+}
+.frame-2608349 {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 562px;
+  height: 714px;
+  position: relative;
+}
+.frame-2608193 {
+  background: #f2f2f2;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #f2f2f2;
+  border-width: 1px;
+  padding: 12px 18px 12px 18px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608191 {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.total {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+}
+._9-760 {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-2608175 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 488px;
+  position: relative;
+}
+.upi {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-8099 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.button-10 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 0px 0px 1px 0px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0px 2px 12px 0px rgba(25, 116, 76, 0.15);
+  overflow: hidden;
+}
+.image-1 {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  object-fit: cover;
+}
+.name {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+}
+.button-8 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 0px 0px 1px 0px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0px 2px 12px 0px rgba(25, 116, 76, 0.15);
+  overflow: hidden;
+}
+.image-2 {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  object-fit: cover;
+}
+.button-9 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 0px 0px 1px 0px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0px 2px 12px 0px rgba(25, 116, 76, 0.15);
+  overflow: hidden;
+}
+.image-3 {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  object-fit: cover;
+}
+.button-11 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 0px 0px 1px 0px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0px 2px 12px 0px rgba(25, 116, 76, 0.15);
+  overflow: hidden;
+}
+.image-4 {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  object-fit: cover;
+}
+.button-12 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 0px 0px 1px 0px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0px 2px 12px 0px rgba(25, 116, 76, 0.15);
+  overflow: hidden;
+}
+.ph-plus-bold {
+  border-radius: 10px;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.name2 {
+  color: var(--primary, #3355b9);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608176 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 488px;
+  height: 146.5px;
+  position: relative;
+}
+.credit-debit-card {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.ph-plus-bold2 {
+  border-radius: 10px;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: visible;
+}
+.frame-2608304 {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  overflow-y: auto;
+}
+.frame-2608279 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608281 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.farmer-name {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.line-43 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.frame-2608280 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-8071 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.booking-id-rb-1996 {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.booking-id-rb-1996-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.booking-id-rb-1996-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.hub-centre-megha-hills-ev-hub {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.hub-centre-megha-hills-ev-hub-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.hub-centre-megha-hills-ev-hub-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.start-date-time-20-oct-2023-11-00-am {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.start-date-time-20-oct-2023-11-00-am-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.start-date-time-20-oct-2023-11-00-am-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.end-date-time-6-nov-2023-10-59-am {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.end-date-time-6-nov-2023-10-59-am-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.end-date-time-6-nov-2023-10-59-am-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.duration-17-days {
+  color: #000000;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.duration-17-days-span {
+  color: #000000;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.duration-17-days-span2 {
+  color: #000000;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.rectangle-2505 {
+  border-radius: 12px;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 172px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-2608298 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.billing-details {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.line-48 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+.frame-2608297 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608292 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.name3 {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.name4 {
+  color: #363636;
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608293 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-2608294 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.line-49 {
+  border-style: solid;
+  border-color: #e8e7e7;
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+.frame-2608296 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.name5 {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.name6 {
+  color: #363636;
+  text-align: right;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-2608242 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.offers-benefits {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.frame {
+  background: #f2f2f2;
+  border-radius: 10px;
+  padding: 12px 16px 12px 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.frame-2608278 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 205.5px;
+  position: relative;
+}
+.frame-2608187 {
+  background: #58d35d;
+  border-radius: 120px;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.frame-2608189 {
+  height: auto;
+  position: absolute;
+  right: 24.32%;
+  left: 27.03%;
+  width: 48.65%;
+  bottom: 31.08%;
+  top: 33.78%;
+  height: 35.14%;
+  overflow: visible;
+}
+.frame-2608277 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.name7 {
+  color: var(--text-color, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.name8 {
+  color: var(--text-color, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.name9 {
+  color: var(--primary, #3355b9);
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}

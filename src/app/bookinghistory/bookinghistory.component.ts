@@ -14,11 +14,12 @@ constructor(private us:UsersService){
 }
 
 ngOnInit() {
-  this.getOrders();
+  let biketype=3506
+  this.getOrders(biketype);
 }
-async getOrders(){
+async getOrders(id:number){
 
-this.us.getOrders()
+this.us.getOrders(id)
     .then((result:PostResult) => {
       if(result.status){
 

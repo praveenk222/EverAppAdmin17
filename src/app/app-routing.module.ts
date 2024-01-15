@@ -14,7 +14,8 @@ const routes: Routes = [
   { path: 'promodata', loadChildren: () => import('./promodata/promodata.module').then(m => m.PromodataModule) },
   { path: 'pushnotification', loadChildren: () => import('./pushnotification/pushnotification.module').then(m => m.PushnotificationModule) },
   { path: 'complains', loadChildren: () => import('./complains/complains.module').then(m => m.ComplainsModule) },
-  { path: '', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) }];
+  { path: '', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
+  { path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

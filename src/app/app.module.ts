@@ -3,13 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidenavComponent } from './commonFiles/sidenav/sidenav.component';
-import { ProfileComponent } from './commonFiles/profile/profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { spinnerInterceptor } from './services/spinner.interceptor';
 import { NgxSpinner, NgxSpinnerModule } from 'ngx-spinner';
+import { DialogContentComponent } from './commonFiles/sharedcomponents/dialog-content/dialog-content.component';
+import { SidenavComponent } from './commonFiles/sharedcomponents/sidenav/sidenav.component';
+import { ProfileComponent } from './commonFiles/sharedcomponents/profile/profile.component';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { NgxSpinner, NgxSpinnerModule } from 'ngx-spinner';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [

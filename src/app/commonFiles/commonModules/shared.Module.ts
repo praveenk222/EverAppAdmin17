@@ -94,6 +94,7 @@ import { RippleModule } from 'primeng/ripple';
 import { StyleClassModule } from 'primeng/styleclass';
 import { MessageService } from 'primeng/api';
 import { NgModule } from '@angular/core';
+import { DialogPopupService } from '../commonServices/dialogPopup.service';
 let importdata=[ TableModule,
     // AvatarModule,
     // AvatarGroupModule,
@@ -193,6 +194,7 @@ let importdata=[ TableModule,
 
   imports: [importdata],
   exports: [ importdata ],
+
 })
 
-export class SharedModule { }
+export class SharedPrimeNgModule { }
