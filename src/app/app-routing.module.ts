@@ -16,7 +16,8 @@ const routes: Routes = [
   { path: 'complains', loadChildren: () => import('./complains/complains.module').then(m => m.ComplainsModule) },
   { path: '', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
   { path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule) },
-  { path: 'primeng', loadChildren: () => import('./PrimengTemplate/app/primeng/primeng.module').then(m => m.PrimengModule) }];
+  { path: 'primeng', loadChildren: () => import('./PrimengTemplate/app/primeng/primeng.module').then(m => m.PrimengModule) },
+  { path: 'charts', loadChildren: () => import('./charts/charts.module').then(m => m.ChartsModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

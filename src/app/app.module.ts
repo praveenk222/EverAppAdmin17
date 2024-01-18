@@ -12,6 +12,7 @@ import { DialogContentComponent } from './commonFiles/sharedcomponents/dialog-co
 import { SidenavComponent } from './commonFiles/sharedcomponents/sidenav/sidenav.component';
 import { ProfileComponent } from './commonFiles/sharedcomponents/profile/profile.component';
 import { DialogModule } from 'primeng/dialog';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { DialogModule } from 'primeng/dialog';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // NgChartsModule.forRoot({ defaults: { ... } }) //for global css
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
