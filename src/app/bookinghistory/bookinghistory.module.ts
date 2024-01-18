@@ -10,6 +10,7 @@ import { BookingDetailsUserComponent } from './booking-details-user/booking-deta
 import { AllBatteryBookingsComponent } from './all-battery-bookings/all-battery-bookings.component';
 import { RecentBatteryBookingsComponent } from './recent-battery-bookings/recent-battery-bookings.component';
 import { RecentBikeWashBookingsComponent } from './recent-bike-wash-bookings/recent-bike-wash-bookings.component';
+import { HubsbookingsummarycardsComponent } from './hubsbookingsummarycards/hubsbookingsummarycards.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { RecentBikeWashBookingsComponent } from './recent-bike-wash-bookings/rec
     BookingDetailsUserComponent,
     AllBatteryBookingsComponent,
     RecentBatteryBookingsComponent,
-    RecentBikeWashBookingsComponent
+    RecentBikeWashBookingsComponent,
+    HubsbookingsummarycardsComponent
   ],
   imports: [
     CommonModule,
