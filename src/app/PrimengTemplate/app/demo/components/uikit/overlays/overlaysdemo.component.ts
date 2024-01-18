@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ConfirmationService, MessageService } from 'primeng/api';
-import { Product } from 'src/app/demo/api/product';
-import { ProductService } from 'src/app/demo/service/product.service';
+import { ProductService } from '../../../service/product.service';
+import { Product } from '../../../api/product';
 
 @Component({
     templateUrl: './overlaysdemo.component.html',
@@ -30,7 +30,7 @@ export class OverlaysDemoComponent implements OnInit {
     constructor(private productService: ProductService, private confirmationService: ConfirmationService, private messageService: MessageService) { }
 
     ngOnInit() {
-        this.productService.getProductsSmall().then(products => this.products = products);
+        this.productService.getProductsSmall().then((products:any) => this.products = products);
 
         this.images = [];
         this.images.push({

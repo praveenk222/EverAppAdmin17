@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -17,6 +17,7 @@ import { AppFooterComponent } from './app.footer.component';
 import { AppConfigModule } from './config/config.module';
 import { AppSidebarComponent } from "./app.sidebar.component";
 import { AppLayoutComponent } from "./app.layout.component";
+import { CommonModule } from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -24,10 +25,11 @@ import { AppLayoutComponent } from "./app.layout.component";
         AppTopBarComponent,
         AppFooterComponent,
         AppMenuComponent,
-        AppSidebarComponent,
         AppLayoutComponent,
+         AppSidebarComponent,
     ],
     imports: [
+        CommonModule,
         BrowserModule,
         FormsModule,
         HttpClientModule,
@@ -38,9 +40,9 @@ import { AppLayoutComponent } from "./app.layout.component";
         RadioButtonModule,
         InputSwitchModule,
         RippleModule,
-        RouterModule,
-        AppConfigModule
+        // AppConfigModule
     ],
+    schemas:[CUSTOM_ELEMENTS_SCHEMA],
     exports: [AppLayoutComponent]
 })
 export class AppLayoutModule { }

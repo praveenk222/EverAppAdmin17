@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NodeService } from 'src/app/demo/service/node.service';
 import { TreeNode} from 'primeng/api';
+import { NodeService } from '../../../service/node.service';
 
 @Component({
     templateUrl: './treedemo.component.html'
@@ -24,9 +24,9 @@ export class TreeDemoComponent implements OnInit {
     constructor(private nodeService: NodeService) {}
 
     ngOnInit() {
-        this.nodeService.getFiles().then(files => this.files1 = files);
-        this.nodeService.getFilesystem().then(files => this.files2 = files);
-        this.nodeService.getFiles().then(files => {
+        this.nodeService.getFiles().then((files:any) => this.files1 = files);
+        this.nodeService.getFilesystem().then((files:any)  => this.files2 = files);
+        this.nodeService.getFiles().then((files:any)  => {
             this.files3 = [{
                 label: 'Root',
                 children: files

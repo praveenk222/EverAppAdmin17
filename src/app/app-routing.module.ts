@@ -15,7 +15,8 @@ const routes: Routes = [
   { path: 'pushnotification', loadChildren: () => import('./pushnotification/pushnotification.module').then(m => m.PushnotificationModule) },
   { path: 'complains', loadChildren: () => import('./complains/complains.module').then(m => m.ComplainsModule) },
   { path: '', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
-  { path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule) }];
+  { path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule) },
+  { path: 'primeng', loadChildren: () => import('./PrimengTemplate/app/primeng/primeng.module').then(m => m.PrimengModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
