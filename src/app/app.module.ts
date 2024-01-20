@@ -13,12 +13,14 @@ import { SidenavComponent } from './commonFiles/sharedcomponents/sidenav/sidenav
 import { ProfileComponent } from './commonFiles/sharedcomponents/profile/profile.component';
 import { DialogModule } from 'primeng/dialog';
 import { NgChartsModule } from 'ng2-charts';
+import { InvoicepageComponent } from './bookinghistory/invoicepage/invoicepage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
     ProfileComponent,
+    InvoicepageComponent,
     
   ],
   imports: [

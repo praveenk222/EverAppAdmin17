@@ -13,6 +13,7 @@ import { SharedPrimeNgModule } from '../commonFiles/commonModules/shared.Module'
 import { RecentBatteryComponent } from './recent-battery/recent-battery.component';
 import { RecentHubsComponent } from './recent-hubs/recent-hubs.component';
 import { AddhubsComponent } from './addhubs/addhubs.component';
+import { AddbikesComponent } from './addbikes/addbikes.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { AddhubsComponent } from './addhubs/addhubs.component';
     AllHubstationComponent,
     RecentBatteryComponent,
     RecentHubsComponent,
-    AddhubsComponent
+    AddhubsComponent,
+    AddbikesComponent
   ],
   imports: [
     CommonModule,

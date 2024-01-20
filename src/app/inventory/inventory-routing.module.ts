@@ -6,6 +6,7 @@ import { AllvehiclesComponent } from './allvehicles/allvehicles.component';
 import { AllWashhubsComponent } from './all-washhubs/all-washhubs.component';
 import { AllHubstationComponent } from './all-hubstation/all-hubstation.component';
 import { AllBattriesComponent } from './all-battries/all-battries.component';
+import { AddbikesComponent } from './addbikes/addbikes.component';
 
 const routes: Routes = [
   { path: '', component: InventoryComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'allbikes', component: AllvehiclesComponent },
   { path: 'allbattries', component: AllBattriesComponent },
   { path: 'allwashhubs', component: AllWashhubsComponent },
-  { path: 'allhubs', component: AllHubstationComponent }
+  { path: 'allhubs', component: AllHubstationComponent },
+  { path: 'addbike', component: AddbikesComponent },
 ];
 
 @NgModule({
