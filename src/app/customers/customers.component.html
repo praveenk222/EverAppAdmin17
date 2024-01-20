@@ -70,7 +70,7 @@
       </div>
       <!-- table -->
       <div class="frame-8720">
-        <div class="manage-users-table-head">
+        <!-- <div class="manage-users-table-head">
           <div class="column-1">
             <div class="customer-id2">Customer id</div>
           </div>
@@ -119,25 +119,25 @@
             <div class="remarks2">N/A</div>
           </div>
           <div class="frame-2608319"></div>
-        </div>
-        <p-table
+        </div> -->
+        <p-table 
         [value]="userdata"
         [paginator]="true"
         [rows]="5"
         [showCurrentPageReport]="true"
-        [tableStyle]="{ 'min-width': '50rem' }"
+        [tableStyle]="{ 'width': '1000px' }"
         currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
         [rowsPerPageOptions]="[5, 10, 20]"
     >
-        <ng-template pTemplate="header">
+        <ng-template pTemplate="header" >
             <tr >
-                <th >Customer id</th>
-                <th >Full name</th>
-                <th >Mobile no.</th>
-                <th >Email id</th>
-                <th >Registration date</th>
-                <th >Status</th>
-                <th >Remarks</th>
+                <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" >Customer id</th>
+                <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" >Full name</th>
+                <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" >Mobile no.</th>
+                <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" >Email id</th>
+                <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" >Registration date</th>
+                <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" >Status</th>
+                <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" >Remarks</th>
             </tr>
         </ng-template>
         <ng-template pTemplate="body" let-customer>

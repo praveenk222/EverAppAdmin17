@@ -121,7 +121,7 @@
   align-self: stretch;
   flex-shrink: 0;
   height: 100px;
-  position: relative;
+
 }
 .frame-8717 {
   background: #92e3a9;
@@ -687,4 +687,7 @@
 /* Optional: Hover effect for the header cells */
 .mat-header-cell:hover {
   background-color: #e0e0e0;
+}
+.inventory-table{
+  width: 100%;
 }
