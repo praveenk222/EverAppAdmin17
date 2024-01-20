@@ -3,15 +3,37 @@ import { CommonModule } from '@angular/common';
 
 import { InventoryRoutingModule } from './inventory-routing.module';
 import { InventoryComponent } from './inventory.component';
+import { MaterialModule } from '../commonFiles/commonModules/material.module';
+import { AllvehiclesComponent } from './allvehicles/allvehicles.component';
+import { AllBattriesComponent } from './all-battries/all-battries.component';
+import { AllWashhubsComponent } from './all-washhubs/all-washhubs.component';
+import { BikeDetailsComponent } from './bike-details/bike-details.component';
+import { AllHubstationComponent } from './all-hubstation/all-hubstation.component';
+import { SharedPrimeNgModule } from '../commonFiles/commonModules/shared.Module';
+import { RecentBatteryComponent } from './recent-battery/recent-battery.component';
+import { RecentHubsComponent } from './recent-hubs/recent-hubs.component';
+import { AddhubsComponent } from './addhubs/addhubs.component';
+import { AddbikesComponent } from './addbikes/addbikes.component';
 
 
 @NgModule({
   declarations: [
-    InventoryComponent
+    InventoryComponent,
+    AllvehiclesComponent,
+    AllBattriesComponent,
+    AllWashhubsComponent,
+    BikeDetailsComponent,
+    AllHubstationComponent,
+    RecentBatteryComponent,
+    RecentHubsComponent,
+    AddhubsComponent,
+    AddbikesComponent
   ],
   imports: [
     CommonModule,
-    InventoryRoutingModule
+    InventoryRoutingModule,
+    MaterialModule,
+    SharedPrimeNgModule
   ]
 })
 export class InventoryModule { }
