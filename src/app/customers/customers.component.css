@@ -208,6 +208,7 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  width: 100%;
 }
 .manage-users-table-head {
   background: #d6edfe;
@@ -632,4 +633,7 @@
   align-items: center;
   justify-content: space-between;
   flex-shrink: 0;
+}
+th{
+  padding: 20px;
 }

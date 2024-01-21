@@ -14,13 +14,20 @@ import { ProfileComponent } from './commonFiles/sharedcomponents/profile/profile
 import { DialogModule } from 'primeng/dialog';
 import { NgChartsModule } from 'ng2-charts';
 import { InvoicepageComponent } from './bookinghistory/invoicepage/invoicepage.component';
-
+import { NavComponent } from './nav/nav.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import {MatChipsModule} from '@angular/material/chips';
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
     ProfileComponent,
     InvoicepageComponent,
+    NavComponent,
     
   ],
   imports: [
@@ -31,7 +38,12 @@ import { InvoicepageComponent } from './bookinghistory/invoicepage/invoicepage.c
     HttpClientModule,
     FormsModule,
     NgxSpinnerModule,
-
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatChipsModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
