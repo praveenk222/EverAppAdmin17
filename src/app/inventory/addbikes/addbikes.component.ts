@@ -12,8 +12,6 @@ export class AddbikesComponent {
 proudctdata!:SampleModel
   constructor(private dialog:MatDialog) {
     // this.openDialog()
-    this.proudctdata.Battery=23
-    this.proudctdata.BranchID=23
     console.log(this.proudctdata)
    }
 
