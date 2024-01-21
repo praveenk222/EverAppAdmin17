@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { PrimengRoutingModule } from './primeng-routing.module';
@@ -13,21 +13,25 @@ import { NodeService } from '../demo/service/node.service';
 import { PhotoService } from '../demo/service/photo.service';
 import { ProductService } from '../demo/service/product.service';
 import { AppSidebarComponent } from '../layout/app.sidebar.component';
+import { AppTopBarComponent } from '../layout/app.topbar.component';
 
 
 @NgModule({
   declarations: [
-    PrimengComponent,NotfoundComponent
+    PrimengComponent,NotfoundComponent,
   ],
   imports: [
     CommonModule,
     PrimengRoutingModule,
-    SharedPrimeNgModule
+    SharedPrimeNgModule,
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
     CountryService, CustomerService, EventService, IconService, NodeService,
     PhotoService, ProductService
+],
+schemas: [
+  NO_ERRORS_SCHEMA
 ],
 })
 export class PrimengModule { }

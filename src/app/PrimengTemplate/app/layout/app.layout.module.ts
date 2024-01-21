@@ -18,6 +18,7 @@ import { AppConfigModule } from './config/config.module';
 import { AppSidebarComponent } from "./app.sidebar.component";
 import { AppLayoutComponent } from "./app.layout.component";
 import { CommonModule } from '@angular/common';
+import { CommonpageComponent } from './commonpage/commonpage.component';
 
 @NgModule({
     declarations: [
@@ -26,7 +27,8 @@ import { CommonModule } from '@angular/common';
         AppFooterComponent,
         AppMenuComponent,
         AppLayoutComponent,
-         AppSidebarComponent,
+        AppSidebarComponent,
+        CommonpageComponent,
     ],
     imports: [
         CommonModule,
@@ -36,11 +38,12 @@ import { CommonModule } from '@angular/common';
         BrowserAnimationsModule,
         InputTextModule,
         SidebarModule,
+        RouterModule,
         BadgeModule,
         RadioButtonModule,
         InputSwitchModule,
         RippleModule,
-        // AppConfigModule
+        AppConfigModule,
     ],
     schemas:[CUSTOM_ELEMENTS_SCHEMA],
     exports: [AppLayoutComponent]
