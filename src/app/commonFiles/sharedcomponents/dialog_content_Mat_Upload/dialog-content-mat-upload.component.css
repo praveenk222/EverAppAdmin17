@@ -1,0 +1,165 @@
+.property-1-variant-2,
+.property-1-variant-2 * {
+  box-sizing: border-box;
+}
+.property-1-variant-2 {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px 14px 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 520px;
+  position: relative;
+  box-shadow: 0px 1px 4px 0px rgba(87, 129, 237, 0.25);
+}
+.upload-image {
+  color: #3f3f3f;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-7594 {
+  background: rgba(51, 85, 185, 0.1);
+  border-radius: 16px;
+  border-style: dashed;
+  border-color: #3355b9;
+  border-width: 1px;
+  padding: 71px 163px 71px 163px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 224px;
+  position: relative;
+  overflow: hidden;
+}
+.icon-park-upload-two {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
+}
+.group {
+  height: auto;
+  position: absolute;
+  right: 3.25%;
+  left: 3.6%;
+  width: 93.15%;
+  bottom: 10.42%;
+  top: 10.42%;
+  height: 79.17%;
+  overflow: visible;
+}
+.frame-7591 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.drag-your-image-here-or-browse-files {
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.800000011920929;
+  position: relative;
+  width: 240px;
+}
+.drag-your-image-here-or-browse-files-span {
+  color: rgba(54, 54, 54, 0.6);
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.drag-your-image-here-or-browse-files-span2 {
+  color: #255a5f;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.drag-your-image-here-or-browse-files-span3 {
+  color: var(--primary, #3355b9);
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.frame-2608413 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.uploaded-images {
+  color: #3f3f3f;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-2608411 {
+  background: #d6edfe;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.image-bike-1-png {
+  color: #000000;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.ic-baseline-delete {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  overflow: visible;
+}
+.mingcute-close-line {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  overflow: hidden;
+}
+.group2 {
+  height: auto;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  overflow: visible;
+}
