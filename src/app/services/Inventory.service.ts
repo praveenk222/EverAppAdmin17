@@ -51,10 +51,20 @@ export class InventoryService {
     });
   }
   async saveProduct(data:any):  Promise<any> {
-    
-
     return new Promise((resolve, reject) => {
       this.http.post(this.apiUrl+'products/save',data).subscribe(
+        (data) => {
+          resolve(data);
+        },
+        (error) => {
+          reject(error);
+        }
+      );
+    });
+  }
+  async saveHub(data:any):  Promise<any> {
+    return new Promise((resolve, reject) => {
+      this.http.post(this.apiUrl+'products/savehub',data).subscribe(
         (data) => {
           resolve(data);
         },
