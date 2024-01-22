@@ -35,9 +35,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
               "src/styleguide.css",
-              "src/globals.css",
               "node_modules/ngx-spinner/animations/ball-clip-rotate-pulse.css",
               "node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],

@@ -10,31 +10,45 @@ export class SampleModel {
     ImageID: number=0;
     IsActive: boolean=true;
     IsAvailable:boolean=true;
-    CreatedDate!: string; // Assuming this is a string representation of a date
-    ModifiedDate!: string; // Assuming this is a string representation of a date
-    EstablishedDate!: string; // Assuming this is a string representation of a date
+    CreatedDate!: string; 
+    ModifiedDate!: string; 
+    EstablishedDate!: string; 
     Condition: number=0;
-    LastServiceDate!: string; // Assuming this is a string representation of a date
+    LastServiceDate!: string; 
     VehicleModel: number=0;
     Price: number=0;
-    Battery: any; // You can replace 'any' with the actual type of Battery if known
-    Connectivity: any; // Replace 'any' with the actual type if known
-    Efficiency: any; // Replace 'any' with the actual type if known
-    Mileage: any; // Replace 'any' with the actual type if known
-    Torque: any; // Replace 'any' with the actual type if known
-    Weight: any; // Replace 'any' with the actual type if known
-    OtherDescription: any; // Replace 'any' with the actual type if known
-    Capacity: any; // Replace 'any' with the actual type if known
-    Range: any; // Replace 'any' with the actual type if known
-    Chemistry: any; // Replace 'any' with the actual type if known
-    ChargingTime: any; // Replace 'any' with the actual type if known
-    ChargingType: any; // Replace 'any' with the actual type if known
-    CompactTo: any; // Replace 'any' with the actual type if known
+    Battery: any; 
+    Connectivity: any; 
+    Efficiency: any; 
+    Mileage: any; 
+    Torque: any; 
+    Weight: any; 
+    OtherDescription: any; 
+    Capacity: any; 
+    Range: any; 
+    Chemistry: any; 
+    ChargingTime: any; 
+    ChargingType: any; 
+    CompactTo: any; 
     ProductType: number=0;
     ProductId: number=0;
-    ModelName: any; // Replace 'any' with the actual type if known
-    Description: any; // Replace 'any' with the actual type if known
+    ModelName: any; 
+    Description: any; 
+    RegistrationNo:any;
+    ProductName:any;
+    RegistrationDate:any;
   }
   
 
-  
+  export interface BranchModal {
+    BranchCode: string;
+    BranchName: string;
+    RegNo: string;
+    IsActive: boolean;
+    CreatedBy: string;
+    ModifiedBy: string;
+    OpenTime: string; // You might want to use a Date type if it represents a time
+    CloseTime: string; // You might want to use a Date type if it represents a time
+    ProfileImage: string;
+    BranchType: number;
+  }

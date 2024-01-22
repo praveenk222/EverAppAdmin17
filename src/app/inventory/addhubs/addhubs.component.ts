@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DialogAddhubMatComponent } from '../../commonFiles/sharedcomponents/dialog_addhub_Mat/dialog_addhub_Mat.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-addhubs',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './addhubs.component.css'
 })
 export class AddhubsComponent {
+  constructor(private dialog:MatDialog) {
+    // this.openDialog()
+   }
+ 
 
-}
+  }

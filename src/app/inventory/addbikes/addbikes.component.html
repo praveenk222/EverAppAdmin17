@@ -1,5 +1,6 @@
 <div class="frame-8725">
     <div class="frame-8724">
+      <form (ngSubmit)="onSubmit()">
       <div class="frame-2608320">
         <div class="frame-2608332">
           <svg
@@ -19,7 +20,11 @@
         </div>
         <div class="frame-2608333">
           <div class="frame-8073">
-            <div class="save-changes">Save changes</div>
+            <div class="save-changes">
+              <button type="submit" >
+                Save changes
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -34,7 +39,9 @@
             </div>
             <div class="cell2">
               <div class="content2">
-                <div class="s-1-pro">S1 Pro</div>
+                <div class="s-1-pro">
+                  <input [(ngModel)]="proudctdata.ModelName" type="text" name="proudctdata.ModelName">
+                </div>
               </div>
             </div>
           </div>
@@ -46,7 +53,11 @@
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="ts-09-ab-1234">TS09AB1234</div>
+                <div class="ts-09-ab-1234">
+
+                  <input [(ngModel)]="proudctdata.RegistrationNo" type="text" name="RegistrationNo">
+                </div>
+
               </div>
             </div>
           </div>
@@ -58,7 +69,10 @@
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="madhapur">Madhapur</div>
+                <div class="madhapur">
+                  <input [(ngModel)]="proudctdata.ProductName" type="text" name="Model">
+
+                </div>
               </div>
             </div>
           </div>
@@ -70,7 +84,11 @@
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="_19-aug-2023">19 Aug, 2023</div>
+                <div class="_19-aug-2023">
+
+                  <input [(ngModel)]="proudctdata.EstablishedDate" type="date" name="EstablishedDate">
+                </div>
+
               </div>
             </div>
           </div>
@@ -82,7 +100,10 @@
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="_15th-aug-2023">15th Aug, 2023</div>
+                <div class="_15th-aug-2023">
+                <input [(ngModel)]="proudctdata.RegistrationDate" type="date" name="RegistrationDate">
+
+                </div>
               </div>
             </div>
           </div>
@@ -94,19 +115,25 @@
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="healthy">Healthy</div>
+                <div class="healthy">Healthy
+                <input [(ngModel)]="proudctdata.Condition" type="text" name="Condition">
+
+                </div>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="cell">
               <div class="content">
-                <div class="last-service-date">Last service date</div>
+                <div class="last-service-date">Last service date
+
+                </div>
               </div>
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="div">-</div>
+                <input [(ngModel)]="proudctdata.LastServiceDate" type="date" name="LastServiceDate">
+                <div class="div"></div>
               </div>
             </div>
           </div>
@@ -118,19 +145,27 @@
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="_22-sep-2023">22 Sep, 2023</div>
+                <div class="_22-sep-2023">
+                <input [(ngModel)]="proudctdata.LastServiceDate" type="date" name="LastServiceDate">
+
+                </div>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="cell">
               <div class="content">
-                <div class="battery">Battery</div>
+                <div class="battery">Battery
+
+                </div>
               </div>
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="_1-8-kwh-li">1.8 Kwh Li</div>
+                <div class="_1-8-kwh-li">
+                <input [(ngModel)]="proudctdata.Battery" type="text" name="Battery">
+
+                </div>
               </div>
             </div>
           </div>
@@ -142,7 +177,11 @@
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="bluetooth">Bluetooth</div>
+                <div class="bluetooth">
+                  <input [(ngModel)]="proudctdata.Connectivity" type="text" name="Connectivity">
+
+
+                </div>
               </div>
             </div>
           </div>
@@ -154,7 +193,10 @@
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="_25-kmph">25 Kmph</div>
+                <div class="_25-kmph">
+                  <input [(ngModel)]="proudctdata.Efficiency" type="text" name="Efficiency">
+
+                </div>
               </div>
             </div>
           </div>
@@ -166,7 +208,10 @@
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="_85-km">85 Km</div>
+                <div class="_85-km">
+                  <input [(ngModel)]="proudctdata.Mileage" type="text" name="Mileage">
+
+                </div>
               </div>
             </div>
           </div>
@@ -178,7 +223,10 @@
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="_25-kg">25 Kg</div>
+                <div class="_25-kg">
+                  <input [(ngModel)]="proudctdata.Weight" type="text" name="Weight">
+
+                </div>
               </div>
             </div>
           </div>
@@ -191,7 +239,9 @@
             <div class="cell3">
               <div class="content2">
                 <div class="recyclable-and-eco-friendly-manufacturing-processes">
-                  Recyclable and eco-friendly manufacturing processes
+                 
+                  <input [(ngModel)]="proudctdata.Description" type="text" name="Description">
+
                 </div>
               </div>
             </div>
@@ -204,12 +254,17 @@
             </div>
             <div class="cell3">
               <div class="content2">
-                <div class="_60">₹60</div>
+                <div class="_60">
+                  <input [(ngModel)]="proudctdata.Price" type="number" name="Price">
+
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </form>
+
       <div class="frame-2608388">
         <div class="frame-2608395">
           <div class="bike-image">Bike image</div>
@@ -222,7 +277,7 @@
             </div>
           </div>
         </div>
-        <div class="frame-2608325">
+        <div class="frame-2608325" *ngIf="isIamages">
           <img class="rectangle-2508" src="rectangle-25080.png" />
           <img class="rectangle-2506" src="rectangle-25060.png" />
           <img class="rectangle-2510" src="rectangle-25100.png" />
