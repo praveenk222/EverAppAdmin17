@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: '', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
   { path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule) },
   { path: 'charts', loadChildren: () => import('./charts/charts.module').then(m => m.ChartsModule) },
+  { path: 'admin', loadChildren: () => import('./commonFiles/sharedcomponents/admin/admin.module').then(m => m.AdminModule) },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

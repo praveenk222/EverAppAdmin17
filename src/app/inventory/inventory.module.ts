@@ -29,14 +29,14 @@ import { MatMenuModule } from '@angular/material/menu';
     RecentHubsComponent,
     AddhubsComponent,
     AddbikesComponent,
-    MatMenuModule
   ],
   imports: [
     CommonModule,
     InventoryRoutingModule,
     MaterialModule,
     SharedPrimeNgModule,
-    ReactiveFormsModule,FormsModule
+    MatMenuModule,
+    ReactiveFormsModule,FormsModule,
   ]
 })
 export class InventoryModule { }
