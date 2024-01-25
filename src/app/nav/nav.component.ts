@@ -22,10 +22,20 @@ export class NavComponent {
     );
 
 
-    availableColors: ChipColor[] = [
-      {name: 'none', color: undefined},
-      {name: 'Primary', color: 'primary'},
-      {name: 'Accent', color: 'accent'},
-      {name: 'Warn', color: 'warn'},
-    ];
+Navitem=[
+  {name:'Dashboard',icon:'',link:'/'},
+  {name:'Booking history',icon:'',link:'/bookinghistory'},
+  {name:'Revenue',icon:'',link:'/revenue'},
+  {name:'Manual booking',icon:'',link:'/manualbooking'},
+  {name:'Inventory',icon:'',link:'/inventory'},
+  {name:'Booking Rates & price management',icon:'',link:'/bookingpricedata'},
+  {name:'Manage customers',icon:'',link:'/customers'},
+  {name:'Promo codes',icon:'',link:'/promodata'},
+  {name:'Push notifications',icon:'',link:'/pushnotification'},
+  {name:'Complains',icon:'',link:'/complains'},
+
+]
+
+
+
 }

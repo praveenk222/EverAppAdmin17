@@ -25,6 +25,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { ReactiveFormsModule} from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +50,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatListModule,
     MatChipsModule,
     MatTableModule,
-    MatPaginatorModule,
+    // MatPaginatorModule,
     ReactiveFormsModule,
     MatMenuModule
   ],

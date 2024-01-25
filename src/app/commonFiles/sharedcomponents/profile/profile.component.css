@@ -3,9 +3,9 @@
   box-sizing: border-box;
 }
 .profile {
-  background: #ffffff;
+  /* background: #ffffff;
   border-style: solid;
-  border-color: transparent;
+  border-color: transparent; */
   border-width: 1px;
   width: 1178px;
   height: 50px;
@@ -22,8 +22,8 @@
   top: 7px;
 }
 .frame-8029 {
-  border-radius: 20px;
-  padding: 8px 12px 8px 8px;
+  /* border-radius: 20px;
+  padding: 8px 12px 8px 8px; */
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -74,4 +74,8 @@
   left: 3px;
   top: 5.25px;
   overflow: visible;
+}
+::ng-deep .menu{
+width:420px !important;
+height: 320px !important;
 }
