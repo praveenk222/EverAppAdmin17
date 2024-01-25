@@ -25,6 +25,9 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { ReactiveFormsModule} from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
+import { RegisterComponent } from './commonFiles/sharedcomponents/register/register.component';
+import { ChangepasswordComponent } from './commonFiles/sharedcomponents/changepassword/changepassword.component';
+import { ResetpasswordComponent } from './commonFiles/sharedcomponents/resetpassword/resetpassword.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +35,9 @@ import {MatMenuModule} from '@angular/material/menu';
     ProfileComponent,
     InvoicepageComponent,
     NavComponent,
+    RegisterComponent,
+    ChangepasswordComponent,
+    ResetpasswordComponent,
     
   ],
   imports: [

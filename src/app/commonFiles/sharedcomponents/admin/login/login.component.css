@@ -1,0 +1,200 @@
+.log-in,
+.log-in * {
+  box-sizing: border-box;
+}
+.log-in {
+  background: linear-gradient(to left, #ffffff, #ffffff);
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.sign-in-form {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
+  padding: 56px 118px 56px 118px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: calc(50% - 330px);
+  top: calc(50% - 258px);
+  box-shadow: 0px 5px 12px 0px rgba(90, 129, 229, 0.2);
+  overflow: hidden;
+  backdrop-filter: blur(28px);
+}
+.frame-2608381 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-8712 {
+  flex-shrink: 0;
+  width: 117.36px;
+  height: 36px;
+  position: relative;
+}
+.logomark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  position: absolute;
+  left: calc(50% - 58.78px);
+  top: calc(50% - 18px);
+  overflow: visible;
+}
+.frame-2608380 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.welcome-to-ever {
+  color: #5781ed;
+  text-align: center;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+}
+.log-in-to-continue-your-journey {
+  color: #363636;
+  text-align: center;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-2608382 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.ob-forms-farmer-name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 424px;
+  position: relative;
+  overflow: hidden;
+}
+.farmer-name {
+  color: var(--text-color, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.frame {
+  background: var(--white, #ffffff);
+  border-radius: 24px;
+  border-style: solid;
+  border-color: var(--strokeon-white, #e2e1e5);
+  border-width: 1px;
+  padding: 12px 16px 12px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.name {
+  color: var(--text-color, #363636);
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.6000000238418579;
+  position: relative;
+}
+.frame2 {
+  background: var(--white, #ffffff);
+  border-radius: 24px;
+  border-style: solid;
+  border-color: var(--strokeon-white, #e2e1e5);
+  border-width: 1px;
+  padding: 12px 16px 12px 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.bi-eye-slash-fill {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.group {
+  height: auto;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 10.29%;
+  top: 10.29%;
+  height: 79.43%;
+  overflow: visible;
+}
+.forgot-your-password {
+  color: var(--primary, #3355b9);
+  text-align: right;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: underline;
+  position: relative;
+}
+.button-1 {
+  background: #3355b9;
+  border-radius: 24px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 424px;
+  position: relative;
+  overflow: hidden;
+}
+.name2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
