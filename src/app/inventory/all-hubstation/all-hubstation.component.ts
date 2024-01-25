@@ -55,7 +55,7 @@ export class AllHubstationComponent {
     const dialogRef =
     this.dialog.open(DialogAddhubMatComponent,{
       width:'490px',
-      height:'758px'
+      height:'658px'
     })
     // dialogRef.afterOpened().subscribe(_ => {
     //   setTimeout(() => {

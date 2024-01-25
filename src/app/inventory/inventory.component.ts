@@ -3,6 +3,8 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import { InventoryService } from '../services/Inventory.service';
 import { PostResult } from '../models/PostResult';
+import { MatDialog } from '@angular/material/dialog';
+import { AddhubsComponent } from './addhubs/addhubs.component';
 @Component({
   selector: 'app-inventory',
   templateUrl: './inventory.component.html',
@@ -17,7 +19,7 @@ export class InventoryComponent {
    pageSizeOptions: number[] = [5, 10, 20];
    pageSize = 5; //
    @ViewChild(MatPaginator) paginator!: MatPaginator;
-  constructor( private invntservice: InventoryService) {
+  constructor( private invntservice: InventoryService,public dialog: MatDialog) {
   }
 
 ngOnInit() {
@@ -44,7 +46,15 @@ getbikes() {
        console.error(error);
      });
  }
+ openDialog() {
+this.dialog.open(AddhubsComponent,{
+  width:'600px',
+  height:'460px'
+}
+  );
 
+
+}
 }
   
  

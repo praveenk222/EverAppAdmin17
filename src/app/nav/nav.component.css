@@ -3,8 +3,8 @@
 }
 
 .sidenav {
-  width: 350px;
-
+  width: 280px;
+   background:#202c51 ;
 }
 
 .sidenav .mat-toolbar {
@@ -21,21 +21,14 @@
 /* .frame-1 * {
   box-sizing: border-box;
 } */
-.frame-1 {
-  background: #202c51;
-  border-style: solid;
-  border-color: #f2f2f2;
-  border-width: 0px 1px 0px 0px;
-
-  height: 840px;
-
-  overflow: hidden;
+.active{ 
+  background: 'white' 
 }
 .frame-8712 {
   width: 159.15px;
   height: 50.78px;
   position: absolute;
-  left: 24px;
+  /* left: 24px; */
   top: 28px;
 }
 .logomark {
@@ -68,7 +61,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 214px;
+
   position: relative;
 }
 .ic-round-space-dashboard {
@@ -95,7 +88,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 214px;
+
   position: relative;
 }
 .material-symbols-deployed-code-history-rounded {
@@ -122,7 +115,7 @@
   align-items:flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 214px;
+
   position: relative;
 }
 .fa-6-solid-coins {
@@ -149,7 +142,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 214px;
+
   position: relative;
 }
 .solar-document-add-bold {
@@ -187,7 +180,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 214px;
+
   position: relative;
 }
 .fluent-box-multiple-20-filled {
@@ -214,7 +207,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 214px;
+
   position: relative;
 }
 .fluent-box-multiple-20-filled2 {
@@ -242,7 +235,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 214px;
+
   position: relative;
 }
 .gridicons-user {
@@ -269,7 +262,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 214px;
+
   position: relative;
 }
 .mingcute-code-fill {
@@ -335,7 +328,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 214px;
+
   position: relative;
 }
 .mingcute-alert-fill {
@@ -369,7 +362,13 @@
 .chips{
   background: transparent;
 }
-mat-chip-option{
-  background: white;
+
+::ng-deep .mat-mdc-standard-chip {
+  background: transparent !important;
+   width:200px !important;
+  border: none !important;
+  border-radius: 2px !important;
+
+  color: white !important;
+
 }
-  
