@@ -23,7 +23,7 @@ export class NavComponent {
 
 
 Navitem=[
-  {name:'Dashboard',icon:'',link:'/'},
+  {name:'Dashboard',icon:'',link:'/dashboard'},
   {name:'Booking history',icon:'',link:'/bookinghistory'},
   {name:'Revenue',icon:'',link:'/revenue'},
   {name:'Manual booking',icon:'',link:'/manualbooking'},

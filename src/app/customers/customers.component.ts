@@ -26,7 +26,6 @@ export class CustomersComponent {
 
   this.us.getUsers()
       .then((result:PostResult) => {
-       
         if (result.status) {
           console.log(result.message)
           // this.router.na

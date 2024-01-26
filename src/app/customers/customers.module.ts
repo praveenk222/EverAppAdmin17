@@ -11,7 +11,7 @@ import { CustomerInvoiceComponent } from './customer-invoice/customer-invoice.co
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatMenuModule } from '@angular/material/menu';
+import { MaterialModule } from '../commonFiles/commonModules/material.module';
 
 
 @NgModule({
@@ -25,11 +25,8 @@ import { MatMenuModule } from '@angular/material/menu';
   imports: [
     CommonModule,
     CustomersRoutingModule,
-    SharedPrimeNgModule,
-    MatTableModule,
-    MatPaginatorModule,
     ReactiveFormsModule,FormsModule,
-    MatMenuModule
+    MaterialModule
   ]
 })
 export class CustomersModule { }
