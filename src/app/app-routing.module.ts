@@ -15,10 +15,10 @@ const routes: Routes = [
   { path: 'promodata', loadChildren: () => import('./promodata/promodata.module').then(m => m.PromodataModule) },
   { path: 'pushnotification', loadChildren: () => import('./pushnotification/pushnotification.module').then(m => m.PushnotificationModule) },
   { path: 'complains', loadChildren: () => import('./complains/complains.module').then(m => m.ComplainsModule) },
-  { path: '', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
+  { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
   { path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule) },
   { path: 'charts', loadChildren: () => import('./charts/charts.module').then(m => m.ChartsModule) },
-  { path: 'admin', loadChildren: () => import('./commonFiles/sharedcomponents/admin/admin.module').then(m => m.AdminModule) },
+  { path: '', loadChildren: () => import('./commonFiles/sharedcomponents/admin/admin.module').then(m => m.AdminModule) },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

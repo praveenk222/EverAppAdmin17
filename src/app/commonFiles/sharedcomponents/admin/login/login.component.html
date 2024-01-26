@@ -1,11 +1,12 @@
 <div
   class="log-in"
   style="
-    background: url(log-in.png) center;
+    background: url('https://s3-alpha-sig.figma.com/img/db76/f400/bfc6b5b7f61fc0e640b1e625b42d7708?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CkPVuXmPm5AY5RMpuqSgJEX~DVILthyDAgAiEJtxdt7TMK~lLU5i4UPuizXKie13prGHdh1o8L7wl2LMcv4VggXIppseiHTrr84WqdLRmyzyqm0Mq4lgxfaMsLAv33i56DKXc7kRKmQQX~JYgP~7k5v4ccBDPQ~CjrbKBw7lsDebmjHpaG~uVIfvpcHolBF5CRxfZQ35YLLBBR56O9~9wtHDQK0DCJyy1NhzEmm2clQ3FW4S1j-6b6FQ2Z3ny24c9S6VzZryGKbOlhK-TdUwc-iEoidq4tHqln4M4mUGkjA3G9Oy5~RKB-~xDEJxpSfVmrzlQLr~vYxorF-EYPN2mA__') center;
     background-size: cover;
     background-repeat: no-repeat;
   "
 >
+<form action="" [formGroup]="loginForm">
   <div class="sign-in-form">
     <div class="frame-2608381">
       <div class="frame-8712">
@@ -60,16 +61,15 @@
       <div class="frame-2608382">
         <div class="ob-forms-farmer-name">
           <div class="farmer-name">Email</div>
-          <div class="frame">
-            <div class="name">xyzemail.com</div>
-          </div>
+          <input type="email" formControlName="UserID" placeholder="xyzemail.com" class="frame">
+         
         </div>
         <div class="ob-forms-farmer-name">
           <div class="farmer-name">Password</div>
-          <div class="frame2">
-            <div class="name">Enter your password</div>
+          <input type="password" formControlName="Password" placeholder="Enter Password" class="frame2">
+       
             <div class="bi-eye-slash-fill">
-              <svg
+              <!-- <svg
                 class="group"
                 width="16"
                 height="14"
@@ -85,15 +85,16 @@
                   d="M5.525 6.646C5.46999 7.03031 5.50524 7.42215 5.62796 7.79047C5.75068 8.15879 5.95749 8.49347 6.23201 8.76799C6.50653 9.0425 6.8412 9.24931 7.20953 9.37203C7.57785 9.49475 7.96969 9.53 8.354 9.475L5.524 6.646H5.525ZM10.475 7.354L7.646 4.524C8.03031 4.46899 8.42215 4.50424 8.79047 4.62696C9.15879 4.74968 9.49347 4.95649 9.76799 5.23101C10.0425 5.50553 10.2493 5.8402 10.372 6.20853C10.4948 6.57685 10.53 6.96869 10.475 7.353V7.354ZM13.646 13.354L1.646 1.354L2.354 0.645996L14.354 12.646L13.646 13.354Z"
                   fill="#363636"
                 />
-              </svg>
-            </div>
+              </svg> -->
+      
           </div>
         </div>
         <div class="forgot-your-password">Forgot your password?</div>
       </div>
-      <div class="button-1">
+      <button type="submit" (click)="login()" class="button-1">
         <div class="name2">Log in</div>
-      </div>
+      </button>
     </div>
   </div>
+</form>
 </div>

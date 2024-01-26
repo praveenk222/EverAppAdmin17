@@ -28,6 +28,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import { RegisterComponent } from './commonFiles/sharedcomponents/register/register.component';
 import { ChangepasswordComponent } from './commonFiles/sharedcomponents/changepassword/changepassword.component';
 import { ResetpasswordComponent } from './commonFiles/sharedcomponents/resetpassword/resetpassword.component';
+import { LoginComponent } from './commonFiles/sharedcomponents/admin/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,8 @@ import { ResetpasswordComponent } from './commonFiles/sharedcomponents/resetpass
     RegisterComponent,
     ChangepasswordComponent,
     ResetpasswordComponent,
+   
+  
     
   ],
   imports: [
