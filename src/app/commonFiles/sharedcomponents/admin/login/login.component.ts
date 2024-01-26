@@ -22,7 +22,7 @@ export class LoginComponent {
     if(!this.loginForm.valid){
       alert('please enter the email and password')
     }else{
-    this._user.loginAdmin(this.data).subscribe((res)=>{
+    this._user.loginAdmin(data).subscribe((res)=>{
       this.data =res['message']
       console.log(res)
       alert(JSON.stringify(res.message))
