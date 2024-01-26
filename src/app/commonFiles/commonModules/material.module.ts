@@ -32,6 +32,7 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatSortModule } from "@angular/material/sort";
 import { MatStepperModule } from "@angular/material/stepper";
 import { MatTableModule } from "@angular/material/table";
+import {MatTabsModule} from '@angular/material/tabs'
 
 const modules=[
     CommonModule,
@@ -66,7 +67,7 @@ const modules=[
     MatSortModule,
     MatStepperModule,
     MatTableModule,
-    // MatTabsModule,
+    MatTabsModule,
     // MatToolbarModule,
     // MatTooltipModule,
     // MatTreeModule,

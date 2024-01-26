@@ -34,8 +34,7 @@ import { MatMenuModule } from '@angular/material/menu';
     CommonModule,
     InventoryRoutingModule,
     MaterialModule,
-    SharedPrimeNgModule,
-    MatMenuModule,
+    
     ReactiveFormsModule,FormsModule,
   ]
 })

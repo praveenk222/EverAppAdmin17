@@ -30,8 +30,8 @@
           <div class="tab-12">Hub stations</div>
         </div>
       </div> -->
-      <p-tabView>
-        <p-tabPanel header="Electric bike">
+      <mat-tab-group>
+        <mat-tab label="First"> 
           <div class="frame-2608321">
             <div class="frame-8717">
               <svg
@@ -144,61 +144,7 @@
               </div>
             </div>
            
-              <!-- <div class="inventory-table-head">
-                <div class="column-1">
-                  <div class="sl-no">Sl no.</div>
-                </div>
-                <div class="column-2">
-                  <div class="hub-name">Hub name</div>
-                </div>
-                <div class="column-3">
-                  <div class="registration-no">Registration no.</div>
-                </div>
-                <div class="column-5">
-                  <div class="hub-code">Hub code</div>
-                </div>
-                <div class="column-6">
-                  <div class="open-time">Open time</div>
-                </div>
-                <div class="column-7">
-                  <div class="close-time">Close time</div>
-                </div>
-                <div class="column-8">
-                  <div class="location">Location</div>
-                </div>
-                <div class="column-9">
-                  <div class="status">Status</div>
-                </div>
-                <div class="frame-2608319"></div>
-              </div>
-              <div class="inventory-table-head2" routerLink="bikedetails">
-                <div class="column-1">
-                  <div class="sl-no2">1</div>
-                </div>
-                <div class="column-2">
-                  <div class="hub-name2">Ola S1 Pro</div>
-                </div>
-                <div class="column-3">
-                  <div class="registration-no2">TS09AB1234</div>
-                </div>
-                <div class="column-5">
-                  <div class="hub-code2">12345</div>
-                </div>
-                <div class="column-6">
-                  <div class="open-time2">19 Aug, 2023</div>
-                </div>
-                <div class="column-7">
-                  <div class="close-time2">15th Aug, 2023</div>
-                </div>
-                <div class="column-8">
-                  <div class="location2">Healthy</div>
-                </div>
-                <div class="column-9">
-                  <div class="status2">-</div>
-                </div>
-                <div class="frame-2608319"></div>
-              </div> -->
-              
+           
               <!-- table -->
     
               <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" class="inventory-table" style="width: 100%;">
@@ -254,14 +200,17 @@
               <!-- table -->
        
           </div>
-        </p-tabPanel>
-        <p-tabPanel header="Electric battery">
+        </mat-tab>
+        <mat-tab label="Second"> 
           <app-recent-battery></app-recent-battery>
-        </p-tabPanel>
-        <p-tabPanel header="Hub station">
-           <app-recent-hubs></app-recent-hubs>
-        </p-tabPanel>
-    </p-tabView>
+        </mat-tab>
+        <mat-tab label="Third"> 
+          
+          <app-recent-hubs></app-recent-hubs>
+        </mat-tab>
+      </mat-tab-group>
+      
+     
     
     </div>
   </div>

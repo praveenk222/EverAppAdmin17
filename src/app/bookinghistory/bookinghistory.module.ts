@@ -11,10 +11,9 @@ import { AllBatteryBookingsComponent } from './all-battery-bookings/all-battery-
 import { RecentBatteryBookingsComponent } from './recent-battery-bookings/recent-battery-bookings.component';
 import { RecentBikeWashBookingsComponent } from './recent-bike-wash-bookings/recent-bike-wash-bookings.component';
 import { HubsbookingsummarycardsComponent } from './hubsbookingsummarycards/hubsbookingsummarycards.component';
-import {MatTableModule} from '@angular/material/table';
-import {MatPaginatorModule} from '@angular/material/paginator';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatMenuModule } from '@angular/material/menu';
+import { MaterialModule } from '../commonFiles/commonModules/material.module';
+import { AllBikeWasBookingComponent } from './all-bike-was-booking/all-bike-was-booking.component';
 
 @NgModule({
   declarations: [
@@ -25,15 +24,14 @@ import { MatMenuModule } from '@angular/material/menu';
     AllBatteryBookingsComponent,
     RecentBatteryBookingsComponent,
     RecentBikeWashBookingsComponent,
-    HubsbookingsummarycardsComponent
+    HubsbookingsummarycardsComponent,
+    AllBikeWasBookingComponent
   ],
   imports: [
     CommonModule,
-    SharedPrimeNgModule,
     BookinghistoryRoutingModule,
-    MatTableModule,
-    MatPaginatorModule,
-    ReactiveFormsModule,FormsModule,MatMenuModule
+    ReactiveFormsModule,FormsModule,
+    MaterialModule
   ]
 })
 export class BookinghistoryModule { }

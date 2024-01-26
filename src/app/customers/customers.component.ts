@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { PostResult } from '../models/PostResult';
-import { CustomerService } from '../services/customer.service';
+import { CustomerService } from '../services/customer_dummy.service';
 import { UsersService } from '../services/users.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
