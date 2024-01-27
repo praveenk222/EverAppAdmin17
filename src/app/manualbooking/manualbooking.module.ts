@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 
 import { ManualbookingRoutingModule } from './manualbooking-routing.module';
 import { ManualbookingComponent } from './manualbooking.component';
@@ -28,6 +28,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ManualbookingRoutingModule,
     FormsModule,
     ReactiveFormsModule
-  ]
+  ],
+  providers: [
+    DatePipe,
+    ],
 })
 export class ManualbookingModule { }
