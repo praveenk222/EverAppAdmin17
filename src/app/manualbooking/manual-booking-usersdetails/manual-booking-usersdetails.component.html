@@ -1,3 +1,4 @@
+
 <div class="frame-8725">
     <div class="frame-8724">
       <div class="frame-2608389">
@@ -28,23 +29,20 @@
               <div class="frame-2608215">
                 <div class="ob-forms-farmer-name">
                   <div class="farmer-name">First name</div>
-                  <div class="frame">
-                    <div class="name">First name</div>
-                  </div>
+                  <input type="text" placeholder="First name" class="frame">
+                  
                 </div>
                 <div class="ob-forms-farmer-name">
                   <div class="farmer-name">Last name</div>
-                  <div class="frame">
-                    <div class="name">Last name</div>
-                  </div>
+                  <input type="text" placeholder="Last name" class="frame">
+                 
                 </div>
               </div>
               <div class="frame-2608304">
                 <div class="ob-forms-farmer-name">
                   <div class="farmer-name2">Email</div>
-                  <div class="frame">
-                    <div class="name">xyz&#64;email.com</div>
-                  </div>
+                  <input type="email" class="frame">
+                 
                 </div>
                 <div class="ob-forms-farmer-name">
                   <div class="farmer-name2">Mobile no.</div>
@@ -241,16 +239,16 @@
                       </div>
                       <div class="name2">+91</div>
                     </div>
-                    <div class="line-26"></div>
-                    <div class="_9876543210">9876543210</div>
+                    <input class="line-26">
+                    <input class="_9876543210">
                   </div>
                 </div>
               </div>
               <div class="frame-2608216">
                 <div class="ob-forms-farmer-name">
                   <div class="farmer-name2">Date of birth</div>
-                  <div class="frame3">
-                    <div class="name">dd-mm-yyyy</div>
+                  <input type="date" class="frame3">
+                 
                     <svg
                       class="uis-calender"
                       width="18"
@@ -264,14 +262,17 @@
                         fill="#363636"
                       />
                     </svg>
-                  </div>
+                
                 </div>
                 <div class="ob-forms-farmer-name">
                   <div class="farmer-name2">Gender</div>
-                  <div class="frame4">
-                    <div class="name">Select</div>
-                    <div class="fe-arrow-down">
-                      <svg
+                  <select class="frame4">
+               
+                    <!-- <div class="fe-arrow-down"> -->
+                      <option value="select"></option>
+                      <option value="male">male</option>
+                      <option value="female">female</option>
+                      <!-- <svg
                         class="fe-arrow-down-0"
                         width="12"
                         height="8"
@@ -285,16 +286,16 @@
                           d="M1.5 0.25L6 4.75L10.5 0.25L12 1.75L6 7.75L0 1.75L1.5 0.25Z"
                           fill="#363636"
                         />
-                      </svg>
-                    </div>
-                  </div>
+                      </svg> -->
+                    <!-- </div> -->
+                    </select>
                 </div>
               </div>
             </div>
             <div class="user-details2">User details</div>
             <div class="line-43"></div>
           </div>
-          <div class="frame-26081812">
+          <!-- <div class="frame-26081812">
             <div class="govt-id-proofs">Govt. id proofs</div>
             <div class="line-43"></div>
             <div class="frame-2608315">
@@ -366,92 +367,331 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="frame-2608182">
-          <div class="frame-2608303">
-            <div class="ob-forms-farmer-name3">
-              <div class="frame-2608275">
-                <div class="farmer-name4">How much time do you need?</div>
-                <div class="frame-2608274">
-                  <div class="frame-2608219">
-                    <div class="name3">6 hours</div>
-                  </div>
-                  <div class="frame-2608218">
-                    <div class="name3">12 hours</div>
-                  </div>
-                  <div class="frame-2608220">
-                    <div class="name3">1 day</div>
-                  </div>
-                  <div class="frame-2608221">
-                    <div class="name3">2 days</div>
-                  </div>
-                </div>
-              </div>
-              <div class="ob-forms-farmer-name4">
-                <div class="frame-26082752">
-                  <div class="farmer-name4">Set date &amp; time</div>
-                </div>
-                <div class="frame-2608277">
-                  <div class="frame7">
-                    <div class="frame-2608379">
-                      <div class="name4">Select start date and time</div>
-                    </div>
-                    <svg
-                      class="uis-calender2"
-                      width="22"
-                      height="22"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M3.25 16C1.975 16 1 15.025 1 13.75V7.75H16L16 9.5C12.9626 9.5 10.5 11.9626 10.5 15C10.5 15.3415 10.5311 15.6757 10.5907 16H3.25ZM12.25 2.5H13.75C15.025 2.5 16 3.475 16 4.75V6.25H1V4.75C1 3.475 1.975 2.5 3.25 2.5H4.75V1.75C4.75 1.3 5.05 1 5.5 1C5.95 1 6.25 1.3 6.25 1.75V2.5H10.75V1.75C10.75 1.3 11.05 1 11.5 1C11.95 1 12.25 1.3 12.25 1.75V2.5Z"
-                        fill="#3355B9"
-                      />
-                      <path
-                        d="M16.5 11C14.0148 11 12 13.0148 12 15.5C12 17.9852 14.0148 20 16.5 20C18.9852 20 21 17.9852 21 15.5C21 13.0148 18.9852 11 16.5 11ZM18.5769 16.1923H16.5C16.4082 16.1923 16.3201 16.1558 16.2552 16.0909C16.1903 16.026 16.1538 15.938 16.1538 15.8462V12.7308C16.1538 12.639 16.1903 12.5509 16.2552 12.486C16.3201 12.4211 16.4082 12.3846 16.5 12.3846C16.5918 12.3846 16.6799 12.4211 16.7448 12.486C16.8097 12.5509 16.8462 12.639 16.8462 12.7308V15.5H18.5769C18.6687 15.5 18.7568 15.5365 18.8217 15.6014C18.8866 15.6663 18.9231 15.7543 18.9231 15.8462C18.9231 15.938 18.8866 16.026 18.8217 16.0909C18.7568 16.1558 18.6687 16.1923 18.5769 16.1923Z"
-                        fill="#3355B9"
-                      />
-                    </svg>
-                  </div>
-                  <div class="frame7">
-                    <div class="frame-2608379">
-                      <div class="name4">Select end date and time</div>
-                    </div>
-                    <svg
-                      class="uis-calender3"
-                      width="22"
-                      height="22"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M3.25 16C1.975 16 1 15.025 1 13.75V7.75H16L16 9.5C12.9626 9.5 10.5 11.9626 10.5 15C10.5 15.3415 10.5311 15.6757 10.5907 16H3.25ZM12.25 2.5H13.75C15.025 2.5 16 3.475 16 4.75V6.25H1V4.75C1 3.475 1.975 2.5 3.25 2.5H4.75V1.75C4.75 1.3 5.05 1 5.5 1C5.95 1 6.25 1.3 6.25 1.75V2.5H10.75V1.75C10.75 1.3 11.05 1 11.5 1C11.95 1 12.25 1.3 12.25 1.75V2.5Z"
-                        fill="#3355B9"
-                      />
-                      <path
-                        d="M16.5 11C14.0148 11 12 13.0148 12 15.5C12 17.9852 14.0148 20 16.5 20C18.9852 20 21 17.9852 21 15.5C21 13.0148 18.9852 11 16.5 11ZM18.5769 16.1923H16.5C16.4082 16.1923 16.3201 16.1558 16.2552 16.0909C16.1903 16.026 16.1538 15.938 16.1538 15.8462V12.7308C16.1538 12.639 16.1903 12.5509 16.2552 12.486C16.3201 12.4211 16.4082 12.3846 16.5 12.3846C16.5918 12.3846 16.6799 12.4211 16.7448 12.486C16.8097 12.5509 16.8462 12.639 16.8462 12.7308V15.5H18.5769C18.6687 15.5 18.7568 15.5365 18.8217 15.6014C18.8866 15.6663 18.9231 15.7543 18.9231 15.8462C18.9231 15.938 18.8866 16.026 18.8217 16.0909C18.7568 16.1558 18.6687 16.1923 18.5769 16.1923Z"
-                        fill="#3355B9"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
+        </div> -->
+        
+    
+
+
+<div class="btn-container">
+  <div style="width: 100%; height: 100%;  ">
+    <div class="btn-container">
+      <a routerLink="/enableloaction"><img class="icon" src="./assets/ic_round-arrow-back (3).svg" alt=""></a>
+      </div>
+      <div
+    style="height: 20px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex;">
+    <div
+      style="color: #3355B9; font-size: 24px;  font-weight: 700; line-height: 20px; word-wrap: break-word">
+      Upload documents </div>
+  </div>
+  <br>
+ 
+  
+    <div
+      style="width:100%; height: 130px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+      <div
+        style="align-self: stretch; color: #363636; font-size: 16px;  font-weight: 700; word-wrap: break-word">
+        Aadhar no.</div>
+      <input type="number" placeholder="Enter Aadhar no." placeholder="0000 0000 0000"
+        style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: white; border-radius: 28px; overflow: hidden; border: 1px #E2E1E5 solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex"
+        oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
+        onKeyPress="if(this.value.length==12) return false;">
+  
+      <div class="button-wrap"
+        style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: #F2F2F2; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+        <label
+          style="opacity: 0.60; color: black; font-size: 14px;  font-weight: 400; line-height: 28px; word-wrap: break-word"
+          for="adhar">Upload File <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="material-symbols:upload-sharp">
+              <path id="Vector"
+                d="M11.5 16V7.85L8.9 10.45L7.5 9L12.5 4L17.5 9L16.1 10.45L13.5 7.85V16H11.5ZM4.5 20V15H6.5V18H18.5V15H20.5V20H4.5Z"
+                fill="black" />
+            </g>
+          </svg></label>
+        <input id="adhar" type="file" (change)="onAdharSelected($event,'adhar')">
+  
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+    <div
+      style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+      <div *ngIf="frontA"
+        style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: flex">
+        <div style="justify-content: flex-start; align-items: center; gap: 6px; display: flex">
+          <div style="width: 14px; height: 14px; position: relative">
+            <div style="width: 12.60px; height: 14px; left: 0.70px; top: -0px; position: absolute; ">
+              
             </div>
           </div>
-          <div class="frame-8078">
-            <div class="frame-26081813">
-              <div class="total">Total</div>
-              <div class="_9-760">₹9,760</div>
+          <div
+            style="color: black; font-size: 12px;  font-weight: 400; letter-spacing: 0.24px; word-wrap: break-word">
+            {{frontA}}</div>
+        </div>
+        <div style="width: 16px; height: 16px; position: relative" (click)="removeFrontA()">
+          <div style="width: 8.79px; height: 8.79px; left: 3.61px; top: 3.61px; position: absolute; ">
+           
+          </div>
+        </div>
+      </div>
+      <div *ngIf="isBackA"
+        style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: flex">
+        <div style="justify-content: flex-start; align-items: center; gap: 6px; display: flex">
+          <div style="width: 14px; height: 14px; position: relative">
+            <div style="width: 12.60px; height: 14px; left: 0.70px; top: -0px; position: absolute; "> -->
+              
             </div>
+          </div>
+          <div
+            style="color: black; font-size: 12px;  font-weight: 400; letter-spacing: 0.24px; word-wrap: break-word">
+            {{BackA}}</div>
+        </div>
+        <div style="width: 16px; height: 16px; position: relative" (click)="removeBackA()">
+          <div style="width: 8.79px; height: 8.79px; left: 3.61px; top: 3.61px; position: absolute; ">
+           
           </div>
         </div>
       </div>
     </div>
-  </div>
   
+  
+  
+    <div
+      style="width:100%; height: 130px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+      <div
+        style="align-self: stretch; color: #363636; font-size: 16px;  font-weight: 700; word-wrap: break-word">
+        Driving licence no.</div>
+      <input type="number" placeholder="Enter Aadhar no." placeholder="0000 0000 0000"
+        style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: white; border-radius: 28px; overflow: hidden; border: 1px #E2E1E5 solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex"
+        oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
+        onKeyPress="if(this.value.length==12) return false;">
+  
+      <div class="button-wrap"
+        style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: #F2F2F2; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+        <label
+          style="opacity: 0.60; color: black; font-size: 14px;  font-weight: 400; line-height: 28px; word-wrap: break-word"
+          for="adhar">Upload File <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="material-symbols:upload-sharp">
+              <path id="Vector"
+                d="M11.5 16V7.85L8.9 10.45L7.5 9L12.5 4L17.5 9L16.1 10.45L13.5 7.85V16H11.5ZM4.5 20V15H6.5V18H18.5V15H20.5V20H4.5Z"
+                fill="black" />
+            </g>
+          </svg></label>
+        <input id="licenseno" type="file" (change)="onLicenseSelected($event,'licence')" formControlName="licensefile">
+  
+      </div>
+    </div>
+  
+    <div
+      style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+      <div *ngIf="filedata.DRImage"
+        style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: flex">
+        <div style="justify-content: flex-start; align-items: center; gap: 6px; display: flex">
+          <div style="width: 14px; height: 14px; position: relative">
+            <div style="width: 12.60px; height: 14px; left: 0.70px; top: -0px; position: absolute; ">
+              
+            </div>
+          </div>
+          <div
+            style="color: black; font-size: 12px;  font-weight: 400; letter-spacing: 0.24px; word-wrap: break-word">
+            {{filedata.DRImage}}</div>
+        </div>
+        <div style="width: 16px; height: 16px; position: relative">
+          <div style="width: 8.79px; height: 8.79px; left: 3.61px; top: 3.61px; position: absolute; ">
+           
+          </div>
+        </div>
+      </div>
+      <div *ngIf="filedata.DRImageB"
+        style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: flex">
+        <div style="justify-content: flex-start; align-items: center; gap: 6px; display: flex">
+          <div style="width: 14px; height: 14px; position: relative">
+            <div style="width: 12.60px; height: 14px; left: 0.70px; top: -0px; position: absolute; "> -->
+              
+            </div>
+          </div>
+          <div
+            style="color: black; font-size: 12px;  font-weight: 400; letter-spacing: 0.24px; word-wrap: break-word">
+            {{filedata.DRImageB}}</div>
+        </div>
+        <div style="width: 16px; height: 16px; position: relative">
+          <div style="width: 8.79px; height: 8.79px; left: 3.61px; top: 3.61px; position: absolute; ">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div
+      style="width:100%; height: 130px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+      <div
+        style="align-self: stretch; color: #363636; font-size: 16px;  font-weight: 700; word-wrap: break-word">
+        Driving licence no.</div>
+      <input type="number" placeholder="Enter Aadhar no." placeholder="0000 0000 0000"
+        style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: white; border-radius: 28px; overflow: hidden; border: 1px #E2E1E5 solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex"
+        oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
+        onKeyPress="if(this.value.length==12) return false;">
+  
+      <div class="button-wrap"
+        style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: #F2F2F2; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: inline-flex">
+        <label
+          style="opacity: 0.60; color: black; font-size: 14px;  font-weight: 400; line-height: 28px; word-wrap: break-word"
+          for="adhar">Upload File <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="material-symbols:upload-sharp">
+              <path id="Vector"
+                d="M11.5 16V7.85L8.9 10.45L7.5 9L12.5 4L17.5 9L16.1 10.45L13.5 7.85V16H11.5ZM4.5 20V15H6.5V18H18.5V15H20.5V20H4.5Z"
+                fill="black" />
+            </g>
+          </svg></label>
+        <input id="panno" type="file" (change)="onPanSelected($event,'voter')" formControlName="panfile">
+  
+      </div>
+    </div>
+    <div
+      style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+      <div *ngIf="filedata.PANImage"
+        style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: flex">
+        <div style="justify-content: flex-start; align-items: center; gap: 6px; display: flex">
+          <div style="width: 14px; height: 14px; position: relative">
+            <div style="width: 12.60px; height: 14px; left: 0.70px; top: -0px; position: absolute; ">
+              
+            </div>
+          </div>
+          <div
+            style="color: black; font-size: 12px;  font-weight: 400; letter-spacing: 0.24px; word-wrap: break-word">
+            {{filedata.PANImage}}</div>
+        </div>
+        <div style="width: 16px; height: 16px; position: relative" (click)="removeFrontA()">
+          <div style="width: 8.79px; height: 8.79px; left: 3.61px; top: 3.61px; position: absolute; ">
+           
+          </div>
+        </div>
+      </div>
+      <div *ngIf="filedata.PANImageB"
+        style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: flex">
+        <div style="justify-content: flex-start; align-items: center; gap: 6px; display: flex">
+          <div style="width: 14px; height: 14px; position: relative">
+            <div style="width: 12.60px; height: 14px; left: 0.70px; top: -0px; position: absolute; "> -->
+              <!-- background: #3355B9 -->
+             
+            </div>
+          </div>
+          <div
+            style="color: black; font-size: 12px;  font-weight: 400; letter-spacing: 0.24px; word-wrap: break-word">
+            {{filedata.PANImageB}}</div>
+        </div>
+        <div style="width: 16px; height: 16px; position: relative" (click)="removeBackA()">
+          <div style="width: 8.79px; height: 8.79px; left: 3.61px; top: 3.61px; position: absolute; ">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="container">
+    <button *ngIf="!personalForm.valid" [disabled]="personalForm.valid" class="disablebtn">
+      <div
+        style="text-align: center; color: white; font-size: 14px;  font-weight: 700; letter-spacing: 0.10px; word-wrap: break-word">
+        Continue </div>
+    </button>
+  </div>
+  <div class="container">
+    <button (click)="gotonext()" *ngIf="personalForm.valid"
+      style="width: 328px; height: 48px; padding-left: 24px; padding-right: 24px; padding-top: 16px; padding-bottom: 16px; background: #3355B9; border-radius: 100px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex">
+      <div
+        style="text-align: center; color: white; font-size: 14px;  font-weight: 700; letter-spacing: 0.10px; word-wrap: break-word">
+        Continue</div>
+    </button>
+  </div>
+ </div>
+  </div>
+        </div>
+ 
+    
+          <form action="" [formGroup]="customDate">
+          <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: inline-flex">
+           <div style="align-self: stretch; justify-content: flex-start; align-items: center; gap: 108px; display: inline-flex">
+               <div style="width: 24px; height: 24px; position: relative">
+                 <button style="background: transparent;border: none;" routerLink="/bikedetails/1000"><img class="icon"
+                   src="./assets/ic_round-arrow-back (3).svg" alt=""></button>
+               </div>
+               <div style=" font-size: 12px;  font-weight: 400; word-wrap: break-word">Date & time</div>
+           </div>
+           <div style="width: 100%; align-self: stretch; height: 70px; flex-direction: column; justify-content: center; align-items: center; gap: 12px; display: flex">
+               <div style="align-self: stretch;  font-size: 18px;  font-weight: 700; word-wrap: break-word">How much time do you need?</div>
+               <div style="justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+                   <button mat-button (click)="onFirstButtonClick(6)" style="padding-left: 12px; padding-right: 12px; padding-top: 7px; padding-bottom: 7px; border-radius: 24px; border: 1px #E8E7E7 solid; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px; display: inline-flex">
+                       <div style=" font-size: 14px;  font-weight: 400; word-wrap: break-word">6 hours</div>
+                   </button>
+                   <button  mat-button (click)="onFirstButtonClick(12)" style="padding-left: 12px; padding-right: 12px; padding-top: 7px; padding-bottom: 7px; border-radius: 24px; border: 1px #E8E7E7 solid; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                       <div style=" font-size: 14px;  font-weight: 400; word-wrap: break-word">12 hours</div>
+                   </button>
+                   <button mat-button (click)="onFirstButtonClick(24)" name="selectoptionone" style="padding-left: 12px; padding-right: 12px; padding-top: 7px; padding-bottom: 7px; border-radius: 24px; border: 1px #E8E7E7 solid; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px; display: inline-flex">
+                       <div style=" font-size: 14px;  font-weight: 400; word-wrap: break-word">1 day</div>
+                   </button>
+                   <button mat-button (click)="onFirstButtonClick(48)" style="padding-left: 12px; padding-right: 12px; padding-top: 7px; padding-bottom: 7px; border-radius: 24px; border: 1px #E8E7E7 solid; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px; display: inline-flex">
+                       <div style=" font-size: 14px;  font-weight: 400; word-wrap: break-word">2 days</div>
+                   </button>
+               </div>
+           </div>
+         
+               <div style="align-self: stretch; height: 25px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                   <div style="align-self: stretch;  font-size: 18px;  font-weight: 700; word-wrap: break-word">Set date & time</div>
+               </div>
+               <div class="input-group" style="  font-size: 18px;
+               padding: 10px 10px 10px 5px;
+               display: block;
+               width: 300px;
+               border: none;
+               background: #F2F2F2; border-radius: 100px;">
+                 <input type="datetime-local" name="startDate" [(ngModel)]="startDate"  (change)="onStartTimeChange($event)" placeholder="Select end date and time" formControlName="date">
+                 <span class="highlight"></span>
+                 <span class="bar"></span>
+                 <label>Select start date and time</label>
+               </div>
+               <div class="input-group" style="  font-size: 18px;
+           padding: 10px 10px 10px 5px;
+           display: block;
+           width: 300px;
+           border: none; background: #F2F2F2;
+          border-radius: 100px;">
+                 <input type="datetime-local" name="endDate"  [(ngModel)]="endDate" (change)="onEndTimeChange($event)" placeholder="Select end date and time" formControlName="time" >
+                 <span class="highlight"></span>
+                 <span class="bar"></span>
+                 <label>Select end date and time</label>
+               </div>
+              
+            
+               
+                   
+         
+              
+         <div class="container">
+           <div style="width: 360px; padding-top:14px; padding-bottom: 14.50px; padding-left: 16px; padding-right: 16px;  justify-content: center; align-items: center; gap: 83px; display: inline-flex;border-top: 2px solid #E2E2E2;">
+               <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                   <div style="color: black; font-size: 14px;  font-weight: 400; word-wrap: break-word">Total</div>
+                   <div style="color: black; font-size: 20px;  font-weight: 700; word-wrap: break-word">₹{{convertedCash}}</div>
+               </div>
+               <button 
+               style="flex: 1 1 0; align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 10px; padding-bottom: 10px; background: #3355B9; border-radius: 24px; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+               <div class="book" >Book now</div>
+               <div
+                 style="width: 24px; height: 24px; padding-top: 1.82px; padding-bottom: 1.82px; justify-content: center; align-items: center; display: flex">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                   <path
+                     d="M19.4064 9.80036L12.1212 2.51516L13.818 0.818359L24 11.0004L23.1516 11.8488L13.818 21.1824L12.1212 19.4856L19.4064 12.2004H0V9.80036H19.4064Z"
+                     fill="white" />
+                 </svg>
+               </div>
+             </button>
+          
+           </div>
+         </div>
+         </div>
+      </form>

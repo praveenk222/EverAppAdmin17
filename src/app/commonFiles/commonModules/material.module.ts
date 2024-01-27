@@ -33,6 +33,7 @@ import { MatSortModule } from "@angular/material/sort";
 import { MatStepperModule } from "@angular/material/stepper";
 import { MatTableModule } from "@angular/material/table";
 import {MatTabsModule} from '@angular/material/tabs'
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 const modules=[
     CommonModule,
@@ -71,6 +72,8 @@ const modules=[
     // MatToolbarModule,
     // MatTooltipModule,
     // MatTreeModule,
+    FormsModule,
+    ReactiveFormsModule
    
 ]
 @NgModule({

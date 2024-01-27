@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { spinnerInterceptor } from './services/spinner.interceptor';
 import { NgxSpinner, NgxSpinnerModule } from 'ngx-spinner';
@@ -69,6 +69,7 @@ import { DialogaddNotificationComponent } from './commonFiles/sharedcomponents/d
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: spinnerInterceptor, multi: true },
+    provideHttpClient(),
   ],
   bootstrap: [AppComponent]
 })
