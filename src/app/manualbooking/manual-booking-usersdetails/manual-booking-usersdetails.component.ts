@@ -531,12 +531,12 @@ if(!this.customDate.valid){
      this.ordersaveData.AdvanceAmount=0
      this.ordersaveData.PaidAmount=0;
      this.ordersaveData.TotalAmount=0;
-     if(this.productId == null ){
-       this.snackBar.open("Please Select a Product")
+    //  if(this.productId == null ){
+    //    this.snackBar.open("Please Select a Product")
     
  
-       return;
-     }
+    //    return;
+    //  }
  
  
      this.reg.book(this.ordersaveData).subscribe(
@@ -544,14 +544,14 @@ if(!this.customDate.valid){
         if(res ){
 
          
-if(!res.Id){
-  this.snackBar.open('booking failed');
+// if(!res.Id){
+//   this.snackBar.open('booking failed');
 
-}
-          this.BookingID = res.ID
+// }
+          // this.BookingID = res.ID
          
           this.snackBar.open(JSON.stringify(res.message));
-          this.router.navigateByUrl('/booking_summary/'+this.BookingID);
+          this.router.navigateByUrl('/paymentdetails/'+this.BookingID);
         }else{
       
         }

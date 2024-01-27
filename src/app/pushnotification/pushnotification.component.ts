@@ -20,10 +20,10 @@ export class PushnotificationComponent {
        height:'358px'
      })
      dialogRef.afterOpened().subscribe(_ => {
-       setTimeout(() => {
-          dialogRef.close();
-       }, timeout)
+    
      })
    
    }
+
+   
 }

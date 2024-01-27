@@ -1,20 +1,21 @@
+<form action="" [formGroup]="notifyForm">
+
 <div class="create-notification">
     <div class="frame-2608353">
       <div class="ob-forms-farmer-name">
         <div class="farmer-name">Name</div>
-        <div class="frame">
-          <div class="name">Write name here</div>
-        </div>
+        <input formControlName="NotificationName" placeholder="Write name here" class="frame">
+       
       </div>
       <div class="ob-forms-farmer-name">
         <div class="farmer-name">Description</div>
-        <div class="frame2">
-          <div class="name">Write description here</div>
-        </div>
+        <input formControlName="Description" placeholder="Write description her" class="frame2">
+        
       </div>
-      <div class="button-1">
+      <button 
+      (click)="notifySubmit()" class="button-1">
         <div class="name2">Create</div>
-      </div>
+      </button>
     </div>
     <div class="create-notification2">Create notification</div>
     <div class="line-43"></div>
@@ -36,4 +37,4 @@
       </svg>
     </div>
   </div>
-  
+</form>
