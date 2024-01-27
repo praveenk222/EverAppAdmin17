@@ -21,7 +21,7 @@ export class DialogaddNotificationComponent {
   }
   notifySubmit(){
     const data = this.notifyForm.value;
-    this.reg.getnotification(data).subscribe((res)=>{
+    this.reg.savenotification(data).subscribe((res)=>{
       this.notiydetails=res;
       console.log(res)
     })

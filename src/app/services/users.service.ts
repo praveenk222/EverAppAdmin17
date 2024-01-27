@@ -66,7 +66,10 @@ baseUrl=`http://localhost:8080/api/`;
   getorder(order:any):Observable<any>{
     return this.http.get('http://localhost:8080/api/orders/getorderbyorderid/1004',order)
   }
-  getnotification(order:any):Observable<any>{
-    return this.http.post('http://localhost:8080/api/v1/adminweb/customers/getnotification',order)
+  getnotification():Observable<any>{
+    return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getnotification')
+  }
+  savenotification(order:any):Observable<any>{
+    return this.http.post('http://localhost:8080/api/v1/adminweb/customers/savenotification',order)
   }
 }
