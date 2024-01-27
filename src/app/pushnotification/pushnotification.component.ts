@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DialogaddNotificationComponent } from '../commonFiles/sharedcomponents/dialogadd-notification/dialogadd-notification.component';
 import { MatDialog } from '@angular/material/dialog';
+import { UsersService } from '../services/users.service';
 
 @Component({
   selector: 'app-pushnotification',
@@ -8,8 +9,10 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrl: './pushnotification.component.css'
 })
 export class PushnotificationComponent {
-  constructor(private dialog:MatDialog) {
+  notifydata:any;
+  constructor(private dialog:MatDialog,private _nd:UsersService) {
     // this.openDialog()
+    this.getNotification()
    }
  
    openDialog() {
@@ -23,6 +26,13 @@ export class PushnotificationComponent {
     
      })
    
+   }
+
+   getNotification(){
+    this._nd.getnotification().subscribe((res)=>{
+      console.log(res)
+      this.notifydata=res['data']
+    })
    }
 
    
