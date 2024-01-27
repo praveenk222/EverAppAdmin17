@@ -2,6 +2,7 @@
 .profile * {
   box-sizing: border-box;
 }
+
 .profile {
   /* background: #ffffff;
   border-style: solid;
@@ -11,6 +12,7 @@
   height: 50px;
   position: relative;
 }
+
 .navigation {
   display: flex;
   flex-direction: row;
@@ -21,6 +23,7 @@
   left: 996px;
   top: 7px;
 }
+
 .frame-8029 {
   /* border-radius: 20px;
   padding: 8px 12px 8px 8px; */
@@ -32,6 +35,7 @@
   flex-shrink: 0;
   position: relative;
 }
+
 .frame-8704 {
   display: flex;
   flex-direction: row;
@@ -41,6 +45,7 @@
   flex-shrink: 0;
   position: relative;
 }
+
 .mdi-user {
   background: linear-gradient(to left, #363636, #363636);
   border-radius: 14px;
@@ -50,6 +55,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .manish-paul {
   color: #363636;
   text-align: center;
@@ -61,6 +67,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .fe-arrow-down {
   flex-shrink: 0;
   width: 18px;
@@ -68,6 +75,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .fe-arrow-down-0 {
   height: auto;
   position: absolute;
@@ -75,7 +83,15 @@
   top: 5.25px;
   overflow: visible;
 }
-::ng-deep .menu{
-width:420px !important;
-height: 320px !important;
+
+::ng-deep .menu {
+  width: 420px !important;
+  height: 320px !important;
+}
+
+.logout {
+  width: 200px;
+  border-radius: 24px;
+  padding: 12px;
+  background: #F2F2F2;
 }
