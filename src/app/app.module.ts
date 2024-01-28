@@ -31,6 +31,7 @@ import { ResetpasswordComponent } from './commonFiles/sharedcomponents/resetpass
 import { LoginComponent } from './commonFiles/sharedcomponents/admin/login/login.component';
 import { DialogAddPromocodeComponent } from './commonFiles/sharedcomponents/dialog-add-promocode/dialog-add-promocode.component';
 import { DialogaddNotificationComponent } from './commonFiles/sharedcomponents/dialogadd-notification/dialogadd-notification.component';
+import { AddthemeComponent } from './commonFiles/sharedcomponents/addtheme/addtheme.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +44,7 @@ import { DialogaddNotificationComponent } from './commonFiles/sharedcomponents/d
     ResetpasswordComponent,
     DialogAddPromocodeComponent,
     DialogaddNotificationComponent,
+    AddthemeComponent,
    
   
     
