@@ -9,7 +9,6 @@ import { FormsModule } from '@angular/forms';
 import { spinnerInterceptor } from './services/spinner.interceptor';
 import { NgxSpinner, NgxSpinnerModule } from 'ngx-spinner';
 import { DialogContentComponent } from './commonFiles/sharedcomponents/dialog-content/dialog-content.component';
-import { SidenavComponent } from './commonFiles/sharedcomponents/sidenav/sidenav.component';
 import { ProfileComponent } from './commonFiles/sharedcomponents/profile/profile.component';
 import { DialogModule } from 'primeng/dialog';
 import { NgChartsModule } from 'ng2-charts';
@@ -32,10 +31,11 @@ import { LoginComponent } from './commonFiles/sharedcomponents/admin/login/login
 import { DialogAddPromocodeComponent } from './commonFiles/sharedcomponents/dialog-add-promocode/dialog-add-promocode.component';
 import { DialogaddNotificationComponent } from './commonFiles/sharedcomponents/dialogadd-notification/dialogadd-notification.component';
 import { AddthemeComponent } from './commonFiles/sharedcomponents/addtheme/addtheme.component';
+import { ToastrModule } from 'ngx-toastr';
+import { SuccessInterceptor } from './services/toastersuccess.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent,
     ProfileComponent,
     InvoicepageComponent,
     NavComponent,
@@ -51,7 +51,7 @@ import { AddthemeComponent } from './commonFiles/sharedcomponents/addtheme/addth
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule,ToastrModule.forRoot(),
     // NgChartsModule.forRoot({ defaults: { ... } }) //for global css
     BrowserAnimationsModule,
     HttpClientModule,
@@ -71,6 +71,7 @@ import { AddthemeComponent } from './commonFiles/sharedcomponents/addtheme/addth
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: spinnerInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: SuccessInterceptor, multi: true },
     provideHttpClient(),
   ],
   bootstrap: [AppComponent]
