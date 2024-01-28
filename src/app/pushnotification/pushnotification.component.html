@@ -39,136 +39,20 @@
             </div>
             <div class="frame-2608319"></div>
           </div>
-          <div class="notification-table-head2">
+          <div class="notification-table-head2" *ngFor="let n of notifydata">
             <div class="column-1">
               <div class="code-name2">
                 <span>
-                  <span class="code-name-2-span">Notification 1</span>
+                  <span class="code-name-2-span">{{n?.NotificationName}}</span>
                   <span class="code-name-2-span2">
-                    : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore.
+                    : {{n?.Description}}.
                   </span>
                 </span>
               </div>
             </div>
             <div class="frame-2608319"></div>
           </div>
-          <div class="notification-table-head3">
-            <div class="column-1">
-              <div class="code-name2">
-                <span>
-                  <span class="code-name-2-span3">Notification 2</span>
-                  <span class="code-name-2-span4">
-                    : Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div class="frame-2608319"></div>
-          </div>
-          <div class="notification-table-head2">
-            <div class="column-1">
-              <div class="code-name2">
-                <span>
-                  <span class="code-name-2-span5">Notification 3</span>
-                  <span class="code-name-2-span6">
-                    : Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia consequuntur magni dolores eos qui
-                    ratione voluptatem sequi nesciunt.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div class="frame-2608319"></div>
-          </div>
-          <div class="notification-table-head3">
-            <div class="column-1">
-              <div class="code-name2">
-                <span>
-                  <span class="code-name-2-span7">Notification 4</span>
-                  <span class="code-name-2-span8">
-                    : Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                    corporis suscipit laboriosam.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div class="frame-2608319"></div>
-          </div>
-          <div class="notification-table-head2">
-            <div class="column-1">
-              <div class="code-name2">
-                <span>
-                  <span class="code-name-2-span9">Notification 5</span>
-                  <span class="code-name-2-span10">
-                    : Quis autem vel eum iure reprehenderit qui in ea voluptate
-                    velit esse quam nihil molestiae consequatur.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div class="frame-2608319"></div>
-          </div>
-          <div class="notification-table-head3">
-            <div class="column-1">
-              <div class="code-name2">
-                <span>
-                  <span class="code-name-2-span11">Notification 6</span>
-                  <span class="code-name-2-span12">
-                    : Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div class="frame-2608319"></div>
-          </div>
-          <div class="notification-table-head2">
-            <div class="column-1">
-              <div class="code-name2">
-                <span>
-                  <span class="code-name-2-span13">Notification 7</span>
-                  <span class="code-name-2-span14">
-                    : Quis autem vel eum iure reprehenderit qui in ea voluptate
-                    velit esse quam nihil molestiae consequatur.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div class="frame-2608319"></div>
-          </div>
-          <div class="notification-table-head3">
-            <div class="column-1">
-              <div class="code-name2">
-                <span>
-                  <span class="code-name-2-span15">Notification 8</span>
-                  <span class="code-name-2-span16">
-                    : Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div class="frame-2608319"></div>
-          </div>
-          <div class="notification-table-head2">
-            <div class="column-1">
-              <div class="code-name2">
-                <span>
-                  <span class="code-name-2-span17">Notification 9</span>
-                  <span class="code-name-2-span18">
-                    : Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia consequuntur magni dolores eos qui
-                    ratione voluptatem sequi nesciunt.
-                  </span>
-                </span>
-              </div>
-            </div>
-            <div class="frame-2608319"></div>
-          </div>
-        </div>
-      </div>
+          
       <div class="frame-2608326">
         <div class="showing-1-to-10-of-22-entries">
           Showing 1 to 10 of 22 entries
