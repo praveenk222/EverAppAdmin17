@@ -30,7 +30,6 @@ export class AddbikesComponent {
     })
   }
   onSubmit() {
-    alert('')
     console.log(this.proudctdata)
     this.invntservice.saveProduct(this.proudctdata)
       .then((result: PostResult) => {
