@@ -1,0 +1,385 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 280px;
+   background:#202c51 ;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+/* sidenav */
+
+/* .frame-1 * {
+  box-sizing: border-box;
+} */
+.active{ 
+  background: 'white' 
+}
+.frame-8712 {
+  width: 159.15px;
+  height: 50.78px;
+  position: absolute;
+  /* left: 24px; */
+  top: 28px;
+}
+.logomark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  position: absolute;
+  left: calc(50% - 79.57px);
+  top: calc(50% - 25.39px);
+  overflow: visible;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: calc(50% - 107px);
+  top: 122px;
+}
+.navigation-1 {
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+ 
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+
+  position: relative;
+}
+.ic-round-space-dashboard {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.dashboard {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.navigation-2 {
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+
+  position: relative;
+}
+.material-symbols-deployed-code-history-rounded {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.booking-history {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.navigation-3 {
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+
+  align-items:flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+
+  position: relative;
+}
+.fa-6-solid-coins {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.revenue {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.navigation-4 {
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+ 
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+
+  position: relative;
+}
+.solar-document-add-bold {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.group {
+  height: auto;
+  position: absolute;
+  right: 4.06%;
+  left: 12.5%;
+  width: 83.44%;
+  bottom: 8.33%;
+  top: 8.33%;
+  height: 83.33%;
+  overflow: visible;
+}
+.manual-booking {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.navigation-5 {
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+ 
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+
+  position: relative;
+}
+.fluent-box-multiple-20-filled {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.inventory {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.navigation-11 {
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+
+  position: relative;
+}
+.fluent-box-multiple-20-filled2 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.inventory2 {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.navigation-6 {
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+
+  position: relative;
+}
+.gridicons-user {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.manage-users {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.navigation-7 {
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+ 
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+
+  position: relative;
+}
+.mingcute-code-fill {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.group2 {
+  height: auto;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  overflow: visible;
+}
+.promo-codes {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.navigation-8 {
+
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+ 
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+
+  position: relative;
+}
+.vector11 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.push-notifications {
+  color: #363636;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+.navigation-9 {
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+
+  position: relative;
+}
+.mingcute-alert-fill {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.group3 {
+  height: auto;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  overflow: visible;
+}
+.complains {
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+
+/* sidenav */
+.chips{
+  background: transparent;
+}
+
+::ng-deep .mat-mdc-standard-chip {
+  background: transparent !important;
+   width:200px !important;
+  border: none !important;
+  border-radius: 2px !important;
+
+  color: white !important;
+
+}
+.header-links .active {
+  padding: 5% !important;
+  width: 160px !important;
+  height: 50px !important;
+  border-radius: 5px !important;
+  background: white !important;
+  color:black !important;
+  text-align: start;
+  text-decoration: none;
+
+}

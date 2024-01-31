@@ -1,28 +1,14 @@
-.frame-8725,
+/* .frame-8725,
 .frame-8725 * {
   box-sizing: border-box;
-}
+} */
 .frame-8725 {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 1178px;
+
+  width: 100%;
   height: 942px;
-  position: relative;
+
 }
-.frame-8724 {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-}
+
 .frame-2608320 {
   display: flex;
   flex-direction: row;
@@ -120,6 +106,7 @@
   flex-wrap: wrap;
   align-self: stretch;
   flex-shrink: 0;
+  width: 100%;
   height: 100px;
   position: relative;
 }
@@ -356,7 +343,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  width: 1146px;
+  width: 100%;
   position: relative;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
 }
@@ -404,13 +391,14 @@
 }
 .frame-87202 {
   border-radius: 8px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
+  position: relative; */
+
 }
 .booking-history-table-head {
   background: #d6edfe;
@@ -675,4 +663,11 @@
   flex-shrink: 0;
   width: 1122px;
   position: relative;
+}
+.row-table{
+padding: 2%;
+width: 120px;
+}
+::ng-deep .booking-table{
+width: 800px !important;
 }

@@ -32,6 +32,9 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatSortModule } from "@angular/material/sort";
 import { MatStepperModule } from "@angular/material/stepper";
 import { MatTableModule } from "@angular/material/table";
+import {MatTabsModule} from '@angular/material/tabs'
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+
 const modules=[
     CommonModule,
     MatAutocompleteModule,
@@ -65,10 +68,13 @@ const modules=[
     MatSortModule,
     MatStepperModule,
     MatTableModule,
-    // MatTabsModule,
+    MatTabsModule,
     // MatToolbarModule,
     // MatTooltipModule,
-    // MatTreeModule
+    // MatTreeModule,
+    FormsModule,
+    ReactiveFormsModule
+   
 ]
 @NgModule({
   imports: [modules],

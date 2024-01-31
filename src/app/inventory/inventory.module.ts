@@ -14,7 +14,8 @@ import { RecentBatteryComponent } from './recent-battery/recent-battery.componen
 import { RecentHubsComponent } from './recent-hubs/recent-hubs.component';
 import { AddhubsComponent } from './addhubs/addhubs.component';
 import { AddbikesComponent } from './addbikes/addbikes.component';
-
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -27,13 +28,14 @@ import { AddbikesComponent } from './addbikes/addbikes.component';
     RecentBatteryComponent,
     RecentHubsComponent,
     AddhubsComponent,
-    AddbikesComponent
+    AddbikesComponent,
   ],
   imports: [
     CommonModule,
     InventoryRoutingModule,
     MaterialModule,
-    SharedPrimeNgModule
+    
+    ReactiveFormsModule,FormsModule,
   ]
 })
 export class InventoryModule { }

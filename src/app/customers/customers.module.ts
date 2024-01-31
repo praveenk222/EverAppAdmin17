@@ -8,6 +8,10 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
 import { CustomerAllbookingsComponent } from './customer-allbookings/customer-allbookings.component';
 import { CustomerTrackComponent } from './customer-track/customer-track.component';
 import { CustomerInvoiceComponent } from './customer-invoice/customer-invoice.component';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from '../commonFiles/commonModules/material.module';
 
 
 @NgModule({
@@ -21,7 +25,8 @@ import { CustomerInvoiceComponent } from './customer-invoice/customer-invoice.co
   imports: [
     CommonModule,
     CustomersRoutingModule,
-    SharedPrimeNgModule
+    ReactiveFormsModule,FormsModule,
+    MaterialModule
   ]
 })
 export class CustomersModule { }

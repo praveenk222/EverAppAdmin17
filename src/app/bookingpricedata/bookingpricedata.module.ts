@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { BookingpricedataRoutingModule } from './bookingpricedata-routing.module';
 import { BookingpricedataComponent } from './bookingpricedata.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -11,7 +13,8 @@ import { BookingpricedataComponent } from './bookingpricedata.component';
   ],
   imports: [
     CommonModule,
-    BookingpricedataRoutingModule
+    BookingpricedataRoutingModule,
+    ReactiveFormsModule,FormsModule,MatMenuModule
   ]
 })
 export class BookingpricedataModule { }

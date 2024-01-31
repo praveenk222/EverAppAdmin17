@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
-import {MatTableModule} from '@angular/material/table';
+import { Component, ViewChild } from '@angular/core';
+import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import {MatTableDataSource, MatTableModule} from '@angular/material/table';
+import { InventoryService } from '../services/Inventory.service';
+import { PostResult } from '../models/PostResult';
+import { MatDialog } from '@angular/material/dialog';
+import { AddhubsComponent } from './addhubs/addhubs.component';
 @Component({
   selector: 'app-inventory',
   templateUrl: './inventory.component.html',
@@ -7,32 +12,50 @@ import {MatTableModule} from '@angular/material/table';
 })
 export class InventoryComponent {
   displayedColumns: string[] = ['slno', 'hubname', 'registrationno', 'hubcode','opnetime','closetime','location','status'];
-  dataSource = ELEMENT_DATA;
 
-  constructor(){
-
+  proudctdata :any;
+  isIamages: boolean = false;
+   dataSource = new MatTableDataSource<any>();
+   pageSizeOptions: number[] = [5, 10, 20];
+   pageSize = 5; //
+   @ViewChild(MatPaginator) paginator!: MatPaginator;
+  constructor( private invntservice: InventoryService,public dialog: MatDialog) {
   }
+
+ngOnInit() {
+  this.getbikes();
+}
+changePage(pageEvent: PageEvent) {
+  const startIndex = pageEvent.pageIndex * pageEvent.pageSize;
+  const endIndex = startIndex + pageEvent.pageSize;
+}
+getbikes() {
+  let p_type:any=3502
+   this.invntservice.getProducts(p_type)
+     .then((result: PostResult) => {
+       if (result.status) {
+         console.log(result.message)
+         // this.router.na
+         this.dataSource=result.message;
+ this.dataSource.paginator=this.paginator;
+
+          this.dataSource.paginator.length=result.message.length;
+       }
+     })
+     .catch((error) => {
+       console.error(error);
+     });
+ }
+ openDialog() {
+this.dialog.open(AddhubsComponent,{
+  width:'600px',
+  height:'460px'
+}
+  );
+
 
 }
-  export interface PeriodicElement {
-    name: string;
-    position: number;
-    weight: number;
-    symbol: string;
-  }
-  
-  const ELEMENT_DATA: PeriodicElement[] = [
-    {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-    {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-    {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-    {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-    {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-    {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-    {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-    {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-    {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-    {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-  ];
+}
   
  
    

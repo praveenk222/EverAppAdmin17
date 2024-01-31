@@ -5,6 +5,8 @@ import { HubBookingSummaryComponent } from './hub-booking-summary/hub-booking-su
 import { AllEbikeBookingComponent } from './all-ebike-booking/all-ebike-booking.component';
 import { InvoicepageComponent } from './invoicepage/invoicepage.component';
 import { BookingDetailsUserComponent } from './booking-details-user/booking-details-user.component';
+import { AllBikeWasBookingComponent } from './all-bike-was-booking/all-bike-was-booking.component';
+import { AllBatteryBookingsComponent } from './all-battery-bookings/all-battery-bookings.component';
 
 const routes: Routes = [
   { path: '', component: BookinghistoryComponent },
@@ -12,6 +14,8 @@ const routes: Routes = [
   { path: 'ebike_booking', component: AllEbikeBookingComponent },
   { path: 'invoice', component: InvoicepageComponent },
   { path: 'user_booking_details', component: BookingDetailsUserComponent },
+  { path: 'washbooking', component: AllBikeWasBookingComponent },
+  { path: 'batterybooking', component: AllBatteryBookingsComponent },
 ];
 
 @NgModule({

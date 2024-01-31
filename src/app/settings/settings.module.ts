@@ -4,16 +4,20 @@ import { CommonModule } from '@angular/common';
 import { SettingsRoutingModule } from './settings-routing.module';
 import { SettingsComponent } from './settings.component';
 import { UserpermissionsComponent } from './userpermissions/userpermissions.component';
+import { MaterialModule } from '../commonFiles/commonModules/material.module';
+import { AdminuserdetailsComponent } from './adminuserdetails/adminuserdetails.component';
 
 
 @NgModule({
   declarations: [
     SettingsComponent,
-    UserpermissionsComponent
+    UserpermissionsComponent,
+    AdminuserdetailsComponent
   ],
   imports: [
     CommonModule,
-    SettingsRoutingModule
+    SettingsRoutingModule,
+    MaterialModule
   ]
 })
 export class SettingsModule { }

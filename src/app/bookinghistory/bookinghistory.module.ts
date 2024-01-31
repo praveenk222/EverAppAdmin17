@@ -11,7 +11,9 @@ import { AllBatteryBookingsComponent } from './all-battery-bookings/all-battery-
 import { RecentBatteryBookingsComponent } from './recent-battery-bookings/recent-battery-bookings.component';
 import { RecentBikeWashBookingsComponent } from './recent-bike-wash-bookings/recent-bike-wash-bookings.component';
 import { HubsbookingsummarycardsComponent } from './hubsbookingsummarycards/hubsbookingsummarycards.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from '../commonFiles/commonModules/material.module';
+import { AllBikeWasBookingComponent } from './all-bike-was-booking/all-bike-was-booking.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +24,14 @@ import { HubsbookingsummarycardsComponent } from './hubsbookingsummarycards/hubs
     AllBatteryBookingsComponent,
     RecentBatteryBookingsComponent,
     RecentBikeWashBookingsComponent,
-    HubsbookingsummarycardsComponent
+    HubsbookingsummarycardsComponent,
+    AllBikeWasBookingComponent
   ],
   imports: [
     CommonModule,
-    SharedPrimeNgModule,
-    BookinghistoryRoutingModule
+    BookinghistoryRoutingModule,
+    ReactiveFormsModule,FormsModule,
+    MaterialModule
   ]
 })
 export class BookinghistoryModule { }

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 
 import { ManualbookingRoutingModule } from './manualbooking-routing.module';
 import { ManualbookingComponent } from './manualbooking.component';
@@ -10,7 +10,7 @@ import { ManualBookingUsersdetailsComponent } from './manual-booking-usersdetail
 import { ManualBookingPaymentsComponent } from './manual-booking-payments/manual-booking-payments.component';
 import { ManualBookingSummaryComponent } from './manual-booking-summary/manual-booking-summary.component';
 import { ManualBookingProductdetailsComponent } from './manual-booking-productdetails/manual-booking-productdetails.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,12 @@ import { ManualBookingProductdetailsComponent } from './manual-booking-productde
   ],
   imports: [
     CommonModule,
-    ManualbookingRoutingModule
-  ]
+    ManualbookingRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  providers: [
+    DatePipe,
+    ],
 })
 export class ManualbookingModule { }
