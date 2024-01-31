@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
-apiUrl='http://localhost:8080/api/v1/adminweb/';
+apiUrl=environment.apiurl;
 baseUrl=`http://localhost:8080/api/`;
   constructor(private http:HttpClient) 
   { }
@@ -67,10 +68,10 @@ baseUrl=`http://localhost:8080/api/`;
     return this.http.get('http://localhost:8080/api/orders/getorderbyorderid/1004',order)
   }
   getnotification():Observable<any>{
-    return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getnotification')
+    return this.http.get(this.apiUrl+'customers/getnotification')
   }
   savenotification(order:any):Observable<any>{
-    return this.http.post('http://localhost:8080/api/v1/adminweb/customers/savenotification',order)
+    return this.http.post(this.apiUrl+'customers/savenotification',order)
   }
 
 }
