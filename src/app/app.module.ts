@@ -33,6 +33,7 @@ import { DialogaddNotificationComponent } from './commonFiles/sharedcomponents/d
 import { AddthemeComponent } from './commonFiles/sharedcomponents/addtheme/addtheme.component';
 import { ToastrModule } from 'ngx-toastr';
 import { SuccessInterceptor } from './services/toastersuccess.interceptor';
+import { PaginationComponent } from './commonFiles/sharedcomponents/pagination/pagination.component';
 @NgModule({
   declarations: [
     AppComponent,
