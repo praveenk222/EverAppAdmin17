@@ -79,7 +79,7 @@ export class InventoryComponent {
     this.getbikes();
   }
 
-  getbikes() {
+ async getbikes() {
     let p_type: any = 3502;
     this.invntservice.getProducts(p_type)
       .then((result: PostResult) => {
