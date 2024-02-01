@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PushnotificationRoutingModule } from './pushnotification-routing.module';
 import { PushnotificationComponent } from './pushnotification.component';
 import { AddNotificationComponent } from './add-notification/add-notification.component';
+import { MaterialModule } from '../commonFiles/commonModules/material.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AddNotificationComponent } from './add-notification/add-notification.co
   ],
   imports: [
     CommonModule,
-    PushnotificationRoutingModule
+    PushnotificationRoutingModule,
+    MaterialModule
   ]
 })
 export class PushnotificationModule { }

@@ -1,15 +1,17 @@
 
 import { NgModule } from '@angular/core';
-import { SidenavComponent } from '../sharedcomponents/sidenav/sidenav.component';
-let importdata=[ 
-    SidenavComponent
-   ];
+import { PaginationComponent } from '../sharedcomponents/pagination/pagination.component';
+import { MaterialModule } from './material.module';
+let importdata = [
+  // SidenavComponent,
+  PaginationComponent
+];
 @NgModule(
-    
-    {
 
-  imports: [importdata],
-  exports: [ importdata ],
-})
+  {
+    imports: [MaterialModule],
+    declarations: [importdata],
+    exports: [importdata],
+  })
 
-export class SharedModule { }
+export class SharedComponentsModule { }
