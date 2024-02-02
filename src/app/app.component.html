@@ -1,6 +1,6 @@
 <div class="container.fluid">
 
-
+ 
   <!-- <div class="row">
     <div class="col-3">
       <app-sidenav></app-sidenav>
@@ -12,17 +12,20 @@
   </div>
 
 -->
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+<mat-toolbar class="tab">
+  
+  <mat-toolbar-row >
+    <button mat-icon-button (click)="sidenav.toggle()" fxShow="true"fxHide.gt-sm >
       <mat-icon>menu</mat-icon>
     </button>
+   
     <span>Responsive</span>
     <span class="example-spacer"></span>
     <div fxShow="true" fxHide.lt-md="true">
       <!-- The following menu items will be hidden on both SM and XS screen sizes -->
      
-   
+      <span class="example-spacer"></span>
+     
       <a href="#" mat-button>
         My Account
       </a>
@@ -42,10 +45,12 @@
     <main>
       <router-outlet></router-outlet>
     </main>
+
     
   </mat-sidenav-content>
 </mat-sidenav-container>
 </div> 
+
 <!-- <app-login></app-login> -->
 <!-- <app-invoicepage></app-invoicepage> -->
  <ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="medium"
