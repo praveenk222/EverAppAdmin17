@@ -15,7 +15,7 @@ constructor(public location: Location,private router:ActivatedRoute,private us:U
   
 }
 ngOnInit(){
-  alert()
+  this.getMemberDetails()
 }
 getMemberDetails(){
   this.us.getMemberDetails(this.userid).subscribe((res:any)=>

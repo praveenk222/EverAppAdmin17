@@ -74,7 +74,7 @@ m_apiUrl=environment.m_apiurl;
     return this.http.post(this.apiUrl+'customers/savenotification',order)
   }
 getMemberDetails(userid:number){
-  return this.http.get(this.apiUrl+'api/members/'+userid)
+  return this.http.get(this.m_apiUrl+'members/'+userid)
 
 }
 }

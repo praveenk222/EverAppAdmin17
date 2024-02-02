@@ -5,7 +5,7 @@
           <button mat-icon-button (click)="this.location.back()">
             <mat-icon>chevron_left</mat-icon>
           </button>
-          <div class="smith-joe">Smith Joe</div>
+          <div class="smith-joe">{{userdetails.firstname}} {{userdetails.lastname}}</div>
           <div class="status">
             <div class="active">Active</div>
           </div>
@@ -44,7 +44,7 @@
           </div>
           <div class="ob-forms-farmer-name">
             <div class="farmer-name">Date of birth</div>
-            <div class="name">2 July, 1989</div>
+            <div class="name">2 July, 1989 {{userdetails.DateofBirth}}</div>
           </div>
           <div class="ob-forms-farmer-name">
             <div class="farmer-name">Address</div>
