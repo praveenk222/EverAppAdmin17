@@ -8,8 +8,10 @@
    background:#202c51 ;
    color: white;
 
+
 }
 .links{
+
   color: white;
 }
 .sidenav .mat-toolbar {
@@ -378,10 +380,10 @@
 
 }
 .header-links .active {
-  padding: 5% !important;
+  padding: 15% !important;
   width: 160px !important;
-  height: 50px !important;
-  border-radius: 5px !important;
+  height: 80px !important;
+  --border-radius: 24px !important;
   background: white !important;
   color:black !important;
   text-align: start;

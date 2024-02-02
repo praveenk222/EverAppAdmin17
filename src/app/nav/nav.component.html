@@ -1,8 +1,12 @@
-<mat-nav-list class="sidenav" fixedviewport >
 
-  <a mat-list-item [routerLink]="m.link" (click)="onToggleClose()" *ngFor="let m of menu">
+<mat-nav-list class="sidenav"  >
+
+  <a mat-list-item [routerLink]="m.link" (click)="onToggleClose()" *ngFor="let m of menu" >
     <!-- <mat-icon>input</mat-icon> -->
-    <span class="links">{{m.name}}</span>
+    <div class="header-links">
+      <mat-icon>{{m.icon}}</mat-icon>
+    <span class="links" routerLinkActive="active" >{{m.name}}</span>
+  </div>
   </a>
- 
+
 </mat-nav-list>

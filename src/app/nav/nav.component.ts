@@ -30,7 +30,7 @@ export class NavComponent {
 
 
     menu=[
-  {name:'Dashboard',icon:'',link:'/dashboard'},
+  {name:'Dashboard',icon:'home',link:'/dashboard',},
   {name:'Booking history',icon:'',link:'/bookinghistory'},
   {name:'Revenue',icon:'',link:'/revenue'},
   {name:'Manual booking',icon:'',link:'/manualbooking'},

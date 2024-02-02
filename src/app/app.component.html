@@ -15,7 +15,7 @@
 <mat-toolbar class="tab">
   
   <mat-toolbar-row >
-    <button mat-icon-button (click)="sidenav.toggle()" fxShow="true"fxHide.gt-sm >
+    <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm >
       <mat-icon>menu</mat-icon>
     </button>
    
@@ -35,8 +35,8 @@
 
 <mat-sidenav-container>
 
-  <mat-sidenav #sidenav>
-    <app-nav-list (closeSideNav)="sidenav.close()"></app-nav-list>
+  <mat-sidenav #sidenav [opened]="isMenuOpen" fixedInViewport>
+    <app-nav-list ></app-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
