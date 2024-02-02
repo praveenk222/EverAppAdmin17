@@ -34,6 +34,9 @@ import { AddthemeComponent } from './commonFiles/sharedcomponents/addtheme/addth
 import { ToastrModule } from 'ngx-toastr';
 import { SuccessInterceptor } from './services/toastersuccess.interceptor';
 import { PaginationComponent } from './commonFiles/sharedcomponents/pagination/pagination.component';
+import { HomeComponent } from './home/home.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +49,7 @@ import { PaginationComponent } from './commonFiles/sharedcomponents/pagination/p
     DialogAddPromocodeComponent,
     DialogaddNotificationComponent,
     AddthemeComponent,
+    HomeComponent,
    
   
     
@@ -67,7 +71,9 @@ import { PaginationComponent } from './commonFiles/sharedcomponents/pagination/p
     MatTableModule,
     // MatPaginatorModule,
     ReactiveFormsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatGridListModule,
+    MatCardModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
