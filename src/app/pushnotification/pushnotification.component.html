@@ -30,6 +30,11 @@
                 />
               </svg>
             </div>
+            <mat-form-field>
+              <input matInput [matDatepicker]="picker" placeholder="Created On" class="created-on">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker class="custom-datepicker-panel"> </mat-datepicker>
+            </mat-form-field>
           </div>
         </div>
         <div class="frame-8720">
