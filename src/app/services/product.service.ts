@@ -6,16 +6,15 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class ProductService {
-  apiUrl=environment.apiurl;
-  constructor(private http:HttpClient) 
-  { }
+  apiUrl = environment.apiurl;
+  constructor(private http: HttpClient) { }
 
-  async getProducts(producttype:number):  Promise<any> {
- let data=   {
-      "ProductType":producttype
-  }
+  async getProducts(producttype: number): Promise<any> {
+    let data = {
+      "ProductType": producttype
+    }
     return new Promise((resolve, reject) => {
-      this.http.post(this.apiUrl+'products',data).subscribe(
+      this.http.post(this.apiUrl + 'products', data).subscribe(
         (data) => {
           resolve(data);
         },
@@ -25,11 +24,11 @@ export class ProductService {
       );
     });
   }
-  async getOrders(type:number):  Promise<any> {
-    
+  async getOrders(type: number): Promise<any> {
+
 
     return new Promise((resolve, reject) => {
-      this.http.get(this.apiUrl+'orders/'+type).subscribe(
+      this.http.get(this.apiUrl + 'orders/' + type).subscribe(
         (data) => {
           resolve(data);
         },
@@ -39,10 +38,13 @@ export class ProductService {
       );
     });
   }
-  loginAdmin(data:any):Observable<any>{
-  return this.http.post(this.apiUrl + `customers/adminLogin`, data);
+  loginAdmin(data: any): Observable<any> {
+    return this.http.post(this.apiUrl + `customers/adminLogin`, data);
   }
-  lookupList(data:any):Observable<any>{
-  return this.http.get(this.apiUrl + `/products/getLookup`);
+  lookupList(data: any): Observable<any> {
+    return this.http.get(this.apiUrl + `/products/getLookup`);
+  }
+  getProductDetailsbyId(id: any): Observable<any> {
+    return this.http.get(this.apiUrl + `products/get/`+id)
   }
 }

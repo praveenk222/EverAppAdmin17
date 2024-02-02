@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UsersService } from '../../../../services/users.service';
 import { AuthService } from '../../../../services/auth.service';
@@ -8,16 +8,17 @@ import { Route, Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrl: './login.component.css',
+  encapsulation: ViewEncapsulation.None,
 })
 export class LoginComponent {
   data: any;
-  loginForm!: FormGroup
+  loginForm: FormGroup
   constructor(private _lf: FormBuilder,private route:Router,
      private _user: UsersService, private as: AuthService) {
     this.loginForm = this._lf.group({
-      UserID: '',
-      Password: ''
+      UserID: ['', [Validators.required]],
+      Password: ['', [Validators.required]],
     })
   }
   login() {

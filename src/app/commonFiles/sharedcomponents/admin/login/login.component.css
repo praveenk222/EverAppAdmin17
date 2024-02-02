@@ -207,3 +207,8 @@
   font-weight: 700;
   position: relative;
 }
+button.disabled {
+  background-color: #dddddd; /* Set the background color for the disabled state */
+  color: #888888; /* Set the text color for the disabled state */
+  cursor: not-allowed; /* Change the cursor to indicate that the button is disabled */
+}

@@ -7,6 +7,7 @@ export const environment = {
   azimageUrl:'https://everdevuat.blob.core.windows.net/',
   environmentvariable:'test',
 // apiurl:'http://localhost:8080/api/v1/adminweb/',
+m_apiurl:'http://localhost:8080/api/',
 apiurl:'https://everbackend.onrender.com/api/v1/adminweb/',
 
   // apiurl:'https://172.188.80.209:8443/api/',
