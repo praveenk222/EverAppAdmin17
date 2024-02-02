@@ -72,6 +72,7 @@ const modules=[
     // MatToolbarModule,
     // MatTooltipModule,
     // MatTreeModule,
+    MatIconModule,
     FormsModule,
     ReactiveFormsModule
    
