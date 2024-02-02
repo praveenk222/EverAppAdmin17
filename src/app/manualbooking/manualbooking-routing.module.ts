@@ -10,7 +10,7 @@ import { ManualBookingSummaryComponent } from './manual-booking-summary/manual-b
 const routes: Routes = [
   { path: '', component: ManualbookingComponent },
   { path: 'bike_list', component: ManualBookingBikelistComponent },
-  { path: 'productdetails', component: ManualBookingProductdetailsComponent },
+  { path: 'productdetails/:id', component: ManualBookingProductdetailsComponent },
   { path: 'userdetails', component: ManualBookingUsersdetailsComponent },
   { path: 'paymentdetails', component: ManualBookingPaymentsComponent },
   { path: 'bookingsummary', component: ManualBookingSummaryComponent },
