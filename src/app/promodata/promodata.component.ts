@@ -17,8 +17,8 @@ export class PromodataComponent  {
   openReport() {
     const dialogRef =
     this.dialog.open(DialogAddPromocodeComponent,{
-      width:'500px',
-      height:'520px'
+      width:'560px',
+      height:'560px'
     })
     dialogRef.afterOpened().subscribe(_ => {
       
