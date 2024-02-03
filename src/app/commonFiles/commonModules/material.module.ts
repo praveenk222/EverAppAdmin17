@@ -78,6 +78,10 @@ const modules=[
     MatNativeDateModule, // Add this line
     MatDatepickerModule,
     MatInputModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatCardModule
    
 ]
 @NgModule({

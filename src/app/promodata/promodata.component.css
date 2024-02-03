@@ -1,0 +1,6 @@
+.notify-card{
+    width:300px;height: 133px; ; background: #D6EDFE; border-radius: 10px; 
+}
+.parent{
+flex: 1 0 0;
+}

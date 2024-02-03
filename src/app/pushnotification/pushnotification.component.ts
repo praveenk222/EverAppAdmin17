@@ -23,8 +23,8 @@ export class PushnotificationComponent {
      const timeout = 2000;
      const dialogRef =
      this.dialog.open(DialogaddNotificationComponent,{
-       width:'520px',
-       height:'358px'
+       width:'400px',
+       height:'400px'
      })
      dialogRef.afterOpened().subscribe(_ => {
     

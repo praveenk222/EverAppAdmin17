@@ -460,3 +460,12 @@
   top: 3px;
   overflow: visible;
 }
+.example-spacer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.icon{
+margin: 10px;
+
+}

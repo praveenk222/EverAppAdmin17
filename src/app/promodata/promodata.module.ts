@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PromodataRoutingModule } from './promodata-routing.module';
 import { PromodataComponent } from './promodata.component';
 import { AddPromocodeComponent } from './add-promocode/add-promocode.component';
+import { MaterialModule } from '../commonFiles/commonModules/material.module';
 
 
 @NgModule({
@@ -13,7 +14,9 @@ import { AddPromocodeComponent } from './add-promocode/add-promocode.component';
   ],
   imports: [
     CommonModule,
-    PromodataRoutingModule
+    PromodataRoutingModule,
+MaterialModule 
+    
   ]
 })
 export class PromodataModule { }

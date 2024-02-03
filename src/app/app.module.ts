@@ -37,6 +37,7 @@ import { PaginationComponent } from './commonFiles/sharedcomponents/pagination/p
 import { HomeComponent } from './home/home.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+import { NaviComponent } from './navi/navi.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +51,7 @@ import { MatCardModule } from '@angular/material/card';
     DialogaddNotificationComponent,
     AddthemeComponent,
     HomeComponent,
+    NaviComponent,
    
   
     

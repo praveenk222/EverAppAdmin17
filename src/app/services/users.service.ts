@@ -7,6 +7,7 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class UsersService {
+
 apiUrl=environment.apiurl;
 m_apiUrl=environment.m_apiurl;
   constructor(private http:HttpClient) 
@@ -76,5 +77,8 @@ m_apiUrl=environment.m_apiurl;
 getMemberDetails(userid:number){
   return this.http.get(this.m_apiUrl+'members/'+userid)
 
+}
+getAlloffers(){
+  return this.http.get(`https://everbackend.onrender.com/api/admin/offers/getall`);
 }
 }

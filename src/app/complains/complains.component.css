@@ -78,6 +78,9 @@
   font-size: 14px;
   font-weight: 400;
   position: relative;
+  border: none;
+  background: transparent !important;
+  width: 300px;
 }
 .frame-8073 {
   background: var(--primary, #3355b9);
@@ -730,4 +733,8 @@
   left: 5.25px;
   top: 3px;
   overflow: visible;
+}
+.search-icon{
+  margin-left: -40px;
+  margin-bottom: 10px;
 }

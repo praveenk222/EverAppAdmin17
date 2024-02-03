@@ -1,0 +1,51 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 280px;
+  font-size: 16px;
+  background:#202c51 ;
+  color: white;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header-links .active {
+  font-size: 20px;
+  padding: 50px 0px;
+  width: 160px !important;
+  height: 100px !important;
+  border-radius: 2px ;
+  background: white !important;
+  color:black !important;
+  text-align: start;
+  text-decoration: none;
+
+}
+.example-spacer{
+  flex: 1 0 0;
+}
+.nav-item{
+  padding: 10%;
+  color: white;
+}
+.toolbar{
+  background:#202c51 ;
+  color: white;
+}
+.side-nav-toolbar{
+  padding:20px;
+
+}
+.links{
+  color: white;
+}
