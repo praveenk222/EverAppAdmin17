@@ -1,4 +1,4 @@
-.frame-8725,
+/* .frame-8725,
 .frame-8725 * {
   box-sizing: border-box;
 }
@@ -2370,4 +2370,21 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+} */
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
 }

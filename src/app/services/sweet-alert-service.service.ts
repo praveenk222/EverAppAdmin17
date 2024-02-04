@@ -14,7 +14,7 @@ export class SweetAlertServiceService {
       showCancelButton: true,
       confirmButtonText: 'Yes, proceed!',
       cancelButtonText: 'No, cancel!',
-    }).then((result) => {
+    }).then((result:any) => {
       return result.value ? true : false;
     });
   }

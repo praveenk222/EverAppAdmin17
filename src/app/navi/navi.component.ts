@@ -17,16 +17,17 @@ export class NaviComponent {
       shareReplay()
     );
     menu=[
+  
       {name:'Dashboard',icon:'home',link:'/dashboard',},
-      {name:'Booking history',icon:'',link:'/bookinghistory'},
-      {name:'Revenue',icon:'',link:'/revenue'},
-      {name:'Manual booking',icon:'',link:'/manualbooking'},
-      {name:'Inventory',icon:'',link:'/inventory'},
-      {name:'Booking Rates & price management',icon:'',link:'/bookingpricedata'},
-      {name:'Manage customers',icon:'',link:'/customers'},
-      {name:'Promo codes',icon:'',link:'/promodata'},
-      {name:'Push notifications',icon:'',link:'/pushnotification'},
-      {name:'Complains',icon:'',link:'/complains'},
+      {name:'Booking history',icon:'bookmark',link:'/bookinghistory'},
+      {name:'Revenue',icon:'attach_money',link:'/revenue'},
+      {name:'Manual booking',icon:'work',link:'/manualbooking'},
+      {name:'Inventory',icon:'invert_colors',link:'/inventory'},
+      {name:'Booking Rates & price management',icon:'insert_chart',link:'/bookingpricedata'},
+      {name:'Manage customers',icon:'supervised_user_circle',link:'/customers'},
+      {name:'Promo codes',icon:'local_offer',link:'/promodata'},
+      {name:'Push notifications',icon:'notification_important',link:'/pushnotification'},
+      {name:'Complains',icon:'markunread_mailbox',link:'/complains'},
     
     ]
 }
