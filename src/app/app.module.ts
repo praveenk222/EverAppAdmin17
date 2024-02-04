@@ -80,7 +80,7 @@ import { NaviComponent } from './navi/navi.component';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: spinnerInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: SuccessInterceptor, multi: true },
+    // { provide: HTTP_INTERCEPTORS, useClass: SuccessInterceptor, multi: true },
     provideHttpClient(),
   ],
   bootstrap: [AppComponent]

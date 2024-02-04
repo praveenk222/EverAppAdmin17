@@ -99,4 +99,7 @@ deletePromo(ID1:number,ID2:number){
 getComplainsList(){
   return this.http.get(this.m_apiUrl+'admin/getComplains')
 }
+getorderByUserID(userid:number){
+  return this.http.get(this.m_apiUrl+'orders/getorderbyUserid/'+userid)
+}
 }

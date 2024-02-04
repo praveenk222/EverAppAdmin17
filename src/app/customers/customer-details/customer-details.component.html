@@ -5,7 +5,7 @@
           <button mat-icon-button (click)="this.location.back()">
             <mat-icon>chevron_left</mat-icon>
           </button>
-          <div class="smith-joe">{{userdetails.firstname}} {{userdetails.lastname}}</div>
+          <div class="smith-joe">{{userdetails?.FirstName}} {{userdetails?.LastName}}</div>
           <div class="status">
             <div class="active">Active</div>
           </div>
@@ -16,7 +16,7 @@
         <mat-tab label="Personal details">   
         </mat-tab>
         <mat-tab label="All bookings">   
-          <app-customer-allbookings></app-customer-allbookings>
+          <app-customer-allbookings [userid]="userdetails.UserID"></app-customer-allbookings>
         </mat-tab>
         <mat-tab label="Track user">   
           <app-customer-track></app-customer-track>
@@ -28,15 +28,15 @@
         <div class="frame-2608342">
           <div class="ob-forms-farmer-name">
             <div class="farmer-name">Full name</div>
-            <div class="name">{{userdetails.firstname}} {{userdetails.lastname}}</div>
+            <div class="name">{{userdetails?.FirstName}} {{userdetails?.LastName}}</div>
           </div>
           <div class="ob-forms-farmer-name">
             <div class="farmer-name">Mobile no.</div>
-            <div class="name">{{userdetails.mobileno}}</div>
+            <div class="name">{{userdetails.MobileNo}}</div>
           </div>
           <div class="ob-forms-farmer-name">
             <div class="farmer-name">Email</div>
-            <div class="name">{{userdetails.emailid}}</div>
+            <div class="name">{{userdetails.EmailID}}</div>
           </div>
           <div class="ob-forms-farmer-name">
             <div class="farmer-name">Gender</div>
@@ -48,7 +48,7 @@
           </div>
           <div class="ob-forms-farmer-name">
             <div class="farmer-name">Address</div>
-            <div class="name2">2/9/15, HZ Road, Hyd, Telengana</div>
+            <div class="name2"></div>
           </div>
           <div class="ob-forms-farmer-name">
             <div class="farmer-name">Remarks</div>
