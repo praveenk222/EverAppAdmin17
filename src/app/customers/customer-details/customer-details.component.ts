@@ -22,6 +22,7 @@ getMemberDetails(){
     {
       if(res){
         this.userdetails=res;
+        console.log(this.userdetails)
       }
     }
   )
