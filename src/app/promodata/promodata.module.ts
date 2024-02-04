@@ -5,12 +5,14 @@ import { PromodataRoutingModule } from './promodata-routing.module';
 import { PromodataComponent } from './promodata.component';
 import { AddPromocodeComponent } from './add-promocode/add-promocode.component';
 import { MaterialModule } from '../commonFiles/commonModules/material.module';
+import { DialogAddPromocodeComponent } from '../commonFiles/sharedcomponents/dialog-add-promocode/dialog-add-promocode.component';
 
 
 @NgModule({
   declarations: [
     PromodataComponent,
-    AddPromocodeComponent
+    AddPromocodeComponent,
+    DialogAddPromocodeComponent
   ],
   imports: [
     CommonModule,

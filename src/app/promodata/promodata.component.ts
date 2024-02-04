@@ -18,7 +18,7 @@ export class PromodataComponent  {
     const dialogRef =
     this.dialog.open(DialogAddPromocodeComponent,{
       width:'560px',
-      height:'560px'
+      height:'600px'
     })
     dialogRef.afterOpened().subscribe(_ => {
       
@@ -39,5 +39,10 @@ export class PromodataComponent  {
       this.notifyData=res;
     })
 
+  }
+  delete(){
+    this.os.deletePromo(this.notifyData).subscribe((res)=>{
+      
+    })
   }
 }

@@ -28,7 +28,7 @@ import { RegisterComponent } from './commonFiles/sharedcomponents/register/regis
 import { ChangepasswordComponent } from './commonFiles/sharedcomponents/changepassword/changepassword.component';
 import { ResetpasswordComponent } from './commonFiles/sharedcomponents/resetpassword/resetpassword.component';
 import { LoginComponent } from './commonFiles/sharedcomponents/admin/login/login.component';
-import { DialogAddPromocodeComponent } from './commonFiles/sharedcomponents/dialog-add-promocode/dialog-add-promocode.component';
+
 import { DialogaddNotificationComponent } from './commonFiles/sharedcomponents/dialogadd-notification/dialogadd-notification.component';
 import { AddthemeComponent } from './commonFiles/sharedcomponents/addtheme/addtheme.component';
 import { ToastrModule } from 'ngx-toastr';
@@ -47,7 +47,7 @@ import { NaviComponent } from './navi/navi.component';
     RegisterComponent,
     ChangepasswordComponent,
     ResetpasswordComponent,
-    DialogAddPromocodeComponent,
+ 
     DialogaddNotificationComponent,
     AddthemeComponent,
     HomeComponent,

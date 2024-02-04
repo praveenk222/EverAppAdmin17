@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { UsersService } from '../../../services/users.service';
 
 @Component({
   selector: 'app-dialog-add-promocode',
@@ -8,19 +9,34 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class DialogAddPromocodeComponent {
 promoForm!:FormGroup;
-constructor(private _pf:FormBuilder){
+show: boolean = false; 
+constructor(private _pf:FormBuilder,private _us:UsersService){
   this.promoForm=this._pf.group({
-    name:'',
-    desp:'',
-    percentage:'',
-    ammount:'',
-    startdate:'',
-    enddate:"",
+ 
+    OfferName: null,
+    Description:null,
+    StartDate: null,
+    EndDate: null,
+    MaxAmount: null,
+    DiscountPercentage: null,
+    CouponID: null,
+    CouponCode: null,
+    IsUsed: false,
+    ExpiryDate: null,
+    UserID:null,
+    ProductID:null,
+    Demography:null,
+    Age:null,
+    
 
   })
 }
 addPromocard(){
-  const data=this.promoForm.value;
-  console.log(data)
+
+  this._us.savepromo(this.promoForm.value).subscribe((res:any)=>{
+    console.log(res);
+
+  })
 }
+
 }
