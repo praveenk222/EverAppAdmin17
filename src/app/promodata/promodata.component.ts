@@ -45,6 +45,7 @@ export class PromodataComponent  {
     this.os.deletePromo(ID1,ID2).subscribe((res:any)=>{
          if(res.status){
                this.getAll()
+            
          }
     })
   }
