@@ -4,7 +4,7 @@
             <div class="parent1">
             <div style="width: 154px; padding-left: 20px; padding-right: 20px; padding-top: 16px; padding-bottom: 16px; background: #3355B9; border-radius: 24px; justify-content:first baseline; align-items: flex-end; gap: 10px; display: flex">
                 <div style="color: white; font-size: 14px; font-family: Open Sans Hebrew; font-weight: 700; word-wrap: break-word">
-                   <a (click)="openReport()"> Add promo code</a></div>
+                   <a (click)="openReport(null)"> Add promo code</a></div>
             </div>
    
         </div>
@@ -12,7 +12,7 @@
             <div class="parent">
             <mat-card [style.background]="nf.color" class="notify-card" *ngFor="let nf of notifyData">
                 <mat-card-header>
-                    <mat-icon class="icon" color="primary" >edit</mat-icon>
+                    <mat-icon class="icon" color="primary" (click)="edit(nf)">edit</mat-icon>
                     <mat-icon class="icon" color="warn" (click)="delete(nf.OfferID,nf.CoupanID)">delete</mat-icon>
                   <mat-card-title>{{nf.CouponCode}}</mat-card-title>
                   <mat-card-subtitle>{{nf.OfferDescription}}</mat-card-subtitle>
