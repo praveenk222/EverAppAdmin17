@@ -84,7 +84,14 @@ getAlloffers(){
 savepromo(order:any):Observable<any>{
   return this.http.post(this.m_apiUrl+'admin/promocode/save',order)
 }
-deletePromo(id:any){
-  return this.http.delete(this.apiUrl+`promocode/remove`+id);
+deletePromo(ID1:number,ID2:number){
+  let payload=
+    {
+      "OfferID": ID1,
+      "CouponID": ID2
+     
+  }
+  
+  return this.http.post(this.m_apiUrl+`admin/promocode/remove`,payload);
 }
 }

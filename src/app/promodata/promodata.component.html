@@ -12,8 +12,8 @@
             <div class="parent">
             <mat-card [style.background]="nf.color" class="notify-card" *ngFor="let nf of notifyData">
                 <mat-card-header>
-                    <mat-icon class="icon" color="primary">edit</mat-icon>
-                    <mat-icon class="icon" color="warn">delete</mat-icon>
+                    <mat-icon class="icon" color="primary" >edit</mat-icon>
+                    <mat-icon class="icon" color="warn" (click)="delete(nf.OfferID,nf.CoupanID)">delete</mat-icon>
                   <mat-card-title>{{nf.CouponCode}}</mat-card-title>
                   <mat-card-subtitle>{{nf.OfferDescription}}</mat-card-subtitle>
                  

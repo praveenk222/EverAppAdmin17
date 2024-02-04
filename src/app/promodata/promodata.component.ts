@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogAddPromocodeComponent } from '../commonFiles/sharedcomponents/dialog-add-promocode/dialog-add-promocode.component';
 import { UsersService } from '../services/users.service';
+import { PostResult } from '../models/PostResult';
 
 @Component({
   selector: 'app-promodata',
@@ -40,9 +41,11 @@ export class PromodataComponent  {
     })
 
   }
-  delete(){
-    this.os.deletePromo(this.notifyData).subscribe((res)=>{
-      
+  delete(ID1:number,ID2:number){
+    this.os.deletePromo(ID1,ID2).subscribe((res:any)=>{
+         if(res.status){
+               this.getAll()
+         }
     })
   }
 }
