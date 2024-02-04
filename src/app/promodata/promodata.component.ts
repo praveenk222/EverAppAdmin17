@@ -30,13 +30,7 @@ export class PromodataComponent  {
     })
   
   }
-  // notifyData=[
-  //   {percentage:'20% Off',message:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",color:'lightblue'},
-  //   {percentage:'20% Off',message:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",color:'lightblue'},
-  //   {percentage:'20% Off',message:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",color:'lightgreen'},
-  //   {percentage:'20% Off',message:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",color:'red'}
 
-  // ]
 
   getAll(){
     this.os.getAlloffers().subscribe(res=>{
