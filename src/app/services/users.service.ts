@@ -88,10 +88,12 @@ deletePromo(ID1:number,ID2:number){
   let payload=
     {
       "OfferID": ID1,
-      "CouponID": ID2
-     
+      "CouponID": ID2     
   }
   
   return this.http.post(this.m_apiUrl+`admin/promocode/remove`,payload);
+}
+getComplainsList(){
+  return this.http.get(this.m_apiUrl+'admin/getComplains')
 }
 }
