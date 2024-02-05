@@ -12,11 +12,11 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 })
 export class CustomersComponent {
   userdata: any;
-  displayedColumns: string[] = ['Customer id', 'Full name', 'Mobile no.', 'Email id', 'Registration date', 'Status', 'Remarks'];
-  dataSource = new MatTableDataSource<any>();
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  displayedColumns: string[] = ['Customer id', 'Full name', 'Mobile no.', 'Email id', 'Registration date', 'Status', ];
+  dataSource = new MatTableDataSource<any>([]);
   pageSizeOptions: number[] = [5, 10, 20];
   pageSize = 5; //
+  @ViewChild(MatPaginator) paginator: MatPaginator;
   constructor(private customerService: CustomerService,private us:UsersService) {}
 
   ngOnInit() {
@@ -29,7 +29,7 @@ export class CustomersComponent {
         if (result.status) {
           console.log(result.message)
           // this.router.na
-          this.dataSource = result.message;
+          this.dataSource = new MatTableDataSource<any>(result.message);
           this.dataSource.paginator = this.paginator;
         }
       })
@@ -41,4 +41,10 @@ export class CustomersComponent {
     const startIndex = pageEvent.pageIndex * pageEvent.pageSize;
     const endIndex = startIndex + pageEvent.pageSize;
   }
+  lists=[
+    {name:'Pending'},
+    {name:'Ongoing'},
+    {name:'completed'},
+   
+  ]
 }

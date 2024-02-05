@@ -20,20 +20,20 @@
                 stroke-linejoin="round"
               />
             </svg>
-            <div class="search-by-customer-id-location-user-name">
-              Search by customer id, location, user name
-            </div>
+            <input type="search" placeholder="Search by customer id, location, user name" class="search-by-customer-id-location-user-name">
+              
+          
           </div>
-          <div class="frame-8073">
+          <button (click)=" openReport()" class="frame-8073">
             <div class="create-ticket">Create ticket</div>
-          </div>
+          </button>
         </div>
       </div>
       <div class="frame-2608323">
         <div class="frame-2608331">
           <div class="frame-2608166">
-            <div class="text-holder">
-              <div class="hub-center">Hub center</div>
+            <input type="search" class="text-holder" placeholder="Hub center">
+             <div class="search-icon">
               <svg
                 class="iconamoon-search-fill"
                 width="17"
@@ -50,7 +50,7 @@
                 />
               </svg>
             </div>
-            <div class="text-holder">
+            <!-- <div class="text-holder">
               <div class="open-date">Open date</div>
               <svg
                 class="uis-calender"
@@ -65,8 +65,20 @@
                   fill="#3355B9"
                 />
               </svg>
-            </div>
-            <div class="text-holder">
+            </div> -->
+            <input matInput [matDatepicker]="picker" class="text-holder" placeholder="Open date">
+            
+            
+            
+              <mat-datepicker-toggle matIconSuffix [for]="picker" style="margin-left: -60px;color: blue;" ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+              <input matInput [matDatepicker]="picker" class="text-holder" placeholder="Closed date">
+            
+            
+            
+              <mat-datepicker-toggle matIconSuffix [for]="picker" style="margin-left: -60px;color: blue;" ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            <!-- <div class="text-holder">
               <div class="closed-date">Closed date</div>
               <svg
                 class="uis-calender2"
@@ -81,9 +93,11 @@
                   fill="#3355B9"
                 />
               </svg>
-            </div>
-            <div class="text-holder">
-              <div class="status">Status</div>
+            </div> -->
+            <select class="text-holder">
+             <option value="">Ongoing</option>
+             <option value="">Pending</option>
+             <option value="">Completed</option>
               <svg
                 class="ep-arrow-down-bold"
                 width="17"
@@ -97,7 +111,7 @@
                   fill="#3355B9"
                 />
               </svg>
-            </div>
+            </select>
           </div>
         </div>
         <div class="frame-2608329">
@@ -125,8 +139,8 @@
             </div>
             <div class="frame-2608319"></div>
           </div>
-          <div class="complains-table-head2">
-            <div class="column-12">
+          <div class="complains-table-head2" *ngFor="let data of complainsData">
+            <div class="column-12" >
               <svg
                 class="frame-8459"
                 width="24"
@@ -140,33 +154,33 @@
                   fill="#B5B5B5"
                 />
               </svg>
-              <div class="user-name2">Smith Joe</div>
+              <div class="user-name2">{{data.UserName}}</div>
             </div>
             <div class="column-2">
               <div class="user-id2">E0000001</div>
             </div>
             <div class="column-3">
               <div class="about2">
-                Lorem ipsum dolor sit amet, conse adipiscing elit
+                {{data.About}}
               </div>
             </div>
             <div class="column-4">
-              <div class="open-date3">12 Oct, 2023</div>
+              <div class="open-date3"> {{data.OpenDate}}</div>
             </div>
             <div class="column-8">
-              <div class="closed-date3">12 Oct, 2023</div>
+              <div class="closed-date3">{{data.ClosedDate}}</div>
             </div>
             <div class="column-5">
-              <div class="location2">Madhapur</div>
+              <div class="location2">{{data.Location}}</div>
             </div>
             <div class="column-6">
               <div class="status3">
-                <div class="completed">On going</div>
+                <div class="completed">{{data.Status}}</div>
               </div>
             </div>
             <div class="frame-2608319"></div>
           </div>
-          <div class="complains-table-head3">
+          <!-- <div class="complains-table-head3">
             <div class="column-12">
               <svg
                 class="frame-84592"
@@ -344,9 +358,9 @@
                   fill="black"
                 />
               </svg>
-            </div>
-          </div>
-        </div>
+            </div> -->
+          <!-- </div>
+        </div> -->
       </div>
     </div>
   </div>

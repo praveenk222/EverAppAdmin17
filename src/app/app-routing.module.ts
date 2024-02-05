@@ -1,8 +1,20 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InvoicepageComponent } from './bookinghistory/invoicepage/invoicepage.component';
+import { LoginComponent } from './commonFiles/sharedcomponents/admin/login/login.component';
+import { LoginLayoutComponent } from './login-layout/login-layout.component';
+import { LoginGuard } from './login.guard';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   component: LoginLayoutComponent,
+  //   canActivate: [LoginGuard], // Apply the guard
+  //   children: [
+  //     { path: 'login', component: LoginComponent },
+  //     // Add other login-related routes if needed
+  //   ],
+  // },
   { path: 'customers', loadChildren: () => import('./customers/customers.module').then(m => m.CustomersModule) },
   {
     path: 'bookinghistory',

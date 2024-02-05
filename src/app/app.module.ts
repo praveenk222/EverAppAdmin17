@@ -25,14 +25,19 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { ReactiveFormsModule} from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
 import { RegisterComponent } from './commonFiles/sharedcomponents/register/register.component';
-import { ChangepasswordComponent } from './commonFiles/sharedcomponents/changepassword/changepassword.component';
-import { ResetpasswordComponent } from './commonFiles/sharedcomponents/resetpassword/resetpassword.component';
+
 import { LoginComponent } from './commonFiles/sharedcomponents/admin/login/login.component';
-import { DialogAddPromocodeComponent } from './commonFiles/sharedcomponents/dialog-add-promocode/dialog-add-promocode.component';
+
 import { DialogaddNotificationComponent } from './commonFiles/sharedcomponents/dialogadd-notification/dialogadd-notification.component';
 import { AddthemeComponent } from './commonFiles/sharedcomponents/addtheme/addtheme.component';
 import { ToastrModule } from 'ngx-toastr';
 import { SuccessInterceptor } from './services/toastersuccess.interceptor';
+import { PaginationComponent } from './commonFiles/sharedcomponents/pagination/pagination.component';
+import { HomeComponent } from './home/home.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { NaviComponent } from './navi/navi.component';
+import { LoginLayoutComponent } from './login-layout/login-layout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,11 +45,13 @@ import { SuccessInterceptor } from './services/toastersuccess.interceptor';
     InvoicepageComponent,
     NavComponent,
     RegisterComponent,
-    ChangepasswordComponent,
-    ResetpasswordComponent,
-    DialogAddPromocodeComponent,
+
+ 
     DialogaddNotificationComponent,
     AddthemeComponent,
+    HomeComponent,
+    NaviComponent,
+    LoginLayoutComponent,
    
   
     
@@ -66,12 +73,14 @@ import { SuccessInterceptor } from './services/toastersuccess.interceptor';
     MatTableModule,
     // MatPaginatorModule,
     ReactiveFormsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatGridListModule,
+    MatCardModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: spinnerInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: SuccessInterceptor, multi: true },
+    // { provide: HTTP_INTERCEPTORS, useClass: SuccessInterceptor, multi: true },
     provideHttpClient(),
   ],
   bootstrap: [AppComponent]

@@ -16,6 +16,7 @@ import { AddhubsComponent } from './addhubs/addhubs.component';
 import { AddbikesComponent } from './addbikes/addbikes.component';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { MatMenuModule } from '@angular/material/menu';
+import { SharedComponentsModule } from '../commonFiles/commonModules/sharedComponents.Module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { MatMenuModule } from '@angular/material/menu';
     CommonModule,
     InventoryRoutingModule,
     MaterialModule,
-    
+    SharedComponentsModule,
     ReactiveFormsModule,FormsModule,
   ]
 })

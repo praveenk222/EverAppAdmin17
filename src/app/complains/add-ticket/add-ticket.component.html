@@ -1,33 +1,34 @@
+
 <div class="create-ticket">
+
     <div class="frame-2608353">
+      <form  [formGroup]="complainForm">
       <div class="ob-forms-farmer-name">
         <div class="farmer-name">Customer name</div>
-        <div class="frame">
-          <div class="name">Write name here</div>
-        </div>
+        <input class="frame" placeholder="Write Customer name here" formControlName="CustomerName">
+        
       </div>
       <div class="ob-forms-farmer-name">
         <div class="farmer-name">Customer id</div>
-        <div class="frame">
-          <div class="name">Write name here</div>
-        </div>
+        <input class="frame" placeholder="Write Customer id here" formControlName="CustomerID">
+       
+       
       </div>
       <div class="ob-forms-farmer-name">
         <div class="farmer-name">Complain title</div>
-        <div class="frame">
-          <div class="name">Write title here</div>
-        </div>
+        <input class="frame" placeholder="Write Complain title here" formControlName="Title">
+        
       </div>
       <div class="ob-forms-farmer-name">
         <div class="farmer-name">Complain description</div>
-        <div class="frame2">
-          <div class="name">Write description here</div>
-        </div>
-      </div>
-      <div class="button-1">
+        <input class="frame2" placeholder="Write Complain description here" formControlName="Description">
+       
+   
+      <button class="button-1" (click)="submitComplainForm()">
         <div class="name2">Create</div>
-      </div>
+      </button>
     </div>
+    </form>
     <div class="create-ticket2">Create ticket</div>
     <div class="line-43"></div>
     <div class="mingcute-close-line">
@@ -47,5 +48,5 @@
         />
       </svg>
     </div>
+
   </div>
-  

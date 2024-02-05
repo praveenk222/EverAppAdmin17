@@ -14,9 +14,9 @@
       <div class="frame-8722">
         <div class="frame-2608332">
           <div class="frame-2608166">
-            <div class="text-holder">
-              <div class="created-on">Created on</div>
-              <svg
+            <input matInput [matDatepicker]="picker" class="text-holder" placeholder="Created on" class="text-holder">
+              
+              <!-- <svg
                 class="uis-calender"
                 width="17"
                 height="17"
@@ -28,8 +28,15 @@
                   d="M1.73332 13.1673C1.73332 14.3007 2.59999 15.1673 3.73332 15.1673H13.0667C14.2 15.1673 15.0667 14.3007 15.0667 13.1673V7.83398H1.73332V13.1673ZM13.0667 3.16732H11.7333V2.50065C11.7333 2.10065 11.4667 1.83398 11.0667 1.83398C10.6667 1.83398 10.4 2.10065 10.4 2.50065V3.16732H6.39999V2.50065C6.39999 2.10065 6.13332 1.83398 5.73332 1.83398C5.33332 1.83398 5.06666 2.10065 5.06666 2.50065V3.16732H3.73332C2.59999 3.16732 1.73332 4.03398 1.73332 5.16732V6.50065H15.0667V5.16732C15.0667 4.03398 14.2 3.16732 13.0667 3.16732Z"
                   fill="#3355B9"
                 />
-              </svg>
+              </svg> -->
+          
+            
+            
+            
+              <mat-datepicker-toggle matIconSuffix [for]="picker" style="margin-left: -60px;color: blue;" ></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
             </div>
+          
           </div>
         </div>
         <div class="frame-8720">
@@ -42,70 +49,24 @@
           <div class="notification-table-head2" *ngFor="let n of notifydata">
             <div class="column-1">
               <div class="code-name2">
-                <span>
+                <span class="tr">
                   <span class="code-name-2-span">{{n?.NotificationName}}</span>
-                  <span class="code-name-2-span2">
-                    : {{n?.Description}}.
-                  </span>
+                  <span class="code-name-2-span2"> : {{n?.Description}} </span>
+                  <span class="example-spacer">
+                    <mat-icon class="icon" color="primary">edit</mat-icon>
+               
+                  <mat-icon class="icon" style="color:green">send</mat-icon>
+                  <mat-icon class="icon" color="warn">delete</mat-icon>
+                  
+                </span>
                 </span>
               </div>
             </div>
-            <div class="frame-2608319"></div>
           </div>
           
       <div class="frame-2608326">
-        <div class="showing-1-to-10-of-22-entries">
-          Showing 1 to 10 of 22 entries
-        </div>
-        <div class="frame-2608325">
-          <div class="previous">
-            <div class="fe-arrow-left">
-              <svg
-                class="fe-arrow-left-0"
-                width="8"
-                height="12"
-                viewBox="0 0 8 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M6.25 0L7.75 1.5L3.25 6L7.75 10.5L6.25 12L0.25 6L6.25 0Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="_1">
-            <div class="_12">1</div>
-          </div>
-          <div class="_2">
-            <div class="_22">2</div>
-          </div>
-          <div class="_3">
-            <div class="_32">3</div>
-          </div>
-          <div class="next">
-            <div class="fe-arrow-right">
-              <svg
-                class="fe-arrow-right-0"
-                width="8"
-                height="12"
-                viewBox="0 0 8 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M1.75375 0L7.75375 6L1.75375 12L0.25 10.5L4.75375 6L0.25 1.5L1.75375 0Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-          </div>
-        </div>
+       
+
       </div>
     </div>
   </div>

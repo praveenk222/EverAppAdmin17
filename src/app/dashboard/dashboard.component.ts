@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { DialogPopupService } from '../commonFiles/commonServices/dialogPopup.service';
 import { DialogService } from 'primeng/dynamicdialog';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogContentMatComponent } from '../commonFiles/sharedcomponents/dialog_content_Mat/dialog-content-mat.component';
 import { DialogContenterrorComponent } from '../commonFiles/sharedcomponents/dialog_content_error/dialog_content_error.component';
 import { DialogContentReportComponent } from '../commonFiles/sharedcomponents/dialog_Genrt_report_content/dialog_Genrt_report_content.component';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-dashboard',
@@ -56,4 +58,33 @@ export class DashboardComponent {
     })
   
   }
+
+  private breakpointObserver = inject(BreakpointObserver);
+
+  /** Based on the screen size, switch from standard to one column per row */
+  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
+    map(({ matches }) => {
+      if (matches) {
+        return [
+          { title: 'Total vehicles', cols: 4, rows: 1,color:'lightgreen' },
+          { title: 'Card 2', cols: 4, rows: 1,color:'lightblue' },
+          { title: 'Card 3', cols: 4, rows: 4,color:'white' },
+          { title: 'Card 4', cols: 4, rows: 1,color:'#F5B7B1' },
+          { title: 'Card 3', cols: 4, rows: 1,color:'lightyellow' },
+          { title: 'Card 4', cols: 4, rows: 2,color:'white' },
+          { title: 'Card 4', cols: 4, rows: 1,color:'white' }
+        ];
+      }
+
+      return [
+        { title: 'Total vehicles', cols: 1, rows: 1,color:'lightgreen' },
+        { title: 'Card 2', cols: 1, rows: 1,color:'lightblue' },
+        { title: 'Card 3', cols: 2, rows: 2,color:'white' },
+        { title: 'Card 4', cols: 1, rows: 1,color:'#F5B7B1' },
+        { title: 'Card 3', cols: 1, rows: 1,color:'lightyellow' },
+        { title: 'Card 4', cols: 2.5, rows: 2,color:'white' },
+        { title: 'Card 4', cols: 1, rows: 2,color:'white' }
+      ];
+    })
+  );
 }

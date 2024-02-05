@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { RevenueRoutingModule } from './revenue-routing.module';
 import { RevenueComponent } from './revenue.component';
+import { MaterialModule } from '../commonFiles/commonModules/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { RevenueComponent } from './revenue.component';
   ],
   imports: [
     CommonModule,
-    RevenueRoutingModule
+    RevenueRoutingModule,
+    MaterialModule
   ]
 })
 export class RevenueModule { }

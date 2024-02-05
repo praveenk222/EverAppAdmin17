@@ -8,19 +8,18 @@ import { PostResult } from '../../models/PostResult';
   styleUrl: './manual-booking-bikelist.component.css'
 })
 export class ManualBookingBikelistComponent {
-  productList:any;
-  producttype:number=3502;
-constructor(private productservice: ProductService){
-this.productservice.getProducts(this.producttype).then((result:PostResult)=>{
-  console.log(result)
-  if (result.status) {
-    console.log(result.message)
-    // this.router.na
-    this.productList = result.message;       
+  productList: any;
+  producttype: number = 3502;
+  constructor(private productservice: ProductService) {
+    this.productservice.getProducts(this.producttype).then((result: PostResult) => {
+      console.log(result)
+      if (result.status) {
+        console.log(result.message)
+        // this.router.na
+        this.productList = result.message;
+      }
+    })
+      .catch((error) => { console.error(error) })
   }
-
-})
-.catch((error)=>{console.error(error)})
-}
 
 }

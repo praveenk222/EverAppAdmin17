@@ -10,6 +10,10 @@ import { UsersService } from '../services/users.service';
 })
 export class PushnotificationComponent {
   notifydata:any;
+  rowsPerPage: number = 10;
+  totalRecords: number = 100; 
+  first:number=0;
+  rows:number=5;
   constructor(private dialog:MatDialog,private _nd:UsersService) {
     // this.openDialog()
     this.getNotification()
@@ -19,8 +23,8 @@ export class PushnotificationComponent {
      const timeout = 2000;
      const dialogRef =
      this.dialog.open(DialogaddNotificationComponent,{
-       width:'520px',
-       height:'358px'
+       width:'400px',
+       height:'400px'
      })
      dialogRef.afterOpened().subscribe(_ => {
     
@@ -35,5 +39,9 @@ export class PushnotificationComponent {
     })
    }
 
+   onPageChange(event: any) {
+    // Handle pagination logic, e.g., fetch data for the new page
+    console.log('Page changed:', event);
+  }
    
 }

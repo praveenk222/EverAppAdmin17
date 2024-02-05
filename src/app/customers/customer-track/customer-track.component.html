@@ -1,3 +1,5 @@
+
+<div #map class="map"></div>
 <div class="frame-8725">
     <div class="frame-8724">
       <div class="frame-2608320">
@@ -44,7 +46,24 @@
                   <div class="seconds">seconds</div>
                 </div>
               </div>
+              
             </div>
+            <div
+            style="align-self: stretch; height: 124px; padding: 12px; background: #2FB735; border-radius: 12px; flex-direction: column; justify-content: center; align-items: center; gap: 12px; display: flex">
+            <div
+              style="text-align: center; color: white; font-size: 14px;  font-weight: 400; word-wrap: break-word">
+              Remaining in</div>
+            <div style="justify-content: center; align-items: flex-start; gap: 6px; display: inline-flex">
+           <div>
+                <table>
+                  <tr>
+                    <th>{{counter }}</th>
+                  </tr>
+                </table>
+              </div>
+      
+            </div>
+          </div>
             <div class="frame-2608279">
               <div class="frame-2608281">
                 <div class="farmer-name3">Ever booking with Bike model 1</div>
@@ -203,9 +222,54 @@
             <div class="rectangle-2510"></div>
           </div>
         </div>
-        <div class="frame-2608345">
-          <img class="image-77" src="image-770.png" />
-          <svg
+       
+          <google-map
+          class="frame-2608345"
+          #myGoogleMap
+        
+          height="500px"
+          width="100%"
+          [zoom]="zoom"
+          [center]="center"
+          [options]="options"
+          (mapClick)="eventHandler($event,'mapClick')"
+          (mapDblclick)="eventHandler($event,'mapDblclick')"
+          (mapDrag)="eventHandler($event,'mapDrag')"
+          (mapDragend)="eventHandler($event,'mapDragend')"
+          (mapRightclick)="eventHandler($event,'mapRightclick')"
+          (positionChanged)="eventHandler($event,'marker_positionChanged')"
+          (zoomChanged)="eventHandler($event,'zoomChanged')"
+        >
+          <map-marker
+            #markerElem="mapMarker"
+            *ngFor="let marker of markers"
+            [position]="marker.position"
+            [label]="marker.label"
+            [title]="marker.title"
+            [options]="marker.options"
+            (mapClick)="openInfo(markerElem, marker.info)"
+          >
+          </map-marker>
+        
+          <map-info-window>{{ infoContent }}</map-info-window>
+        </google-map>
+        
+        <button (click)="zoomIn()">Zoom in</button>
+        <button (click)="zoomOut()">Zoom out</button>
+        <button (click)="logCenter()">Log center</button>
+          <!-- <google-map
+          width="100vw"
+          height="100vh"
+          [center]="center"
+          [zoom]="zoom"
+          (mapClick)="moveMap($event)"
+          (mapMousemove)="move($event)">
+</google-map> -->
+<!-- <div *ngIf="apiLoaded | async">
+  <google-map></google-map>
+</div> -->
+
+          <!-- <svg
             class="line-46"
             width="368"
             height="556"
@@ -218,13 +282,10 @@
               stroke="black"
               stroke-width="5"
             />
-          </svg>
-          <div class="group-662">
-            <div class="ellipse-1532"></div>
-            <div class="ellipse-1542"></div>
-          </div>
-        </div>
+          </svg> -->
+      
+      
       </div>
     </div>
   </div>
-  
+ 

@@ -1,0 +1,22 @@
+.notify-card{
+    width:300px;height: 133px; ; background: #D6EDFE; border-radius: 10px; 
+}
+.parent{
+flex: 1 0 0;
+}
+.parent{
+    display: flex;
+    flex-flow:wrap row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.parent1{
+    display: flex;
+    flex-flow:wrap row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    column-gap: 20px;
+    row-gap: 20px;
+}

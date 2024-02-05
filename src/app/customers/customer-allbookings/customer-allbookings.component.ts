@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { UsersService } from '../../services/users.service';
 
 @Component({
   selector: 'app-customer-allbookings',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './customer-allbookings.component.css'
 })
 export class CustomerAllbookingsComponent {
+  @Input () userid:number;
+  orderList: any;
+  constructor(private us:UsersService){}
 
+  ngOnInit(){
+this.us.getorderByUserID(this.userid).subscribe(res=>{
+this.orderList=res;
+console.log(this.orderList)
+})
+  }
 }

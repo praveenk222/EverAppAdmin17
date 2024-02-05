@@ -4,18 +4,18 @@
       
       </div>
      
-      <div class="frame-8722">
+      <div class="frame-8722" *ngFor="let b of orderList">
         <div class="frame-2608222">
           <div class="current-bookings">Current bookings</div>
           <div class="frame-2608194">
             <div class="frame-2608183">
               <img class="frame-8075" src="frame-80750.png" />
               <div class="frame-2608182">
-                <div class="bike-model-1">Bike model 1</div>
+                <div class="bike-model-1">{{b.ProductName}}</div>
                 <div class="_20-oct-2023-11-00-am-6-nov-2023-10-59-am">
-                  20 Oct, 2023 | 11:00 am - 6 Nov, 2023 | 10:59 am
+                  {{b.BookingStartDate}} - {{b.BookingEndDate}}
                 </div>
-                <div class="_1-200">₹1,200</div>
+                <div class="_1-200">₹{{b.TotalAmount}}</div>
               </div>
               <div class="frame-8073">
                 <div class="view-details">View details</div>
@@ -23,7 +23,7 @@
             </div>
           </div>
         </div>
-        <div class="frame-2608223">
+        <!-- <div class="frame-2608223">
           <div class="previous-bookings">Previous bookings</div>
           <div class="frame-2608194">
             <div class="frame-2608183">
@@ -65,7 +65,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   

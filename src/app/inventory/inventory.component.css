@@ -121,6 +121,7 @@
   align-self: stretch;
   flex-shrink: 0;
   height: 100px;
+  padding: 2%;
 
 }
 .frame-8717 {
@@ -690,4 +691,8 @@
 }
 .inventory-table{
   width: 100%;
+}
+
+tr:nth-child(even) {
+  background: #F5F5F5;
 }

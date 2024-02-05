@@ -8,7 +8,7 @@ import { CustomerTrackComponent } from './customer-track/customer-track.componen
 const routes: Routes = [
   
   { path: '', component: CustomersComponent },
-  { path: 'details', component: CustomerDetailsComponent },
+  { path: 'details/:id', component: CustomerDetailsComponent },
   { path: 'allbookings', component: CustomerAllbookingsComponent },
   { path: 'track', component: CustomerTrackComponent },
 ];
