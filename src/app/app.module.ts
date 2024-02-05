@@ -37,6 +37,7 @@ import { HomeComponent } from './home/home.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { NaviComponent } from './navi/navi.component';
+import { LoginLayoutComponent } from './login-layout/login-layout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +51,7 @@ import { NaviComponent } from './navi/navi.component';
     AddthemeComponent,
     HomeComponent,
     NaviComponent,
+    LoginLayoutComponent,
    
   
     
