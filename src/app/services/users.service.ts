@@ -111,5 +111,10 @@ getComplainsList(){
 getorderByUserID(userid:number){
   return this.http.get(this.m_apiUrl+'orders/getorderbyUserid/'+userid)
 }
-
+getordersummeryByBookingNo(bookingNo:string){
+  let  bookingdata = {
+      "BookingNo": bookingNo
+    }
+    return this.http.post(this.m_apiUrl+`orders/getordersummeryByBookingNo`,bookingdata);
+  }
 }

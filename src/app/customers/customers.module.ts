@@ -12,6 +12,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../commonFiles/commonModules/material.module';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -26,7 +28,10 @@ import { MaterialModule } from '../commonFiles/commonModules/material.module';
     CommonModule,
     CustomersRoutingModule,
     ReactiveFormsModule,FormsModule,
-    MaterialModule
+    MaterialModule,
+    GoogleMapsModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
   ]
 })
 export class CustomersModule { }
