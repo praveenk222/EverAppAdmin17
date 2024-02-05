@@ -66,24 +66,24 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Card 1', cols: 4, rows: 1,color:'lightgreen' },
+          { title: 'Total vehicles', cols: 4, rows: 1,color:'lightgreen' },
           { title: 'Card 2', cols: 4, rows: 1,color:'lightblue' },
           { title: 'Card 3', cols: 4, rows: 4,color:'white' },
-          { title: 'Card 4', cols: 4, rows: 1,color:'lightred' },
+          { title: 'Card 4', cols: 4, rows: 1,color:'#F5B7B1' },
           { title: 'Card 3', cols: 4, rows: 1,color:'lightyellow' },
-          { title: 'Card 4', cols: 4, rows: 2,color:'lightgreen' },
-          { title: 'Card 4', cols: 4, rows: 1,color:'lightgreen' }
+          { title: 'Card 4', cols: 4, rows: 2,color:'white' },
+          { title: 'Card 4', cols: 4, rows: 1,color:'white' }
         ];
       }
 
       return [
-        { title: 'Card 1', cols: 1, rows: 1,color:'lightgreen' },
+        { title: 'Total vehicles', cols: 1, rows: 1,color:'lightgreen' },
         { title: 'Card 2', cols: 1, rows: 1,color:'lightblue' },
         { title: 'Card 3', cols: 2, rows: 2,color:'white' },
-        { title: 'Card 4', cols: 1, rows: 1,color:'lightred' },
+        { title: 'Card 4', cols: 1, rows: 1,color:'#F5B7B1' },
         { title: 'Card 3', cols: 1, rows: 1,color:'lightyellow' },
-        { title: 'Card 4', cols: 2.5, rows: 2,color:'lightgreen' },
-        { title: 'Card 4', cols: 1, rows: 2,color:'lightgreen' }
+        { title: 'Card 4', cols: 2.5, rows: 2,color:'white' },
+        { title: 'Card 4', cols: 1, rows: 2,color:'white' }
       ];
     })
   );

@@ -2388,3 +2388,7 @@
 .dashboard-card-content {
   text-align: center;
 }
+.example-spacer{
+flex: 1 0 0;
+}
+

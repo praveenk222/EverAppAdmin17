@@ -7,12 +7,21 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class UsersService {
+  visible:boolean;
 
 apiUrl=environment.apiurl;
 m_apiUrl=environment.m_apiurl;
   constructor(private http:HttpClient) 
-  { }
+  { 
 
+    this.visible=false;
+  }
+hide(){
+  this.visible=true;
+}
+show(){
+  this.visible=false;
+}
   async getUsers():  Promise<any> {
     return new Promise((resolve, reject) => {
       this.http.get(this.apiUrl+'customers').subscribe(
@@ -102,4 +111,5 @@ getComplainsList(){
 getorderByUserID(userid:number){
   return this.http.get(this.m_apiUrl+'orders/getorderbyUserid/'+userid)
 }
+
 }

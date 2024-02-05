@@ -674,3 +674,7 @@ width: 800px !important;
 ::ng-deep .tabs{
   width: 300px !important;
 }
+
+tr:nth-child(even) {
+  background: #F5F5F5;
+}

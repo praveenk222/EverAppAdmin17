@@ -41,4 +41,10 @@ export class CustomersComponent {
     const startIndex = pageEvent.pageIndex * pageEvent.pageSize;
     const endIndex = startIndex + pageEvent.pageSize;
   }
+  lists=[
+    {name:'Pending'},
+    {name:'Ongoing'},
+    {name:'completed'},
+   
+  ]
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-add-ticket',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrl: './add-ticket.component.css'
 })
 export class AddTicketComponent {
+  complainForm!:FormGroup;
+  constructor(private cf:FormBuilder){
+    this.complainForm=this.cf.group({
+      CustomerName:'',
+      CustomerID:'',
+      Title:'',
+      Description:''
 
+
+    })
+  }
+  submitComplainForm(){
+    const data=this.complainForm.value;
+    console.log(data)
+  }
 }

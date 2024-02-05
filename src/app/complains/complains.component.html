@@ -24,9 +24,9 @@
               
           
           </div>
-          <div class="frame-8073">
+          <button (click)=" openReport()" class="frame-8073">
             <div class="create-ticket">Create ticket</div>
-          </div>
+          </button>
         </div>
       </div>
       <div class="frame-2608323">
@@ -139,8 +139,8 @@
             </div>
             <div class="frame-2608319"></div>
           </div>
-          <div class="complains-table-head2">
-            <div class="column-12">
+          <div class="complains-table-head2" *ngFor="let data of complainsData">
+            <div class="column-12" >
               <svg
                 class="frame-8459"
                 width="24"
@@ -154,28 +154,28 @@
                   fill="#B5B5B5"
                 />
               </svg>
-              <div class="user-name2">Smith Joe</div>
+              <div class="user-name2">{{data.UserName}}</div>
             </div>
             <div class="column-2">
               <div class="user-id2">E0000001</div>
             </div>
             <div class="column-3">
               <div class="about2">
-                Lorem ipsum dolor sit amet, conse adipiscing elit
+                {{data.About}}
               </div>
             </div>
             <div class="column-4">
-              <div class="open-date3">12 Oct, 2023</div>
+              <div class="open-date3"> {{data.OpenDate}}</div>
             </div>
             <div class="column-8">
-              <div class="closed-date3">12 Oct, 2023</div>
+              <div class="closed-date3">{{data.ClosedDate}}</div>
             </div>
             <div class="column-5">
-              <div class="location2">Madhapur</div>
+              <div class="location2">{{data.Location}}</div>
             </div>
             <div class="column-6">
               <div class="status3">
-                <div class="completed">On going</div>
+                <div class="completed">{{data.Status}}</div>
               </div>
             </div>
             <div class="frame-2608319"></div>

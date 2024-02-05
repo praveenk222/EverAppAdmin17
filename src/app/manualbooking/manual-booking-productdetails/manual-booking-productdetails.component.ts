@@ -17,6 +17,7 @@ export class ManualBookingProductdetailsComponent {
 console.log(this.itemId)
     this.productservice.getProductDetailsbyId(this.itemId).subscribe((res:SampleModel) => {
       this.data = res;
+      
     })
   }
 }
