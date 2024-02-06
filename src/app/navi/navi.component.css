@@ -21,7 +21,7 @@
 
 .header-links .active {
   font-size: 20px;
-  padding: 50px 0px;
+  padding: 50px 0px !important;
   width: 160px !important;
   height: 100px !important;
   border-radius: 2px ;
@@ -48,4 +48,5 @@
 }
 .links{
   color: white;
+  padding: 5%;
 }

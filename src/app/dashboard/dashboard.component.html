@@ -630,8 +630,8 @@
     </div>
 </div>
 
-</div>
- -->
+</div> -->
+
  <div class="grid-container">
     <mat-toolbar style="background: none;"> 
         <h1 class="mat-h1">Dashboard</h1>
@@ -645,22 +645,43 @@
           <mat-card class="dashboard-card" [style.background]="card.color">
             <mat-card-header>
               <mat-card-title>
-                {{card.title}}
-                <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                <mat-icon class="more-button">{{card.icon}}</mat-icon>
+                <div class="frame-8717">
+                    <div
+                        class="streamline-money-graph-arrow-increase-ascend-growth-up-arrow-stats-graph-right-grow">
+                        <svg class="group2" width="16" height="9" viewBox="0 0 16 9" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.8571 0.5H15.4286V5.07143" stroke="#19744C" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M15.4286 0.5L8.97143 6.95714C8.86461 7.06184 8.721 7.12049 8.57143 7.12049C8.42185 7.12049 8.27824 7.06184 8.17143 6.95714L5.54286 4.32857C5.43604 4.22387 5.29243 4.16522 5.14286 4.16522C4.99328 4.16522 4.84967 4.22387 4.74286 4.32857L0.571426 8.5"
+                                stroke="#19744C" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="_20-9">20.9%</div>
+                </div>
+                <!-- <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
                   <mat-icon>more_vert</mat-icon>
                 </button>
                 <mat-menu #menu="matMenu" xPosition="before">
                   <button mat-menu-item>Expand</button>
                   <button mat-menu-item>Remove</button>
-                </mat-menu>
+                </mat-menu> -->
               </mat-card-title>
+             
+             
             </mat-card-header>
+          
             <mat-card-content class="dashboard-card-content">
-              <div>Card Content Here</div>
+                <div style="font-size: 24px;"> {{card.title}}</div> 
+              <div>{{card.content}}</div>
             </mat-card-content>
+    
           </mat-card>
         </mat-grid-tile>
       }
     </mat-grid-list>
   </div>
+
+
   

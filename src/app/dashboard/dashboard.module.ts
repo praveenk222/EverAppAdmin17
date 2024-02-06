@@ -8,6 +8,7 @@ import { MaterialModule } from '../commonFiles/commonModules/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { SharedPrimeNgModule } from '../commonFiles/commonModules/shared.Module';
+import { NgChartsModule } from "ng2-charts";
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SharedPrimeNgModule } from '../commonFiles/commonModules/shared.Module'
     CommonModule,
     DashboardRoutingModule,
     SharedPrimeNgModule,
-    MaterialModule
+    MaterialModule,
+    NgChartsModule
     
   ],
   providers:[DialogPopupService],

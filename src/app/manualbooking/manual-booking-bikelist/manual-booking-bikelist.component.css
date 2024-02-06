@@ -637,3 +637,10 @@
   position: relative;
   overflow: visible;
 }
+.card-parent{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
