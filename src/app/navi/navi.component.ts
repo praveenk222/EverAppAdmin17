@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
+import { NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navi',
@@ -9,10 +10,21 @@ import { map, shareReplay } from 'rxjs/operators';
   styleUrl: './navi.component.css'
 })
 export class NaviComponent {
+  showHead: boolean=false;
 
-  constructor(){
-    
-  }
+  constructor(private router: Router) {
+    // on route change to '/login', set the variable showHead to false
+      router.events.forEach((event) => {
+        if (event instanceof NavigationStart) {
+          if (event['url'] == '/') {
+            this.showHead = false;
+          } else {
+            // console.log("NU")
+            this.showHead = true;
+          }
+        }
+      });
+    }
   private breakpointObserver = inject(BreakpointObserver);
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
@@ -34,4 +46,7 @@ export class NaviComponent {
       {name:'Complains',icon:'markunread_mailbox',link:'/complains'},
     
     ]
+
+
+
 }
