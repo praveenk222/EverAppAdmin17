@@ -11,6 +11,7 @@ import { ManualBookingPaymentsComponent } from './manual-booking-payments/manual
 import { ManualBookingSummaryComponent } from './manual-booking-summary/manual-booking-summary.component';
 import { ManualBookingProductdetailsComponent } from './manual-booking-productdetails/manual-booking-productdetails.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from '../commonFiles/commonModules/material.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     ManualbookingRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MaterialModule
   ],
   providers: [
     DatePipe,

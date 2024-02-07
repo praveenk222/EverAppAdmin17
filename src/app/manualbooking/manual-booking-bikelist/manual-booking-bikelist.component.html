@@ -1,4 +1,4 @@
-<div class="frame-8725">
+<!-- <div class="frame-8725">
   <div class="frame-8724">
     <div class="frame-2608320">
       <div class="frame-2608332">
@@ -93,4 +93,24 @@
     </div>
   </div>
 </div>
+</div> -->
+
+<div class="card-parent" >
+  <mat-card class="example-card" *ngFor="let pl of productList" routerLink="../productdetails/{{pl?.ProductID}}">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{pl?.ProductName}}</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="pl?.ImageName" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        {{pl?.Size}}
+      </p>
+      <p>Efficiency {{pl.Color}}</p>
+      <p>{{pl.Quntity}}</p>
+    </mat-card-content>
+
+  </mat-card>
+  
 </div>

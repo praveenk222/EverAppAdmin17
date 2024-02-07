@@ -21,21 +21,25 @@
 
 .header-links .active {
   font-size: 20px;
-  padding: 50px 0px;
+  padding: 20px !important;
   width: 160px !important;
   height: 100px !important;
-  border-radius: 2px ;
+  border-radius: 10px !important;
   background: white !important;
-  color:black !important;
+  color:black ;
   text-align: start;
   text-decoration: none;
 
+}
+.header-links{
+  margin-left:10% ;
 }
 .example-spacer{
   flex: 1 0 0;
 }
 .nav-item{
-  padding: 10%;
+  padding: 6%;
+font-size: 20px;
   color: white;
 }
 .toolbar{
@@ -48,4 +52,11 @@
 }
 .links{
   color: white;
+
 }
+
+.icon .active{
+  color: blue !important;margin-bottom: 6x;
+}
+
+

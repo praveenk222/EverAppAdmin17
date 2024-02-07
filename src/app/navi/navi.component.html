@@ -46,13 +46,13 @@
       </defs>
     </svg></mat-toolbar>
     
-    <mat-nav-list>
-      <a mat-list-item [routerLink]="m.link"  *ngFor="let m of menu" class="nav-item" >
+    <mat-nav-list >
+      <a  [routerLink]="m.link"  *ngFor="let m of menu" class="nav-item" >
         <!-- <mat-icon>input</mat-icon> -->
     
         <div class="header-links">
           
-        <span class="links" routerLinkActive="active" ><mat-icon style="color: white;margin-bottom: -4px;">{{m.icon}}</mat-icon>{{m.name}}</span>
+        <span class="links" routerLinkActive="active" ><mat-icon  class="icon">{{m.icon}}</mat-icon>{{m.TabName}}</span>
       </div>
       </a>
     </mat-nav-list>
@@ -71,9 +71,10 @@
       <span>EverAdminPanel</span>
       <span class="example-spacer"></span>
      
-      <a href="#" mat-button>
+      <!-- <a href="#" mat-button>
         My Account
-      </a>
+      </a> -->
+      <app-profile></app-profile>
     </mat-toolbar>
     <router-outlet></router-outlet>
     <!-- Add Content Here -->
