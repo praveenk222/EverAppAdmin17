@@ -3,6 +3,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { NavigationStart, Router } from '@angular/router';
+import { UsersService } from '../services/users.service';
 
 @Component({
   selector: 'app-navi',
@@ -12,7 +13,7 @@ import { NavigationStart, Router } from '@angular/router';
 export class NaviComponent {
   showHead: boolean=false;
 
-  constructor(private router: Router) {
+  constructor(private router: Router,private us:UsersService) {
     // on route change to '/login', set the variable showHead to false
       router.events.forEach((event) => {
         if (event instanceof NavigationStart) {
@@ -24,6 +25,7 @@ export class NaviComponent {
           }
         }
       });
+      this.get()
     }
   private breakpointObserver = inject(BreakpointObserver);
 
@@ -47,6 +49,10 @@ export class NaviComponent {
     
     ]
 
-
+get(){
+  this.us.getnavlist().subscribe((res:any)=>{
+    console.log(res)
+  })
+}
 
 }
