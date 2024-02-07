@@ -39,7 +39,7 @@ export class NaviComponent {
       {name:'Revenue',icon:'attach_money',link:'/revenue'},
       {name:'Manual booking',icon:'work',link:'/manualbooking'},
       {name:'Inventory',icon:'invert_colors',link:'/inventory'},
-      {name:'Booking Rates & price management',icon:'insert_chart',link:'/bookingpricedata'},
+      {name:'price management',icon:'insert_chart',link:'/bookingpricedata'},
       {name:'Manage customers',icon:'supervised_user_circle',link:'/customers'},
       {name:'Promo codes',icon:'local_offer',link:'/promodata'},
       {name:'Push notifications',icon:'notification_important',link:'/pushnotification'},

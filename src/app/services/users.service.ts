@@ -117,4 +117,7 @@ getordersummeryByBookingNo(bookingNo:string){
     }
     return this.http.post(this.m_apiUrl+`orders/getordersummeryByBookingNo`,bookingdata);
   }
+  postcomplain(data:any):Observable<any>{
+    return this.http.post('http://localhost:8080/api/v1/adminweb/customers/adComplains',data)
+  }
 }

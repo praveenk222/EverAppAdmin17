@@ -12,20 +12,21 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 })
 export class ComplainsComponent {
   complainsData:any;
-  displayedColumns: string[] = ['Booking id', 'User name', 'Mobile no.', 'Booking Date', 'Station Location', 'Wash time','Fare','Status','Reviews & ratings'];
-  dataSource = new MatTableDataSource<any>();
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  displayedColumns: string[] = ['Customer id', 'Full name', 'Mobile no.', 'Email id', 'Registration date','ClosedDate', 'Status', ];
+  dataSource = new MatTableDataSource<any>([]);
   pageSizeOptions: number[] = [5, 10, 20];
   pageSize = 5; //
+  @ViewChild(MatPaginator) paginator: MatPaginator;
 constructor(private us:UsersService,private dialog:MatDialog){
 this.complains()
 }
 
  complains(){
-  this.us.getComplainsList().subscribe((res)=>{
+  this.us.getComplainsList().subscribe((res:any)=>{
    
-    this.complainsData = res;
-
+ 
+    this.dataSource = new MatTableDataSource<any>(res);
+          this.dataSource.paginator = this.paginator;
    console.log(res)
   })
  }
@@ -33,8 +34,8 @@ this.complains()
  openReport() {
   const dialogRef =
   this.dialog.open(AddTicketComponent,{
-    width:'560px',
-    height:'600px',
+    width:'540px',
+    height:'520px',
    
   })
   dialogRef.afterOpened().subscribe(_ => {
