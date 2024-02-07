@@ -2377,6 +2377,7 @@
   left: 15px;
   right: 15px;
   bottom: 15px;
+  border-radius: 24px;
 }
 
 .more-button {
@@ -2403,7 +2404,7 @@ flex: 1 0 0;
   flex-direction: row;
   gap: 8px;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-shrink: 0;
   position: relative;
 }

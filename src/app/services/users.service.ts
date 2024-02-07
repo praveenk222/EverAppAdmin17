@@ -123,4 +123,13 @@ getordersummeryByBookingNo(bookingNo:string){
   getnavlist(){
     return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getLeftnavbar')
   }
+  getNavById(){
+    return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getLeftNavbarByID/1000')
+  }
+  getusertabbyid(){
+
+  }
+  getdasboarddata(){
+    return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getDashboardData')
+  }
 }

@@ -643,9 +643,15 @@
       @for (card of cards | async; track card) {
         <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows" >
           <mat-card class="dashboard-card" [style.background]="card.color">
+           
             <mat-card-header>
-              <mat-card-title>
-                <mat-icon class="more-button">{{card.icon}}</mat-icon>
+           <div style="display: flex;align-items: flex-start;justify-content: flex-start;"> 
+            <mat-icon >{{card.icon}}</mat-icon>
+           </div>
+               
+             
+               
+                <span class="example-spacer"></span>
                 <div class="frame-8717">
                     <div
                         class="streamline-money-graph-arrow-increase-ascend-growth-up-arrow-stats-graph-right-grow">
@@ -659,6 +665,7 @@
                         </svg>
                     </div>
                     <div class="_20-9">20.9%</div>
+
                 </div>
                 <!-- <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
                   <mat-icon>more_vert</mat-icon>
@@ -667,7 +674,7 @@
                   <button mat-menu-item>Expand</button>
                   <button mat-menu-item>Remove</button>
                 </mat-menu> -->
-              </mat-card-title>
+             
              
              
             </mat-card-header>

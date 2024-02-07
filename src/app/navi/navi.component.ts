@@ -12,7 +12,8 @@ import { UsersService } from '../services/users.service';
 })
 export class NaviComponent {
   showHead: boolean=false;
-
+menu:any;
+menuById:any;
   constructor(private router: Router,private us:UsersService) {
     // on route change to '/login', set the variable showHead to false
       router.events.forEach((event) => {
@@ -34,23 +35,30 @@ export class NaviComponent {
       map(result => result.matches),
       shareReplay()
     );
-    menu=[
+    // menu=[
   
-      {name:'Dashboard',icon:'home',link:'/dashboard',},
-      {name:'Booking history',icon:'bookmark',link:'/bookinghistory'},
-      {name:'Revenue',icon:'attach_money',link:'/revenue'},
-      {name:'Manual booking',icon:'work',link:'/manualbooking'},
-      {name:'Inventory',icon:'invert_colors',link:'/inventory'},
-      {name:'price management',icon:'insert_chart',link:'/bookingpricedata'},
-      {name:'Manage customers',icon:'supervised_user_circle',link:'/customers'},
-      {name:'Promo codes',icon:'local_offer',link:'/promodata'},
-      {name:'Push notifications',icon:'notification_important',link:'/pushnotification'},
-      {name:'Complains',icon:'markunread_mailbox',link:'/complains'},
+      // {name:'Dashboard',icon:'home',link:'/dashboard',},
+      // {name:'Booking history',icon:'bookmark',link:'/bookinghistory'},
+      // {name:'Revenue',icon:'attach_money',link:'/revenue'},
+      // {name:'Manual booking',icon:'work',link:'/manualbooking'},
+      // {name:'Inventory',icon:'invert_colors',link:'/inventory'},
+      // {name:'price management',icon:'insert_chart',link:'/bookingpricedata'},
+      // {name:'Manage customers',icon:'supervised_user_circle',link:'/customers'},
+      // {name:'Promo codes',icon:'local_offer',link:'/promodata'},
+      // {name:'Push notifications',icon:'notification_important',link:'/pushnotification'},
+      // {name:'Complains',icon:'markunread_mailbox',link:'/complains'},
     
-    ]
+    // ]
 
 get(){
   this.us.getnavlist().subscribe((res:any)=>{
+    this.menu=res
+    console.log(res)
+  })
+}
+getnavbyId(){
+  this.us.getNavById().subscribe((res:any)=>{
+    this.menuById=res
     console.log(res)
   })
 }

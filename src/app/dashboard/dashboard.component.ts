@@ -8,6 +8,7 @@ import { DialogContentReportComponent } from '../commonFiles/sharedcomponents/di
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { map } from 'rxjs';
 import { Chart, ChartDataset, ChartOptions, Color } from 'chart.js';
+import { UsersService } from '../services/users.service';
 
 
 @Component({
@@ -16,12 +17,15 @@ import { Chart, ChartDataset, ChartOptions, Color } from 'chart.js';
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
+  dashboardData:any=[];
   // constructor(private dialogService: DialogPopupService) {
-  constructor(private dialog:MatDialog) {
+  constructor(private dialog:MatDialog,private us:UsersService) {
    // this.openDialog();
-   
+   this.getdasboarData()
   }
-
+ngOnInit(){
+  
+}
   openDialog() {
     const timeout = 2000;
     const dialogRef =
@@ -69,7 +73,7 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Total vehicles',content:'3,500', cols: 4, rows: 1,color:'lightgreen' ,icon:'card_travel'},
+          { title: 'Total vehicles',content:`${this.dashboardData[0]?.TotalProducts}`, cols: 4, rows: 1,color:'lightgreen' ,icon:'card_travel'},
           { title: 'Total bookings',content:'1,000', cols: 4, rows: 1,color:'lightblue',icon:'card_travel' },
           { title: '',content:'', cols: 4, rows: 4,color:'white',icon:'card_travel' ,chart:'barChartData',label:'barChartLabels'},
           { title: 'Available',content:'400', cols: 4, rows: 1,color:'#F5B7B1',icon:'card_travel' },
@@ -80,7 +84,7 @@ export class DashboardComponent {
       }
 
       return [
-        { title: 'Total vehicles',content:'3,500', cols: 1, rows: 1,color:'lightgreen' ,icon:'card_travel'},
+        { title: 'Total vehicles',content:this.dashboardData[0]?.TotalProducts, cols: 1, rows: 1,color:'lightgreen' ,icon:'card_travel'},
         { title: 'Total bookings',content:'1,000', cols: 1, rows: 1,color:'lightblue',icon:'card_travel' },
         { title: '',content:'', cols: 2, rows: 2,color:'white',icon:'card_travel',chart:'barChartData' ,label:'barChartLabels'},
         { title: 'Available',content:'400', cols: 1, rows: 1,color:'#F5B7B1',icon:'card_travel' },
@@ -109,6 +113,12 @@ export class DashboardComponent {
     { data: [65, 59, 80, 81, 56, 55, 40], label: "Series A" },
     { data: [28, 48, 40, 19, 86, 27, 90], label: "Series B" }
   ];
-
+getdasboarData(){
+  this.us.getdasboarddata().subscribe((res:any)=>{
+    console.log(res)
+    this.dashboardData=res;
+    console.log(this.dashboardData[0]?.TotalProducts)
+  })
+}
  
 }
