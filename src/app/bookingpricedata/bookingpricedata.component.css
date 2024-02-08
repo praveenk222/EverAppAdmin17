@@ -2,7 +2,5 @@
     flex: 1 0 0;
 }
 .add-btn{
-    width:120px;
-    height: 60px;
-    
+    width: 154px; height: 40px; background: #3355B9; border-radius: 24px; justify-content:center; align-items: center; gap: 10px; display: flex;text-align: center;border: none;
 }

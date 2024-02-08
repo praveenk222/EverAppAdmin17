@@ -3,6 +3,8 @@ import { UsersService } from '../services/users.service';
 import { PostResult } from '../models/PostResult';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { AddpricedataComponent } from '../addpricedata/addpricedata.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-bookingpricedata',
@@ -16,7 +18,7 @@ export class BookingpricedataComponent {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   pageSizeOptions: number[] = [5, 10, 20];
   pageSize = 5; //
-constructor(private us:UsersService){
+constructor(private us:UsersService,private dialog:MatDialog){
 
 }
 
@@ -43,5 +45,17 @@ this.us.getPridcedata()
 changePage(pageEvent: PageEvent) {
   const startIndex = pageEvent.pageIndex * pageEvent.pageSize;
   const endIndex = startIndex + pageEvent.pageSize;
+}
+
+
+openReport() {
+  const dialogRef =
+  this.dialog.open(AddpricedataComponent,{
+    width:'560px',
+    height:'600px',
+  
+  })
+
+
 }
 }

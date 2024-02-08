@@ -40,6 +40,7 @@ import { NaviComponent } from './navi/navi.component';
 import { LoginLayoutComponent } from './login-layout/login-layout.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { CardComponent } from './card/card.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +56,7 @@ import { CardComponent } from './card/card.component';
     NaviComponent,
     LoginLayoutComponent,
     CardComponent,
+  
    
   
     

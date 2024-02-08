@@ -6,11 +6,13 @@ import { BookingpricedataComponent } from './bookingpricedata.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatMenuModule } from '@angular/material/menu';
 import { MaterialModule } from '../commonFiles/commonModules/material.module';
+import { AddpricedataComponent } from '../addpricedata/addpricedata.component';
 
 
 @NgModule({
   declarations: [
-    BookingpricedataComponent
+    BookingpricedataComponent,
+    AddpricedataComponent
   ],
   imports: [
     CommonModule,

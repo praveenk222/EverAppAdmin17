@@ -1,0 +1,34 @@
+
+<!-- props: {"property1":{"type":"VARIANT","defaultValue":"'default'","variantOptions":["Default","Variant2"]}} -->
+<form action="" [formGroup]="priceForm">
+    <div class="add-promo-code">
+        <div class="frame-2608404">
+          <div class="add-promo-code2">Add Price</div>
+       
+            <a mat-icon-button (click)="this.dialogRef.close()">
+              <mat-icon>close</mat-icon>
+            </a>
+          
+        </div>
+        <div class="line-43"></div>
+        <div class="frame-2608353">
+          <div class="ob-forms-farmer-name">
+            <div class="farmer-name">Pay Type</div>
+            <input placeholder="NEWYEAR 2024" class="frame" formControlName="paytype">
+           
+          
+          </div>
+          <div class="ob-forms-farmer-name">
+            <div class="farmer-name">Payment</div>
+            <input placeholder="Write description here" class="frame2" formControlName="payment">
+            
+          </div>
+         
+       
+    
+          <button (disabled)="!promoForm.valid" (click)="addpircecard()" class="button-1">
+            <div class="name2">Add</div>
+          </button>
+        </div>
+      </div>
+    </form>
