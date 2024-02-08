@@ -22,6 +22,7 @@ hide(){
 show(){
   this.visible=false;
 }
+//duplicate 
   async getUsers():  Promise<any> {
     return new Promise((resolve, reject) => {
       this.http.get(this.apiUrl+'customers').subscribe(
@@ -131,5 +132,11 @@ getordersummeryByBookingNo(bookingNo:string){
   }
   getdasboarddata(){
     return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getDashboardData')
+  }
+  getadminUsers(){
+    return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getAdminUserList')
+  }
+  getadminUserdetails(userid:number){
+    return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getsecurityusers/'+userid)
   }
 }

@@ -105,35 +105,52 @@
         </div>
         <div class="frame-8720">
       
-            <mat-table #table [dataSource]="dataSource">
-          
-              <ng-container matColumnDef="mobile">
-                <mat-header-cell *matHeaderCellDef> Mobile No. </mat-header-cell>
-                <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
-              </ng-container>
-          
-              <!-- Name Column -->
-              <ng-container matColumnDef="empname">
-                <mat-header-cell *matHeaderCellDef>Emp Name </mat-header-cell>
-                <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
-              </ng-container>
-          
-              <!-- Weight Column -->
-              <ng-container matColumnDef="createdon">
-                <mat-header-cell *matHeaderCellDef> Created On </mat-header-cell>
-                <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
-              </ng-container>
-          
-              <!-- Symbol Column -->
-              <ng-container matColumnDef="isactive">
-                <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
-                <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
-              </ng-container>
-          
-              <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-              <mat-row (click)="test()" *matRowDef="let row; columns: displayedColumns;"></mat-row>
-            </mat-table>
+          <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" class="inventory-table"
+          style="width: 100%;">
+      
+         
+          <ng-container matColumnDef="Customer id">
+            <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef>SL No. </th>
+            <td mat-cell *matCellDef="let element"> 1 </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="Full name">
+            <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef>Full Name
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.UserName}} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="Mobile no.">
+            <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Mobile Number
+              </th>
+            <td mat-cell *matCellDef="let element"> {{element.MobileNumber}}  
+            <a routerLink=""></a>
+            </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="Email id">
+            <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Email ID
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.Email }} </td>
+          </ng-container>
+        
+          <ng-container matColumnDef="Status">
+            <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Created On
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.CreatedOn | date}} </td>
+          </ng-container>
+       
+      
+          <tr [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-row
+            *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row routerLink="../details/{{row.UserID}}" *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+        showFirstLastButtons
+        aria-label="Select page of periodic elements">
+      </mat-paginator>
           </div>
+          <!-- <mat-row (click)="test()" *matRowDef="let row; columns: displayedColumns;"></mat-row> -->
         </div>
       </div>
      

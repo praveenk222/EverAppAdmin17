@@ -7,7 +7,7 @@ import { AdminuserdetailsComponent } from './adminuserdetails/adminuserdetails.c
 const routes: Routes = [
   { path: '', component: SettingsComponent },
   { path: 'users', component: UserpermissionsComponent },
-  { path: 'details', component: AdminuserdetailsComponent },
+  { path: 'details/:id', component: AdminuserdetailsComponent },
 ];
 
 @NgModule({
