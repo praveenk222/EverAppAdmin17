@@ -21,7 +21,7 @@
 
 .header-links .active {
   font-size: 20px;
-  padding: 20px !important;
+  padding: 5px !important;
   width: 160px !important;
   height: 100px !important;
   border-radius: 10px !important;
@@ -38,8 +38,8 @@
   flex: 1 0 0;
 }
 .nav-item{
-  padding: 6%;
-font-size: 20px;
+  padding: 3%;
+font-size: 18px;
   color: white;
 }
 .toolbar{
@@ -54,7 +54,11 @@ font-size: 20px;
   color: white;
 
 }
+.icon{
 
+  margin-bottom: -4px;
+
+}
 .icon .active{
   color: blue !important;margin-bottom: 6x;
 }

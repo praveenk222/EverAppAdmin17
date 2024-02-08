@@ -99,23 +99,17 @@
 }
 .frame-2608321 {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-self: stretch;
-  flex-shrink: 0;
-  width: 100%;
-  height: 100px;
-  position: relative;
+  flex-flow: wrap row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+ row-gap: 20px;
 }
 .frame-8717 {
   background: #92e3a9;
   border-radius: 16px;
   padding: 16px;
-  display: flex;
-  flex-direction: row;
+
   gap: 12px;
   align-items: flex-start;
   justify-content: flex-start;
