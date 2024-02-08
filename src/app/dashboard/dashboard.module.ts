@@ -19,14 +19,16 @@ import { PiechartComponent } from './piechart/piechart.component';
     DashboardComponent,
     LinechartComponent,
     BarchartComponent,
-    PiechartComponent
+    PiechartComponent,
+    
   ],
   imports: [
     CommonModule,
     DashboardRoutingModule,
     SharedPrimeNgModule,
     MaterialModule,
-    NgChartsModule
+    NgChartsModule,
+
     
   ],
   providers:[DialogPopupService],

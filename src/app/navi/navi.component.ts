@@ -1,4 +1,4 @@
-import { Component, HostBinding, inject } from '@angular/core';
+import { Component, HostBinding, OnInit, inject } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
@@ -7,12 +7,13 @@ import { UsersService } from '../services/users.service';
 import { FormControl } from '@angular/forms';
 import { OverlayContainer } from '@angular/cdk/overlay';
 
+
 @Component({
   selector: 'app-navi',
   templateUrl: './navi.component.html',
   styleUrl: './navi.component.css'
 })
-export class NaviComponent {
+export class NaviComponent implements OnInit {
   showHead: boolean=false;
 menu:any;
 menuById:any;

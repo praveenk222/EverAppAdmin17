@@ -4,7 +4,9 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
       
-    <mat-toolbar class="side-nav-toolbar" > <svg
+    <mat-toolbar class="side-nav-toolbar" >
+  
+      <svg
       class="logomark"
       width="115"
       height="37"
@@ -12,6 +14,7 @@
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
+    
    <path
         fill-rule="evenodd"
         clip-rule="evenodd"
@@ -70,7 +73,7 @@
       }
       <span>EverAdminPanel</span>
       <span class="example-spacer"></span>
-  <mat-slide-toggle labelPosition="before" [formControl]="toggleControl"></mat-slide-toggle> 
+
       <!-- <a href="#" mat-button>
         My Account
       </a> -->

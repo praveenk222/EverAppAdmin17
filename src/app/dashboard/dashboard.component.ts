@@ -77,24 +77,24 @@ ngOnInit(){
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Total vehicles',content:this.TotalVehicles, cols: 4, rows: 1,color:'lightgreen' ,icon:'card_travel'},
-          { title: 'Total bookings',content:this.TotalBookings, cols: 4, rows: 1,color:'lightblue',icon:'card_travel' },
-          { title: '',content:'', cols: 4, rows: 4,color:'white',icon:'card_travel' ,chart:'barChartData',label:'barChartLabels'},
-          { title: 'Available',content:this.TotalAvilable, cols: 4, rows: 1,color:'#F5B7B1',icon:'card_travel' },
-          { title: 'Total revenue',content:this.TotalAMount, cols: 4, rows: 1,color:'lightyellow',icon:'card_travel' },
-          { title: '' ,content:'', cols: 4, rows: 2,color:'white',icon:'card_travel' },
-          { title: '',content:'', cols: 4, rows: 1,color:'white' ,icon:'card_travel'}
+          { title: 'Total vehicles',content:this.TotalVehicles, cols: 4, rows: 1,color:'lightgreen' ,icon:'card_travel',visible:'none',linevisible:'none',barvisible:'none'},
+          { title: 'Total bookings',content:this.TotalBookings, cols: 4, rows: 1,color:'lightblue',icon:'card_travel',visible:'none',linevisible:'none',barvisible:'none' },
+          { title: '',content:'', cols: 4, rows: 4,color:'white',icon:'' ,label:'barChartLabels',visible:'block',linevisible:'none',barvisible:'none'},
+          { title: 'Available',content:this.TotalAvilable, cols: 4, rows: 1,color:'#F5B7B1',icon:'card_travel' ,visible:'none',linevisible:'none',barvisible:'none'},
+          { title: 'Total revenue',content:this.TotalAMount, cols: 4, rows: 1,color:'lightyellow',icon:'card_travel',visible:'none',linevisible:'none',barvisible:'none' },
+          { title: '' ,content:'', cols: 2, rows: 2,color:'white',icon:'card_travel',bar:'barchart_material',visible:'none',linevisible:'block' },
+          { title: '',content:'', cols: 2, rows: 2,color:'white' ,icon:'card_travel',visible:'none',linevisible:'none',barvisible:'block'}
         ];
       }
 
       return [
-        { title: 'Total vehicles',content:this.TotalVehicles, cols: 1, rows: 1,color:'lightgreen' ,icon:'card_travel'},
-        { title: 'Total bookings',content:this.TotalBookings, cols: 1, rows: 1,color:'lightblue',icon:'card_travel' },
-        { title: '',content:'', cols: 2, rows: 2,color:'white',icon:'card_travel',chart:'barChartData' ,label:'barChartLabels'},
-        { title: 'Available',content:this.TotalAvilable, cols: 1, rows: 1,color:'#F5B7B1',icon:'card_travel' },
-        { title: 'Total revenue',content:this.TotalAMount, cols: 1, rows: 1,color:'lightyellow',icon:'card_travel' },
-        { title: '',content:'', cols: 2.5, rows: 2,color:'white',icon:'card_travel' },
-        { title: '',content:'', cols: 1, rows: 2,color:'white',icon:'card_travel' }
+        { title: 'Total vehicles',content:this.TotalVehicles, cols: 1, rows: 1,color:'lightgreen' ,icon:'card_travel',visible:'none',linevisible:'none',barvisible:'none'},
+        { title: 'Total bookings',content:this.TotalBookings, cols: 1, rows: 1,color:'lightblue',icon:'card_travel' ,visible:'none',linevisible:'none',barvisible:'none'},
+        { title: '',content:'', cols: 2, rows: 2,color:'white',icon:'' ,label:'barChartLabels',visible:'block',linevisible:'none',barvisible:'none'},
+        { title: 'Available',content:this.TotalAvilable, cols: 1, rows: 1,color:'#F5B7B1',icon:'card_travel' ,visible:'none',linevisible:'none',barvisible:'none'},
+        { title: 'Total revenue',content:this.TotalAMount, cols: 1, rows: 1,color:'lightyellow',icon:'card_travel',visible:'none',linevisible:'none',barvisible:'none' },
+        { title: '',content:'', cols: 2, rows: 2,color:'white',icon:'card_travel' ,bar:'barchart_material',visible:'none',linevisible:'block',barvisible:'none' },
+        { title: '',content:'', cols: 2, rows: 2,color:'white',icon:'card_travel' ,visible:'none',linevisible:'none',barvisible:'block'}
       ];
     })
   );
@@ -132,5 +132,24 @@ getdasboarData(){
     }
   })
 }
- 
+lineChartData={
+  labels:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+  datasets:[
+    {
+      data:[0,80,70,60,50],
+      label:'Sales Precent',
+      fill:false,
+      tension:0.1,
+      borderColor:'red',
+      backgroundColor:'red',
+    },
+    {
+      data:[0,60,40,30,10],
+      label:'Sales',
+      fill:false,
+      tension:0.1,
+      borderColor:'blue',
+    },
+  ]
+}
 }

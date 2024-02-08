@@ -675,7 +675,7 @@
                   <button mat-menu-item>Remove</button>
                 </mat-menu> -->
              
-             
+              
              
             </mat-card-header>
           
@@ -683,11 +683,22 @@
                 <div style="font-size: 24px;"> {{card.title}}</div> 
               <div>{{card.content}}</div>
             </mat-card-content>
-    
+            <div style="display:{{card.visible}}">
+            <app-linechart></app-linechart>
+        </div>
+        <div style="display:{{card.linevisible}}">
+        <app-barchart></app-barchart>
+        </div>
+        <div style="display:{{card.barvisible}}">
+          <app-piechart></app-piechart>
+            </div>
           </mat-card>
         </mat-grid-tile>
       }
     </mat-grid-list>
+ 
+      
+ 
   </div>
 
 

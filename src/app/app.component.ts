@@ -1,5 +1,7 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Component } from '@angular/core';
+import { OverlayContainer } from '@angular/cdk/overlay';
+import { Component, HostBinding } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
@@ -12,7 +14,7 @@ export class AppComponent {
   private sidenav: MatSidenav;
 
   public isMenuOpen = true;
-constructor(private breakpointObserver: BreakpointObserver,){
+constructor(private breakpointObserver: BreakpointObserver,private overlay:OverlayContainer){
   this.isMenuOpen = false;
 }
   get isHandset(): boolean {
@@ -25,5 +27,22 @@ constructor(private breakpointObserver: BreakpointObserver,){
       this.isMenuOpen = true;
     }      
 }
-  
+ngOnInit() {
+  this.toggleControl.valueChanges.subscribe(
+    (darkMode:any)=>{
+      this.className= darkMode ? this.darkClassName : this.lightClassName;
+      if(darkMode){
+        this.overlay.getContainerElement().classList.add(this.darkClassName);
+
+      }else{
+        this.overlay.getContainerElement().classList.remove(this.darkClassName);
+      }
+
+    }
+  )
+}
+toggleControl = new FormControl(false);
+@HostBinding('class')  className = '';
+darkClassName = 'theme-dark';
+lightClassName = 'theme-light';
 }
