@@ -38,6 +38,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { NaviComponent } from './navi/navi.component';
 import { LoginLayoutComponent } from './login-layout/login-layout.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,7 +76,8 @@ import { LoginLayoutComponent } from './login-layout/login-layout.component';
     ReactiveFormsModule,
     MatMenuModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatSlideToggleModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [

@@ -73,7 +73,7 @@ ngOnInit(){
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Total vehicles',content:`${this.dashboardData[0]?.TotalProducts}`, cols: 4, rows: 1,color:'lightgreen' ,icon:'card_travel'},
+          { title: 'Total vehicles',content:`${this.dashboardData[0]?.TotalProducts.toString()}`, cols: 4, rows: 1,color:'lightgreen' ,icon:'card_travel'},
           { title: 'Total bookings',content:'1,000', cols: 4, rows: 1,color:'lightblue',icon:'card_travel' },
           { title: '',content:'', cols: 4, rows: 4,color:'white',icon:'card_travel' ,chart:'barChartData',label:'barChartLabels'},
           { title: 'Available',content:'400', cols: 4, rows: 1,color:'#F5B7B1',icon:'card_travel' },
