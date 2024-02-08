@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../../services/product.service';
 import { PostResult } from '../../models/PostResult';
+import { environment } from '../../../environments/environment.prod';
 
 @Component({
   selector: 'app-manual-booking-bikelist',
@@ -10,6 +11,7 @@ import { PostResult } from '../../models/PostResult';
 export class ManualBookingBikelistComponent {
   productList: any;
   producttype: number = 3502;
+  azimageUrl: any = environment.azimageUrl_hub;
   constructor(private productservice: ProductService) {
     this.productservice.getProducts(this.producttype).then((result: PostResult) => {
       console.log(result)

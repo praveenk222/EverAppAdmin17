@@ -643,4 +643,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.example-card{
+  width:300px;
+  height: 300px;
 }
