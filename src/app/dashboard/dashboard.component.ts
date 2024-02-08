@@ -18,6 +18,10 @@ import { UsersService } from '../services/users.service';
 })
 export class DashboardComponent {
   dashboardData:any=[];
+  TotalVehicles: any=0;
+  TotalAMount: any=0;
+  TotalBookings: any=0;
+  TotalAvilable: any=0;
   // constructor(private dialogService: DialogPopupService) {
   constructor(private dialog:MatDialog,private us:UsersService) {
    // this.openDialog();
@@ -73,22 +77,22 @@ ngOnInit(){
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Total vehicles',content:`${this.dashboardData[0]?.TotalProducts.toString()}`, cols: 4, rows: 1,color:'lightgreen' ,icon:'card_travel'},
-          { title: 'Total bookings',content:'1,000', cols: 4, rows: 1,color:'lightblue',icon:'card_travel' },
+          { title: 'Total vehicles',content:this.TotalVehicles, cols: 4, rows: 1,color:'lightgreen' ,icon:'card_travel'},
+          { title: 'Total bookings',content:this.TotalBookings, cols: 4, rows: 1,color:'lightblue',icon:'card_travel' },
           { title: '',content:'', cols: 4, rows: 4,color:'white',icon:'card_travel' ,chart:'barChartData',label:'barChartLabels'},
-          { title: 'Available',content:'400', cols: 4, rows: 1,color:'#F5B7B1',icon:'card_travel' },
-          { title: 'Total revenue',content:'₹76,100', cols: 4, rows: 1,color:'lightyellow',icon:'card_travel' },
+          { title: 'Available',content:this.TotalAvilable, cols: 4, rows: 1,color:'#F5B7B1',icon:'card_travel' },
+          { title: 'Total revenue',content:this.TotalAMount, cols: 4, rows: 1,color:'lightyellow',icon:'card_travel' },
           { title: '' ,content:'', cols: 4, rows: 2,color:'white',icon:'card_travel' },
           { title: '',content:'', cols: 4, rows: 1,color:'white' ,icon:'card_travel'}
         ];
       }
 
       return [
-        { title: 'Total vehicles',content:this.dashboardData[0]?.TotalProducts, cols: 1, rows: 1,color:'lightgreen' ,icon:'card_travel'},
-        { title: 'Total bookings',content:'1,000', cols: 1, rows: 1,color:'lightblue',icon:'card_travel' },
+        { title: 'Total vehicles',content:this.TotalVehicles, cols: 1, rows: 1,color:'lightgreen' ,icon:'card_travel'},
+        { title: 'Total bookings',content:this.TotalBookings, cols: 1, rows: 1,color:'lightblue',icon:'card_travel' },
         { title: '',content:'', cols: 2, rows: 2,color:'white',icon:'card_travel',chart:'barChartData' ,label:'barChartLabels'},
-        { title: 'Available',content:'400', cols: 1, rows: 1,color:'#F5B7B1',icon:'card_travel' },
-        { title: 'Total revenue',content:'₹76,100', cols: 1, rows: 1,color:'lightyellow',icon:'card_travel' },
+        { title: 'Available',content:this.TotalAvilable, cols: 1, rows: 1,color:'#F5B7B1',icon:'card_travel' },
+        { title: 'Total revenue',content:this.TotalAMount, cols: 1, rows: 1,color:'lightyellow',icon:'card_travel' },
         { title: '',content:'', cols: 2.5, rows: 2,color:'white',icon:'card_travel' },
         { title: '',content:'', cols: 1, rows: 2,color:'white',icon:'card_travel' }
       ];
@@ -116,8 +120,16 @@ ngOnInit(){
 getdasboarData(){
   this.us.getdasboarddata().subscribe((res:any)=>{
     console.log(res)
-    this.dashboardData=res;
-    console.log(this.dashboardData[0]?.TotalProducts)
+    if(res){
+
+      this.dashboardData=res;
+      this.TotalVehicles=this.dashboardData[0].TotalProducts;
+      this.TotalAMount=this.dashboardData[0].TotalBookingAmount;
+      this.TotalAvilable=this.dashboardData[0].TotalAvilable;
+      this.TotalBookings=this.dashboardData[0].CanceledBookings;
+      console.log(this.cards)
+      this.cards
+    }
   })
 }
  
