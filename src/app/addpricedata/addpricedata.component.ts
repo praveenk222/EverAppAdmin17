@@ -10,16 +10,16 @@ import { UsersService } from '../services/users.service';
 })
 export class AddpricedataComponent {
 priceForm:FormGroup;
-data:any;
+postdata:any;
 constructor(private pf:FormBuilder,private us:UsersService){
   this.priceForm=this.pf.group({
     paytype:'',
     payment:''
   })
 }
-addpriceCard(){
+addpricecard(){
   const date=this.priceForm.value;
-  this.us.postpricedata(this.data).subscribe((res:any)=>{
+  this.us.saveUserdata(this.postdata).subscribe((res:any)=>{
     console.log(res)
   })
 }

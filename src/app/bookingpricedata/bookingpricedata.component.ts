@@ -55,7 +55,9 @@ openReport() {
     height:'600px',
   
   })
-
+  dialogRef.afterOpened().subscribe(_ => {
+      
+  })
 
 }
 }
