@@ -141,8 +141,7 @@ getordersummeryByBookingNo(bookingNo:string){
   }
   saveUserdata(postdata:any){
     return this.http.post('http://localhost:8080/api/v1/adminweb/customers/savePriceData',postdata)
-  }
- 
+  } 
   async getPridcedata():  Promise<any> {    
 
     return new Promise((resolve, reject) => {
