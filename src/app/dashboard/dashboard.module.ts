@@ -9,11 +9,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { SharedPrimeNgModule } from '../commonFiles/commonModules/shared.Module';
 import { NgChartsModule } from "ng2-charts";
+import { LinechartComponent } from './linechart/linechart.component';
+import { BarchartComponent } from './barchart/barchart.component';
+import { PiechartComponent } from './piechart/piechart.component';
 
 
 @NgModule({
   declarations: [
-    DashboardComponent
+    DashboardComponent,
+    LinechartComponent,
+    BarchartComponent,
+    PiechartComponent
   ],
   imports: [
     CommonModule,
