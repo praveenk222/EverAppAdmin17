@@ -11,7 +11,7 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 })
 export class BookingpricedataComponent {
   orderdata:any;
-  displayedColumns: string[] = ['Booking id', 'User name', 'Mobile no.', 'Booking Date', 'Station Location', 'Wash time','Fare','Status','Reviews & ratings'];
+  displayedColumns: string[] = ['Booking id', 'User name',  'Fare','Status'];
   dataSource = new MatTableDataSource<any>();
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   pageSizeOptions: number[] = [5, 10, 20];
@@ -26,7 +26,7 @@ ngOnInit() {
 }
 async getOrders(id:number){
 
-this.us.getOrders(id)
+this.us.getPridcedata()
     .then((result:PostResult) => {
       if (result.status) {
         console.log(result.message)

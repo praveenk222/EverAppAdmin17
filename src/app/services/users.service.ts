@@ -139,4 +139,21 @@ getordersummeryByBookingNo(bookingNo:string){
   getadminUserdetails(userid:number){
     return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getsecurityusers/'+userid)
   }
+  saveUserdata(postdata:any){
+    return this.http.post('http://localhost:8080/api/v1/adminweb/customers/savePriceData',postdata)
+  }
+ 
+  async getPridcedata():  Promise<any> {    
+
+    return new Promise((resolve, reject) => {
+      this.http.get(this.apiUrl+'customers/getPriceList').subscribe(
+        (data) => {
+          resolve(data);
+        },
+        (error) => {
+          reject(error);
+        }
+      );
+    });
+  }
 }
