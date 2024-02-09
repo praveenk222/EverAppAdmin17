@@ -15,6 +15,7 @@ import { MaterialModule } from '../commonFiles/commonModules/material.module';
 import { TimeDifferencePipe } from '../services/time-difference.pipe';
 import { SharedModule } from '../services/shared.module';
 import { ManualBatteryListComponent } from './manual-battery-list/manual-battery-list.component';
+import { ManualWashstationComponent } from './manual-washstation/manual-washstation.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import { ManualBatteryListComponent } from './manual-battery-list/manual-battery
     ManualBookingSummaryComponent,
     ManualBookingProductdetailsComponent,
     ManualBatteryListComponent,
-    ManualBatteryListComponent
+    ManualBatteryListComponent,
+    ManualWashstationComponent,
+    ManualWashstationComponent
   ],
   imports: [
     CommonModule,

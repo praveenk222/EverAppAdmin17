@@ -1908,3 +1908,7 @@ input:focus ~ .highlight {
   position: relative;
   width:100%;
 }
+.models .bike-model{
+  font-size: 24px;
+  font-weight:bolder;
+}
