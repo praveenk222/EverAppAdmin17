@@ -40,6 +40,9 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+    font-size: 30px;
+    font-weight: 500;
+
 }
 .ic-round-arrow-back {
   flex-shrink: 0;
