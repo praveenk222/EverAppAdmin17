@@ -6,7 +6,7 @@ import { ChartsComponent } from './charts.component';
 import { NgChartsModule } from 'ng2-charts';
 import { PiechartComponent } from './piechart/piechart.component';
 import { LinechartComponent } from './linechart/linechart.component';
-import { DoughnutchartComponent } from './doughnutchart/doughnutchart.component';
+
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import { DoughnutchartComponent } from './doughnutchart/doughnutchart.component'
     ChartsComponent,
     PiechartComponent,
     LinechartComponent,
-    DoughnutchartComponent
+ 
   ],
   imports: [
     CommonModule,

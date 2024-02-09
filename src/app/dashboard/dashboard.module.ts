@@ -12,6 +12,7 @@ import { NgChartsModule } from "ng2-charts";
 import { LinechartComponent } from './linechart/linechart.component';
 import { BarchartComponent } from './barchart/barchart.component';
 import { PiechartComponent } from './piechart/piechart.component';
+import { DoughnutchartComponent } from '../charts/doughnutchart/doughnutchart.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { PiechartComponent } from './piechart/piechart.component';
     LinechartComponent,
     BarchartComponent,
     PiechartComponent,
+    DoughnutchartComponent
     
   ],
   imports: [
