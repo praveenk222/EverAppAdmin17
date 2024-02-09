@@ -21,7 +21,7 @@
                 stroke-linejoin="round"
               />
             </svg>
-            <input type="search" placeholder="Search by customer id, location, user name" class="search-by-customer-id-location-user-name">
+            <input type="search" #input (keyup)="applyFilter($event)" placeholder="Search by Customer name,status" class="search-by-customer-id-location-user-name">
               
           
           </div>
@@ -51,23 +51,8 @@
                 />
               </svg>
             </div>
-            <!-- <div class="text-holder">
-              <div class="open-date">Open date</div>
-              <svg
-                class="uis-calender"
-                width="17"
-                height="17"
-                viewBox="0 0 17 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.13332 13.1673C2.13332 14.3007 2.99999 15.1673 4.13332 15.1673H13.4667C14.6 15.1673 15.4667 14.3007 15.4667 13.1673V7.83398H2.13332V13.1673ZM13.4667 3.16732H12.1333V2.50065C12.1333 2.10065 11.8667 1.83398 11.4667 1.83398C11.0667 1.83398 10.8 2.10065 10.8 2.50065V3.16732H6.79999V2.50065C6.79999 2.10065 6.53332 1.83398 6.13332 1.83398C5.73332 1.83398 5.46665 2.10065 5.46665 2.50065V3.16732H4.13332C2.99999 3.16732 2.13332 4.03398 2.13332 5.16732V6.50065H15.4667V5.16732C15.4667 4.03398 14.6 3.16732 13.4667 3.16732Z"
-                  fill="#3355B9"
-                />
-              </svg>
-            </div> -->
-            <input matInput [matDatepicker]="picker" class="text-holder" placeholder="Open date"   formControlName="fromDate">
+       
+            <input matInput [matDatepicker]="picker" class="text-holder" placeholder="Open date">
               <mat-datepicker-toggle matIconSuffix [for]="picker" style="margin-left: -60px;color: blue;" ></mat-datepicker-toggle>
               <mat-datepicker #picker></mat-datepicker>
 
@@ -109,7 +94,7 @@
          
           <ng-container matColumnDef="Customer id">
             <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef>SL No. </th>
-            <td mat-cell *matCellDef="let element"> 1 </td>
+            <td mat-cell *matCellDef="let element;let i=index;"> {{i+1}} </td>
           </ng-container>
       
           <ng-container matColumnDef="Full name">
@@ -149,7 +134,10 @@
           <ng-container matColumnDef="Status">
             <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Status
             </th>
-            <td mat-cell *matCellDef="let element"> {{element.Status}} </td>
+            <td mat-cell *matCellDef="let element">
+              <span class="badge badge-pill badge-primary" *ngIf="element.Status">Active</span> 
+              <span class="badge badge-pill badge-danger" *ngIf="!element.Status">InActive</span> 
+            </td>
           </ng-container>
       
           <tr [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-row
