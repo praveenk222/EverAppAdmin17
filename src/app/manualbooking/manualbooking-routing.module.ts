@@ -6,6 +6,7 @@ import { ManualBookingProductdetailsComponent } from './manual-booking-productde
 import { ManualBookingUsersdetailsComponent } from './manual-booking-usersdetails/manual-booking-usersdetails.component';
 import { ManualBookingPaymentsComponent } from './manual-booking-payments/manual-booking-payments.component';
 import { ManualBookingSummaryComponent } from './manual-booking-summary/manual-booking-summary.component';
+import { ManualBatteryListComponent } from './manual-battery-list/manual-battery-list.component';
 
 const routes: Routes = [
   { path: '', component: ManualbookingComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'userdetails', component: ManualBookingUsersdetailsComponent },
   { path: 'paymentdetails', component: ManualBookingPaymentsComponent },
   { path: 'bookingsummary', component: ManualBookingSummaryComponent },
+  {path:'battery-list',component:ManualBatteryListComponent}
 ];
 
 @NgModule({

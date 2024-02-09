@@ -13,6 +13,8 @@ import { ManualBookingProductdetailsComponent } from './manual-booking-productde
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../commonFiles/commonModules/material.module';
 import { TimeDifferencePipe } from '../services/time-difference.pipe';
+import { SharedModule } from '../services/shared.module';
+import { ManualBatteryListComponent } from './manual-battery-list/manual-battery-list.component';
 
 @NgModule({
   declarations: [
@@ -23,18 +25,21 @@ import { TimeDifferencePipe } from '../services/time-difference.pipe';
     ManualBookingUsersdetailsComponent,
     ManualBookingPaymentsComponent,
     ManualBookingSummaryComponent,
-    ManualBookingProductdetailsComponent
+    ManualBookingProductdetailsComponent,
+    ManualBatteryListComponent,
+    ManualBatteryListComponent
   ],
   imports: [
     CommonModule,
     ManualbookingRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    MaterialModule
+    MaterialModule,
+    SharedModule
   ],
   providers: [
     DatePipe,
-    TimeDifferencePipe
+ 
     ],
 })
 export class ManualbookingModule { }
