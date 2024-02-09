@@ -161,35 +161,35 @@
                 <!-- Name Column -->
                 <ng-container matColumnDef="hubname">
                   <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef>Hub Name </th>
-                  <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                  <td mat-cell *matCellDef="let element"> {{element?.BranchName}} </td>
                 </ng-container>
               
                 <!-- Weight Column -->
                 <ng-container matColumnDef="registrationno">
                   <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Registration no. </th>
-                  <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+                  <td mat-cell *matCellDef="let element"> {{element.RegistrationNo}} </td>
                 </ng-container>
               
                 <!-- Symbol Column -->
                 <ng-container matColumnDef="hubcode">
                   <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Hub Code </th>
-                  <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                  <td mat-cell *matCellDef="let element"> {{element.BranchCode}} </td>
                 </ng-container>
                 <ng-container matColumnDef="opnetime">
                   <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Open Time </th>
-                  <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                  <td mat-cell *matCellDef="let element"> {{element.OpenTime}} </td>
                 </ng-container>
                 <ng-container matColumnDef="closetime">
                   <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Close Time </th>
-                  <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                  <td mat-cell *matCellDef="let element"> {{element.CloseTime}} </td>
                 </ng-container>
                 <ng-container matColumnDef="location">
                   <th mat-header-cell *matHeaderCellDef> Location </th>
-                  <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                  <td mat-cell *matCellDef="let element"> {{element.Location}} </td>
                 </ng-container>
                 <ng-container matColumnDef="status">
                   <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Status </th>
-                  <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+                  <td mat-cell *matCellDef="let element"> {{element.IsActive}} </td>
                 </ng-container>
               
                 <tr [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-row *matHeaderRowDef="displayedColumns"></tr>
