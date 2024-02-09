@@ -4,6 +4,7 @@ import { AddTicketComponent } from './add-ticket/add-ticket.component';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { SharedsameApiDataService } from '../services/sharedsame-api-data.service';
 
 @Component({
   selector: 'app-complains',
@@ -17,10 +18,19 @@ export class ComplainsComponent {
   pageSizeOptions: number[] = [5, 10, 20];
   pageSize = 5; //
   @ViewChild(MatPaginator) paginator: MatPaginator;
-constructor(private us:UsersService,private dialog:MatDialog){
-this.complains()
+  response: any;
+constructor(private us:UsersService,private dialog:MatDialog,private shareds:SharedsameApiDataService){
+this.complains();
+this.response=this.shareds.getHubList()
+this.getHubList();
+this.getHubList();
 }
+getHubList(){
+  this.response.subscribe((res:any)=>{
+    console.log(res)
+  })
 
+}
  complains(){
   this.us.getComplainsList().subscribe((res:any)=>{
    
@@ -46,5 +56,11 @@ this.complains()
 changePage(pageEvent: PageEvent) {
   const startIndex = pageEvent.pageIndex * pageEvent.pageSize;
   const endIndex = startIndex + pageEvent.pageSize;
+}
+
+// search
+applyFilter(event: Event) {debugger
+  const filterValue = (event.target as HTMLInputElement).value;
+  this.dataSource.filter = filterValue.trim().toLowerCase();
 }
 }
