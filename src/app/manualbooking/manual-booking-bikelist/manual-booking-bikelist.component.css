@@ -645,6 +645,7 @@
   flex-direction: row;
   row-gap: 20px;
   column-gap: 20px;
+  padding: 2%;
 }
 .example-card{
   width:300px;

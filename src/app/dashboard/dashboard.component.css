@@ -1,4 +1,4 @@
-/* .frame-8725,
+.frame-8725,
 .frame-8725 * {
   box-sizing: border-box;
 }
@@ -2004,70 +2004,11 @@
   position: absolute;
   inset: 0;
 }
-.rectangle-1401 {
-  background: #5088c6;
-  border-radius: 6px;
-  width: 31.23px;
-  position: absolute;
-  left: 144.66px;
-  bottom: -54.66%;
-  top: 68.86%;
-  height: 85.8%;
-  transform-origin: 0 0;
-  transform: rotate(-90deg) scale(1, 1);
-}
-.rectangle-1402 {
-  background: #5088c6;
-  border-radius: 6px;
-  width: 32.53px;
-  position: absolute;
-  left: 144.66px;
-  bottom: -0.84%;
-  top: 15.04%;
-  height: 85.8%;
-  transform-origin: 0 0;
-  transform: rotate(-90deg) scale(1, 1);
-}
-.rectangle-1403 {
-  background: #5088c6;
-  border-radius: 6px;
-  width: 31.23px;
-  position: absolute;
-  left: 144.66px;
-  bottom: -91.35%;
-  top: 32.71%;
-  height: 158.64%;
-  transform-origin: 0 0;
-  transform: rotate(-90deg) scale(1, 1);
-}
-.rectangle-1404 {
-  background: #5088c6;
-  border-radius: 6px;
-  width: 32.53px;
-  position: absolute;
-  left: 144.66px;
-  bottom: -118.41%;
-  top: 86.93%;
-  height: 131.48%;
-  transform-origin: 0 0;
-  transform: rotate(-90deg) scale(1, 1);
-}
-.rectangle-1405 {
-  background: #5088c6;
-  border-radius: 6px;
-  width: 32.53px;
-  position: absolute;
-  left: 144.66px;
-  bottom: -70.85%;
-  top: 50.78%;
-  height: 120.06%;
-  transform-origin: 0 0;
-  transform: rotate(-90deg) scale(1, 1);
-}
+
 .frame-8713 {
   background: #ffffff;
   border-radius: 16px;
-  flex: 1;
+  flex: 1 ;
   height: 404px;
   position: relative;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
@@ -2370,8 +2311,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-} */
-.dashboard-card {
+}
+/* .dashboard-card {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -2407,4 +2348,4 @@ flex: 1 0 0;
   justify-content: flex-end;
   flex-shrink: 0;
   position: relative;
-}
+} */
