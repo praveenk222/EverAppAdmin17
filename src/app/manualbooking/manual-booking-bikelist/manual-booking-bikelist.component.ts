@@ -23,5 +23,7 @@ export class ManualBookingBikelistComponent {
     })
       .catch((error) => { console.error(error) })
   }
-
+open(){
+  
+}
 }

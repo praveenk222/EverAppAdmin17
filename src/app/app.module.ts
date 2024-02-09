@@ -41,6 +41,7 @@ import { LoginLayoutComponent } from './login-layout/login-layout.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { CardComponent } from './card/card.component';
 import { DateRangePipe } from './date-range.pipe';
+import { TimeDifferencePipe } from './services/time-difference.pipe';
 
 @NgModule({
   declarations: [
@@ -90,6 +91,7 @@ import { DateRangePipe } from './date-range.pipe';
     { provide: HTTP_INTERCEPTORS, useClass: spinnerInterceptor, multi: true },
     // { provide: HTTP_INTERCEPTORS, useClass: SuccessInterceptor, multi: true },
     provideHttpClient(),
+    TimeDifferencePipe
   ],
   bootstrap: [AppComponent]
 })

@@ -12,6 +12,7 @@ import { ManualBookingSummaryComponent } from './manual-booking-summary/manual-b
 import { ManualBookingProductdetailsComponent } from './manual-booking-productdetails/manual-booking-productdetails.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../commonFiles/commonModules/material.module';
+import { TimeDifferencePipe } from '../services/time-difference.pipe';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { MaterialModule } from '../commonFiles/commonModules/material.module';
   ],
   providers: [
     DatePipe,
+    TimeDifferencePipe
     ],
 })
 export class ManualbookingModule { }

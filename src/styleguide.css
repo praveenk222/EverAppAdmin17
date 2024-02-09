@@ -178,3 +178,28 @@
 }
 
   /* allbikes */
+
+  .frame-8073 {
+    background: var(--primary, #3355b9);
+    border-radius: 10px;
+    padding: 16px 20px 16px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width:100px;
+    height: 46px;
+    position: relative;
+    border: none;
+  }
+  .create-notification {
+    color: #ffffff;
+    text-align: left;
+    font-family: "OpenSansHebrew-Bold", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+  }

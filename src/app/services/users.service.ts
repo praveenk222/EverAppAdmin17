@@ -114,7 +114,7 @@ getorderByUserID(userid:number){
 }
 getordersummeryByBookingNo(bookingNo:string){
   let  bookingdata = {
-      "BookingNo": bookingNo
+      "BookingNo": "BKKPHB231100002"
     }
     return this.http.post(this.m_apiUrl+`orders/getordersummeryByBookingNo`,bookingdata);
   }
