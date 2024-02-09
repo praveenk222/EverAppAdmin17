@@ -3,6 +3,7 @@ import { PostResult } from '../../models/PostResult';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { InventoryService } from '../../services/Inventory.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-recent-battery',
@@ -13,6 +14,8 @@ export class RecentBatteryComponent {
 
   proudctdata :any;
   isIamages: boolean = false;
+  azimageUrl: any = environment.azimageUrl_hub;
+
   constructor( private invntservice: InventoryService) {
   }
 

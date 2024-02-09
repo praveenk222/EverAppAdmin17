@@ -111,9 +111,9 @@
             </svg>
           </div>
         </div>
-        <div class="frame-2608386" *ngFor="let p of proudctdata">
-          <div class="frame-8067">
-            <img class="rectangle-2505" src="rectangle-25050.png" />
+        <div class="frame-2608386" >
+          <div class="frame-8067" *ngFor="let p of proudctdata">
+            <img class="rectangle-2505" src="{{azimageUrl}}{{p?.ImageName}}" />
             <div class="frame-2608179">
               <div class="frame-2608175">
                 <div class="battery-model-1">{{p.ProductName}}</div>
