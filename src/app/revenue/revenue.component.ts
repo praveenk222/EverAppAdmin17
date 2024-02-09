@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SubjectService } from '../services/subject.service';
 
 @Component({
   selector: 'app-revenue',
@@ -14,4 +15,10 @@ lists=[
   {name:'last 6 months'},
   {name:'last 1 year'}
 ]
+constructor(private subjectService:SubjectService){
+  this.subjectService.getData().subscribe(data => {
+    console.log('test',data);
+  });
+
+}
 }
