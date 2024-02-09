@@ -1,3 +1,4 @@
+<form [formGroup]="form" >
 <div class="frame-8725">
     <div class="frame-8724">
       <div class="frame-2608320">
@@ -66,13 +67,13 @@
                 />
               </svg>
             </div> -->
-            <input matInput [matDatepicker]="picker" class="text-holder" placeholder="Open date">
+            <input matInput [matDatepicker]="picker" class="text-holder" placeholder="Open date"   formControlName="fromDate">
               <mat-datepicker-toggle matIconSuffix [for]="picker" style="margin-left: -60px;color: blue;" ></mat-datepicker-toggle>
               <mat-datepicker #picker></mat-datepicker>
 
 
 
-              <input matInput [matDatepicker]="picker1" class="text-holder" placeholder="Closed date">
+              <input matInput [matDatepicker]="picker1" class="text-holder" placeholder="Closed date" formControlName="toDate">
             
               <mat-datepicker-toggle matIconSuffix [for]="picker1" style="margin-left: -60px;color: blue;" ></mat-datepicker-toggle>
               <mat-datepicker #picker1></mat-datepicker>
@@ -95,6 +96,7 @@
                 />
               </svg>
             </select>
+            <button (click)="applyDateFilter()">submit</button>
           </div>
         </div>
         <div class="frame-2608329">
@@ -342,4 +344,5 @@
       </div>
     </div>
   </div>
-  
+  </div>
+</form>

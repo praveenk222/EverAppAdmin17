@@ -126,7 +126,7 @@
   overflow: visible;
 }
 .frame-8714 {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   gap: 4px;
   align-items: flex-start;

@@ -4,6 +4,7 @@ import { AddTicketComponent } from './add-ticket/add-ticket.component';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-complains',
@@ -12,11 +13,18 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 })
 export class ComplainsComponent {
   complainsData:any;
+  dateRange:any;
+  arrayList:any
   displayedColumns: string[] = ['Customer id', 'Full name', 'Mobile no.', 'Email id', 'Registration date','ClosedDate', 'Status', ];
   dataSource = new MatTableDataSource<any>([]);
   pageSizeOptions: number[] = [5, 10, 20];
   pageSize = 5; //
   @ViewChild(MatPaginator) paginator: MatPaginator;
+
+  form = new FormGroup({
+    fromDate: new FormControl(null, { validators: [Validators.required]}),
+    toDate: new FormControl(null, { validators: [Validators.required]})
+  });
 constructor(private us:UsersService,private dialog:MatDialog){
 this.complains()
 }
@@ -46,5 +54,13 @@ this.complains()
 changePage(pageEvent: PageEvent) {
   const startIndex = pageEvent.pageIndex * pageEvent.pageSize;
   const endIndex = startIndex + pageEvent.pageSize;
+}
+applyDateFilter() {
+  if(this.dateRange.value.start && this.dateRange.value.end){
+    this.dataSource.data = this.arrayList;
+    console.log("data",this.dataSource.data);
+    this.dataSource.data = this.dataSource.data.filter(e=> new Date(e.timestamp).getTime() >= this.dateRange.value.start?.getTime()! && new Date(e.timestamp).getTime() <= this.dateRange.value.end?.getTime()!);
+    console.log("filterd",this.dataSource.data);
+  }
 }
 }
