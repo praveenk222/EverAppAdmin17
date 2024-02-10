@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddhubsComponent } from './addhubs.component';
+import { AllbhulistComponent } from './allbhulist.component';
 
-describe('AddhubsComponent', () => {
-  let component: AddhubsComponent;
-  let fixture: ComponentFixture<AddhubsComponent>;
+describe('AllbhulistComponent', () => {
+  let component: AllbhulistComponent;
+  let fixture: ComponentFixture<AllbhulistComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AddhubsComponent]
+      declarations: [AllbhulistComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(AddhubsComponent);
+    fixture = TestBed.createComponent(AllbhulistComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

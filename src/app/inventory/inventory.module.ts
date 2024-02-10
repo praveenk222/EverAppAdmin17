@@ -12,11 +12,12 @@ import { AllHubstationComponent } from './all-hubstation/all-hubstation.componen
 import { SharedPrimeNgModule } from '../commonFiles/commonModules/shared.Module';
 import { RecentBatteryComponent } from './recent-battery/recent-battery.component';
 import { RecentHubsComponent } from './recent-hubs/recent-hubs.component';
-import { AddhubsComponent } from './addhubs/addhubs.component';
 import { AddbikesComponent } from './addbikes/addbikes.component';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { MatMenuModule } from '@angular/material/menu';
 import { SharedComponentsModule } from '../commonFiles/commonModules/sharedComponents.Module';
+import { AllbikesComponent } from './allvehicles/allbikes/allbikes.component';
+import { AllbhulistComponent } from './all-hubstation/allbhulist/allbhulist.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +29,9 @@ import { SharedComponentsModule } from '../commonFiles/commonModules/sharedCompo
     AllHubstationComponent,
     RecentBatteryComponent,
     RecentHubsComponent,
-    AddhubsComponent,
     AddbikesComponent,
+    AllbikesComponent,
+    AllbhulistComponent,
   ],
   imports: [
     CommonModule,
