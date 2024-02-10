@@ -33,12 +33,13 @@
 }
 .header-links{
   margin-left:10% ;
+  margin-top: 2%;
 }
 .example-spacer{
   flex: 1 0 0;
 }
 .nav-item{
-  padding: 5%;
+  padding: 8%;
 font-size: 18px;
   color: white;
 }
@@ -47,7 +48,7 @@ font-size: 18px;
   color: white;
 }
 .side-nav-toolbar{
-  padding:20px;
+  padding:24px;
 
 }
 .links{

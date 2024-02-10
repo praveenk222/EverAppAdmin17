@@ -16,6 +16,7 @@ import { TimeDifferencePipe } from '../services/time-difference.pipe';
 import { SharedModule } from '../services/shared.module';
 import { ManualBatteryListComponent } from './manual-battery-list/manual-battery-list.component';
 import { ManualWashstationComponent } from './manual-washstation/manual-washstation.component';
+import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ManualWashstationComponent } from './manual-washstation/manual-washstat
   ],
   providers: [
     DatePipe,
- 
+    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 3000 ,    horizontalPosition: 'end',
+    verticalPosition: 'top',} },
     ],
 })
 export class ManualbookingModule { }

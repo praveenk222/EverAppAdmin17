@@ -27,11 +27,11 @@ export class SweetAlertServiceService {
       timer: 1500
     });
   }
-  showFailure(title:string,text:string){
+  showFailure(text:string){
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Something went wrong!",
+      text: text,
     });
   }
 }

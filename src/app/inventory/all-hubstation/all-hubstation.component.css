@@ -65,10 +65,10 @@
   flex-shrink: 0;
   position: relative;
 }
-.frame-8073 {
+/* .frame-8073 {
   border-radius: 24px;
-  border-style: solid;
-  border-color: var(--primary, #3355b9);
+
+  border:2px solid var(--primary, #3355b9);
   border-width: 1px;
   padding: 8px 20px 8px 20px;
   display: flex;
@@ -79,7 +79,7 @@
   flex-shrink: 0;
   height: 42px;
   position: relative;
-}
+} */
 .ph-plus-bold {
   flex-shrink: 0;
   width: 18px;
@@ -88,7 +88,17 @@
   overflow: visible;
 }
 .add-hub-station {
-  color: var(--primary, #3355b9);
+  border:2px solid var(--primary, #3355b9);
+  border-width: 1px;
+  border-radius: 24px;
+  padding: 8px 20px 8px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  --color:var(--primary, #3355b9);
   text-align: left;
   font-family: "OpenSansHebrew-Bold", sans-serif;
   font-size: 14px;
