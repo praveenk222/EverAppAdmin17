@@ -31,9 +31,10 @@ export class LoginComponent {
     } else {
       this._user.loginAdmin(data).subscribe((res: PostResult) => {
         if (res.status) {
+          console.log(res)
 
+          this.as.login(res.data);
           this.route.navigateByUrl('/dashboard')
-          this.as.login(res.message);
           // this.as.login(res.message)
         }
       })

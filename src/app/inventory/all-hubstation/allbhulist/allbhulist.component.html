@@ -1,0 +1,120 @@
+
+<div class="frame-8722">
+    <div class="frame-26083322">
+      <div class="frame-2608166">
+        <div class="text-holder">
+          <div class="hub-station">Hub station</div>
+          <svg
+            class="ep-arrow-down-bold"
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.03595 5.79279C2.22348 5.60532 2.47779 5.5 2.74295 5.5C3.00811 5.5 3.26242 5.60532 3.44995 5.79279L8.39995 10.7428L13.35 5.79279C13.5386 5.61063 13.7912 5.50983 14.0534 5.51211C14.3155 5.51439 14.5664 5.61956 14.7518 5.80497C14.9372 5.99038 15.0423 6.24119 15.0446 6.50339C15.0469 6.76558 14.9461 7.01818 14.764 7.20679L9.10695 12.8638C8.91942 13.0513 8.66511 13.1566 8.39995 13.1566C8.13479 13.1566 7.88048 13.0513 7.69295 12.8638L2.03595 7.20679C1.84848 7.01926 1.74316 6.76495 1.74316 6.49979C1.74316 6.23462 1.84848 5.98031 2.03595 5.79279Z"
+              fill="#3355B9"
+            />
+          </svg>
+        </div>
+        <div class="text-holder">
+          <div class="open-time">Open time</div>
+          <svg
+            class="uis-calender"
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.13379 13.1663C2.13379 14.2997 3.00046 15.1663 4.13379 15.1663H13.4671C14.6005 15.1663 15.4671 14.2997 15.4671 13.1663V7.83301H2.13379V13.1663ZM13.4671 3.16634H12.1338V2.49967C12.1338 2.09967 11.8671 1.83301 11.4671 1.83301C11.0671 1.83301 10.8005 2.09967 10.8005 2.49967V3.16634H6.80046V2.49967C6.80046 2.09967 6.53379 1.83301 6.13379 1.83301C5.73379 1.83301 5.46712 2.09967 5.46712 2.49967V3.16634H4.13379C3.00046 3.16634 2.13379 4.03301 2.13379 5.16634V6.49967H15.4671V5.16634C15.4671 4.03301 14.6005 3.16634 13.4671 3.16634Z"
+              fill="#3355B9"
+            />
+          </svg>
+        </div>
+        <div class="text-holder">
+          <div class="close-time">Close time</div>
+          <svg
+            class="uis-calender2"
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.5332 13.1663C1.5332 14.2997 2.39987 15.1663 3.5332 15.1663H12.8665C13.9999 15.1663 14.8665 14.2997 14.8665 13.1663V7.83301H1.5332V13.1663ZM12.8665 3.16634H11.5332V2.49967C11.5332 2.09967 11.2665 1.83301 10.8665 1.83301C10.4665 1.83301 10.1999 2.09967 10.1999 2.49967V3.16634H6.19987V2.49967C6.19987 2.09967 5.9332 1.83301 5.5332 1.83301C5.1332 1.83301 4.86654 2.09967 4.86654 2.49967V3.16634H3.5332C2.39987 3.16634 1.5332 4.03301 1.5332 5.16634V6.49967H14.8665V5.16634C14.8665 4.03301 13.9999 3.16634 12.8665 3.16634Z"
+              fill="#3355B9"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+<div class="frame-8720">
+    <!-- table -->
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" class="inventory-table"
+    style="width: 100%;">
+
+    <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="slno">
+      <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef>SL No. </th>
+      <td mat-cell *matCellDef="let element"> 1 </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="productname">
+      <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef>Hub Name
+      </th>
+      <td mat-cell *matCellDef="let element"> {{element.BranchName}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="registrationno">
+      <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Registration
+        no. </th>
+      <td mat-cell *matCellDef="let element"> {{element.RegNo}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="hubcode">
+      <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Hub Code
+      </th>
+      <td mat-cell *matCellDef="let element"> {{element.BranchCode}} </td>
+    </ng-container>
+    <ng-container matColumnDef="opnetime">
+      <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Open Time
+      </th>
+      <td mat-cell *matCellDef="let element"> {{element.OpenTime}} </td>
+    </ng-container>
+    <ng-container matColumnDef="closetime">
+      <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Close Time
+      </th>
+      <td mat-cell *matCellDef="let element"> {{element.CloseTime}} </td>
+    </ng-container>
+    <ng-container matColumnDef="location">
+      <th mat-header-cell *matHeaderCellDef> Location </th>
+      <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+    </ng-container>
+    <ng-container matColumnDef="status">
+      <th [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-cell *matHeaderCellDef> Status </th>
+      <td mat-cell *matCellDef="let element"> {{element.IsActive}} </td>
+    </ng-container>
+
+    <tr [style.background]="'#d6edfe'" [style.color]="'#3355b9'" mat-header-row
+      *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="pageSizeOptions" (page)="changePage($event)">
+  </mat-paginator>
+  <!-- table -->
+   
+    </div>

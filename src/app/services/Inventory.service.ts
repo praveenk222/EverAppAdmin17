@@ -62,6 +62,7 @@ export class InventoryService {
       );
     });
   }
+  //old one let check
   async saveHub(data:any):  Promise<any> {
     return new Promise((resolve, reject) => {
       this.http.post(this.apiUrl+'products/savehub',data).subscribe(

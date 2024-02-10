@@ -1,18 +1,18 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { InventoryService } from '../../services/Inventory.service';
-import { PostResult } from '../../models/PostResult';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { DialogAddhubMatComponent } from '../../commonFiles/sharedcomponents/dialog_addhub_Mat/dialog_addhub_Mat.component';
 import { MatDialog } from '@angular/material/dialog';
+import { InventoryService } from '../../../services/Inventory.service';
+import { PostResult } from '../../../models/PostResult';
+import { DialogAddhubMatComponent } from '../../../commonFiles/sharedcomponents/dialog_addhub_Mat/dialog_addhub_Mat.component';
 
 @Component({
-  selector: 'app-all-hubstation',
-  templateUrl: './all-hubstation.component.html',
-  styleUrl: './all-hubstation.component.css'
+  selector: 'app-allbhulist',
+  templateUrl: './allbhulist.component.html',
+  styleUrl: './allbhulist.component.css'
 })
-export class AllHubstationComponent {
- 
+export class AllbhulistComponent {
+
   proudctdata: any;
   isIamages: boolean = false;
   displayedColumns: string[] = ['slno', 'productname', 'registrationno', 'hubcode', 'opnetime', 'closetime', 'location', 'status'];

@@ -1,10 +1,4 @@
 
-
-
-  
-
-
-
 <div class="dropdown">
   <div class="profile" >
  
@@ -23,7 +17,7 @@
             "
             src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
           />
-          <div class="manish-paul">Manish Paul</div>
+          <div class="manish-paul">{{user.UserName}}</div>
         </div>
         <div class="fe-arrow-down">
           <svg
@@ -69,6 +63,8 @@
                 <mat-list-item style="color:black">Support</mat-list-item>
                 <mat-divider></mat-divider><br>
                 <div class="button-9">
+                  
+
                   <svg
                     class="ant-design-logout-outlined"
                     width="24"
@@ -82,7 +78,11 @@
                       fill="#E33629"
                     />
                   </svg>
-                  <div class="name">Log out</div>
+                  <div class="name" >
+                    <a (click)="logout()">
+                      Log out
+                    </a> 
+                    </div>
                 </div>
               </mat-list>
   </div>
