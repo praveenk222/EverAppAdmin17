@@ -84,6 +84,9 @@ show(){
   savenotification(order:any):Observable<any>{
     return this.http.post(this.apiUrl+'customers/savenotification',order)
   }
+  deleteNotification(id:number):Observable<any>{
+    return this.http.get(this.apiUrl+'customers/deleteNotification/'+id)
+  }
 getMemberDetails(userid:number){
   return this.http.get(this.m_apiUrl+'members/'+userid)
 

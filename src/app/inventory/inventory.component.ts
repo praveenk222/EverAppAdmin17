@@ -71,7 +71,6 @@ export class InventoryComponent {
   pageSizeOptions: number[] = [5, 10, 20];
   pageSize = 5;
   @ViewChild(MatPaginator) paginator: MatPaginator;
-
   constructor(private invntservice: InventoryService, public dialog: MatDialog) {
   }
 
