@@ -648,7 +648,7 @@
   position: relative;
 }
 .booking-history-table-head3 {
-  background: #f5f5f5;
+  /* background: #f5f5f5; */
   border-radius: 8px;
   display: flex;
   flex-direction: row;

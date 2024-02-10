@@ -1,18 +1,27 @@
 
-<div class="profile" style="border:none">
+
+
+  
+
+
+
+<div class="dropdown">
+  <div class="profile" >
  
     <div class="navigation" >
-      <button mat-button [matMenuTriggerFor]="animals" > 
+   
+   
+      
       <div class="frame-8029">
         <div class="frame-8704" >
           <img
             class="mdi-user"
             style="
-              background: url(mdi-user0.png) center;
+              background: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png') center;
               background-size: cover;
               background-repeat: no-repeat;
             "
-            src="mdi-user0.png"
+            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
           />
           <div class="manish-paul">Manish Paul</div>
         </div>
@@ -34,43 +43,47 @@
           </svg>
         </div>
       </div>
-    </button>
+ 
     </div>
 
 
   </div>
 
-  <mat-menu #animals="matMenu" class="menu">
-    <div style="width: 280px; padding-left: 12px; padding-right: 12px; padding-top: 16px; padding-bottom: 16px; background: #F2F2F2; border-radius: 12px; justify-content: space-between; align-items: center; display: inline-flex">
-    <div style="justify-content: flex-start; align-items: center; gap: 17px; display: flex">
-      <img style="width: 52px; height: 52px; position: relative; border-radius: 100px"
-       src="https://via.placeholder.com/52x52" />
-      <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
-      <div style="color: #363636; font-size: 24px; font-family: Open Sans Hebrew; font-weight: 400; word-wrap: break-word">Manish Paul</div>
-      <div style="opacity: 0.80; color: #363636; font-size: 16px; font-family: Open Sans Hebrew; font-weight: 400; word-wrap: break-word">9876543210</div>
-      </div>
+  <div class="dropdown-content">
+    <div style="display: flex;align-items: center;justify-content: center;padding: 2%;">
+    <div style="width: 100%; padding-left: 12px; padding-right: 12px; padding-top: 16px; padding-bottom: 16px;  border-radius: 12px; justify-content: space-between; align-items: center; display: inline-flex">
+      <div style="justify-content: center; align-items: center; gap: 17px; display: flex">
+        <img style="width: 52px; height: 52px; position: relative; border-radius: 100px"
+         src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" />
+        <div style="flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+        <div style=" font-size: 24px; font-family: Open Sans Hebrew; font-weight: 400; word-wrap: break-word;color:black;">Manish Paul</div>
+        <div style="opacity: 0.80;  font-size: 16px; font-family: Open Sans Hebrew; font-weight: 400; word-wrap: break-word;color:black;">9876543210</div>
+        </div>
+        </div>
       </div>
     </div>
-   
-        <!-- <div style="color: #363636; font-size: 16px; font-family: Open Sans Hebrew; font-weight: 400; word-wrap: break-word">Settings</div>
-        <div style="width: 24px; height: 24px; position: relative">
-          <div style="width: 20px; height: 18px; left: 2px; top: 3px; position: absolute; background: #3355B9"></div>
-          <div style="width: 2px; height: 2px; left: 8px; top: 12px; position: absolute; background: #3355B9"></div>
-          <div style="width: 2px; height: 2px; left: 14px; top: 12px; position: absolute; background: #3355B9"></div>
-          <div style="width: 11.99px; height: 6.45px; left: 6.01px; top: 6px; position: absolute; background: #3355B9"></div>
-          </div>
-          <div style="color: #363636; font-size: 16px; font-family: Open Sans Hebrew; font-weight: 400; word-wrap: break-word">Support</div>
-          <div style="width: 24px; height: 24px; position: relative">
-            <div style="width: 20.58px; height: 20.16px; left: 1.92px; top: 1.92px; position: absolute; background: #E33629"></div>
-            </div>
-            <div style="color: #E33629; font-size: 14px; font-family: Open Sans Hebrew; font-weight: 700; word-wrap: break-word">Log out</div> -->
-            <mat-list>
-              <mat-list-item routerLink="settings">Settings</mat-list-item>
-              <mat-divider></mat-divider>
-              <mat-list-item>Support</mat-list-item>
-              <mat-divider></mat-divider><br>
-              <div style="display: flex;align-items: center;justify-content: center;">
-              <button routerLink="/" mat-raised-button  class="logout" >
-                Log out</button></div>
-            </mat-list>
-  </mat-menu>
+  
+              <mat-list>
+                <mat-list-item routerLink="settings" style="color:black">Settings</mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item style="color:black">Support</mat-list-item>
+                <mat-divider></mat-divider><br>
+                <div class="button-9">
+                  <svg
+                    class="ant-design-logout-outlined"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.3433 17.1563H18.6956C18.5831 17.1563 18.4777 17.2055 18.4074 17.2922C18.2433 17.4914 18.0675 17.6836 17.8824 17.8664C17.1251 18.6245 16.2281 19.2286 15.2409 19.6453C14.2183 20.0773 13.1191 20.2989 12.0089 20.2969C10.8863 20.2969 9.79876 20.0766 8.77689 19.6453C7.78977 19.2286 6.89276 18.6245 6.13548 17.8664C5.37685 17.111 4.77193 16.2155 4.35423 15.2297C3.92064 14.2078 3.70267 13.1227 3.70267 12C3.70267 10.8774 3.92298 9.79222 4.35423 8.77035C4.77142 7.78363 5.37142 6.89535 6.13548 6.13363C6.89954 5.37191 7.78783 4.77191 8.77689 4.35472C9.79876 3.92347 10.8863 3.70316 12.0089 3.70316C13.1316 3.70316 14.2191 3.92113 15.2409 4.35472C16.23 4.77191 17.1183 5.37191 17.8824 6.13363C18.0675 6.31879 18.241 6.51097 18.4074 6.70785C18.4777 6.79457 18.5855 6.84379 18.6956 6.84379H20.3433C20.4909 6.84379 20.5824 6.67972 20.5003 6.5555C18.7027 3.76175 15.5574 1.91254 11.9831 1.92191C6.36751 1.93597 1.86517 6.49457 1.92142 12.1032C1.97767 17.6227 6.47298 22.0782 12.0089 22.0782C15.5738 22.0782 18.705 20.2313 20.5003 17.4446C20.58 17.3203 20.4909 17.1563 20.3433 17.1563ZM22.4269 11.8524L19.1011 9.22738C18.9769 9.12894 18.7964 9.218 18.7964 9.37504V11.1563H11.437C11.3339 11.1563 11.2495 11.2407 11.2495 11.3438V12.6563C11.2495 12.7594 11.3339 12.8438 11.437 12.8438H18.7964V14.625C18.7964 14.7821 18.9792 14.8711 19.1011 14.7727L22.4269 12.1477C22.4493 12.1302 22.4674 12.1077 22.4799 12.0822C22.4924 12.0566 22.4988 12.0285 22.4988 12C22.4988 11.9716 22.4924 11.9435 22.4799 11.9179C22.4674 11.8923 22.4493 11.8699 22.4269 11.8524Z"
+                      fill="#E33629"
+                    />
+                  </svg>
+                  <div class="name">Log out</div>
+                </div>
+              </mat-list>
+  </div>
+</div>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="globals.scss" />
-  <!-- <link rel="stylesheet" href="./styleguide.css" /> -->
+  <link rel="stylesheet" href="./styleguide.scss" />
   <meta name="color-scheme" content="light dark" />
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -13,37 +13,13 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-    google.charts.load('current', {'packages':['bar']});
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-      var data = google.visualization.arrayToDataTable([
-        ['Year', 'Sales', 'Expenses', 'Profit'],
-        ['2014', 1000, 400, 200],
-        ['2015', 1170, 460, 250],
-        ['2016', 660, 1120, 300],
-        ['2017', 1030, 540, 350]
-      ]);
-
-      var options = {
-        chart: {
-          title: 'Company Performance',
-          subtitle: 'Sales, Expenses, and Profit: 2014-2017',
-        },
-        bars: 'horizontal' // Required for Material Bar Charts.
-      };
-
-      var chart = new google.charts.Bar(document.getElementById('barchart_material'));
-
-      chart.draw(data, google.charts.Bar.convertOptions(options));
-    }
-  </script>
  
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
+<body class="mat-typography">
   
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU4W4iQLV5ydrW3UxZncI_JdLi1EsKH5A"></script>
   <app-root></app-root>

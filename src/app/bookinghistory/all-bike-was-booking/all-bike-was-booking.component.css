@@ -72,11 +72,11 @@
   padding: 16px 12px 16px 12px;
   display: flex;
   flex-direction: column;
-
+  gap: 16px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-
+  width: 1146px;
   position: relative;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
 }
