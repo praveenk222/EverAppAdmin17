@@ -39,18 +39,18 @@ export class PromodataComponent  {
     })
 
   }
-  async delete(ID1:number,ID2:number){
-    const confirmed = await this.sweetAlertService.showConfirmation('Are you sure?', 'do you want to remove record!');
-    
-    if (confirmed) {
-      this.os.deletePromo(ID1,ID2).subscribe((res:any)=>{
-           if(res.status){
-                 this.getAll()
-           }
-      })
-    } else {
+    async delete(ID1:number,ID2:number){
+      const confirmed = await this.sweetAlertService.showConfirmation('Are you sure?', 'do you want to remove record!');
+      
+      if (confirmed) {
+        this.os.deletePromo(ID1,ID2).subscribe((res:any)=>{
+            if(res.status){
+                  this.getAll()
+            }
+        })
+      } else {
+      }
     }
-  }
 edit(data:any){
   const dialogRef =this.dialog.open(DialogAddPromocodeComponent,{
     width:'560px',

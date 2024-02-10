@@ -4,7 +4,7 @@
         <div class="push-notifications">Push notifications</div>
         <div class="frame-8073">
           <div class="create-notification">
-            <a (click)="openDialog()">
+            <a (click)="openDialog('add',null)">
 
               Create notification
             </a>
@@ -53,10 +53,10 @@
                   <span class="code-name-2-span">{{n?.NotificationName}}</span>
                   <span class="code-name-2-span2"> : {{n?.Description}} </span>
                   <span class="example-spacer">
-                    <mat-icon class="icon" color="primary">edit</mat-icon>
+                    <mat-icon class="icon" color="primary" (click)="openDialog('edit',n)">edit</mat-icon>
                
                   <mat-icon class="icon" style="color:green">send</mat-icon>
-                  <mat-icon class="icon" color="warn">delete</mat-icon>
+                  <mat-icon class="icon" color="warn" (click)="delete(n.ID)">delete</mat-icon>
                   
                 </span>
                 </span>

@@ -16,7 +16,7 @@ export class AllHubstationComponent {
   proudctdata: any;
   isIamages: boolean = false;
   displayedColumns: string[] = ['slno', 'productname', 'registrationno', 'hubcode', 'opnetime', 'closetime', 'location', 'status'];
-  dataSource = new MatTableDataSource<any>();
+  dataSource = new MatTableDataSource<any>([]);
   pageSizeOptions: number[] = [5, 10, 20];
   pageSize = 5; //
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -39,7 +39,7 @@ export class AllHubstationComponent {
         if (result.status) {
           console.log(result.message)
           // this.router.na
-          this.dataSource = result.message;
+          this.dataSource = new MatTableDataSource<any>(result.message)
           this.dataSource.paginator = this.paginator;
 
         }

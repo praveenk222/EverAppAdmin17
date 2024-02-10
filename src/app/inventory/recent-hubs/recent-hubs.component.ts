@@ -14,30 +14,26 @@ export class RecentHubsComponent {
   proudctdata: any;
   isIamages: boolean = false;
   displayedColumns: string[] = ['slno', 'productname', 'registrationno', 'hubcode', 'opnetime', 'closetime', 'location', 'status'];
-  dataSource = new MatTableDataSource<any>();
+  dataSource = new MatTableDataSource<any>([]);
   pageSizeOptions: number[] = [5, 10, 20];
-  pageSize = 5; //
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  pageSize = 5;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
   constructor(private invntservice: InventoryService) {
   }
 
   ngOnInit() {
     this.getbikes();
   }
-  changePage(pageEvent: PageEvent) {
-    const startIndex = pageEvent.pageIndex * pageEvent.pageSize;
-    const endIndex = startIndex + pageEvent.pageSize;
-  }
+ 
   ngAfterViewInit() {
     // this.dataSource.paginator=this.paginator;
   }
-  getbikes() {
+ async getbikes() {
     this.invntservice.getHubs()
       .then((result: PostResult) => {
         if (result.status) {
-          console.log(result.message)
           // this.router.na
-          this.dataSource = result.message;
+          this.dataSource = new MatTableDataSource<any>(result.message);
           this.dataSource.paginator = this.paginator;
 
         }
