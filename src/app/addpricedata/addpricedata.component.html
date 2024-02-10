@@ -1,6 +1,7 @@
 
 <!-- props: {"property1":{"type":"VARIANT","defaultValue":"'default'","variantOptions":["Default","Variant2"]}} -->
 <form action="" [formGroup]="priceForm">
+  <div class="parent">
     <div class="add-promo-code">
         <div class="frame-2608404">
           <div class="add-promo-code2">Add Price</div>
@@ -20,15 +21,16 @@
           </div>
           <div class="ob-forms-farmer-name">
             <div class="farmer-name">Payment</div>
-            <input placeholder="Write description here" class="frame2" formControlName="payment">
+            <input placeholder="Write description here" class="frame" formControlName="payment">
             
           </div>
          
        
-    
+    <br>
           <button (disabled)="!priceForm.valid" (click)="addpricecard()" class="button-1">
             <div class="name2">Add</div>
           </button>
         </div>
       </div>
+    </div>
     </form>

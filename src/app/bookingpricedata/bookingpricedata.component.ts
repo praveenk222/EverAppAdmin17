@@ -51,8 +51,8 @@ changePage(pageEvent: PageEvent) {
 openReport() {
   const dialogRef =
   this.dialog.open(AddpricedataComponent,{
-    width:'560px',
-    height:'600px',
+    width:'360px',
+    height:'300px',
   
   })
   dialogRef.afterOpened().subscribe(_ => {

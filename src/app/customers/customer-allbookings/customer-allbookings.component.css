@@ -254,9 +254,10 @@
   align-self: stretch;
 }
 .frame-8073 {
+  background: transparent;
   border-radius: 24px;
-  border-style: solid;
-  border-color: var(--primary, #3355b9);
+
+  border: 2px solid #3355b9;
   border-width: 1px;
   padding: 8px 10px 8px 10px;
   display: flex;
@@ -269,7 +270,7 @@
   position: relative;
 }
 .view-details {
-  color: var(--primary, #3355b9);
+  color: #3355b9;
   text-align: left;
   font-family: "OpenSansHebrew-Bold", sans-serif;
   font-size: 16px;
