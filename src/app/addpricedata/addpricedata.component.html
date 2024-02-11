@@ -3,14 +3,16 @@
 <form action="" [formGroup]="priceForm">
   <div class="parent">
     <div class="add-promo-code">
+      
+      <a mat-icon-button  style="float: right;">
+        <mat-icon>close</mat-icon>
+      </a>
         <div class="frame-2608404">
           <div class="add-promo-code2">Add Price</div>
        
-            <a mat-icon-button >
-              <mat-icon>close</mat-icon>
-            </a>
           
         </div>
+        <br>
         <div class="line-43"></div>
         <div class="frame-2608353">
           <div class="ob-forms-farmer-name">
@@ -19,6 +21,7 @@
            
           
           </div>
+          <br>
           <div class="ob-forms-farmer-name">
             <div class="farmer-name">Payment</div>
             <input placeholder="Write description here" class="frame" formControlName="payment">

@@ -45,7 +45,8 @@ font-size: 18px;
 }
 .toolbar{
   background:white;
-  color: white;
+
+  height: 50px;
 }
 .side-nav-toolbar{
   padding:24px;
