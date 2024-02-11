@@ -60,7 +60,7 @@ get(){
   })
 }
 getnavbyId(){
-  this.us.getNavById().subscribe((res:any)=>{
+  this.us.getNavById(100).subscribe((res:any)=>{
     this.menuById=res
     console.log(res)
   })
