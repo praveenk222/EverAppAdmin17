@@ -92,7 +92,7 @@ getMemberDetails(userid:number){
 
 }
 getAlloffers(){
-  return this.http.get(`https://everbackend.onrender.com/api/admin/offers/getall`);
+  return this.http.get(this.apiUrl+'orders/offers/getall');
 }
 savepromo(order:any):Observable<any>{
   return this.http.post(this.m_apiUrl+'admin/promocode/save',order)
