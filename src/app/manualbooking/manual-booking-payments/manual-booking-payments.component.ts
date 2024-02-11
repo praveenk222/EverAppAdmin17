@@ -3,6 +3,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DataserviceService } from '../../dataservice.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { UsersService } from '../../services/users.service';
+import { environment } from '../../../environments/environment.prod';
+import { ManualPaymentSuccessComponent } from '../manual-payment-success/manual-payment-success.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-manual-booking-payments',
@@ -10,6 +13,7 @@ import { UsersService } from '../../services/users.service';
   styleUrl: './manual-booking-payments.component.css'
 })
 export class ManualBookingPaymentsComponent {
+  azimageUrl: any = environment.azimageUrl_hub;
   timeDifference = 0;
   startDate = '';
   endDate = ''
@@ -19,9 +23,22 @@ export class ManualBookingPaymentsComponent {
   productId: any;
   bikeHubID: any;
   bikeHub: any;
-  bookingNo: string='BKEV-01231100008';
-  
-  constructor(private dataService: DataserviceService, private snackBar: MatSnackBar,
+  bookingNo: string='SWKPHB231100002';
+
+
+  openDialog() {
+    this.dialog.open(ManualPaymentSuccessComponent,{
+      width:"520px",
+      height:"358px",
+      panelClass:"myclass"
+    }
+     
+
+      );
+
+   
+  }
+  constructor(private dataService: DataserviceService, private snackBar: MatSnackBar,public dialog: MatDialog,
     private route: ActivatedRoute, private _pd: UsersService,
     private router: Router, 
    ) {
@@ -32,7 +49,7 @@ export class ManualBookingPaymentsComponent {
     this.getDetails()
   }
   getDetails() {
-    this._pd.getorder(this.bookingNo).subscribe((res) => {
+    this._pd.getorder(this.bookingNo).subscribe((res:any) => {
       console.log(res)
       this.ProductDetails = res[0];
     })

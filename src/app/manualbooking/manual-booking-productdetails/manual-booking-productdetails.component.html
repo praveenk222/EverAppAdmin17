@@ -19,10 +19,8 @@
         </svg>
         <div class="user-details" >User details</div>
       </div>
-      <button class="frame-8073"  >
-    Next
-      </button>
-      <button routerLink="../../paymentdetails">apply</button>
+  
+      <button class="frame-8073"  routerLink="../../paymentdetails">Next</button>
     </div>
     <div class="frame-2608349">
       <div class="frame-2608318">
@@ -498,7 +496,7 @@
             <div class="frame-26083041">
               <div class="frame-2608279">
                 <div class="frame-2608281">
-                  <div class="farmer-name">Ever booking with Ola S1 Pro</div>
+                  <div class="farmer-name">Ever booking with {{ProductDetails?.VehicleName}}</div>
                   <div class="line-43"></div>
                   <div class="frame-2608280">
                     <div class="frame-8071">
@@ -542,7 +540,7 @@
                     <div class="duration-17-days">
                       <span>
                         <span class="duration-17-days-span">Duration</span>
-                        <span class="duration-17-days-span2">: 17 days</span>
+                        <span class="duration-17-days-span2">:  {{ ProductDetails?.BookingStartDate | timeDifference:ProductDetails?.BookingEndDate }} </span>
                       </span>
                     </div>
                   </div>
