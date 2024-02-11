@@ -11,24 +11,46 @@ export class AdminuserdetailsComponent {
   userid: any;
   details:any;
   hide:boolean=true;
+  Details=[
+    
+      {
+          "TabID": 1,
+          "TabName": "Dashboard",
+          "icon": "home",
+          "link": "/dashboard",
+          "UserID": "100",
+          "Description":"Test",
+          "CanAccess":1
+      },
+      {
+          "TabID": 2,
+          "TabName": "Booking History",
+          "icon": "bookmark",
+          "link": "/bookinghistory",
+          "UserID": "100",
+          "CanAccess":1
+
+      },
+    
+     
+  
+  ]
   constructor(private router:ActivatedRoute,private us:UsersService){
     this.userid= this.router.snapshot.params['id']
     this.userdetails()
+    this.usertabdetails();
 }
   userdetails() {
     this.us.getadminUserdetails(this.userid).subscribe((res:any)=>{
-      this.details=res['0']
+      this.details=res[0]
       console.log(res)
     })
   }
-  Details=[
-    {name:'userpermission',desp:'lorem'},
-    {name:'view dashboard',desp:'lorem'},
-    {name:'Manage user',desp:'lorem'},
-    {name:'Manage Inventory',desp:'lorem'},
-    {name:'Manual booking',desp:'lorem'},
-    {name:'Track vehicle location',desp:'lorem'},
-    {name:'Generate Reports',desp:'lorem'},
-    {name:'Customer support',desp:'lorem'},
-  ]
+  usertabdetails() {
+    this.us.getNavById(this.userid).subscribe((res:any)=>{
+      this.Details=res;
+      console.log(res)
+    })
+  }
+  
 }
