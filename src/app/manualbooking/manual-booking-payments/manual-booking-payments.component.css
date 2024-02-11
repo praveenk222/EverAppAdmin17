@@ -703,3 +703,6 @@
   font-weight: 700;
   position: relative;
 }
+::ng-deep .myclass{
+  border-radius: 24px !important;
+}

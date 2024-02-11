@@ -17,7 +17,10 @@ const routes: Routes = [
   { path: 'paymentdetails', component: ManualBookingPaymentsComponent },
   { path: 'bookingsummary', component: ManualBookingSummaryComponent },
   {path:'battery-list',component:ManualBatteryListComponent},
-  {path:'washstation',component:ManualWashstationComponent}
+  {path:'washstation',component:ManualWashstationComponent},
+  {path:'booking-summary',component:ManualBookingSummaryComponent}
+
+  
 ];
 
 @NgModule({

@@ -17,6 +17,8 @@ import { SharedModule } from '../services/shared.module';
 import { ManualBatteryListComponent } from './manual-battery-list/manual-battery-list.component';
 import { ManualWashstationComponent } from './manual-washstation/manual-washstation.component';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
+import { ManualPaymentSuccessComponent } from './manual-payment-success/manual-payment-success.component';
+import { ManualBookingUserBookingSummaryComponent } from './manual-booking-user-booking-summary/manual-booking-user-booking-summary.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,11 @@ import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
     ManualBatteryListComponent,
     ManualBatteryListComponent,
     ManualWashstationComponent,
-    ManualWashstationComponent
+    ManualWashstationComponent,
+    ManualPaymentSuccessComponent,
+    ManualBookingUserBookingSummaryComponent,
+    ManualBookingSummaryComponent,
+    ManualPaymentSuccessComponent
   ],
   imports: [
     CommonModule,
