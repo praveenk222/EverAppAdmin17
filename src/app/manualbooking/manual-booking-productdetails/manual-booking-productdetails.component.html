@@ -307,11 +307,12 @@
                 oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
                 onKeyPress="if(this.value.length==12) return false;">
           
-              
-                <label
-                  style="opacity: 0.60; color: black; font-size: 14px;  font-weight: 400; line-height: 28px; word-wrap: break-word"
-                  for="adhar">Upload File </label>
-                <input id="adhar" type="file" class="file" (change)="onAdharSelected($event,'adhar')">
+                <div class="upload-btn-wrapper">
+                  <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
+                  <input id="adhar" type="file" name="myfile" (change)="onAdharSelected($event,'adhar')" />
+                </div>
+               
+             
           
               </div>
           
@@ -373,11 +374,12 @@
                 oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
                 onKeyPress="if(this.value.length==12) return false;">
           
-              
-                <label
-                  style="opacity: 0.60; color: black; font-size: 14px;  font-weight: 400; line-height: 28px; word-wrap: break-word"
-                  for="adhar">Upload File </label>
-                <input id="licenseno" type="file" class="file" (change)="onLicenseSelected($event,'licence')" formControlName="licensefile">
+                <div class="upload-btn-wrapper">
+                  <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
+                  <input id="licenseno" type="file" name="myfile" (change)="onLicenseSelected($event,'licence')"/>
+                </div>
+               
+            
           
               </div>
           
@@ -432,15 +434,17 @@
           >
            <div
              style="align-self: stretch; color: #363636; font-size: 16px;  font-weight: 700; word-wrap: break-word">
-             Driving licence no.</div>
+             Driving licence no.</div><br>
            <input type="number" placeholder="Enter Aadhar no." placeholder="0000 0000 0000"
              style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: white; border-radius: 28px; overflow: hidden; border: 1px #E2E1E5 solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex"
              oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
-             onKeyPress="if(this.value.length==12) return false;">
-       
+             onKeyPress="if(this.value.length==12) return false;"><br><br>
+             <div class="upload-btn-wrapper">
+              <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
+              <input id="panno" type="file" name="myfile" (change)="onPanSelected($event,'voter')" formControlName="panfile" />
+            </div>
            
     
-             <input id="panno" type="file" class="file" (change)="onPanSelected($event,'voter')" formControlName="panfile">
        
            </div>
        
@@ -478,12 +482,15 @@
                  {{filedata.PANImageB}}</div>
              </div>
              <div style="width: 16px; height: 16px; position: relative" (click)="removeBackA()">
-               <div style="width: 8.79px; height: 8.79px; left: 3.61px; top: 3.61px; position: absolute; ">
-                 
-               </div>
+            
+             
+          
              </div>
            </div>
+       
+        
            </div>
+        
                 </div>
                 
               </div>
@@ -497,7 +504,7 @@
               <div class="frame-2608279">
                 <div class="frame-2608281">
                   <div class="farmer-name">Ever booking with {{ProductDetails?.VehicleName}}</div>
-                  <div class="line-43"></div>
+                  <!-- <div class="line-43"></div> -->
                   <div class="frame-2608280">
                     <div class="frame-8071">
                       <div class="booking-id-rb-1996">
@@ -572,11 +579,11 @@
                   </div>
                 </div>
               </div>
-              <div class="frame-2608242">
-                <div class="offers-benefits">Offers &amp; benefits</div>
-                <div class="frame">
-                  <div class="frame-2608278">
-                    <div class="frame-2608187">
+              <!-- <div class="frame-2608242"> -->
+                <!-- <div class="offers-benefits">Offers &amp; benefits</div> -->
+                <!-- <div class="frame"> -->
+                  <!-- <div class="frame-2608278"> -->
+                    <!-- <div class="frame-2608187">
                       <svg
                         class="frame-2608189"
                         width="11"
@@ -598,15 +605,15 @@
                           fill="white"
                         />
                       </svg>
-                    </div>
-                    <div class="frame-2608277">
+                    </div> -->
+                    <!-- <div class="frame-2608277">
                       <div class="name7">‘FIRSTRIDE20’ applied</div>
                       <div class="name8">₹1,500 savings</div>
-                    </div>
-                  </div>
-                  <div class="name9">Remove</div>
-                </div>
-              </div>
+                    </div> -->
+                  <!-- </div> -->
+                  <!-- <div class="name9">Remove</div>
+                </div> -->
+              <!-- </div> -->
             </div>
           </div>
             

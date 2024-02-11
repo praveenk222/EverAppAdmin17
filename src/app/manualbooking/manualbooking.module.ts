@@ -19,6 +19,7 @@ import { ManualWashstationComponent } from './manual-washstation/manual-washstat
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import { ManualPaymentSuccessComponent } from './manual-payment-success/manual-payment-success.component';
 import { ManualBookingUserBookingSummaryComponent } from './manual-booking-user-booking-summary/manual-booking-user-booking-summary.component';
+import { WebcamModule } from 'ngx-webcam';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ManualBookingUserBookingSummaryComponent } from './manual-booking-user-
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
-    SharedModule
+    SharedModule,
+    WebcamModule,
   ],
   providers: [
     DatePipe,
