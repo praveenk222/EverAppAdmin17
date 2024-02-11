@@ -43,7 +43,8 @@
 .frame-8073 {
   background: var(--primary, #3355b9);
   border-radius: 24px;
-  padding: 16px 20px 16px 20px;
+width: 200px;
+  /* padding: 16px 20px 16px 20px; */
   display: flex;
   flex-direction: row;
   gap: 10px;

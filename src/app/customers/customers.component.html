@@ -10,16 +10,16 @@
     <div class="frame-8722">
       <div class="frame-2608332">
         <div class="frame-2608166">
-          <input type="search" placeholder="Customer name, email" class="text-holder">
+          <input type="search" placeholder="Customer name, email" class="text-holder" (keyup)="applyFilter($event)">
           
-          <input type="search" class="text-holder2" placeholder="Customer id">
+          <input type="search" class="text-holder2" placeholder="Customer id" >
            
           <input matInput [matDatepicker]="picker" placeholder="Registration date" class="text-holder2">
             
          
             
             
-            <mat-datepicker-toggle matIconSuffix [for]="picker" style="margin-left: -60px;color: blue;" ></mat-datepicker-toggle>
+            <mat-datepicker-toggle matIconSuffix [for]="picker" style="margin-left: -60px;color: blue;margin-bottom: -8px;" ></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
 
           <mat-select class="text-holder2" placeholder="status">

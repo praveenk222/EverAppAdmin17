@@ -21,7 +21,7 @@ export class PromodataComponent  {
   openReport(data:any) {
     const dialogRef =
     this.dialog.open(DialogAddPromocodeComponent,{
-      width:'560px',
+      width:'520px',
       height:'600px',
       data:null
     })

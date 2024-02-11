@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { UsersService } from '../services/users.service';
 import { AddTicketComponent } from './add-ticket/add-ticket.component';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
@@ -13,6 +13,7 @@ import { SharedsameApiDataService } from '../services/sharedsame-api-data.servic
   styleUrl: './complains.component.css'
 })
 export class ComplainsComponent {
+  start_date:any;
   complainsData:any;
   dateRange:any;
   arrayList:any
@@ -20,6 +21,7 @@ export class ComplainsComponent {
   dataSource = new MatTableDataSource<any>([]);
   pageSizeOptions: number[] = [5, 10, 20];
   pageSize = 5; //
+
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
   form = new FormGroup({
@@ -56,6 +58,7 @@ getHubList(){
     height:'520px',
    
   })
+
   dialogRef.afterOpened().subscribe(_ => {
     
   })

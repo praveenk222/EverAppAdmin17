@@ -21,14 +21,26 @@ menuById:any;
     // on route change to '/login', set the variable showHead to false
       router.events.forEach((event) => {
         if (event instanceof NavigationStart) {
-          if (event['url'] == '/') {
+          if (event['url'] == '/'  || event['url'] == '/changepassword' ) {
             this.showHead = false;
           } else {
             // console.log("NU")
             this.showHead = true;
           }
         }
+        
       });
+      // router.events.forEach((event) => {
+      //   if (event instanceof NavigationStart) {
+      //     if (event['url'] == '/changepassword') {
+      //       this.showHead = false;
+      //     } else {
+      //       // console.log("NU")
+      //       this.showHead = true;
+      //     }
+      //   }
+        
+      // });
       this.get()
     }
   private breakpointObserver = inject(BreakpointObserver);

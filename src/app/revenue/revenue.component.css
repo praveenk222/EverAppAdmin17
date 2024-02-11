@@ -52,7 +52,7 @@
 .frame-8073 {
   background: var(--primary, #3355b9);
   border-radius: 24px;
-  padding: 16px 20px 16px 20px;
+width: 180px;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -600,10 +600,10 @@
 }
 .chart {
   width: 1101px;
-  height: 312px;
+  height: 412px;
   position: absolute;
   left: 22.5px;
-  top: 84px;
+
   overflow: hidden;
 }
 .horizontal-bar {

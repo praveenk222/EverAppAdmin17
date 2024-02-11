@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { UsersService } from '../../services/users.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-add-ticket',
@@ -11,7 +12,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class AddTicketComponent {
 
   complainForm!:FormGroup;
-  constructor(private cf:FormBuilder,private us:UsersService,private snackbar:MatSnackBar){
+  constructor(private cf:FormBuilder,private us:UsersService,private snackbar:MatSnackBar,public dialogRef: MatDialogRef<AddTicketComponent>){
     this.complainForm=this.cf.group({
    
       ID: 1,
@@ -31,7 +32,7 @@ export class AddTicketComponent {
     const data=this.complainForm.value;
     console.log(data)
     this.us.postcomplain(data).subscribe((res:any)=>{
-     
+      this.dialogRef.close();
       console.log(res)
 
       this.snackbar.open(res.message)

@@ -4,16 +4,21 @@ import { CommonModule } from '@angular/common';
 import { RevenueRoutingModule } from './revenue-routing.module';
 import { RevenueComponent } from './revenue.component';
 import { MaterialModule } from '../commonFiles/commonModules/material.module';
+import { DashboardModule } from '../dashboard/dashboard.module';
+import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
   declarations: [
-    RevenueComponent
+    RevenueComponent,
+    
   ],
   imports: [
     CommonModule,
     RevenueRoutingModule,
-    MaterialModule
+    MaterialModule,
+    DashboardModule,
+    NgChartsModule,
   ]
 })
 export class RevenueModule { }

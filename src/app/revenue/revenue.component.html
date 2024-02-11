@@ -3,20 +3,32 @@
       <div class="frame-2608320">
         <div class="revenue">Revenue</div>
         <div class="frame-2608324">
-          <button mat-raised-button class="frame-8073">
+          <button  class="frame-8073">
             <div class="generate-report">Generate report</div>
           </button>
         </div>
       </div>
       <div class="mh">
-        <div class="group-8427">
+        <div style="position: absolute;top: 70px;">
+        <canvas
+        baseChart
+        class="chart"
+        type="pie"
+        width="240"
+        height="240"
+        [data]="pieChartData"
+        [options]="pieChartOption"
+        >
+    </canvas>
+  </div>
+        <!-- <div class="group-8427">
           <div class="ellipse-2"></div>
           <div class="ellipse-6"></div>
           <div class="ellipse-7"></div>
           <div class="ellipse-8"></div>
           <div class="ellipse-9"></div>
           <div class="ellipse-10"></div>
-        </div>
+        </div> -->
         <div class="frame-8714">
           <div class="total-revenue">Total revenue</div>
           <div class="_76-100">
@@ -169,290 +181,21 @@
         </div>
         <div class="line-43"></div>
         <div class="chart">
-          <div class="horizontal-bar">
-            <div class="group">
-              <svg
-                class="vector5"
-                width="2"
-                height="11"
-                viewBox="0 0 2 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1.26218 10.7901V0.498047" stroke="#363636" />
-              </svg>
-              <div class="jan">Jan</div>
-            </div>
-            <div class="group">
-              <svg
-                class="vector6"
-                width="2"
-                height="11"
-                viewBox="0 0 2 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1.13533 10.7901V0.498047" stroke="#363636" />
-              </svg>
-              <div class="feb">Feb</div>
-            </div>
-            <div class="group">
-              <svg
-                class="vector7"
-                width="2"
-                height="11"
-                viewBox="0 0 2 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1.15336 10.7901V0.498047" stroke="#363636" />
-              </svg>
-              <div class="mar">Mar</div>
-            </div>
-            <div class="group2">
-              <svg
-                class="vector8"
-                width="2"
-                height="11"
-                viewBox="0 0 2 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1.16496 10.7901V0.498047" stroke="#363636" />
-              </svg>
-              <div class="apr">Apr</div>
-            </div>
-            <div class="group3">
-              <svg
-                class="vector9"
-                width="2"
-                height="11"
-                viewBox="0 0 2 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0.918869 10.7901V0.498047" stroke="#363636" />
-              </svg>
-              <div class="may">May</div>
-            </div>
-            <div class="group4">
-              <svg
-                class="vector10"
-                width="2"
-                height="11"
-                viewBox="0 0 2 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0.930389 10.7901V0.498047" stroke="#363636" />
-              </svg>
-              <div class="jun">Jun</div>
-            </div>
-            <div class="group5">
-              <svg
-                class="vector11"
-                width="2"
-                height="11"
-                viewBox="0 0 2 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1.41119 10.7901V0.498047" stroke="#363636" />
-              </svg>
-              <div class="dec">Dec</div>
-            </div>
-            <div class="group5">
-              <svg
-                class="vector12"
-                width="1"
-                height="11"
-                viewBox="0 0 1 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0.496185 10.7901V0.498047" stroke="#363636" />
-              </svg>
-              <div class="sep">Sep</div>
-            </div>
-            <div class="group5">
-              <svg
-                class="vector13"
-                width="2"
-                height="11"
-                viewBox="0 0 2 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0.660095 10.7901V0.498047" stroke="#363636" />
-              </svg>
-              <div class="nov">Nov</div>
-            </div>
-            <div class="group6">
-              <svg
-                class="vector14"
-                width="2"
-                height="11"
-                viewBox="0 0 2 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0.646057 10.7901V0.498047" stroke="#363636" />
-              </svg>
-              <div class="oct">Oct</div>
-            </div>
-            <div class="group7">
-              <svg
-                class="vector15"
-                width="2"
-                height="11"
-                viewBox="0 0 2 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1.06592 10.7901V0.498047" stroke="#363636" />
-              </svg>
-              <div class="jul">Jul</div>
-            </div>
-            <div class="group5">
-              <svg
-                class="vector16"
-                width="2"
-                height="11"
-                viewBox="0 0 2 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M1.07767 10.7901V0.498047" stroke="#363636" />
-              </svg>
-              <div class="aug">Aug</div>
-            </div>
-          </div>
-          <svg
-            class="graph"
-            width="1021"
-            height="276"
-            viewBox="0 0 1021 276"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M0.644135 275.033L1020.89 275.033" stroke="#CCCCCC" />
-            <path d="M1.6808 206.419H1020.89" stroke="#CCCCCC" />
-            <path d="M1.6808 137.808H1020.89" stroke="#CCCCCC" />
-            <path d="M1.6808 69.189H1020.89" stroke="#CCCCCC" />
-            <path d="M0.644135 0.577637L1020.89 0.577726" stroke="#CCCCCC" />
-            <path d="M1.284 0.577637V275.031" stroke="#CCCCCC" />
-            <path d="M80.0739 0.577637V275.031" stroke="#CCCCCC" />
-            <path d="M202.694 0.577637V275.031" stroke="#CCCCCC" />
-            <path d="M311.471 0.577637V275.031" stroke="#CCCCCC" />
-            <path d="M450.306 0.577637V275.031" stroke="#CCCCCC" />
-            <path d="M573.393 0.577637V275.031" stroke="#CCCCCC" />
-            <path d="M697.916 0.577637V275.031" stroke="#CCCCCC" />
-            <path d="M819.571 0.577637V275.031" stroke="#CCCCCC" />
-            <path d="M941.227 0.577637V275.031" stroke="#CCCCCC" />
-            <path d="M1020.89 0.577637V275.031" stroke="#CCCCCC" />
-          </svg>
-          <div class="side-bar">
-            <div class="group10">
-              <div class="group-8343">
-                <div class="group11">
-                  <svg
-                    class="vector32"
-                    width="6"
-                    height="2"
-                    viewBox="0 0 6 2"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0.098114 1.03418H5.28349" stroke="#2A547C" />
-                  </svg>
-                  <div class="_0">0</div>
-                </div>
-                <div class="group12">
-                  <svg
-                    class="vector33"
-                    width="6"
-                    height="2"
-                    viewBox="0 0 6 2"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0.101166 1.42139H5.28654" stroke="#2A547C" />
-                  </svg>
-                  <div class="_20-k">20k</div>
-                </div>
-                <div class="group13">
-                  <svg
-                    class="vector34"
-                    width="6"
-                    height="2"
-                    viewBox="0 0 6 2"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0.0980225 0.809082H5.2834" stroke="#2A547C" />
-                  </svg>
-                  <div class="_40-k">40k</div>
-                </div>
-                <div class="group14">
-                  <svg
-                    class="vector35"
-                    width="6"
-                    height="2"
-                    viewBox="0 0 6 2"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0.0982056 1.19189H5.28358" stroke="#2A547C" />
-                  </svg>
-                  <div class="_60-k">60k</div>
-                </div>
-                <div class="group15">
-                  <svg
-                    class="vector36"
-                    width="6"
-                    height="2"
-                    viewBox="0 0 6 2"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M0.0980988 0.577637H5.28348" stroke="#2A547C" />
-                  </svg>
-                  <div class="_80-k">80k</div>
-                </div>
-                <svg
-                  class="vector37"
-                  width="2"
-                  height="276"
-                  viewBox="0 0 2 276"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M1.28922 0.577637V275.031" stroke="#2A547C" />
-                </svg>
-              </div>
-              <div class="no-of-bookings">No. of bookings</div>
-            </div>
-          </div>
-          <svg
-            class="hospitalised"
-            width="907"
-            height="184"
-            viewBox="0 0 907 184"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0.871796 183.546L85.2244 167.591L166.528 149.864H245.256L328.428 161.655L409.696 151.255L492.759 139.227L628.943 97.2729L691.953 66.5456L758.013 18.682L852.528 0.36377L906.392 31.091"
-              stroke="#E86933"
-              stroke-width="2"
-            />
-          </svg>
-        </div>
-        <div class="frame-87303">
-          <div class="ellipse-117"></div>
-          <div class="revenue2">Revenue</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+   
+ 
+
+    <canvas
+    baseChart
+    class="chart"
+    width="440"
+    height="240"
+    type="line"
+    [data]="lineChartData"
+    >
+</canvas>
+
+
+</div>
+</div>
+</div>
+</div>
