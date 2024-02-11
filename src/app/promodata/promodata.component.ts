@@ -33,11 +33,12 @@ export class PromodataComponent  {
 
 
   getAll(){
-    this.os.getAlloffers().subscribe(res=>{
-      console.log(res)
-      this.notifyData=res;
-    })
+    this.os.getAlloffers().subscribe((res:any)=>{
+      if(res){
 
+        this.notifyData=res[0];
+      }
+    })
   }
     async delete(ID1:number,ID2:number){
       const confirmed = await this.sweetAlertService.showConfirmation('Are you sure?', 'do you want to remove record!');
