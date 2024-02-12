@@ -35,6 +35,7 @@ console.log(data)
     const data = this.notifyForm.value;
     this.reg.savenotification(data).subscribe((res)=>{
       this.dialogRef.close();
+      this.snackBar.open(res.message)
       // this.notiydetails=res;
       console.log(res)
     })

@@ -1,7 +1,4 @@
-.frame-8725,
-.frame-8725 * {
-  box-sizing: border-box;
-}
+
 .frame-8725 {
   padding: 16px;
   display: flex;
@@ -9,8 +6,7 @@
   gap: 10px;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 1178px;
-  height: 942px;
+
   position: relative;
 }
 .frame-8724 {

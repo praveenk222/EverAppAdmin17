@@ -17,15 +17,21 @@
    
   </mat-toolbar>
     
-    <mat-nav-list >
-      <a  [routerLink]="m.link"  *ngFor="let m of menu" class="nav-item" >
+    <mat-nav-list>
+      <!-- <a  [routerLink]="m.link"  *ngFor="let m of menu" class="nav-item" > -->
         <!-- <mat-icon>input</mat-icon> -->
     
-        <div class="header-links">
+        <!-- <div class="header-links">
           
         <span class="links" routerLinkActive="active" ><mat-icon  class="icon">{{m.icon}}</mat-icon>{{m.TabName}}</span>
       </div>
-      </a>
+      </a> -->
+     <div class="container">
+      <a mat-list-item [routerLink]="m.link" routerLinkActive="active"  *ngFor="let m of menu" class="nav-item" > 
+        <mat-icon  class="icon">{{m.icon}}</mat-icon>
+        <span class="links" >{{m.TabName}}</span> 
+        </a>
+      </div>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

@@ -20,6 +20,8 @@ import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import { ManualPaymentSuccessComponent } from './manual-payment-success/manual-payment-success.component';
 import { ManualBookingUserBookingSummaryComponent } from './manual-booking-user-booking-summary/manual-booking-user-booking-summary.component';
 import { WebcamModule } from 'ngx-webcam';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { DocumentsUploadComponent } from './documents-upload/documents-upload.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,11 @@ import { WebcamModule } from 'ngx-webcam';
     ManualPaymentSuccessComponent,
     ManualBookingUserBookingSummaryComponent,
     ManualBookingSummaryComponent,
-    ManualPaymentSuccessComponent
+    ManualPaymentSuccessComponent,
+    UserdetailsComponent,
+    DocumentsUploadComponent,
+    UserdetailsComponent,
+    DocumentsUploadComponent
   ],
   imports: [
     CommonModule,

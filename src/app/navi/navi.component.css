@@ -3,7 +3,7 @@
 }
 
 .sidenav {
-  width: 280px;
+  width: 300px;
   font-size: 16px;
   background:#202c51 ;
   color: white;
@@ -19,9 +19,9 @@
   z-index: 1;
 }
 
-.header-links .active {
+/* .header-links .active {
   font-size: 20px;
-  padding: 12px !important;
+  padding:12px 20px 12px 1px !important;
   width: 160px !important;
   height: 100px !important;
   border-radius: 10px !important;
@@ -34,14 +34,22 @@
 .header-links{
   margin-left:10% ;
   margin-top: 2%;
+
+} */
+
+.active {
+	background: white;
+     width: 200px !important;
+	 border-radius: 10px !important;
+	 color: black !important;
 }
 .example-spacer{
   flex: 1 0 0;
 }
-.nav-item{
-  padding: 8%;
-font-size: 18px;
-  color: white;
+.nav-item {
+	/* margin-left:2% ; */
+	margin-top: 2%;
+	color: white !important;
 }
 .toolbar{
   background:white;
@@ -52,18 +60,24 @@ font-size: 18px;
   padding:15%;
 
 }
+.container{
+	padding: 5%;
+}
+.active .links{
+	color: black !important;
+}
 .links{
   color: white;
 
 }
 .icon{
-
+   color: white;
   margin-bottom: -4px;
   margin-right: 10px;
 
 }
-.icon .active{
-  color: blue !important;margin-bottom: 6x;
+.active .icon {
+  color: #202c51 !important;margin-bottom: 6x;
 }
 
 .switch,

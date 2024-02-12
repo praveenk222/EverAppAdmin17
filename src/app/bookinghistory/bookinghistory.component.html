@@ -119,9 +119,9 @@
                 </svg>
               </div>
             </div>
-            <div class="frame-87202">
-      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" class="inventory-table"
-          style="width: 100%;">
+            <!-- <div class="frame-87202"> -->
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" 
+         >
       
           <!--- Note that these columns can be defined in any order.
                     The actual rendered columns are set as a property on the row definition" -->
@@ -183,7 +183,7 @@
         <mat-paginator #paginator [pageSize]="10" [pageSizeOptions]="pageSizeOptions" (page)="changePage($event)">
         </mat-paginator>
         
-            </div>
+            <!-- </div> -->
           </div>     
         </mat-tab>
         <mat-tab label="Electric battery">   

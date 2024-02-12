@@ -385,14 +385,17 @@
 }
 .frame-87202 {
   border-radius: 8px;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative; */
+  position: relative;
 
+}
+::ng-deep .mat-elevation-z8{
+   width: 100% !important;
 }
 .booking-history-table-head {
   background: #d6edfe;

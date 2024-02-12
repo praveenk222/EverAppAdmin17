@@ -18,6 +18,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { SharedComponentsModule } from '../commonFiles/commonModules/sharedComponents.Module';
 import { AllbikesComponent } from './allvehicles/allbikes/allbikes.component';
 import { AllbhulistComponent } from './all-hubstation/allbhulist/allbhulist.component';
+import { AddbatteryComponent } from './addbattery/addbattery.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AllbhulistComponent } from './all-hubstation/allbhulist/allbhulist.comp
     AddbikesComponent,
     AllbikesComponent,
     AllbhulistComponent,
+    AddbatteryComponent,
   ],
   imports: [
     CommonModule,

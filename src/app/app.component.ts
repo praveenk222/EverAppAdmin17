@@ -1,5 +1,6 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { OverlayContainer } from '@angular/cdk/overlay';
+import { HttpClient } from '@angular/common/http';
 import { Component, HostBinding } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatSidenav } from '@angular/material/sidenav';
@@ -12,10 +13,11 @@ import { MatSidenav } from '@angular/material/sidenav';
 export class AppComponent {
   title = 'EverAdminPanel';
   private sidenav: MatSidenav;
-
+code:number;
   public isMenuOpen = true;
-constructor(private breakpointObserver: BreakpointObserver,private overlay:OverlayContainer){
+constructor(private breakpointObserver: BreakpointObserver,private overlay:OverlayContainer,private http:HttpClient){
   this.isMenuOpen = false;
+  this.pincode()
 }
   get isHandset(): boolean {
     return this.breakpointObserver.isMatched(Breakpoints.Handset);
@@ -45,4 +47,14 @@ toggleControl = new FormControl(false);
 @HostBinding('class')  className = '';
 darkClassName = 'theme-dark';
 lightClassName = 'theme-light';
+pincode(){
+ 
+}
+// handle(event:any){console.log(this.code.toString().length)
+//   if(this.code.toString().length == 6){
+//   this.http.get(`https://api.postalpincode.in/pincode/${this.code}`).subscribe((res:any)=>{
+//     console.log(res)
+//   })
+// }
+// }
 }

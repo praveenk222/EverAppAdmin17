@@ -1,7 +1,7 @@
-.frame-8725,
+/* .frame-8725,
 .frame-8725 * {
   box-sizing: border-box;
-}
+} */
 .frame-8725 {
   padding: 16px;
   display: flex;
@@ -9,8 +9,7 @@
   gap: 10px;
   align-items: center;
   justify-content: center;
-  width: 1178px;
-  height: 942px;
+
   position: relative;
 }
 .parent{
@@ -472,14 +471,14 @@
   background: #ffffff;
   border-radius: 18px;
   flex-shrink: 0;
-  width: 630px;
+  width: 62%;
   height: 380px;
   position: relative;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
 .chart {
-  width: 604px;
+  width: 70%;
   height: 256px;
   position: absolute;
   left: 12px;

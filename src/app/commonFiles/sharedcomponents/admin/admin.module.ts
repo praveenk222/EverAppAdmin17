@@ -6,6 +6,8 @@ import { AdminComponent } from './admin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { ChangepasswordComponent } from '../changepassword/changepassword.component';
+import { MaterialModule } from '../../commonModules/material.module';
+import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -16,7 +18,12 @@ import { ChangepasswordComponent } from '../changepassword/changepassword.compon
     CommonModule,
     AdminRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MaterialModule
+  ],
+  providers:[
+    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 3000 ,    horizontalPosition: 'end',
+    verticalPosition: 'top',} },
   ]
 })
 export class AdminModule { }

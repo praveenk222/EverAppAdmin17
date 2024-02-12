@@ -6,6 +6,7 @@ import { PromodataComponent } from './promodata.component';
 import { AddPromocodeComponent } from './add-promocode/add-promocode.component';
 import { MaterialModule } from '../commonFiles/commonModules/material.module';
 import { DialogAddPromocodeComponent } from '../commonFiles/sharedcomponents/dialog-add-promocode/dialog-add-promocode.component';
+import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -19,6 +20,10 @@ import { DialogAddPromocodeComponent } from '../commonFiles/sharedcomponents/dia
     PromodataRoutingModule,
 MaterialModule 
     
+  ],
+  providers:[
+    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 3000 ,    horizontalPosition: 'end',
+    verticalPosition: 'top',} },
   ]
 })
 export class PromodataModule { }

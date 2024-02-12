@@ -1,0 +1,101 @@
+.add-vehicle {
+    color: var(--primary, #3355b9);
+    text-align: left;
+    font-family: "OpenSansHebrew-Bold", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+  }
+  .generate-booking-report{
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSansHebrew-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  }
+  .parent{
+    display: flex;
+    flex-wrap: wrap row;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .child{
+    width: 520px;
+    height: 1000px;
+    border-radius: 24px;
+    padding: 2%;
+  }
+  .child1{
+    width: 520px;
+    height: 1000px;
+    border-radius: 24px;
+  
+  }
+  td{
+    padding: 2%;
+  }
+
+  .content2 {
+    border-radius: 24px;
+    border-style: solid;
+    border-color: #e8e7e7;
+    border-width: 1px;
+    padding: 6px 12px 6px 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .frame-2608332 {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+  }
+  .ic-round-arrow-back {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+  }
+  .all-hub-stations {
+    color: #363636;
+    text-align: left;
+    font-family: "OpenSansHebrew-Bold", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+  }
+  .example-spacer{
+    flex:1 0 0;
+  }
+
+  .frame-8073 {
+  border-radius: 24px;
+  color:white;
+  font-size: 12px;
+  border:2px solid var(--primary, #3355b9);
+  border-width: 1px;
+  padding: 8px 20px 8px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 42px;
+  position: relative;
+}
