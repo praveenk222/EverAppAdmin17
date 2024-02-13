@@ -147,6 +147,9 @@ getordersummeryByBookingNo(bookingNo:string){
   savehub(postdata:any){
     return this.http.post('http://localhost:8080/api/v1/adminweb/products/savehub',postdata)
   } 
+  savePrice(postdata:any){
+    return this.http.post('http://localhost:8080/api/v1/adminweb/counts/savePrice',postdata)
+  } 
   async getPridcedata():  Promise<any> {    
 
     return new Promise((resolve, reject) => {
