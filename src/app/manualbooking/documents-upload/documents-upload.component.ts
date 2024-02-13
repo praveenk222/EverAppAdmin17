@@ -6,6 +6,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DataserviceService } from '../../dataservice.service';
 import { DatePipe } from '@angular/common';
 import { environment } from '../../../environments/environment.prod';
+import { WebcamImage } from 'ngx-webcam';
+import { Subject } from 'rxjs';
 interface Food {
   value: string;
   viewValue: number;
@@ -632,4 +634,18 @@ if(!this.customDate.valid){
       this.ProductDetails = res;
     })
   }
+  public showWebcam = true;
+  public allowCameraSwitch = true;
+  public multipleWebcamsAvailable = false;
+  public deviceId: string;
+  public facingMode: string = 'environment';
+  public messages: any[] = [];
+
+  // latest snapshot
+
+
+  // webcam snapshot trigger
+  private trigger: Subject<void> = new Subject<void>();
+  // switch to next / previous / specific webcam; true/false: forward/backwards, string: deviceId
+  private nextWebcam: Subject<boolean|string> = new Subject<boolean|string>();
 }

@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: space-between;
   flex-shrink: 0;
-  width: 1146px;
+  /* width: 1146px; */
   position: relative;
 }
 .frame-2608332 {
@@ -1183,15 +1183,7 @@ input:focus ~ .highlight {
   
 }
 
-.parent{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  column-gap: 20px;
-  row-gap: 20px;
-}
+
 
 .button-wrap {
   position: relative;
@@ -1422,6 +1414,7 @@ input:focus ~ .highlight {
   flex-shrink: 0;
   height: 0px;
   position: relative;
+  width:100%
 }
 .frame-2608297 {
   display: flex;
@@ -1655,4 +1648,26 @@ input:focus ~ .highlight {
   left: 0;
   top: 0;
   opacity: 0;
+}
+
+.tile{
+  border-radius: 24px;
+}
+.parent{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 2%;
+}
+.child{
+  width:640px;
+  height: 540px;
+  border-radius: 24px;
+}
+.example-spacer{
+  flex:1 0 0;
 }

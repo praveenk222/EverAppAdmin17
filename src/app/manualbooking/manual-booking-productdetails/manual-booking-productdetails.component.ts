@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { UsersService } from '../../services/users.service';
@@ -6,6 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DataserviceService } from '../../dataservice.service';
 import { DatePipe } from '@angular/common';
 import { environment } from '../../../environments/environment.prod';
+import { DateRange } from '@angular/material/datepicker';
 interface Food {
   value: string;
   viewValue: number;
@@ -30,6 +31,68 @@ export class ManualBookingProductdetailsComponent {
       
 //     })
 //   }
+
+@Input() BookingStartDate: any
+@Input() BookingEndDate: any
+
+datetimeForm!: FormGroup;
+ProductDetails: any;
+taskId: any;
+ProductID = 1000;
+ str:any;
+ end:any;
+ strtime:any;
+ endtime:any;
+
+
+save() {
+  
+  if (this.str != '' && this.end != '') {
+    this.sendData();
+    this.router.navigateByUrl('/slotbooking')
+  }
+  else {
+   
+
+  }
+}
+
+sendData() {
+  const combinedData = {
+    inputValue: this.str,
+    inputValue1: this.end
+  
+  };
+  console.log(this.str);
+  console.log(this.end)
+  this.dataService.setCombinedData(combinedData);
+}
+
+
+selectedDateRange!: DateRange<Date>;
+
+_onSelectedChange(date: Date): void {
+  if (
+    this.selectedDateRange &&
+    this.selectedDateRange.start &&
+    date > this.selectedDateRange.start &&
+    !this.selectedDateRange.end
+  ) {
+    this.selectedDateRange = new DateRange(
+      this.selectedDateRange.start,
+      date
+      
+    );
+ this.str=this.selectedDateRange.start
+this.end= this.selectedDateRange.end
+    console.log(this.selectedDateRange.start)
+    console.log(this.selectedDateRange.end)
+
+  } else {
+    this.selectedDateRange = new DateRange(date, null);
+  }
+}
+
 
 regForm!:FormGroup;
   data: any;
@@ -344,9 +407,9 @@ filedata: any =
   customDate!: FormGroup;
   productId: any =null;
   Number!: number;
-  ProductDetails: any
+
   totalHours!: number;
-  taskId: any;
+
   timeDifference: any
   selectedValue!: string;
   selectedValue1!: string;

@@ -1,4 +1,4 @@
-
+<!-- 
 <div
 style="width:100%;  flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
 <div
@@ -152,6 +152,116 @@ style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom
 </div>
 </div>
 
+ -->
+ <div class="user-details2">Upload Documments</div><br>
+ <div class="line-43"></div><br>
+ <table>
+  <tr>
+    <td>
+      <div
+  style="align-self: stretch; color: #363636; font-size: 16px;  font-weight: 700; word-wrap: break-word">
+  Aadhar no.</div>
+<input type="number" placeholder="Enter Aadhar no." placeholder="0000 0000 0000"
+  style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: white; border-radius: 28px; overflow: hidden; border: 1px #E2E1E5 solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex"
+  oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
+  onKeyPress="if(this.value.length==12) return false;">
+<br><br>
+  <div class="upload-btn-wrapper">
+    <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
+    <input id="adhar" type="file" name="myfile" (change)="onAdharSelected($event,'adhar')" />
+  </div>
+  <div
+style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+<div *ngIf="frontA"
+  style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: flex">
+  <div style="justify-content: flex-start; align-items: center; gap: 6px; display: flex">
+    
+    <div
+      style="color: black; font-size: 12px;  font-weight: 400; letter-spacing: 0.24px; word-wrap: break-word">
+      {{frontA}}</div>
+  </div>
+  <div style="width: 16px; height: 16px; position: relative" (click)="removeFrontA()">
 
+  </div>
+  </div>
+</div>
+<div *ngIf="isBackA"
+  style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: flex">
+  <div style="justify-content: flex-start; align-items: center; gap: 6px; display: flex">
+ 
+    <div
+      style="color: black; font-size: 12px;  font-weight: 400; letter-spacing: 0.24px; word-wrap: break-word">
+      {{BackA}}</div>
+  </div>
+  <div style="width: 16px; height: 16px; position: relative" (click)="removeBackA()">
+ 
+  </div>
+</div>
+    </td>
 
+    <td>
+      <div
+      style="align-self: stretch; color: #363636; font-size: 16px;  font-weight: 700; word-wrap: break-word">
+      Driving licence no.</div>
+    <input type="number" placeholder="Enter Aadhar no." placeholder="0000 0000 0000"
+      style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: white; border-radius: 28px; overflow: hidden; border: 1px #E2E1E5 solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex"
+      oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
+      onKeyPress="if(this.value.length==12) return false;">
+    <br><br>
+      <div class="upload-btn-wrapper">
+        <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
+        <input id="licenseno" type="file" name="myfile" (change)="onLicenseSelected($event,'licence')"/>
+      </div>
+     
+      <div *ngIf="filedata.PANImage"
+      style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: flex">
+      <div style="justify-content: flex-start; align-items: center; gap: 6px; display: flex">
+      
+       <div
+         style="color: black; font-size: 12px;  font-weight: 400; letter-spacing: 0.24px; word-wrap: break-word">
+         {{filedata.PANImage}}</div>
+      </div>
+      <div style="width: 16px; height: 16px; position: relative" (click)="removeFrontA()">
+      
+      </div>
+      </div>
+      <div *ngIf="filedata.PANImageB"
+      style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: flex">
+      <div style="justify-content: flex-start; align-items: center; gap: 6px; display: flex">
+      
+       <div
+         style="color: black; font-size: 12px;  font-weight: 400; letter-spacing: 0.24px; word-wrap: break-word">
+         {{filedata.PANImageB}}</div>
+      </div>
+      <div style="width: 16px; height: 16px; position: relative" (click)="removeBackA()">
+      
+      
+      
+      </div>
+      </div>
+  
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div
+  style="align-self: stretch; color: #363636; font-size: 16px;  font-weight: 700; word-wrap: break-word">
+  Driving licence no.</div>
+<input type="number" placeholder="Enter Aadhar no." placeholder="0000 0000 0000"
+  style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: white; border-radius: 28px; overflow: hidden; border: 1px #E2E1E5 solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex"
+  oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
+  onKeyPress="if(this.value.length==12) return false;">
+<br><br>
+  <div class="upload-btn-wrapper">
+    <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
+    <input id="licenseno" type="file" name="myfile" (change)="onLicenseSelected($event,'licence')"/>
+  </div>
+    </td>
+
+    <td>
+      <webcam [height]="00" [width]="200" style="border-radius: 24px;"></webcam>
+     
+    </td>
+  </tr>
+ </table>
 
