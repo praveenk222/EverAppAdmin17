@@ -15,13 +15,16 @@ priceForm:FormGroup;
 postdata:any;
 constructor(private pf:FormBuilder,private us:UsersService,public dialogRef: MatDialogRef<AddpricedataComponent>,public snackBar: MatSnackBar){
   this.priceForm=this.pf.group({
-    paytype:'',
-    payment:''
+      "ID": 0,
+      "PayTypes": "",
+      "Amount": 0,
+      "IsActive": true,
   })
 }
 addpricecard(){
   const date=this.priceForm.value;
-  this.us.saveUserdata(this.postdata).subscribe((res:any)=>{
+  console.log(date)
+  this.us.savePrice(this.postdata).subscribe((res:any)=>{
     console.log(res)
     this.snackBar.open(res.message);
     this.dialogRef.close();
