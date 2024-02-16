@@ -695,4 +695,13 @@ if(!this.customDate.valid){
       this.ProductDetails = res;
     })
   }
+
+  displayStyle = "none"; 
+  
+  openPopup() { 
+    this.displayStyle = "block"; 
+  } 
+  closePopup() { 
+    this.displayStyle = "none"; 
+  } 
 }

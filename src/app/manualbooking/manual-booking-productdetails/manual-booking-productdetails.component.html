@@ -169,8 +169,8 @@
   <mat-card class="child">
 
    
-    <hr>
-          
+   
+<!--           
     <div class="user-details2">User details</div>
 <br>
       
@@ -190,8 +190,82 @@
         </div><br>
         <mat-calendar style="width:60%;padding: 2%;" (selectedChange)="_onSelectedChange($event)"
         [selected]="selectedDateRange">
-      </mat-calendar>
-      
+      </mat-calendar> -->
+      <div class="btn-container">
+        <form action="" [formGroup]="customDate">
+        <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: center; gap: 24px; display: inline-flex">
+       
+         
+         <div style="width: 100%; align-self: stretch; height: 70px; flex-direction: column; justify-content: center; align-items: center; gap: 12px; display: flex">
+             <div style="align-self: stretch;  font-size: 18px;  font-weight: 700; word-wrap: break-word">How much time do you need?</div>
+             <div style="justify-content: flex-start; align-items: flex-start; gap: 12px; display: inline-flex">
+                 <button mat-button (click)="onFirstButtonClick(6)" style="padding-left: 12px; padding-right: 12px; padding-top: 7px; padding-bottom: 7px; border-radius: 24px; border: 1px #E8E7E7 solid; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px; display: inline-flex">
+                     <div style=" font-size: 14px;  font-weight: 400; word-wrap: break-word">6 hours</div>
+                 </button>
+                 <button  mat-button (click)="onFirstButtonClick(12)" style="padding-left: 12px; padding-right: 12px; padding-top: 7px; padding-bottom: 7px; border-radius: 24px; border: 1px #E8E7E7 solid; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                     <div style=" font-size: 14px;  font-weight: 400; word-wrap: break-word">12 hours</div>
+                 </button>
+                 <button mat-button (click)="onFirstButtonClick(24)" name="selectoptionone" style="padding-left: 12px; padding-right: 12px; padding-top: 7px; padding-bottom: 7px; border-radius: 24px; border: 1px #E8E7E7 solid; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px; display: inline-flex">
+                     <div style=" font-size: 14px;  font-weight: 400; word-wrap: break-word">1 day</div>
+                 </button>
+                 <button mat-button (click)="onFirstButtonClick(48)" style="padding-left: 12px; padding-right: 12px; padding-top: 7px; padding-bottom: 7px; border-radius: 24px; border: 1px #E8E7E7 solid; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px; display: inline-flex">
+                     <div style=" font-size: 14px;  font-weight: 400; word-wrap: break-word">2 days</div>
+                 </button>
+             </div>
+         </div>
+       
+             <div style="align-self: stretch; height: 25px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 12px; display: flex">
+                 <div style="align-self: stretch;  font-size: 18px;  font-weight: 700; word-wrap: break-word">Set date & time</div>
+             </div>
+             
+           
+             <div class="input-group" >
+               <input type="datetime-local" name="startDate" [(ngModel)]="startDate"  (change)="onStartTimeChange($event)" placeholder="Select end date and time" formControlName="date">
+               <span class="highlight"></span>
+               <span class="bar"></span>
+               <label>Select start date and time</label>
+             </div>
+        
+           
+             <div class="input-group" >
+               <input type="datetime-local" name="endDate"  [(ngModel)]="endDate" (change)="onEndTimeChange($event)" placeholder="Select end date and time" formControlName="time" >
+               <span class="highlight"></span>
+               <span class="bar"></span>
+               <label>Select end date and time</label>
+             </div>
+          
+            
+          
+             
+                 
+       
+            
+       <div class="container">
+         <div style="width: 100%; padding-top:14px; padding-bottom: 14.50px; padding-left: 16px; padding-right: 16px;  justify-content: center; align-items: center; gap: 83px; display: inline-flex;border-top: 2px solid #E2E2E2;">
+             <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+                 <div style="color: black; font-size: 14px;  font-weight: 400; word-wrap: break-word">Total</div>
+                 <div style="color: black; font-size: 20px;  font-weight: 700; word-wrap: break-word">₹{{convertedCash}}</div>
+             </div>
+             <button (click)="book()" 
+             style="flex: 1 1 0; align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 10px; padding-bottom: 10px; background: #3355B9; border-radius: 24px; overflow: hidden; justify-content: space-between; align-items: center; display: inline-flex">
+             <div class="book" >Book now</div>
+             <div
+               style="width: 24px; height: 24px; padding-top: 1.82px; padding-bottom: 1.82px; justify-content: center; align-items: center; display: flex">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                 <path
+                   d="M19.4064 9.80036L12.1212 2.51516L13.818 0.818359L24 11.0004L23.1516 11.8488L13.818 21.1824L12.1212 19.4856L19.4064 12.2004H0V9.80036H19.4064Z"
+                   fill="white" />
+               </svg>
+             </div>
+           </button>
+
+           
+        
+         </div>
+       </div>
+       </div>
+       </form>
+       </div>
        
       
  
