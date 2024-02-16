@@ -68,11 +68,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+margin-top: -5px;
 }
 
-.fe-arrow-down {
+.icon {
   flex-shrink: 0;
-  width: 18px;
+  width:100px;
   height: 18px;
   position: relative;
   overflow: hidden;
@@ -100,23 +101,26 @@
 }
 
 .button-9 {
-  background: #F2F2F2;
+
   border-radius: 24px;
 
-
+  background: whitesmoke;
   padding: 12px;
   display: flex;
   flex-direction: row;
-  gap: 12px;
+
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
   width: 100%;
-  position: absolute;
- 
-  bottom: 19px;
+
+ border: none;
+
   box-shadow: 0px 2px 12px 0px rgba(25, 116, 76, 0.15);
   overflow: hidden;
+}
+.btn-container{
+  padding: 2%;
 }
 
 .dropdown {

@@ -299,6 +299,7 @@
      
       </table>
 
-      
-     <button  matRipple class="register-btn"  type="submit"  (click)="register()" >Register</button>
+      <div class="btn-container">
+     <button  matRipple class="register-btn" [disabled]="!regForm.valid"  type="submit"  (click)="register()" >Register</button>
+    </div>
     </form>

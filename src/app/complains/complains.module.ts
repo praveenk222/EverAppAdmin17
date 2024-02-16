@@ -7,6 +7,7 @@ import { AddTicketComponent } from './add-ticket/add-ticket.component';
 import { ComplainsDetailsComponent } from './complains-details/complains-details.component';
 import { MaterialModule } from '../commonFiles/commonModules/material.module';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
+import { AutoserachComponent } from '../commonFiles/sharedcomponents/autoserach/autoserach.component';
 
 
 
@@ -19,7 +20,10 @@ import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
   imports: [
     CommonModule,
     ComplainsRoutingModule,
-    MaterialModule
+    MaterialModule,
+    AutoserachComponent
+
+    
 
   ],
   providers:[
