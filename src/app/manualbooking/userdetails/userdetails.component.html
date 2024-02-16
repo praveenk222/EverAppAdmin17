@@ -278,7 +278,7 @@
           </td>
           <td>
             <div class="farmer-name2">Mobile no.</div>
-            <input class="frame" formControlName=" MobileNo" placeholder="Enter mobile number">
+            <input type="tel" class="frame" formControlName=" MobileNo" placeholder="Enter mobile number">
           </td>
         </tr>
         <tr>
@@ -288,14 +288,10 @@
           </td>
           <td>
             <div class="farmer-name2">Gender</div>
-            <select class="frame" formControlName="Gender
-            
-            " placeholder="select">
+            <select class="frame" formControlName="MemberType" placeholder="select" value="select" placeholder="select">
            
-           
-              <option value="select"></option>
-              <option value="male">male</option>
-              <option value="female">female</option>
+              <option [value]="p.value" *ngFor ="let p of genderdata">{{p.name}}</option>
+              
           
             </select>
           </td>

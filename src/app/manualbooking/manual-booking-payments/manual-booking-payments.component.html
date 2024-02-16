@@ -184,6 +184,36 @@
               </div>
             </div>
           </div>
+          <div class="rechargedialog">
+            <form action="" [formGroup]="recharge">
+          <label>Name</label><br>
+          <input type="text" name="name"  class="rec" formControlName="name" [(ngModel)]="Name">
+          <br>
+          <label>phone</label><br>
+          <input type="tel" name="name" class="rec" formControlName="contact" [(ngModel)]="phoneNo">
+          <br>
+          <label>Email</label><br>
+          <input type="email" name="name"  class="rec" formControlName="email"  [(ngModel)]="Email">
+          <br>
+          <label>productname</label><br>
+          <input type="text" name="name"  class="rec" formControlName="product_name"> 
+          <br>
+          <label>amount</label><br>
+          <input type="number" name="name" class="rec" formControlName="amount" [(ngModel)]="inputValue">
+          <br>
+          <label>discription</label><br>
+          <input type="text" name="name" class="rec `" formControlName="discription">
+          </form>
+          </div>
+        <br>
+        <button mat-stroked-button color="primary" style="width: 100px;" (click)="onButtonClick('1000')">1000</button>
+        <button mat-stroked-button color="accent"style="width: 100px;" (click)="onButtonClick('2000')">2000</button>
+        <button mat-stroked-button color="warn"style="width: 100px;" (click)="onButtonClick('500')">500</button><br><br>
+        <button mat-raised-button color="accent" (click)="paynow()">Paynow</button><br >
+        <div mat-dialog-actions>
+          <button mat-button mat-dialog-close>Close</button>
+        </div> 
+
           <!-- <div class="frame-2608242">
             <div class="offers-benefits">Offers &amp; benefits</div>
             <div class="frame">

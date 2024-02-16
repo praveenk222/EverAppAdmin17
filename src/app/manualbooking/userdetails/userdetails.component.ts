@@ -50,7 +50,7 @@ export class UserdetailsComponent {
       country: '+91',
       MobileNo: ['', [Validators.required, this.mobileNumberValidator]],
       DateofBirth: ['', [Validators.compose([Validators.required])]],
-      Password: ['12345', Validators.compose([Validators.required])],
+      Password: '12345',
       MemberType: "0",
       OTP: '146789',
       IsOTPSent: 'true',
@@ -70,7 +70,7 @@ export class UserdetailsComponent {
     
   }
 
-  get f() { return this.regForm.controls; }
+  // get f() { return this.regForm.controls; }
 
   // openDialog() {
   //   const dialogRef = this.dialog.open(CommunicationAllowPermissionComponent,
@@ -115,27 +115,24 @@ export class UserdetailsComponent {
   }
   register() {
     
-    if (!this.isChecked) {
-      this.snackBar.open('Please select terms and conditions')
-      return
-    }
-    if (!this.regForm.valid) {
+  
+    // if (!this.regForm.valid) {
 
-      this.regForm.markAllAsTouched();
-      this.snackBar.open(" All fields are required ");
-      return;
-    }
+    //   this.regForm.markAllAsTouched();
+    //   this.snackBar.open(" All fields are required ");
+    //   return;
+    // }
  
-    const picname = this.regForm.get('FirstName')!.value + '_' + this.regForm.get('LastName')!.value;
-    this.regForm.controls['ProfilePhoto'].setValue(picname);
-    this.regForm.value.MobileNo = (this.regForm.value.MobileNo).toString()
-    const data = this.regForm.value;
+    // const picname = this.regForm.get('FirstName')!.value + '_' + this.regForm.get('LastName')!.value;
+    // this.regForm.controls['ProfilePhoto'].setValue(picname);
+    // this.regForm.value.MobileNo = (this.regForm.value.MobileNo).toString()
+    // const data = this.regForm.value;
 
-    this.reg.signup(data).subscribe(
+    this.reg.signup(this.regForm.value).subscribe(
       (res: any) => {
-        if (res) {
+        // if (res) {
 
-          if (res.status == 'true') {
+        //   if (res.status == 'true') {
           
             console.log(res)
             this.data = res;
@@ -143,19 +140,19 @@ export class UserdetailsComponent {
            
 
             this.router.navigate(['/login'])
-          } else {
+    //       } else {
         
 
 
 
 
-          }
-        } else {
+    //       }
+    //     } else {
         
 
-        }
+    //     }
 
-      }, (error:any) => {
+    //   }, (error:any) => {
        
 
       }

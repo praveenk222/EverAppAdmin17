@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'bike_list', component: ManualBookingBikelistComponent },
   { path: 'productdetails/:id', component: ManualBookingProductdetailsComponent },
   { path: 'userdetails', component: ManualBookingUsersdetailsComponent },
-  { path: 'paymentdetails', component: ManualBookingPaymentsComponent },
+  { path: 'paymentdetails/:ID', component: ManualBookingPaymentsComponent },
   { path: 'bookingsummary', component: ManualBookingSummaryComponent },
   {path:'battery-list',component:ManualBatteryListComponent},
   {path:'washstation',component:ManualWashstationComponent},

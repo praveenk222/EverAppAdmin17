@@ -96,7 +96,7 @@ this.end= this.selectedDateRange.end
 
 regForm!:FormGroup;
   data: any;
-  bikeHubID: any;
+  bikeHubID=10;
   bikeHub: any;
   bookingNo: string ="SWKPHB231100002";
 constructor(private _rf:FormBuilder,private snackBar: MatSnackBar,private reg:UsersService,private router:Router,private dataService: DataserviceService,private datePipe:DatePipe,private route:ActivatedRoute){
@@ -593,27 +593,27 @@ filedata: any =
 
  //last line
  book() {
-if(!this.customDate.valid){
-  this.customDate.markAllAsTouched();
-  this.snackBar.open(" All fields are required ");
-}else{
+// if(!this.customDate.valid){
+//   this.customDate.markAllAsTouched();
+//   this.snackBar.open(" All fields are required ");
+// }else{
 
-  // this.router.navigateByUrl('/adhar');
+//   // this.router.navigateByUrl('/adhar');
 
-   if (this.isSolt) {
-     this.customDate.markAllAsTouched();
-     this.snackBar.open(" Please Select A Slot!!!");
-   } else {
+//    if (this.isSolt) {
+//      this.customDate.markAllAsTouched();
+//      this.snackBar.open(" Please Select A Slot!!!");
+//    } else {
     
-     this.ordersaveData.ProductID = this.productId;
-     this.ordersaveData.BookingStartDate = this.startDate;
-     this.ordersaveData.BookingEndDate = this.endDate;
-     this.ordersaveData.SecurityAmount=this.securitydeposit
-     this.ordersaveData.WashAmount=this.washtype
-     this.ordersaveData.BookingAmount =this.convertedCash
-     this.ordersaveData.AdvanceAmount=0
-     this.ordersaveData.PaidAmount=0;
-     this.ordersaveData.TotalAmount=0;
+//      this.ordersaveData.ProductID = this.productId;
+//      this.ordersaveData.BookingStartDate = this.startDate;
+//      this.ordersaveData.BookingEndDate = this.endDate;
+//      this.ordersaveData.SecurityAmount=this.securitydeposit
+//      this.ordersaveData.WashAmount=this.washtype
+//      this.ordersaveData.BookingAmount =this.convertedCash
+//      this.ordersaveData.AdvanceAmount=0
+//      this.ordersaveData.PaidAmount=0;
+//      this.ordersaveData.TotalAmount=0;
     //  if(this.productId == null ){
     //    this.snackBar.open("Please Select a Product")
     
@@ -621,23 +621,24 @@ if(!this.customDate.valid){
     //    return;
     //  }
  
- 
+    this.ordersaveData.ProductID = this.productId;
      this.reg.book(this.ordersaveData).subscribe(
        (res: any) => {
-        if(res ){
+        console.log(res)
+        // if(res ){
 
          
 // if(!res.Id){
 //   this.snackBar.open('booking failed');
 
 // }
-          // this.BookingID = res.ID
+          this.BookingID = res.ID
          
           this.snackBar.open(JSON.stringify(res.message));
-          this.router.navigateByUrl('/paymentdetails/'+this.BookingID);
-        }else{
+          this.router.navigateByUrl('/manualbooking/paymentdetails/'+this.BookingID);
+        // }else{
       
-        }
+        // }
         // this.dialog.open(CompletekycComponent);
         // this.router.navigateByUrl('/adhar');
        },
@@ -648,8 +649,8 @@ if(!this.customDate.valid){
        }
      )
    }
-  }
-}
+  // }
+// }
 
 
 
@@ -661,7 +662,7 @@ if(!this.customDate.valid){
     "BookingEndDate": null,
     "IsActive": true,
     "BookingNo": "ABC123",
-    "HubID": 0,
+    "HubID": 10,
     "MemberID": 0,
     "BookingStatus": 2,
     "AddressID": 0,
