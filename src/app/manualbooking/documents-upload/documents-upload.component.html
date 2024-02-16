@@ -9,8 +9,7 @@ style="width:100%;  flex-direction: column; justify-content: flex-start; align-i
   oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
   onKeyPress="if(this.value.length==12) return false;">
 
-  <div class="upload-btn-wrapper">
-    <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
+ 
     <input id="adhar" type="file" name="myfile" (change)="onAdharSelected($event,'adhar')" />
   </div>
  
@@ -65,8 +64,7 @@ style="width:100%;  flex-direction: column; justify-content: flex-start; align-i
   oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
   onKeyPress="if(this.value.length==12) return false;">
 
-  <div class="upload-btn-wrapper">
-    <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
+ 
     <input id="licenseno" type="file" name="myfile" (change)="onLicenseSelected($event,'licence')"/>
   </div>
  
@@ -166,10 +164,9 @@ style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom
   oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
   onKeyPress="if(this.value.length==12) return false;">
 <br><br>
-  <div class="upload-btn-wrapper">
-    <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
+ 
     <input id="adhar" type="file" name="myfile" (change)="onAdharSelected($event,'adhar')" />
-  </div>
+ 
   <div
 style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
 <div *ngIf="frontA"
@@ -208,11 +205,9 @@ style="align-self: stretch; justify-content: flex-start; align-items: flex-start
       oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
       onKeyPress="if(this.value.length==12) return false;">
     <br><br>
-      <div class="upload-btn-wrapper">
-        <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
-        <input id="licenseno" type="file" name="myfile" (change)="onLicenseSelected($event,'licence')"/>
-      </div>
      
+        <input id="licenseno" type="file" name="myfile" (change)="onLicenseSelected($event,'licence')"/>
+  
       <div *ngIf="filedata.PANImage"
       style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; border-radius: 28px; overflow: hidden; border: 1px #D3D2D4 dotted; justify-content: center; align-items: center; gap: 12px; display: flex">
       <div style="justify-content: flex-start; align-items: center; gap: 6px; display: flex">
@@ -252,10 +247,9 @@ style="align-self: stretch; justify-content: flex-start; align-items: flex-start
   oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
   onKeyPress="if(this.value.length==12) return false;">
 
-  <div class="upload-btn-wrapper">
-    <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
+ 
     <input id="licenseno" type="file" name="myfile" (change)="onLicenseSelected($event,'licence')"/>
-  </div>
+
   <div
 style="align-self: stretch; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
 <div *ngIf="filedata.PANImage"

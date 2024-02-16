@@ -1671,3 +1671,19 @@ input:focus ~ .highlight {
 .example-spacer{
   flex:1 0 0;
 }
+.parent1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+   padding: 2%;
+}
+.child1{
+  width:200px;
+  height: 100px;
+  border-radius: 24px;
+ 
+}
