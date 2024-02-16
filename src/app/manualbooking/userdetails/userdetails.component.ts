@@ -35,6 +35,7 @@ export class UserdetailsComponent {
     {"name":'Female',"value":3500},
     {"name":'Prefer not say',"value":1},
   ]
+  regForm!: FormGroup;
 
   constructor(
     private router: Router, private userdata: DataserviceService, private _snackBar: MatSnackBar
@@ -81,7 +82,6 @@ export class UserdetailsComponent {
 
   //   });
   // }
-  regForm!: FormGroup;
   data: any
   user: any;
   loggedIn: any;

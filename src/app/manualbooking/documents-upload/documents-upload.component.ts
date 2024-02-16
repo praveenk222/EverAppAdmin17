@@ -21,17 +21,7 @@ interface Food {
 })
 export class DocumentsUploadComponent {
   azimageUrl: any = environment.azimageUrl_hub;
-//   itemId: any;
-//   data: any;
 
-//   constructor(private route: ActivatedRoute,private productservice: ProductService) {
-//     this.itemId = this.route.snapshot.paramMap.get('id');
-// console.log(this.itemId)
-//     this.productservice.getProductDetailsbyId(this.itemId).subscribe((res:SampleModel) => {
-//       this.data = res;
-      
-//     })
-//   }
 
 regForm!:FormGroup;
   data: any;
@@ -39,118 +29,12 @@ regForm!:FormGroup;
   bikeHub: any;
   bookingNo: string ="SWKPHB231100002";
 constructor(private _rf:FormBuilder,private snackBar: MatSnackBar,private reg:UsersService,private router:Router,private dataService: DataserviceService,private datePipe:DatePipe,private route:ActivatedRoute){
-  this.regForm = this._rf.group({
-    FirstName: ['', Validators.compose([Validators.required, Validators.pattern('^[a-zA-Z \-\']+')])],
-    LastName: ['', [Validators.required, Validators.pattern('^[a-zA-Z \-\']+')]],
-    EmailID: ['', Validators.compose([Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$'), Validators.email])],
-    country: '+91',
-    MobileNo: ['', [Validators.required, ]],
-    DateofBirth: ['', [Validators.compose([Validators.required]), ]],
-    Password: ['12345', Validators.compose([Validators.required])],
-    MemberType: "0",
-    OTP: '146789',
-    IsOTPSent: 'true',
-    OTPSentDate: '2023-09-06T14:20:44.670Z',
-    IsResendOTP: 'true',
-    IsEmailVerified: 'true',
-    IsOTPVerified: 'true',
-    CreatedOn: '2023-09-06T01:50:47.117Z',
-    Token: 'null',
-    ParentID: '1000',
-    IsRegisteredByMobile: 'true',
-    ProfilePhoto: null,
-    userId: 0,
-    Gender: 1000
-  })
-  this.personalForm = this._rf.group({
-    adharno: ['', Validators.required],
-    adharfile: ['',],
-    licenseno: ['', Validators.required],
-    licensefile: ['',],
-    panno: ['', Validators.required],
-    panfile: ['',]
-  })
-  this.customDate = this._rf.group({
-    date: ['', Validators.required],
-    time: ['', Validators.required]
-  })
-
-  this.totalHours = this.convertToHours(this.Number);
-  this.totalHours = this.convertToHoursin(this.Number);
-
-  this.dataService.combinedData$.subscribe(data => {
-    if (data) {
-      this.startDate = data.inputValue;
-      this.endDate = data.inputValue1;
-      const startTime = new Date(this.startDate).getTime();
-      const endTime = new Date(this.endDate).getTime();
-      if (!isNaN(startTime) && !isNaN(endTime)) {
-        const difference = Math.abs(endTime - startTime);
-
-        // Calculate days, hours, minutes, seconds
-        const days = Math.floor(difference / (1000 * 3600 * 24));
-        const hours = Math.floor((difference % (1000 * 3600 * 24)) / (1000 * 3600));
-
-        const minutes = Math.floor((difference % (1000 * 3600)) / (1000 * 60));
-        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-        const ammount = Math.floor(hours * 20);
-        // Construct the time difference string
-        this.timeDifference = `${days} days,${hours} hours `;
-        this.Amount = `${ammount}`
-      }
-    }
-  })
-  this.bookingNo  = route.snapshot.params["ID"];
-}
-
-register() {
-    
- 
-  if (!this.regForm.valid) {
-
-    this.regForm.markAllAsTouched();
-    this.snackBar.open(" All fields are required ");
-    return;
-  }
-
-  const picname = this.regForm.get('FirstName')!.value + '_' + this.regForm.get('LastName')!.value;
-
-  this.regForm.value.MobileNo = (this.regForm.value.MobileNo).toString()
-  const data = this.regForm.value;
-
-  this.reg.signup(data).subscribe(
-    (res: any) => {
-      if (res) {
-
-        if (res.status == 'true') {
-    
-          console.log(res)
-          this.data = res;
-          this.snackBar.open(res.message.toString());
-        
-
-          this.router.navigate(['/login'])
-        } else {
-        
-
-   
-
-
-
-        }
-      } else {
-       
-
-      }
-
-    }, (error) => {
- 
-
-    }
-  )
 
 
 }
+
+
+
 
 
 personalForm!: FormGroup;
@@ -169,7 +53,7 @@ BackA: any;
 isFrontA = false;
 isBackA = false;
 isAllFIles: boolean = false;
-
+isshow:boolean=false;
 
 
 
@@ -302,24 +186,6 @@ removeBackA(): void {
   console.log(this.adhar)
 }
 
-gotonext() {
-
-  // if (!this.isAllFIles) {
-  //   this.snackbar.open('Please Upload All Files');
-  //   return
-  // }
-
-  // console.log(this.filedata)
-  // this._rf.saveDocuments(this.filedata).subscribe((res:any)=>{
-  // console.log(res)
-  // if(res.Status== "true"){
- 
-
-  // }else{
-
-  // }
-  // })
-}
 
 filedata: any =
   {
@@ -382,251 +248,10 @@ filedata: any =
   price: number = 10
   toppingList: string[] = ['hours', 'days', 'weeks'];
   ngOnInit() {
-    this.getDetails();
-    this.toppingList1 = this.numberdata.data;
-
-    this.dataService.combinedData$.subscribe((data:any) => {
-      if (data) {
-        this.startDate = data.inputValue;
-        this.endDate = data.inputValue1;
-        const startTime = new Date(this.startDate).getTime();
-        const endTime = new Date(this.endDate).getTime();
-        if (!isNaN(startTime) && !isNaN(endTime)) {
-          const difference = Math.abs(endTime - startTime);
-
-          // Calculate days, hours, minutes, seconds
-          const days = Math.floor(difference / (1000 * 3600 * 24));
-          const hours = Math.floor((difference % (1000 * 3600 * 24)) / (1000 * 3600));
-
-          const minutes = Math.floor((difference % (1000 * 3600)) / (1000 * 60));
-          const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-          const ammount = Math.floor(hours * 20);
-          // Construct the time difference string
-          this.timeDifference = `${days} days,${hours} hours `;
-          this.Amount = `${ammount}`
-        }
-      }
-    })
-    this.GetPriceData()
-  }
-  GetPriceData() {
-   this.reg.getPriceData().subscribe((res:any)=>{
-    this.priceData=res;
-    this.dailyRate=this.priceData.filter((x:any)=>x.PayTypes == 'day')[0].Amount
-    this.weeklyRate=this.priceData.filter((x:any)=>x.PayTypes == 'week')[0].Amount
-    this.hourlyRate=this.priceData.filter((x:any)=>x.PayTypes == 'hour')[0].Amount
-    console.log('daily rate',this.dailyRate)
-    console.log('week rate',this.weeklyRate)
-    console.log('hour rate',this.hourlyRate)
-   })
-  }
-  duration() {
-    this.ordersaveData.ProductID = this.productId;
-    console.log(this.ordersaveData)
-  }
-
-  Data = [];
-
-
-  onFirstButtonClick(data: number) {
-    this.startDate = ''
-    this.endDate=''
-    this.convertedCash = 0
-    const currentDate = new Date();
-    this.startDate = this.datePipe.transform(new Date(), 'yyyy-MM-dd HH:mm:ss', 'Asia/Kolkata');
-    // console.log('Start Date and Time:', startdate);
-    // adding time slot to the current time
-    currentDate.setHours(currentDate.getHours() + data);
-    this.endDate= this.datePipe.transform(currentDate, 'yyyy-MM-dd HH:mm:ss', 'Asia/Kolkata');
-    // console.log('End Date and Time:', enddate);
-    this.selectoptionone = data;
-    this.convertedCash = Math.floor(data * this.price)
-
-  }
-  onStartTimeChange(e:any){
-    console.log(e.target.value);
-    this.startDate = this.datePipe.transform(e.target.value, 'yyyy-MM-dd HH:mm:ss', 'Asia/Kolkata');
-    // console.log('Start Date and Time:', startdate);
-  }
-  onEndTimeChange(e:any){
-    this.convertedCash = 0
-    this.endDate= this.datePipe.transform(e.target.value, 'yyyy-MM-dd HH:mm:ss', 'Asia/Kolkata');
-    const startTime = new Date(this.startDate).getTime();
-  const endTime = new Date(this.endDate).getTime();
-  if (!isNaN(startTime) && !isNaN(endTime)) {
-    const difference = Math.abs(endTime - startTime);
-
-    // Calculate days, hours, minutes, seconds
-    const days = Math.floor(difference / (1000 * 3600 * 24));
-    const hours = Math.floor((difference % (1000 * 3600 * 24)) / (1000 * 3600));
-
-    const ammount = Math.floor(hours * 20);
-    // Construct the time difference string
-    this.timeDifference = `${days} days,${hours} hours `;
-    let dayprice = days * this.dailyRate + hours * this.hourlyRate;
-    this.convertedCash = dayprice
-  }
-  }
-  onSecondButtonClick() {
-    if(this.selectoptionTwo == null){
-      this.snackBar.open('Pleasect Select Time First!!!');
-      return;
-    }
-   
-
-    if (this.selectoptionThree === 'hours') {
-      this.convertedCash = this.selectoptionTwo * this.hourlyRate;
-      const currentDate = new Date();
-      this.startDate = this.datePipe.transform(new Date(), 'yyyy-MM-dd HH:mm:ss', 'Asia/Kolkata');
-      console.log('start Date and Time:', this.startDate);
-      currentDate.setHours(currentDate.getHours() + parseInt(this.selectoptionTwo));
-      this.endDate= this.datePipe.transform(currentDate, 'yyyy-MM-dd HH:mm:ss', 'Asia/Kolkata');
-      console.log('End Date and Time:', this.endDate);
-    } else if (this.selectoptionThree === 'days') {
-      const currentDate = new Date();
-      this.startDate = this.datePipe.transform(new Date(), 'yyyy-MM-dd HH:mm:ss', 'Asia/Kolkata');
-      console.log('start Date and Time:', this.startDate);
-
-      currentDate.setDate(currentDate.getDate() + parseInt(this.selectoptionTwo));
-      this.endDate= this.datePipe.transform(currentDate, 'yyyy-MM-dd HH:mm:ss', 'Asia/Kolkata');
-      console.log('End Date and Time:', this.endDate);
-
-      //price
-      this.convertedCash = this.selectoptionTwo * this.dailyRate;
-    } else if (this.selectoptionThree === 'weeks') {
-      this.convertedCash = this.selectoptionTwo * this.weeklyRate;
-
-      const currentDate = new Date();
-      this.startDate = this.datePipe.transform(new Date(), 'yyyy-MM-dd HH:mm:ss', 'Asia/Kolkata');
-      console.log('start Date and Time:', this.startDate);
-
-      currentDate.setDate(currentDate.getDate()+(parseInt(this.selectoptionTwo) * 7));
-      this.endDate= this.datePipe.transform(currentDate, 'yyyy-MM-dd HH:mm:ss', 'Asia/Kolkata');
-      console.log('End Date and Time:', this.endDate);
-
-      //price
-    } else {
-      this.convertedCash = 0; // Handle unexpected selections
-    }
-  }
-  convertToHours(weeks: number): number {
-    const hoursInDay = 24;
-    const hoursInWeek = hoursInDay * 7;
-
-    const totalHours = (weeks * hoursInWeek);
-    console.log('totalhours in a 5weeks ' + totalHours)
-    return totalHours;
-  }
-  convertToHoursin(day: number): number {
-    const hoursInDay = 24;
-
-    const totalHours = (day * hoursInDay);
-    console.log('total hours ' + totalHours)
-    return totalHours;
-  }
-  amount: number = 0; // Input amount
-  convertedCash: number  = 0; // Converted cash value
-
-
-
-
- //last line
- book() {
-if(!this.customDate.valid){
-  this.customDate.markAllAsTouched();
-  this.snackBar.open(" All fields are required ");
-}else{
-
-  // this.router.navigateByUrl('/adhar');
-
-   if (this.isSolt) {
-     this.customDate.markAllAsTouched();
-     this.snackBar.open(" Please Select A Slot!!!");
-   } else {
-    
-     this.ordersaveData.ProductID = this.productId;
-     this.ordersaveData.BookingStartDate = this.startDate;
-     this.ordersaveData.BookingEndDate = this.endDate;
-     this.ordersaveData.SecurityAmount=this.securitydeposit
-     this.ordersaveData.WashAmount=this.washtype
-     this.ordersaveData.BookingAmount =this.convertedCash
-     this.ordersaveData.AdvanceAmount=0
-     this.ordersaveData.PaidAmount=0;
-     this.ordersaveData.TotalAmount=0;
-    //  if(this.productId == null ){
-    //    this.snackBar.open("Please Select a Product")
-    
  
-    //    return;
-    //  }
- 
- 
-     this.reg.book(this.ordersaveData).subscribe(
-       (res: any) => {
-        if(res ){
-
-         
-// if(!res.Id){
-//   this.snackBar.open('booking failed');
-
-// }
-          // this.BookingID = res.ID
-         
-          this.snackBar.open(JSON.stringify(res.message));
-          this.router.navigateByUrl('/paymentdetails/'+this.BookingID);
-        }else{
-      
-        }
-        // this.dialog.open(CompletekycComponent);
-        // this.router.navigateByUrl('/adhar');
-       },
-       (error)=>{
+  }
   
-         this.snackBar.open('booking failed');
-         
-       }
-     )
-   }
-  }
-}
 
-
-
-  //#region dummy data
-  ordersaveData = {
-    "OrderID": 123,
-    "ProductID": 0,
-    "BookingStartDate": null,
-    "BookingEndDate": null,
-    "IsActive": true,
-    "BookingNo": "ABC123",
-    "HubID": 0,
-    "MemberID": 0,
-    "BookingStatus": 2,
-    "AddressID": 0,
-    "BookingAmount": 0,
-    "AdvanceAmount": 0,
-    "DiscountAmount": 0,
-    "TaxAmount": 0,
-    "TotalAmount": 0,
-    "PaidAmount": 0,
-    "IsCancel": false,
-    "Remarks": "Bike Booking",
-    "CreatedOn": "2023-11-28T00:30:42",
-    "DeliveredOn": "2023-11-30T00:30:42",
-    "PaymentConfirmedOn": null,
-    "IsFullPaid":0,
-    "WashAmount":0,        
-    "SecurityAmount":0,
-    "CouponID":0,
-    "ServiceType":3507
-  }
-
-  numberdata = {
-    'data': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
-      18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
-  }
-  //# sample data
 
   getDetails() {
     this.reg.getordersummeryByBookingNo(this.bookingNo).subscribe((res:any) => {
@@ -663,6 +288,7 @@ if(!this.customDate.valid){
   
   openPopup() { 
     this.displayStyle = "block"; 
+    this.isshow=true
   } 
   closePopup() { 
     this.displayStyle = "none"; 

@@ -100,37 +100,8 @@ regForm!:FormGroup;
   bikeHub: any;
   bookingNo: string ="SWKPHB231100002";
 constructor(private _rf:FormBuilder,private snackBar: MatSnackBar,private reg:UsersService,private router:Router,private dataService: DataserviceService,private datePipe:DatePipe,private route:ActivatedRoute){
-  this.regForm = this._rf.group({
-    FirstName: ['', Validators.compose([Validators.required, Validators.pattern('^[a-zA-Z \-\']+')])],
-    LastName: ['', [Validators.required, Validators.pattern('^[a-zA-Z \-\']+')]],
-    EmailID: ['', Validators.compose([Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$'), Validators.email])],
-    country: '+91',
-    MobileNo: ['', [Validators.required, ]],
-    DateofBirth: ['', [Validators.compose([Validators.required]), ]],
-    Password: ['12345', Validators.compose([Validators.required])],
-    MemberType: "0",
-    OTP: '146789',
-    IsOTPSent: 'true',
-    OTPSentDate: '2023-09-06T14:20:44.670Z',
-    IsResendOTP: 'true',
-    IsEmailVerified: 'true',
-    IsOTPVerified: 'true',
-    CreatedOn: '2023-09-06T01:50:47.117Z',
-    Token: 'null',
-    ParentID: '1000',
-    IsRegisteredByMobile: 'true',
-    ProfilePhoto: null,
-    userId: 0,
-    Gender: 1000
-  })
-  this.personalForm = this._rf.group({
-    adharno: ['', Validators.required],
-    adharfile: ['',],
-    licenseno: ['', Validators.required],
-    licensefile: ['',],
-    panno: ['', Validators.required],
-    panfile: ['',]
-  })
+ 
+
   this.customDate = this._rf.group({
     date: ['', Validators.required],
     time: ['', Validators.required]
@@ -161,57 +132,8 @@ constructor(private _rf:FormBuilder,private snackBar: MatSnackBar,private reg:Us
       }
     }
   })
-  this.bookingNo  = route.snapshot.params["ID"];
 }
 
-register() {
-    
- 
-  if (!this.regForm.valid) {
-
-    this.regForm.markAllAsTouched();
-    this.snackBar.open(" All fields are required ");
-    return;
-  }
-
-  const picname = this.regForm.get('FirstName')!.value + '_' + this.regForm.get('LastName')!.value;
-
-  this.regForm.value.MobileNo = (this.regForm.value.MobileNo).toString()
-  const data = this.regForm.value;
-
-  this.reg.signup(data).subscribe(
-    (res: any) => {
-      if (res) {
-
-        if (res.status == 'true') {
-    
-          console.log(res)
-          this.data = res;
-          this.snackBar.open(res.message.toString());
-        
-
-          this.router.navigate(['/login'])
-        } else {
-        
-
-   
-
-
-
-        }
-      } else {
-       
-
-      }
-
-    }, (error) => {
- 
-
-    }
-  )
-
-
-}
 
 
 personalForm!: FormGroup;
