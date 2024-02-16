@@ -7,7 +7,7 @@ import { DataserviceService } from '../../dataservice.service';
 import { DatePipe } from '@angular/common';
 import { environment } from '../../../environments/environment.prod';
 import { WebcamImage } from 'ngx-webcam';
-import { Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 interface Food {
   value: string;
   viewValue: number;
@@ -634,18 +634,37 @@ if(!this.customDate.valid){
       this.ProductDetails = res;
     })
   }
-  public showWebcam = true;
-  public allowCameraSwitch = true;
-  public multipleWebcamsAvailable = false;
-  public deviceId: string;
-  public facingMode: string = 'environment';
-  public messages: any[] = [];
+  private trigger: Subject<any> = new Subject();
+  webcamImage: any;
+  private nextWebcam: Subject<any> = new Subject();
 
-  // latest snapshot
+  sysImage = '';
 
 
-  // webcam snapshot trigger
-  private trigger: Subject<void> = new Subject<void>();
-  // switch to next / previous / specific webcam; true/false: forward/backwards, string: deviceId
-  private nextWebcam: Subject<boolean|string> = new Subject<boolean|string>();
+  public getSnapshot(): void {
+    this.trigger.next(void 0);
+  }
+
+  public captureImg(webcamImage: WebcamImage): void {
+    this.webcamImage = webcamImage;
+    this.sysImage = webcamImage!.imageAsDataUrl;
+    console.info('got webcam image', this.sysImage);
+  }
+
+  public get invokeObservable(): Observable<any> {
+    return this.trigger.asObservable();
+  }
+
+  public get nextWebcamObservable(): Observable<any> {
+    return this.nextWebcam.asObservable();
+  }
+
+  displayStyle = "none"; 
+  
+  openPopup() { 
+    this.displayStyle = "block"; 
+  } 
+  closePopup() { 
+    this.displayStyle = "none"; 
+  } 
 }

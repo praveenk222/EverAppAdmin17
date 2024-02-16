@@ -255,9 +255,10 @@
         </div>
     
       </div> -->
+      <form action="" [formGroup]="regForm" >
 
-      <div class="user-details2">User details</div><br>
-      <div class="line-43"></div><br>
+      <div class="user-details2">User details</div><br><br>
+      <hr><br>
       <table>
       
         <tr>
@@ -273,21 +274,23 @@
         <tr>
           <td>
             <div class="farmer-name2">Email</div>
-            <input type="email" class="frame" formControlName="EmailID">
+            <input type="email" class="frame" formControlName="EmailID" placeholder="Enter email address">
           </td>
           <td>
             <div class="farmer-name2">Mobile no.</div>
-            <input class="frame" formControlName=" MobileNo">
+            <input class="frame" formControlName=" MobileNo" placeholder="Enter mobile number">
           </td>
         </tr>
         <tr>
           <td>
             <div class="farmer-name2">Date of birth</div>
-            <input type="date" class="frame" formControlName="DateofBirth">
+            <input type="date" class="frame" formControlName="DateofBirth"placeholder="Enter your dob">
           </td>
           <td>
             <div class="farmer-name2">Gender</div>
-            <select class="frame" formControlName="">
+            <select class="frame" formControlName="Gender
+            
+            " placeholder="select">
            
            
               <option value="select"></option>
@@ -299,3 +302,7 @@
         </tr>
      
       </table>
+
+      
+     <button  matRipple class="register-btn"  type="submit"  (click)="register()" >Register</button>
+    </form>

@@ -153,8 +153,8 @@ style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom
 </div>
 
  -->
- <div class="user-details2">Upload Documments</div><br>
- <div class="line-43"></div><br>
+ <div class="user-details2">Upload Documments</div><br><br>
+ <hr>
  <table>
   <tr>
     <td>
@@ -251,7 +251,7 @@ style="align-self: stretch; justify-content: flex-start; align-items: flex-start
   style="align-self: stretch; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: white; border-radius: 28px; overflow: hidden; border: 1px #E2E1E5 solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex"
   oninput="this.value = this.value.replace(/[^0-9.][12]/g, '').replace(/(\..*)\./g, '$1');"
   onKeyPress="if(this.value.length==12) return false;">
-<br>br
+
   <div class="upload-btn-wrapper">
     <button class="btn">Upload a file<i style="font-size:18px" class="fa">&#xf093;</i></button>
     <input id="licenseno" type="file" name="myfile" (change)="onLicenseSelected($event,'licence')"/>
@@ -288,8 +288,45 @@ style="padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom
     </td>
 
     <td>
-      <webcam [height]="00" [width]="200" style="border-radius: 24px;"></webcam>
-     
+      <img [src]="webcamImage?.imageAsDataUrl" height="200px" />
+    
+      <button
+   
+      type="button"
+      class="btn btn-primary"
+      (click)="openPopup()">Take a photo
+    </button> 
+    <div
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      [ngStyle]="{'display':displayStyle}"> 
+      <div class="modal-dialog" role="document"> 
+        <div class="modal-content"> 
+          <div class="modal-header"> 
+            <h4 class="modal-title">GeeksForGeeks</h4> 
+          </div> 
+          <div class="modal-body"> 
+            <webcam [height]="300" [width]="200"
+      [trigger]="invokeObservable"
+      (imageCapture)="captureImg($event)"
+    ></webcam>
+
+
+      <button class="btn btn-danger" (click)="getSnapshot()">
+        Capture Image
+      </button>
+      
+          </div> 
+          <div class="modal-footer"> 
+            <button type="button" class="btn btn-danger" 
+                    (click)="closePopup()"> 
+              Close 
+            </button> 
+          </div> 
+        </div> 
+      </div> 
+    </div>
     </td>
   </tr>
  </table>

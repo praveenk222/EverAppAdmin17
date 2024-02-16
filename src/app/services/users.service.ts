@@ -163,5 +163,7 @@ getordersummeryByBookingNo(bookingNo:string){
       );
     });
   }
-
+sendmail(data:any):Observable<any>{
+  return this.http.post('http://localhost:8080/api/v1/adminweb/customers/forgotpassword',data)
+}
 }
