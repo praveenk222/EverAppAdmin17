@@ -8,45 +8,69 @@
         <tr>
           <td>
             <div class="farmer-name">First name</div>
-            <input type="text" placeholder="First name" class="frame" id="FirstName" name formControlName="FirstName" 
+            <input type="text" placeholder="First name" class="frame" id="FirstName" name formControlName="FirstName"  required
            />
-           
+           <div *ngIf="regForm.get('FirstName')?.invalid && regForm.get('FirstName')?.touched" class="error">
+            <div  *ngIf="regForm.get('FirstName')?.hasError('required')">First name is required.</div>
+            <div  *ngIf="regForm.get('FirstName')?.hasError('pattern')">Allows only alphabets.</div>
+
+          </div>
         
           </td>
           <td>
             <div class="farmer-name">Last name</div>
-            <input type="text" placeholder="Last name" class="frame" formControlName="LastName">
+            <input type="text" placeholder="Last name" class="frame" formControlName="LastName" required>
+            <div *ngIf="regForm.get('LastName')?.invalid && regForm.get('LastName')?.touched" class="error">
+              <div  *ngIf="regForm.get('LastName')?.hasError('required')">Last name is required.</div>
+              <div  *ngIf="regForm.get('LastName')?.hasError('pattern')">Allows only alphabets.</div>
+          
+            </div>
           </td>
         </tr>
         <tr>
           <td>
             <div class="farmer-name2">Email</div>
-            <input type="email" class="frame" id="EmailID" formControlName="EmailID" placeholder="Enter email address" />
-            
+            <input type="email" class="frame" id="EmailID" formControlName="EmailID" placeholder="Enter email address" required/>
+            <div *ngIf="regForm.get('EmailID')?.invalid && regForm.get('EmailID')?.touched" class="error">
+              <div  *ngIf="regForm.get('EmailID')?.hasError('required')">Email required</div>
+              <div  *ngIf="regForm.get('EmailID')?.hasError('pattern')">Inavalid Email</div>
+            </div>
           </td>
           <td>
             <div class="farmer-name2">Mobile no.</div>
-            <input type="tel" class="frame" formControlName=" MobileNo" placeholder="Enter mobile number">
+            <input type="tel" class="frame" formControlName="MobileNo" placeholder="Enter mobile number" required>
+            <div *ngIf="regForm.get('MobileNo')?.invalid && regForm.get('MobileNo')?.touched" class="error">
+              <div  *ngIf="regForm.get('MobileNo')?.hasError('required')">Mobile no required</div>
+              <div  *ngIf="regForm.get('MobileNo')?.hasError('pattern')">Mobile no required 10 numbers</div>
+            </div>
           </td>
         </tr>
         <tr>
           <td>
             <div class="farmer-name2">Date of birth</div>
-            <input type="date" class="frame" formControlName="DateofBirth"placeholder="Enter your dob">
+            <input type="date" class="frame" formControlName="DateofBirth"placeholder="Enter your dob" required>
+            <div *ngIf="regForm.get('DateofBirth')?.invalid && regForm.get('DateofBirth')?.touched" class="error">
+              <div  *ngIf="regForm.get('DateofBirth')?.hasError('required')">Date of birth required</div>
+              <div *ngIf="regForm.get('DateofBirth')?.hasError('underage')">Age should be above 18 years</div> 
+            </div>
           </td>
           <td>
             <div class="farmer-name2">Gender</div>
-            <select class="frame" formControlName="MemberType" placeholder="select" value="select" placeholder="select">
+            <select class="frame" formControlName="MemberType" placeholder="select" value="select" placeholder="select" >
            
               <option [value]="p.value" *ngFor ="let p of genderdata">{{p.name}}</option>
               
           
             </select>
+
+            <div *ngIf="regForm.get('Gender')?.invalid && regForm.get('Gender')?.touched" class="error">
+              <div  *ngIf="regForm.get('Gender')?.hasError('required')">Gender required</div>       
+            </div>
           </td>
         </tr>
      
       </table>
       <div class="btn-container">
-     <button  matRipple class="register-btn" [disabled]="!regForm.valid"  type="submit"  (click)="register()" >Register</button>
+     <button  matRipple class="register-btn"  type="submit"  (click)="register()" >Register</button>
     </div>
     </form>
