@@ -14,3 +14,11 @@ async showConfirmation() {
     }
   }
   ----sweet alert
+
+  --getting data using resolve guard done in revenue and complains page
+  --this concept got after getting data only load the page.
+  --subject service used in complains and revenu for
+  this.shareds.fetchMasterData(); // Fetch data if null
+  this.shareds.data$.subscribe(data => {
+    console.log('revenue data',data)
+  });

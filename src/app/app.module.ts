@@ -42,6 +42,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { CardComponent } from './card/card.component';
 import { DateRangePipe } from './date-range.pipe';
 import { TimeDifferencePipe } from './services/time-difference.pipe';
+import { ResolvegurdService } from './services/resolvegurd.service';
 
 @NgModule({
   declarations: [
@@ -87,7 +88,7 @@ import { TimeDifferencePipe } from './services/time-difference.pipe';
     MatSlideToggleModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [
+  providers: [ResolvegurdService,
     { provide: HTTP_INTERCEPTORS, useClass: spinnerInterceptor, multi: true },
     // { provide: HTTP_INTERCEPTORS, useClass: SuccessInterceptor, multi: true },
     provideHttpClient(),

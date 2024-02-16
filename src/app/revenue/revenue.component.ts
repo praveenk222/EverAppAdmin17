@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SubjectService } from '../services/subject.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-revenue',
@@ -15,13 +16,25 @@ lists=[
   {name:'last 6 months'},
   {name:'last 1 year'}
 ]
-constructor(private subjectService:SubjectService){
-  this.subjectService.getData().subscribe(data => {
-    console.log('test',data);
-  });
+constructor(private shareds:SubjectService,
+  // private activroute:ActivatedRoute
+  ){
+ // to check resolve data enable acitveted route
 
 }
+ngOnInit()
+{
+  // let data=this.activroute.snapshot.data['data']
+  // console.log(data)
 
+  // console.log(this.shareds.getData())
+  // if (!this.shareds.getData()) { // Check if data is null
+  // }
+  this.shareds.fetchMasterData(); // Fetch data if null
+  this.shareds.data$.subscribe(data => {
+    console.log('revenue data',data)
+  });
+}
 lineChartData={
   labels:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
   datasets:[
