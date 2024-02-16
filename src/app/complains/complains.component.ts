@@ -6,6 +6,8 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { SharedsameApiDataService } from '../services/sharedsame-api-data.service';
+import { ActivatedRoute } from '@angular/router';
+import { SubjectService } from '../services/subject.service';
 
 @Component({
   selector: 'app-complains',
@@ -29,11 +31,18 @@ export class ComplainsComponent {
     toDate: new FormControl(null, { validators: [Validators.required]})
   });
   response: any;
-constructor(private us:UsersService,private dialog:MatDialog,private shareds:SharedsameApiDataService){
+constructor(private us:UsersService,
+  private dialog:MatDialog,private shareds:SubjectService){
 this.complains();
-this.response=this.shareds.getHubList()
-this.getHubList();
-this.getHubList();
+
+}
+ngOnInit()
+{
+  this.shareds.fetchMasterData();
+  this.shareds.data$.subscribe(data => {
+    console.log('complains data',data)
+
+  });
 }
 getHubList(){
   this.response.subscribe((res:any)=>{
