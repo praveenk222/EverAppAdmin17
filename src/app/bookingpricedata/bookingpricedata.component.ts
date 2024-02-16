@@ -5,6 +5,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { AddpricedataComponent } from '../addpricedata/addpricedata.component';
 import { MatDialog } from '@angular/material/dialog';
+import { SweetAlertServiceService } from '../services/sweet-alert-service.service';
 
 @Component({
   selector: 'app-bookingpricedata',
@@ -13,20 +14,19 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class BookingpricedataComponent {
   orderdata:any;
-  displayedColumns: string[] = ['Booking id', 'User name',  'Fare','Status'];
+  displayedColumns: string[] = ['Booking id', 'User name',  'Fare','Status','action'];
   dataSource = new MatTableDataSource<any>();
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   pageSizeOptions: number[] = [5, 10, 20];
   pageSize = 5; //
-constructor(private us:UsersService,private dialog:MatDialog){
+constructor(private us:UsersService,private dialog:MatDialog,private sw:SweetAlertServiceService){
 
 }
 
 ngOnInit() {
-  let biketype=3506
-  this.getOrders(biketype);
+  this.getPrice()
 }
-async getOrders(id:number){
+async getPrice(){
 
 this.us.getPridcedata()
     .then((result:PostResult) => {
@@ -47,15 +47,35 @@ changePage(pageEvent: PageEvent) {
   const endIndex = startIndex + pageEvent.pageSize;
 }
 
+async delete(data:any){
+  console.log(data)
+  data.IsActive=false;
+ const confirmed= await this.sw.showConfirmation('Delete','Are you sure want to delete the data');
+ if(confirmed){
 
-openReport() {
+   this.us.savePrice(data).subscribe((res:any)=>{
+     console.log(res)
+     if(res[0].status){
+      this.getPrice();
+     }
+   })
+ }
+
+}
+edit(data:any){
+
+  this.openReport(data)
+}
+openReport(data:any) {
   const dialogRef =
   this.dialog.open(AddpricedataComponent,{
     width:'360px',
     height:'300px',
+    data:data
   
   })
-  dialogRef.afterOpened().subscribe(_ => {
+  dialogRef.afterClosed().subscribe(_ => {
+    this.getPrice();
       
   })
 
