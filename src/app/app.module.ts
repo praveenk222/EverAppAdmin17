@@ -43,6 +43,7 @@ import { CardComponent } from './card/card.component';
 import { DateRangePipe } from './date-range.pipe';
 import { TimeDifferencePipe } from './services/time-difference.pipe';
 import { ResolvegurdService } from './services/resolvegurd.service';
+import { AutoserachComponent } from './commonFiles/sharedcomponents/autoserach/autoserach.component';
 
 @NgModule({
   declarations: [
@@ -60,10 +61,7 @@ import { ResolvegurdService } from './services/resolvegurd.service';
     LoginLayoutComponent,
     CardComponent,
     DateRangePipe,
-  
-   
-  
-    
+
   ],
   imports: [
     BrowserModule,

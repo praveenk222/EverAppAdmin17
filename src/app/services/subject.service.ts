@@ -14,7 +14,7 @@ export class SubjectService {
   constructor(private http: HttpClient) { }
   async fetchMasterData() {
     if (!this._dataSubject.getValue()) { // Prevent unnecessary API calls
-      const response = await this.http.get<any>(`${this.apiUrl}products/getLookup`).toPromise();
+      const response = await this.http.get<any>(`${this.apiUrl}products/gethubs`).toPromise();
       this._dataSubject.next(response);
     }
   }

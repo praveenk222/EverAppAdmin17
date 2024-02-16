@@ -23,6 +23,7 @@
     "@angular/router": "^17.0.0",
     "@canvasjs/charts": "^3.7.37",
     "@types/googlemaps": "^3.43.3",
+    "angular-ng-autocomplete": "^2.0.12",
     "chart.js": "^4.4.1",
     "ng2-charts": "^5.0.4",
     "ng2-charts-schematics": "^0.1.7",
