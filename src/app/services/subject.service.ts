@@ -8,7 +8,9 @@ import { Subject, Observable, BehaviorSubject } from 'rxjs';
 export class SubjectService {
   private apiUrl = 'http://localhost:8080/api/v1/adminweb/'; // Replace with your API URL
   private _dataSubject = new BehaviorSubject<any>(null);
+  private _lookupSubject = new BehaviorSubject<any>(null);
   data$: Observable<any> = this._dataSubject.asObservable();
+  Lookupdata$: Observable<any> = this._lookupSubject.asObservable();
 
 
   constructor(private http: HttpClient) { }
@@ -19,10 +21,13 @@ export class SubjectService {
     }
   }
  
-
-  getLookup(): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}products/getLookup`);
+async fetchLookup(){
+  if(!this._lookupSubject.getValue()){
+    const response=await this.http.get<any>(`${this.apiUrl}products/getLookup`).toPromise();
+    this._lookupSubject.next(response)
   }
+}
+
 
 
 
