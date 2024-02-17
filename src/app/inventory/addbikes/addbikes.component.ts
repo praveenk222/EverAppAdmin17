@@ -36,7 +36,7 @@ export class AddbikesComponent {
     });
     this.shareds.fetchMasterData(); // Fetch data if null
     this.shareds.data$.subscribe(data => {
-     this.hubList=data;
+     this.hubList=data.message;
      console.log(this.hubList)
     });
   }
@@ -59,8 +59,9 @@ export class AddbikesComponent {
       .then((result: PostResult) => {
         if (result.status) {
           console.log(result.message)
+         // this.snackbar.open(JSON.stringify(result.message))
           // this.router.na
-          window.history.back();
+          // window.history.back();
 
         }
       })
