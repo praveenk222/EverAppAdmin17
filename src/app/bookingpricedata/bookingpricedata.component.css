@@ -655,3 +655,6 @@ p-datatable{
 tr:nth-child(even) {
   background: #F5F5F5;
 }
+::ng-deep .custom-modalbox .mat-dialog-container{
+  border-radius: 100% !important;
+}

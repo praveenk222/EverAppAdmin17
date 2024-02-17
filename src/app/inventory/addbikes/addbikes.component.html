@@ -563,7 +563,10 @@
             </tr>
             <tr>
               <td>Hub station</td>
-              <td>  <input [(ngModel)]="proudctdata.ProductName" type="text" name="Model" class="content2"></td>
+              <td>  <select [(ngModel)]="proudctdata.ProductName" type="text" name="Model" class="content2">
+                <option value=""></option>
+                </select>
+              </td>
             </tr>
             <tr>
               <td>Established date</td>
@@ -575,7 +578,10 @@
             </tr>
             <tr>
               <td>Bike condition</td>
-              <td>     <input [(ngModel)]="proudctdata.Condition" type="text" name="Condition" class="content2"></td>
+              <td>     <select [(ngModel)]="proudctdata.Condition" type="text" name="Condition" class="content2">
+                <option value=""></option>
+                </select>
+              </td>
             </tr>
             <tr>
               <td>Last service date</td>

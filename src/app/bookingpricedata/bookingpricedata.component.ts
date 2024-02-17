@@ -71,7 +71,8 @@ openReport(data:any) {
   this.dialog.open(AddpricedataComponent,{
     width:'360px',
     height:'300px',
-    data:data
+    data:data,
+    panelClass: 'custom-modalbox'
   
   })
   dialogRef.afterClosed().subscribe(_ => {
