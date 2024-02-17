@@ -100,6 +100,9 @@ cancelOrder(orderID:any){
 savepromo(order:any):Observable<any>{
   return this.http.post(this.m_apiUrl+'admin/promocode/save',order)
 }
+saveUserTabAccess(item:any):Observable<any>{
+  return this.http.post(this.apiUrl+'customers/saveUserTabAccess',item)
+}
 updatepromo(order:any):Observable<any>{
   return this.http.post(this.m_apiUrl+'admin/promocode/Update',order)
 }
