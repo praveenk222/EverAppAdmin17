@@ -8,11 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
 import { UsersService } from '../../services/users.service';
 import { DataserviceService } from '../../dataservice.service';
-// import { LoadingService } from 'src/Services/services/loading.service';
-// import { UserData } from 'src/providers/user-data';
-// import { RegisterService } from 'src/Services/registration-services/register.service';
-// import { ValidateUrl } from './age.validator';
-// import { SnackbarService } from 'src/Services/snackbar.service';
+
 
 @Component({
   selector: 'app-userdetails',
@@ -35,6 +31,7 @@ export class UserdetailsComponent {
     {"name":'Female',"value":3500},
     {"name":'Prefer not say',"value":1},
   ]
+  regForm!: FormGroup;
 
   constructor(
     private router: Router, private userdata: DataserviceService, private _snackBar: MatSnackBar
@@ -81,7 +78,6 @@ export class UserdetailsComponent {
 
   //   });
   // }
-  regForm!: FormGroup;
   data: any
   user: any;
   loggedIn: any;
@@ -116,12 +112,12 @@ export class UserdetailsComponent {
   register() {
     
   
-    // if (!this.regForm.valid) {
+    if (!this.regForm.valid) {
 
-    //   this.regForm.markAllAsTouched();
-    //   this.snackBar.open(" All fields are required ");
-    //   return;
-    // }
+      this.regForm.markAllAsTouched();
+      this.snackBar.open(" All fields are required ");
+      return;
+    }
  
     // const picname = this.regForm.get('FirstName')!.value + '_' + this.regForm.get('LastName')!.value;
     // this.regForm.controls['ProfilePhoto'].setValue(picname);
@@ -130,35 +126,16 @@ export class UserdetailsComponent {
 
     this.reg.signup(this.regForm.value).subscribe(
       (res: any) => {
-        // if (res) {
-
-        //   if (res.status == 'true') {
-          
-            console.log(res)
-            this.data = res;
-            this.snackBar.open(res.message.toString());
+        if (res) {
+              if (res.status == 'true') {
+              
+                console.log(res)
+                this.data = res;
+                this.snackBar.open(res.message.toString());
+              }
+            }
            
-
-            this.router.navigate(['/login'])
-    //       } else {
-        
-
-
-
-
-    //       }
-    //     } else {
-        
-
-    //     }
-
-    //   }, (error:any) => {
-       
-
-      }
-    )
-
-
+          })
   }
 
 

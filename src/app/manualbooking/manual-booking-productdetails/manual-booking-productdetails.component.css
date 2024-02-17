@@ -1689,4 +1689,18 @@ input:focus ~ .highlight {
  
 }
 
-
+button[disabled]
+{   
+opacity
+:
+0.5
+;
+/* Example: Reduce opacity for disabled buttons */
+ 
+cursor
+: not-allowed;
+/* Example: Change cursor for disabled buttons */
+ 
+/* Add any other styles you want for disabled buttons */
+background: grey;
+}
