@@ -5,6 +5,7 @@ import { SampleModel } from '../../models/product.model';
 import { InventoryService } from '../../services/Inventory.service';
 import { PostResult } from '../../models/PostResult';
 import { SubjectService } from '../../services/subject.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-addbikes',
@@ -16,9 +17,18 @@ export class AddbikesComponent {
   isIamages: boolean = false;
   hubList: any;
   LookupData: any;
+  ID:number;
+  btntype:string='Save Changes'
   constructor(private dialog: MatDialog, private invntservice: InventoryService
-    ,private shareds:SubjectService
+    ,private shareds:SubjectService,private routes:ActivatedRoute
     ) {
+      this.ID=this.routes.snapshot.params['id']
+      if(this.ID == 0){
+        this.btntype='Save Changes'
+      }else{
+        this.btntype='Update Changes'
+
+      }
     this.shareds.fetchLookup(); // Fetch data if null
     this.shareds.Lookupdata$.subscribe(data => {
       this.LookupData=data.message.filter((x:any)=>x.LookupCategory =='BikeCondition');
