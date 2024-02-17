@@ -17,10 +17,15 @@
           </svg>
           <div class="booking-summary">Booking summary</div>
         </div>
+        <span class="example-spacer"></span>
+        <button class="frame-2608333" (click)="cancelOrder()">
+          <div class="view-invoice">Cancel order</div>
+        </button>
         <div class="frame-2608333">
           <div class="view-invoice">View invoice</div>
         </div>
       </div>
+    
       <div class="frame-2608389">
         <div class="frame-2608393">
           <div class="frame-2608321">
@@ -36,7 +41,7 @@
                   </div>
                   <div class="cell2">
                     <div class="content">
-                      <div class="smith-joe">Smith Joe</div>
+                      <div class="smith-joe">{{ProductDetails?.FullName}}</div>
                     </div>
                   </div>
                 </div>
@@ -48,7 +53,8 @@
                   </div>
                   <div class="cell2">
                     <div class="content">
-                      <div class="_9876543210">9876543210</div>
+                      <div class="_9876543210">{{ProductDetails?.MobileNo}}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -60,7 +66,7 @@
                   </div>
                   <div class="cell2">
                     <div class="content">
-                      <div class="smithjoe-gmail-com">smithjoe&#64;gmail.com</div>
+                      <div class="smithjoe-gmail-com">{{ProductDetails?.EmailID}}</div>
                     </div>
                   </div>
                 </div>
@@ -72,7 +78,7 @@
                   </div>
                   <div class="cell2">
                     <div class="content">
-                      <div class="male">Male</div>
+                      <div class="male">{{ProductDetails?.Gender}}</div>
                     </div>
                   </div>
                 </div>
@@ -84,7 +90,7 @@
                   </div>
                   <div class="cell2">
                     <div class="content">
-                      <div class="_2-july-1989">2 July, 1989</div>
+                      <div class="_2-july-1989">{{ProductDetails?.DateofBirth}}</div>
                     </div>
                   </div>
                 </div>
@@ -97,7 +103,7 @@
                   <div class="cell2">
                     <div class="content">
                       <div class="_2-9-15-hz-road-hyd-telengana">
-                        2/9/15, HZ Road, Hyd, Telengana
+                        {{ProductDetails?.MobileNo}}
                       </div>
                     </div>
                   </div>
@@ -110,7 +116,7 @@
                   </div>
                   <div class="cell4">
                     <div class="content">
-                      <div class="n-a">N/A</div>
+                      <div class="n-a">{{ProductDetails?.MobileNo}}</div>
                     </div>
                   </div>
                 </div>
@@ -125,7 +131,8 @@
               <div class="ob-forms-farmer-name">
                 <div class="frame-2608390">
                   <div class="farmer-name">Aadhar details</div>
-                  <div class="name">4444 3333 6666 8888</div>
+                  <div class="name">{{ProductDetails?.AadharNo
+                  }}</div>
                 </div>
                 <div class="frame-26083332">
                   <div class="bi-eye-fill">
@@ -154,8 +161,7 @@
                     class="group2"
                     width="10.588237762451172"
                     height="10.588237762451172"
-                  ></svg
-                  ><svg
+                  ></svg><svg
                     class="vector5"
                     width="8"
                     height="6"
@@ -176,7 +182,8 @@
               <div class="ob-forms-farmer-name">
                 <div class="frame-2608391">
                   <div class="farmer-name">Pan / passport details</div>
-                  <div class="name">GEMPM1675Q</div>
+                  <div class="name">{{ProductDetails?.
+                    PAN}}</div>
                 </div>
                 <div class="frame-26083332">
                   <div class="bi-eye-fill">
@@ -205,8 +212,7 @@
                     class="group4"
                     width="10.588237762451172"
                     height="10.588237762451172"
-                  ></svg
-                  ><svg
+                  ></svg><svg
                     class="vector9"
                     width="8"
                     height="6"
@@ -227,7 +233,7 @@
               <div class="ob-forms-farmer-name">
                 <div class="frame-2608392">
                   <div class="farmer-name">Driving license details</div>
-                  <div class="name">DL-0420113434567</div>
+                  <div class="name">{{ProductDetails?.DrivingLicen}}</div>
                 </div>
                 <div class="frame-26083332">
                   <div class="bi-eye-fill">
@@ -305,14 +311,15 @@
           </div>
           <div class="frame-2608299">
             <div class="frame-2608281">
-              <div class="farmer-name4">Ever booking with Ola S1 Pro</div>
+              <div class="farmer-name4">Ever booking with {{ProductDetails?.VehicleName}}</div>
               <div class="line-43"></div>
               <div class="frame-2608280">
                 <div class="frame-8071">
                   <div class="booking-id-rb-1996">
                     <span>
                       <span class="booking-id-rb-1996-span">Booking id</span>
-                      <span class="booking-id-rb-1996-span2">: RB-1996</span>
+                      <span class="booking-id-rb-1996-span2">: 
+                      {{ProductDetails?.BookingNo}}  </span>
                     </span>
                   </div>
                 </div>
@@ -320,10 +327,11 @@
                   <div class="vehicle-number-ts-09-rk-1996">
                     <span>
                       <span class="vehicle-number-ts-09-rk-1996-span">
-                        Vehicle number
+                         VehicleNumber
+
                       </span>
                       <span class="vehicle-number-ts-09-rk-1996-span2">
-                        : TS09RK1996
+                        :  {{ProductDetails?.VehicleNumber}} 
                       </span>
                     </span>
                   </div>
@@ -334,7 +342,8 @@
                       Hub centre
                     </span>
                     <span class="hub-centre-megha-hills-ev-hub-span2">
-                      : Megha hills EV hub
+                      : {{ProductDetails?.HubCenterName}}
+
                     </span>
                   </span>
                 </div>
@@ -344,7 +353,9 @@
                       Start date &amp; time
                     </span>
                     <span class="start-date-time-20-oct-2023-11-00-am-span2">
-                      : 20 Oct, 2023 | 11:00 am
+                      : 
+                      {{ProductDetails?.BookingStartDate}}
+                      
                     </span>
                   </span>
                 </div>
@@ -354,7 +365,7 @@
                       End date &amp; time
                     </span>
                     <span class="end-date-time-6-nov-2023-10-59-am-span2">
-                      : 6 Nov, 2023 | 10:59 am
+                      : {{ProductDetails?.BookingEndDate}}
                     </span>
                   </span>
                 </div>
@@ -374,20 +385,22 @@
             <div class="frame-2608297">
               <div class="frame-2608292">
                 <div class="name2">Usage charges</div>
-                <div class="name3">₹11,090</div>
+                <div class="name3">₹
+                  {{ProductDetails?.BookingAmount}}
+                  </div>
               </div>
               <div class="frame-2608293">
                 <div class="name2">Tax</div>
-                <div class="name3">₹1,110</div>
+                <div class="name3">₹{{ProductDetails?.TaxAmount}}</div>
               </div>
               <div class="frame-2608294">
                 <div class="name2">Coupon</div>
-                <div class="name3">- ₹1,500</div>
+                <div class="name3">- ₹{{ProductDetails?.Coupan}}</div>
               </div>
               <div class="line-49"></div>
               <div class="frame-2608296">
                 <div class="name4">Total</div>
-                <div class="name5">₹9,760</div>
+                <div class="name5">₹{{ProductDetails?.TotalAmount}}</div>
               </div>
             </div>
           </div>
