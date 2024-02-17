@@ -22,3 +22,4 @@ async showConfirmation() {
   this.shareds.data$.subscribe(data => {
     console.log('revenue data',data)
   });
+  -- <img class="frame-2608343" src="../../../assets/img/download.jpg" />

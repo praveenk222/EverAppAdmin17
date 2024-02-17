@@ -36,11 +36,9 @@ ngAfterViewInit(){
       .then((result: PostResult) => {
         if (result.status) {
           console.log(result.message)
-          // this.router.na
-          this.dataSource=result.message;
-  this.dataSource.paginator=this.paginator;
 
-           this.dataSource.paginator.length=result.message.length;
+           this.dataSource = new MatTableDataSource<any>(result.message)
+           this.dataSource.paginator = this.paginator;
         }
       })
       .catch((error) => {
