@@ -58,10 +58,10 @@ export class AddbikesComponent {
   onSubmit() {
     console.log(this.proudctdata)
     if(this.actiontype == 'addbike'){
-      this.proudctdata.ProductType=3503
+      this.proudctdata.ProductType=3507
 
     }else{
-      this.proudctdata.ProductType=3502
+      this.proudctdata.ProductType=3508
 
     }
     this.invntservice.saveProduct(this.proudctdata)
