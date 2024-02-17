@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'allbattries', component: AllBattriesComponent },
   { path: 'allwashhubs', component: AllWashhubsComponent },
   { path: 'allhubs', component: AllHubstationComponent },
-  { path: 'addbike', component: AddbikesComponent },
+  { path: 'addbike/:id', component: AddbikesComponent },
   {path:'all-battery',component:AllBattriesComponent},
   {path:'add-battery',component:AddbatteryComponent}
 ];
