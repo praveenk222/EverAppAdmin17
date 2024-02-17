@@ -1685,3 +1685,7 @@ line-height: normal;
   /* Add any other styles you want for disabled buttons */
   background: grey;
   }
+
+  .error {
+    color: red;
+}

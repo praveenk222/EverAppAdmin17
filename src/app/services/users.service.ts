@@ -117,9 +117,15 @@ getorderByUserID(userid:number){
 }
 getordersummeryByBookingNo(bookingNo:string){
   let  bookingdata = {
-      "BookingNo": "BKKPHB231100002"
+      "BookingNo": bookingNo
     }
     return this.http.post(this.m_apiUrl+`orders/getordersummeryByBookingNo`,bookingdata);
+  }
+  getBookingndUserSummaryByBookingID(bookingNo:string){
+  let  bookingdata = {
+      "BookingNo": bookingNo
+    }
+    return this.http.post(this.apiUrl+`orders/getBookingndUserSummaryByBookingID`,bookingdata);
   }
   postcomplain(data:any):Observable<any>{
     return this.http.post('http://localhost:8080/api/v1/adminweb/customers/adComplains',data)

@@ -15,10 +15,9 @@ const routes: Routes = [
   { path: 'productdetails/:id', component: ManualBookingProductdetailsComponent },
   { path: 'userdetails', component: ManualBookingUsersdetailsComponent },
   { path: 'paymentdetails/:ID', component: ManualBookingPaymentsComponent },
-  { path: 'bookingsummary', component: ManualBookingSummaryComponent },
+  { path: 'bookingsummary/:ID', component: ManualBookingSummaryComponent },
   {path:'battery-list',component:ManualBatteryListComponent},
   {path:'washstation',component:ManualWashstationComponent},
-  {path:'booking-summary',component:ManualBookingSummaryComponent}
 
   
 ];

@@ -61,7 +61,7 @@ export class ManualBookingPaymentsComponent {
   getDetails() {
     this._pd.getordersummeryByBookingNo(this.bookingNo).subscribe((res:any) => {
       console.log(res)
-      this.ProductDetails = res[0];
+      this.ProductDetails = res
     })
   }
 

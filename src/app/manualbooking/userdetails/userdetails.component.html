@@ -49,7 +49,7 @@
           <td>
             <div class="farmer-name2">Date of birth</div>
             <input type="date" class="frame" formControlName="DateofBirth"placeholder="Enter your dob" required>
-            <div *ngIf="regForm.get('DateofBirth')?.invalid && regForm.get('DateofBirth')?.touched" class="error">
+            <div *ngIf="regForm.get('DateofBirth')?.invalid && regForm.get('DateofBirth')?.touched" class="error" class="invalid-feedback">
               <div  *ngIf="regForm.get('DateofBirth')?.hasError('required')">Date of birth required</div>
               <div *ngIf="regForm.get('DateofBirth')?.hasError('underage')">Age should be above 18 years</div> 
             </div>

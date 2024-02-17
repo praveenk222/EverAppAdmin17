@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { UsersService } from '../../services/users.service';
@@ -11,6 +11,7 @@ import { PostResult } from '../../models/PostResult';
 })
 export class RecentBatteryBookingsComponent {
   orderdata:any;
+  @Input() parentdata:any;
   displayedColumns: string[] = ['Booking id', 'User name', 'Mobile no.', 'Booking Date', 'Station Location', 'Wash time','Fare','Status','Reviews & ratings'];
   dataSource = new MatTableDataSource<any>();
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -19,10 +20,16 @@ export class RecentBatteryBookingsComponent {
 constructor(private us:UsersService){
 
 }
+ngDocheck(){
+  console.log(this.parentdata)
+
+}
 
 ngOnInit() {
+  console.log(this.parentdata)
+
   let biketype=3506
-  this.getOrders(biketype);
+  // this.getOrders(biketype);
 }
 async getOrders(id:number){
 
