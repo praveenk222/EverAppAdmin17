@@ -21,7 +21,7 @@ export class AddbikesComponent {
     ) {
     this.shareds.fetchLookup(); // Fetch data if null
     this.shareds.Lookupdata$.subscribe(data => {
-      this.LookupData=data;
+      this.LookupData=data.message.filter((x:any)=>x.LookupCategory =='BikeCondition');
       console.log(this.LookupData)
     });
     this.shareds.fetchMasterData(); // Fetch data if null
