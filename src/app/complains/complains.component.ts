@@ -100,7 +100,18 @@ form = new FormGroup({
   toDate: new FormControl(null, { validators: [Validators.required]})
 });
 
-applyFilter1(event: Event) {
+  desde = new  Date('December 25, 1995 13:30:00');
+  hasta =  new Date();
+
+
+
+
+
+
+  ver() {
+    console.log('desde:', this.desde);
+    console.log('hasta:', this.hasta);
+  }
+
  
-}
 }

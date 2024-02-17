@@ -105,6 +105,7 @@ paynow(){
     }
    }
  }
+ 
  const successCallback= (paymentid:any) =>{
   console.log(paymentid);
  }
