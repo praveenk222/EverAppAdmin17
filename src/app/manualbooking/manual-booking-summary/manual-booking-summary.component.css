@@ -56,6 +56,9 @@
   font-weight: 700;
   position: relative;
 }
+.example-spacer{
+  flex: 1 0 0;
+}
 .frame-2608333 {
   background: var(--primary, #3355b9);
   border-radius: 24px;
