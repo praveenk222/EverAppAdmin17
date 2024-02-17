@@ -253,10 +253,20 @@
     </mat-tab>
     <mat-tab label="Permissions">
       <mat-card>
-      <mat-list *ngFor="let d of Details">
+        <div class="frame-2608404">
+          <div class="add-promo-code2">
+            <a (click)="save()">
+
+              Save
+            </a>
+          </div>
+       
+          
+        </div>
+      <mat-list *ngFor="let d of Details;let i = index">
 
         <mat-list-item style=" font-weight:bolder;">   
-            <mat-checkbox class="example-margin" [(ngModel)]="d.CanAccess" ></mat-checkbox> {{d?.TabName}}</mat-list-item>
+            <mat-checkbox class="example-margin" [(ngModel)]="d.CanAccess" (change)="handleChange($event,d,i)" ></mat-checkbox> {{d?.TabName}}</mat-list-item>
         <mat-list-item style="margin-left: 40px;">{{d.Description}}</mat-list-item>
         <!-- <mat-divider></mat-divider> -->
      
