@@ -4,6 +4,7 @@ import { DialogContentMatUploadComponent } from '../../commonFiles/sharedcompone
 import { SampleModel } from '../../models/product.model';
 import { InventoryService } from '../../services/Inventory.service';
 import { PostResult } from '../../models/PostResult';
+import { SubjectService } from '../../services/subject.service';
 
 @Component({
   selector: 'app-addbikes',
@@ -13,9 +14,21 @@ import { PostResult } from '../../models/PostResult';
 export class AddbikesComponent {
   proudctdata = new SampleModel();
   isIamages: boolean = false;
-  constructor(private dialog: MatDialog, private invntservice: InventoryService) {
-    // this.openDialog()
-    console.log(this.proudctdata)
+  hubList: any;
+  LookupData: any;
+  constructor(private dialog: MatDialog, private invntservice: InventoryService
+    ,private shareds:SubjectService
+    ) {
+    this.shareds.fetchLookup(); // Fetch data if null
+    this.shareds.Lookupdata$.subscribe(data => {
+      this.LookupData=data;
+      console.log(this.LookupData)
+    });
+    this.shareds.fetchMasterData(); // Fetch data if null
+    this.shareds.data$.subscribe(data => {
+     this.hubList=data;
+     console.log(this.hubList)
+    });
   }
 
   openDialog() {
@@ -31,6 +44,7 @@ export class AddbikesComponent {
   }
   onSubmit() {
     console.log(this.proudctdata)
+    this.proudctdata.ProductType=3502
     this.invntservice.saveProduct(this.proudctdata)
       .then((result: PostResult) => {
         if (result.status) {

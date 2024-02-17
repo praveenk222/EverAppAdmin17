@@ -22,4 +22,8 @@ async showConfirmation() {
   this.shareds.data$.subscribe(data => {
     console.log('revenue data',data)
   });
+
+  --product bike type =3502
+  --product battery type =3503
+  --product wash type =3504
   -- <img class="frame-2608343" src="../../../assets/img/download.jpg" />
