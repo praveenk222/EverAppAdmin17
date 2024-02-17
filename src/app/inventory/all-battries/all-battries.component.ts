@@ -4,6 +4,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { InventoryService } from '../../services/Inventory.service';
 import { environment } from '../../../environments/environment';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-all-battries',
   templateUrl: './all-battries.component.html',
@@ -14,7 +15,7 @@ export class AllBattriesComponent {
   isIamages: boolean = false;
   azimageUrl: any = environment.azimageUrl_hub;
 
-  constructor( private invntservice: InventoryService) {
+  constructor( private invntservice: InventoryService,private router:Router) {
   }
 
 ngOnInit() {
@@ -36,4 +37,9 @@ getbattry() {
        console.error(error);
      });
  }
+
+ goto(){
+  localStorage.setItem('actiontype','addbattery')
+  this.router.navigate(['/inventory/addbike/0'])
+}
 }

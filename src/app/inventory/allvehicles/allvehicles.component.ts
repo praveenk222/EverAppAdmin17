@@ -3,6 +3,7 @@ import { InventoryService } from '../../services/Inventory.service';
 import { PostResult } from '../../models/PostResult';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-allvehicles',
@@ -17,7 +18,7 @@ export class AllvehiclesComponent implements OnInit {
    pageSizeOptions: number[] = [5, 10, 20];
    pageSize = 5; //
    @ViewChild(MatPaginator) paginator!: MatPaginator;
-  constructor( private invntservice: InventoryService) {
+  constructor( private invntservice: InventoryService,private router:Router) {
   }
 
 ngOnInit() {
@@ -44,5 +45,9 @@ ngAfterViewInit(){
       .catch((error) => {
         console.error(error);
       });
+  }
+  goto(){
+      localStorage.setItem('actiontype','addbike')
+      this.router.navigate(['/inventory/addbike/0'])
   }
 }

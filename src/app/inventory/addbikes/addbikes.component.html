@@ -18,7 +18,7 @@
           <table>
             <tr>
               <td>ProductName</td>
-              <td><input type="text" [(ngModel)]="proudctdata.ProductName" name="ProductName"></td>
+              <td><input type="text" [(ngModel)]="proudctdata.ProductName" name="ProductName" class="content2"></td>
             </tr>
             
             <tr>
@@ -33,6 +33,8 @@
               <td>Hub station</td>
               <!-- dropdown branchid bind id -->
               <td>  <select [(ngModel)]="proudctdata.BranchID" type="text" name="BranchID" class="content2">
+
+            <option value="0" >Select Hub center</option>
             <option value="{{p?.BranchID}}" *ngFor="let p of hubList">{{p?.BranchName}}</option>
               </select>
               </td>
@@ -51,6 +53,8 @@
               <td>Bike condition</td>
               <!-- dropdown LookupData bind LookupDescription LookupCode -->
               <td>     <select [(ngModel)]="proudctdata.Condition" type="text" name="Condition" class="content2">
+            <option value="0" >Select Bike Condition</option>
+
                 <option *ngFor="let b of LookupData " value="{{b?.LookupID}}">{{b?.LookupCode}}</option>
                 </select>
               </td>
