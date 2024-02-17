@@ -5,6 +5,7 @@ import { SampleModel } from '../../models/product.model';
 import { InventoryService } from '../../services/Inventory.service';
 import { PostResult } from '../../models/PostResult';
 import { SubjectService } from '../../services/subject.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-addbikes',
@@ -17,7 +18,7 @@ export class AddbikesComponent {
   hubList: any;
   LookupData: any;
   constructor(private dialog: MatDialog, private invntservice: InventoryService
-    ,private shareds:SubjectService
+    ,private shareds:SubjectService,private snackbar:MatSnackBar
     ) {
     this.shareds.fetchLookup(); // Fetch data if null
     this.shareds.Lookupdata$.subscribe(data => {
@@ -26,7 +27,7 @@ export class AddbikesComponent {
     });
     this.shareds.fetchMasterData(); // Fetch data if null
     this.shareds.data$.subscribe(data => {
-     this.hubList=data;
+     this.hubList=data.message;
      console.log(this.hubList)
     });
   }
@@ -49,8 +50,9 @@ export class AddbikesComponent {
       .then((result: PostResult) => {
         if (result.status) {
           console.log(result.message)
+          this.snackbar.open(JSON.stringify(result.message))
           // this.router.na
-          window.history.back();
+          // window.history.back();
 
         }
       })

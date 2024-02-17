@@ -17,6 +17,11 @@
       <div class="full-description">Full description</div>
           <table>
             <tr>
+              <td>ProductName</td>
+              <td><input type="text" [(ngModel)]="proudctdata.ProductName" name="ProductName"></td>
+            </tr>
+            
+            <tr>
               <td>Model name</td>
               <td><input [(ngModel)]="proudctdata.ModelName" type="text" name="proudctdata.ModelName" class="content2"></td>
             </tr>
@@ -27,8 +32,12 @@
             <tr>
               <td>Hub station</td>
               <!-- dropdown branchid bind id -->
-              <td>  <input [(ngModel)]="proudctdata.BranchID" type="text" name="BranchID" class="content2"></td>
+              <td>  <select [(ngModel)]="proudctdata.BranchID" type="text" name="BranchID" class="content2">
+            <option value="{{p?.BranchID}}" *ngFor="let p of hubList">{{p?.BranchName}}</option>
+              </select>
+              </td>
             </tr>
+
             <tr>
               <td>Established date</td>
               <td>  <input [(ngModel)]="proudctdata.EstablishedDate" type="date" name="EstablishedDate" class="content2"></td>
@@ -41,7 +50,10 @@
               <!-- quntity coloumn Quantity   add-->
               <td>Bike condition</td>
               <!-- dropdown LookupData bind LookupDescription LookupCode -->
-              <td>     <input [(ngModel)]="proudctdata.Condition" type="text" name="Condition" class="content2"></td>
+              <td>     <select [(ngModel)]="proudctdata.Condition" type="text" name="Condition" class="content2">
+                <option *ngFor="let b of LookupData " value="{{b?.LookupID}}">{{b?.LookupCode}}</option>
+                </select>
+              </td>
             </tr>
             <tr>
               <td>Last service date</td>
