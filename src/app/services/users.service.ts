@@ -94,6 +94,9 @@ getMemberDetails(userid:number){
 getAlloffers(){
   return this.http.get(this.apiUrl+'orders/offers/getall');
 }
+cancelOrder(orderID:any){
+  return this.http.get(this.apiUrl+'api/orders/cancelOrder/'+orderID);
+}
 savepromo(order:any):Observable<any>{
   return this.http.post(this.m_apiUrl+'admin/promocode/save',order)
 }

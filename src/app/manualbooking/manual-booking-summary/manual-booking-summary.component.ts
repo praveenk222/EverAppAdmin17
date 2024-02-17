@@ -12,6 +12,7 @@ import { UsersService } from '../../services/users.service';
 export class ManualBookingSummaryComponent {
   bookingNo: any;
   ProductDetails: any;
+  orderID:number=0;
   constructor(private dataService: DataserviceService, private snackBar: MatSnackBar,
     private route: ActivatedRoute, private _pd: UsersService,
     private router: Router, 
@@ -28,6 +29,11 @@ export class ManualBookingSummaryComponent {
     this._pd.getBookingndUserSummaryByBookingID(this.bookingNo).subscribe((res:any) => {
       console.log(res)
       this.ProductDetails = res
+    })
+  }
+  cancelOrder(){
+    this._pd.cancelOrder(this.ProductDetails.OrderID).subscribe(res=>{
+      console.log(res)
     })
   }
 }
