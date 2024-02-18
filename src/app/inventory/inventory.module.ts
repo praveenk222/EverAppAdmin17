@@ -19,6 +19,7 @@ import { SharedComponentsModule } from '../commonFiles/commonModules/sharedCompo
 import { AllbikesComponent } from './allvehicles/allbikes/allbikes.component';
 import { AllbhulistComponent } from './all-hubstation/allbhulist/allbhulist.component';
 import { AddbatteryComponent } from './addbattery/addbattery.component';
+import { RemainingbikesComponent } from './allvehicles/remainingbikes/remainingbikes.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { AddbatteryComponent } from './addbattery/addbattery.component';
     AllbikesComponent,
     AllbhulistComponent,
     AddbatteryComponent,
+    RemainingbikesComponent,
   ],
   imports: [
     CommonModule,

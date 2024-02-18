@@ -27,27 +27,25 @@
     </div>
             
 
-            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" (selectedIndexChange)="tabChanged($event)" >
               <!-- header -->
-            
-           
-
               <!-- header -->
                 <mat-tab label="All Vehicles"> 
                   
-                          <app-allbikes></app-allbikes>>
+                          <app-allbikes></app-allbikes>
                 </mat-tab>
                 <mat-tab label="Booked"> 
-                  <app-allbikes></app-allbikes>>
-
+                  <!-- <app-remainingbikes *ngIf="selectedTabIndex === 1 && loadData[1]" ></app-remainingbikes> -->
+                  <!-- <app-remainingbikes *ngIf="selectedTabIndex === 1" ></app-remainingbikes> -->
+                  <app-allbikes></app-allbikes>
                 </mat-tab>
                 <mat-tab label="Avilable"> 
-                  <app-allbikes></app-allbikes>>
+                  <app-allbikes></app-allbikes>
 
                   
                 </mat-tab>
                 <mat-tab label="Out of Stock"> 
-                  <app-allbikes></app-allbikes>>
+                  <app-allbikes></app-allbikes>
 
                   
                 </mat-tab>
