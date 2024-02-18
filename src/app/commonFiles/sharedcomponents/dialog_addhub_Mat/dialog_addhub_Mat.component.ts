@@ -5,6 +5,7 @@ import { InventoryService } from '../../../services/Inventory.service';
 import { PostResult } from '../../../models/PostResult';
 import { FormsModule, NgForm } from '@angular/forms';
 import { UsersService } from '../../../services/users.service';
+import { SubjectService } from '../../../services/subject.service';
 
 @Component({
   selector: 'app-dialog-addhub-mat',
@@ -15,8 +16,16 @@ import { UsersService } from '../../../services/users.service';
 })
 export class DialogAddhubMatComponent {
  hubmodal!: BranchModal ;
-  constructor(private dialogRef: MatDialogRef<DialogAddhubMatComponent>,  @Inject(MAT_DIALOG_DATA) public data: any
-  ,private us:UsersService) {}
+ LookupData:any;
+  constructor(private dialogRef: MatDialogRef<DialogAddhubMatComponent>,  @Inject(MAT_DIALOG_DATA) public data: any,private shareds:SubjectService
+  ,private us:UsersService) {
+
+    this.shareds.fetchLookup(); // Fetch data if null
+    this.shareds.Lookupdata$.subscribe(data => {
+      this.LookupData=data.message.filter((x:any)=>x.LookupCategory =='SERVICETYPE');
+      console.log(this.LookupData)
+    });
+  }
 
   closeDialog(): void {
     this.dialogRef.close();

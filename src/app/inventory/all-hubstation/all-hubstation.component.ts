@@ -5,6 +5,7 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { DialogAddhubMatComponent } from '../../commonFiles/sharedcomponents/dialog_addhub_Mat/dialog_addhub_Mat.component';
 import { MatDialog } from '@angular/material/dialog';
+import { SubjectService } from '../../services/subject.service';
 
 @Component({
   selector: 'app-all-hubstation',
@@ -12,7 +13,7 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrl: './all-hubstation.component.css'
 })
 export class AllHubstationComponent {
- 
+  LookupData:any;
   proudctdata: any;
   isIamages: boolean = false;
   displayedColumns: string[] = ['slno', 'productname', 'registrationno', 'hubcode', 'opnetime', 'closetime', 'location', 'status'];
@@ -20,7 +21,11 @@ export class AllHubstationComponent {
   pageSizeOptions: number[] = [5, 10, 20];
   pageSize = 5; //
   @ViewChild(MatPaginator) paginator!: MatPaginator;
-  constructor(private invntservice: InventoryService,private dialog:MatDialog) {
+  constructor(private invntservice: InventoryService,private dialog:MatDialog,private shareds:SubjectService) {
+    this.shareds.fetchLookup(); // Fetch data if null
+    this.shareds.Lookupdata$.subscribe(data => {
+      this.LookupData=data.message.filter((x:any)=>x.LookupCategory =='BikeCondition');
+    });
   }
 
   ngOnInit() {

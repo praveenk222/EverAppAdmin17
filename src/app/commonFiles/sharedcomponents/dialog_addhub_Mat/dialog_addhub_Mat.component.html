@@ -56,7 +56,10 @@
     </div>
     <div class="ob-forms-farmer-name">
       <div class="farmer-name">Branch Type</div>
-      <input class="frame" placeholder="" id="BranchType" name="BranchType" ngModel>
+      <select class="frame" placeholder="" id="BranchType" name="BranchType" ngModel>
+        <option *ngFor="let p of LookupData" value="">{{p?.LookupCode
+        }}</option>
+        </select>
     </div>
     <div class="ob-forms-farmer-name">
       <div class="farmer-name">Location</div>
