@@ -134,33 +134,33 @@ getordersummeryByBookingNo(bookingNo:string){
     return this.http.post(this.apiUrl+`orders/getBookingndUserSummaryByBookingID`,bookingdata);
   }
   postcomplain(data:any):Observable<any>{
-    return this.http.post('http://localhost:8080/api/v1/adminweb/customers/adComplains',data)
+    return this.http.post(this.apiUrl+'customers/adComplains',data)
   }
   getnavlist(){
-    return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getLeftnavbar')
+    return this.http.get(this.apiUrl+'customers/getLeftnavbar')
   }
   getNavById(userid:number){
-    return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getLeftNavbarByID/'+userid)
+    return this.http.get(this.apiUrl+'customers/getLeftNavbarByID/'+userid)
   }
   getusertabbyid(){
   }
   getdasboarddata(){
-    return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getDashboardData')
+    return this.http.get(this.apiUrl+'customers/getDashboardData')
   }
   getadminUsers(){
-    return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getAdminUserList')
+    return this.http.get(this.apiUrl+'customers/getAdminUserList')
   }
   getadminUserdetails(userid:number){
-    return this.http.get('http://localhost:8080/api/v1/adminweb/customers/getsecurityusers/'+userid)
+    return this.http.get(this.apiUrl+'customers/getsecurityusers/'+userid)
   }
   saveUserdata(postdata:any){
-    return this.http.post('http://localhost:8080/api/v1/adminweb/customers/savePriceData',postdata)
+    return this.http.post(this.apiUrl+'customers/savePriceData',postdata)
   } 
   savehub(postdata:any){
-    return this.http.post('http://localhost:8080/api/v1/adminweb/products/savehub',postdata)
+    return this.http.post(this.apiUrl+'products/savehub',postdata)
   } 
   savePrice(postdata:any){
-    return this.http.post('http://localhost:8080/api/v1/adminweb/counts/savePrice',postdata)
+    return this.http.post(this.apiUrl+'counts/savePrice',postdata)
   } 
   async getPridcedata():  Promise<any> {    
 
@@ -176,6 +176,6 @@ getordersummeryByBookingNo(bookingNo:string){
     });
   }
 sendmail(data:any):Observable<any>{
-  return this.http.post('http://localhost:8080/api/v1/adminweb/customers/forgotpassword',data)
+  return this.http.post(this.apiUrl+'customers/forgotpassword',data)
 }
 }
