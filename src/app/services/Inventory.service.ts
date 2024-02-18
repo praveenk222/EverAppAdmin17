@@ -7,6 +7,7 @@ import { environment } from '../../environments/environment';
 })
 export class InventoryService {
     apiUrl=environment.apiurl;
+    m_apiUrl=environment.m_apiurl;
   constructor(private http:HttpClient) 
   { }
 
@@ -75,4 +76,9 @@ export class InventoryService {
       );
     });
   }
+
+//api//1000
+getProductdetails(userid:number){
+  return this.http.get(this.m_apiUrl+'product/get/'+userid)
+}
 }

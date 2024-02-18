@@ -6,8 +6,10 @@ import { InventoryService } from '../../services/Inventory.service';
 import { PostResult } from '../../models/PostResult';
 import { SubjectService } from '../../services/subject.service';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 import { SweetAlertResult } from 'sweetalert2';
 import { SweetAlertServiceService } from '../../services/sweet-alert-service.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-addbikes',
@@ -20,30 +22,50 @@ export class AddbikesComponent {
   hubList: any;
   LookupData: any;
   ID:number;
+  isview:boolean=true;
+  azimageUrl: any = environment.azimageUrl_hub;
+
   btntype:string='Save Changes'
   actiontype: string | null;
-  constructor(private dialog: MatDialog, private invntservice: InventoryService
-    ,private shareds:SubjectService,private routes:ActivatedRoute,private swal:SweetAlertServiceService
+  constructor(private dialog: MatDialog, private invntservice: InventoryService,private location:Location,
+    private shareds:SubjectService,private routes:ActivatedRoute,private swal:SweetAlertServiceService
     ) {
       this.ID=this.routes.snapshot.params['id']
       this.actiontype=localStorage.getItem('actiontype');
+      if(this.actiontype == 'view'){
+        this.isview=!this.isview
+
+      }
       //addbike
+      // localStorage.setItem('actiontype','edit')
+      // localStorage.setItem('pagetype','bike')
       if(this.ID == 0){
         this.btntype='Save Changes'
       }else{
         this.btntype='Update Changes'
+        this.getBikedetails()
 
       }
     this.shareds.fetchLookup(); // Fetch data if null
     this.shareds.Lookupdata$.subscribe(data => {
-      this.LookupData=data.message.filter((x:any)=>x.LookupCategory =='BikeCondition');
+      let res=data.message
+      if(res){
+
+        this.LookupData=res.filter((x:any)=>x.LookupCategory =='BikeCondition');
+      }
     });
     this.shareds.fetchMasterData(); // Fetch data if null
     this.shareds.data$.subscribe(data => {
      this.hubList=data.message;
     });
-  }
 
+  }
+getBikedetails(){
+  this.invntservice.getProductdetails(this.ID).subscribe((res:any)=>{
+    this.proudctdata=res;
+    console.log(res)
+  })
+}
   openDialog() {
     const timeout = 2000;
     let dialogRef =
@@ -78,5 +100,8 @@ export class AddbikesComponent {
       .catch((error) => {
         console.error(error);
       });
+  }
+  goBack(){
+    this.location.back();
   }
 }
